@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 3. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 1. ЭЛЕМЕНТЫ ЛИНЕЙНОЙ АЛГЕБРЫ</h3>
+<h3>§3. Системы линейных уравнений</h3>
+<a href="#1" class=punkt>3.1. Основные понятия. Совместность. Решения системы</a><br>
+<a href="#2" class=punkt>3.2. Исследование системы. Теорема Кронекера – Капелли</a><br>
+<a href="#3" class=punkt>3.3. Однородные системы и их исследование</a><br>
+<a href="#4" class=punkt>3.4. Метод Гаусса</a><br>
+<a href="#5">ЗАДАЧИ К ЧАСТИ 1 (для самостоятельного решения)
+
+</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§3. СИСТЕМЫ ЛИНЕЙНЫХ УРАВНЕНИЙ</h3>
+<a name=1 class="anchor"></a>
+
+<h3>3.1.
+Основные понятия. Совместность. Решения системы</h3>
+<p><i>Системой линейных алгебраических
+уравнений</i>, содержащей <i>m</i> уравнений
+и <i>n</i> неизвестных,
+называется система вида</p>
+<p><img src="img/lec2.files/image254.gif" height="113" width="243">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(3.1)</span></p>
+<p>где
+числа <img src="img/lec2.files/image255.gif" height="29" width="215">&nbsp;называются
+<i>коэффициентами </i>системы, числа <img src="img/lec2.files/image256.gif" height="27" width="17">&nbsp;-
+<i>свободными членами</i>. Неизвестные
+числа <img src="img/lec2.files/image257.gif" height="29" width="21">&nbsp;называются
+<i>неизвестными </i>системы и подлежат нахождению.</p>
+<p>По аналогии с тем, как это сделано
+в пункте 2.3, систему
+(3.1) удобно записывать в компактной <i>матричной форме </i><img src="img/lec2.files/image258.gif" height="20" width="79">,
+где </p>
+<p><img src="img/lec2.files/image259.gif" height="113" width="201">&nbsp;<img src="img/lec2.files/image260.gif" height="113" width="75">,
+<img src="img/lec2.files/image261.gif" height="113" width="72">.</p>
+<p>Здесь <i>A</i> – матрица коэффициентов системы, <i>Х
+</i>– вектор-столбец неизвестных , <i>В –</i> вектор-столбец
+свободных членов.
+Произведение матриц <img src="img/lec2.files/image262.gif" height="20" width="45">&nbsp;определено,
+так как в матрице <i>А </i>столбцов столько же, сколько
+строк в матрице <i>X</i>
+(а именно <i>n</i>).</p>
+<p><i>Расширенной </i>матрицей
+системы называется матрица <img src="img/f000.png" align="middle" height="30" width="50">,
+получаемая приписыванием справа к матрице
+системы столбца свободных членов:</p>
+<p><img src="img/lec2.files/image264.gif" height="116" width="251">.</p>
+<p><i>Решением </i>системы
+называется <i>n</i> значений неизвестных&nbsp; <img src="img/lec2.files/image265.gif" height="27" width="208"><b><i>,
+</i></b>при подстановке которых во
+все уравнения системы, эти уравнения обращаются в верные равенства.
+Всякое
+решение системы можно записать в виде матрицы-столбца <i>C</i>,
+при этом <img src="img/lec2.files/image266.gif" height="33" width="187">.</p>
+<p>Система уравнений называется <i>совместной</i><i>,</i>
+если она имеет хотя бы одно решение, и <i>несовместной</i>,
+если она не имеет ни одного решения.</p>
+<p>Совместная система называется <i>определенной</i>,
+если она имеет единственное решение, и <i>неопределенной</i>,
+если она имеет более одного решения. В последнем случае каждое ее решение называется <i>частным
+решением</i> системы. Совокупность всех частных решений
+называется <i>общим решением</i>.</p>
+<p><i>Решить систему </span></i>— это значит выяснить, совместна она или несовместна. Если система
+совместна, то найти ее общее решение.</p>
+<p>Две системы называются <i>эквивалентными
+</i>(равносильными),
+если они имеют одно и то же множество решений. Другими словами, системы
+эквивалентны, если каждое решение одной из них является решением другой, и обратно.</span></p>
+<p>Эквивалентные системы получаются, в частности, при таких
+преобразованиях системы, которые индуцируют соответствующие
+элементарные преобразования расширенной матрицы системы при условии, что эти преобразования
+выполняются лишь над строками расширенной матрицы. В самом деле, перестановка строк
+расширенной матрицы, умножение строки на ненулевое число, прибавление к
+строке другой строки, предварительно умноженной на число, – все эти действия,
+будучи выполненными над уравнениями системы, оставляют систему равносильной
+исходной. Такие преобразования естественно было бы называть <i>элементарными
+преобразованиями системы</i> (3.1).
+</p>
+<br>
+<a name=2 class="anchor"></a>
+<h3>3.2. Исследование
+системы. Теорема Кронекера - Капелли</h3>
+<p>Процесс
+поиска решений системы (3.1) может оказаться довольно длительным и
+кропотливым.
+Ведь на практике приходится иметь дело с системами, состоящими из
+многих
+уравнений, иногда десятков или даже сотен. Поэтому важно заранее знать,
+имеет
+ли решение данная система, совместна ли она? Ответ на этот вопрос даёт
+следующая теорема.</p>
+<p><i>Теорема
+(Кронекера - Капелли</span></i>). <i>Система </i>(3.1)
+<i>совместна тогда и только тогда, когда ранг матрицы системы
+равен рангу
+расширенной матрицы</i> <i>этой системы</i></p>
+<p><img src="img/lec2.files/image267.gif" height="25" width="121">.</span></p>
+<p><i>Доказательство</span></i>. Введём обозначения для столбцов
+расширенной матрицы <i><img src="img/lec2.files/image268.gif" height="25" width="56"></i></p>
+<p><img src="img/f001.png"></p>
+<p>В новых обозначениях система
+выглядит так:</span></p>
+<p><img src="img/f002.png" height="30" width="241"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(3.2)</p>
+<p><i>Необходимость</i>. Пусть система совместна, т.е.
+существуют такие <img src="img/f003.png" align="middle" height="23" width="96">,
+что выполняется равенство</p>
+<p><img src="img/f004.png" height="26" width="239">.</p>
+<p>Из
+этого равенства следует, что столбец <em><strong>b</strong></em>&nbsp;есть
+линейная комбинация остальных
+столбцов матрицы системы. Добавление этого столбца не может увеличить
+ранга
+матрицы и, следовательно, <img src="img/lec2.files/image267.gif" height="25" width="121">.</p>
+<p><i>Достаточность</i>. Пусть ранг матрицы системы и ранг
+расширенной
+матрицы этой системы совпадают и равны <i>r</i>. Тогда <i>r</i>
+столбцов матрицы линейно независимы. Без ограничения общности можно
+считать,
+что это первые <i>r</i><i> </i>столбцов.
+Остальные <img src="img/lec2.files/image274.gif" height="16" width="40">&nbsp;столбцов,
+в частности, столбец<em><strong> b</strong></em>,
+являются линейными комбинациями первых <i>r</i> столбцов.
+Это означает, что найдутся такие <img src="img/f008.png" align="middle" height="21" width="92">,
+что </p>
+<p><img src="img/f005.png" height="26" width="240">.</p>
+<p>Положив
+<img src="img/f007.png" align="middle" height="25" width="210">, получим решение
+системы </p>
+<p><img src="img/f006.png" height="25" width="237">.</p>
+<p>Теорема
+доказана.</p>
+<p>Из теоремы Кронекера – Капелли вытекает несколько следствий.</p>
+<p><i>Следствие</i> 1<b>.</b> Если
+ранг системы (3.1) равен числу неизвестных <img src="img/lec2.files/image278.gif" height="31" width="59">,
+то система имеет единственное решение.
+Это решение можно получить, в частности, по формулам Крамера.</p>
+<p><i>Следствие</i> 2<b>.</b> Если ранг системы (3.1) меньше
+числа неизвестных <img src="img/lec2.files/image279.gif" height="31" width="59">, то система имеет
+бесконечное множество решений. В этом случае <img src="img/lec2.files/image280.gif" height="16" width="41">&nbsp;неизвестных,
+называемых <i>свободными,</i>
+могут принимать произвольные значения. Через них единственным образом
+выражаются остальные неизвестные, называемые <i>базисными</i>.
+</p>
+<p>Решение
+системы, в котором все свободные переменные равны нулю, называется <i>базисным
+решением</i>.</p>
+<p>Исследование
+системы следует начинать с выяснения вопроса о её совместности. Для
+этого надо
+вычислить ранги матрицы и расширенной матрицы системы. Если они не
+равны (в
+этом случае ранг матрицы системы на единицу меньше ранга расширенной
+матрицы
+системы), то делается вывод: система несовместна, т.е. решений нет.
+Если же
+ранги совпадают, то система совместна и можно её решить – найти её
+единственное
+или общее решение.</p>
+<p><i>Пример</span></i>.<i>&nbsp; </i>Исследовать
+на совместность систему</p>
+<p><img src="img/lec2.files/image281.gif" height="52" width="100"></p>
+<p><i>Решение</span></i>: </p>
+<p><img src="img/lec2.files/image282.gif" height="52" width="159">;
+&nbsp;&nbsp;&nbsp;<img src="img/lec2.files/image283.gif" height="56" width="401">.</p>
+<p>Таким
+образом, <img src="img/lec2.files/image284.gif" height="23" width="108">, следовательно, система
+несовместна.</p>
+<p><i>Пример.
+</i>Решить систему</p>
+<p><img src="img/lec2.files/image285.gif" height="80" width="163"></p>
+<p><i>Решение</span></i>: <img src="img/lec2.files/image286.gif" height="23" width="133">. Система совместна и
+неопределенная. Найдем её общее
+решение. Из трёх уравнений системы можно оставить два первых. Далее,
+можно
+выразить неизвестные <img src="img/lec2.files/image287.gif" height="27" width="20">&nbsp;и
+<img src="img/lec2.files/image288.gif" height="27" width="21">&nbsp;через <img src="img/lec2.files/image289.gif" height="27" width="19">&nbsp;и
+<img src="img/lec2.files/image290.gif" height="27" width="21">:</p>
+<p><img src="img/lec2.files/image291.gif" height="53" width="163">,&nbsp;
+<img src="img/lec2.files/image292.gif" height="53" width="163">.</p>
+<p>Решая
+эту последнюю систему, получим: <img src="img/lec2.files/image293.gif" height="27" width="115">;
+<img src="img/lec2.files/image294.gif" height="27" width="49">.</p>
+<p>Таким
+образом, полагая <img src="img/lec2.files/image295.gif" height="27" width="17">&nbsp;и
+<img src="img/lec2.files/image296.gif" height="27" width="20">&nbsp;– произвольными
+числами, можно представить общее решение системы в виде:</p>
+<p><img src="img/lec2.files/image297.gif" height="24" width="289">.</p>
+<p>Положив,
+например, <sub><img src="img/lec2.files/image298.gif" height="24" width="75">, получим
+<i>базисное</i> решение системы:</p>
+<p><img src="img/lec2.files/image299.gif" height="24" width="227">.</p>
+<p>Положив
+<img src="img/lec2.files/image300.gif" height="24" width="72">, получим <i>другое
+частное</i> решение системы:</p>
+<p><img src="img/lec2.files/image301.gif" height="24" width="217">.</p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+
+<p style="border: medium none ; margin: 0cm 0cm 0.0001pt; padding: 0cm; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;" lang="X-NONE">&nbsp;</span></p>
+</div>
+<p style="border: medium none ; margin: 0cm 0cm 0.0001pt; padding: 0cm; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;" lang="X-NONE">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 0.0001pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><img src="img/lec2.files/image302.jpg" align="left" height="258" hspace="12" width="213"></p>
+<p style="margin: 0cm 0cm 0.0001pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><b><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;" lang="X-NONE">КРО&#769;НЕКЕР</span></b> <b>Леопо&#769;льд</b>
+(1823 - 1891) — немецкий  математик. Член
+Берлинской Академии наук, иностранный член-корреспондент Петербургской
+АН, профессор университета в Берлине.</p>
+<p>Основные труды по и теории чисел,
+где он продолжил работы своего учителя Э.Куммера по теории  квадратичных форм
+и теории групп. Большое значение имеют его исследования по арифметической теории
+алгебраических величин.</p>
+<p>Был сторонником «арифметизации» математики, которая по его мнению, должна
+быть сведена к арифметике целых
+чисел; только последняя, как он утверждал, обладает подлинной
+реальностью. Защищая эти взгляды, вёл упорную дискуссию с принципами
+теоретико-функциональной
+школы  К.Вейерштрасса 
+и теоретико-множественной школы Г.Кантора.
+Следующее его выражение стало знаменитым:</p>
+<p>«Бог создал натуральные числа, всё остальное —
+дело рук человека».</p>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+<p>Написал свыше 120 больших и малых мемуаров,
+печатавшихся в специальных журналах. В своих исследованиях Кронекер, путём
+применения эллиптических функций, получил ряд новых данных для теории чисел.
+Подобный подход привел Э.Уайлса в 1993 г. к доказательству Великой теоремы Ферма.</p>
+<p style="border: medium none ; margin: 0cm 0cm 0.0001pt; padding: 0cm; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;" lang="X-NONE">&nbsp;</span></p>
+</div>
+<br>
+<a name=3 class="anchor"></a>
+<h3>3.3. Однородные системы и их исследование</h3>
+<p>Система линейных уравнений называется <i>однородной</i>,
+если все свободные члены равны нулю:</p>
+<p><img src="img/lec2.files/image303.gif" border="0" height="113" width="232">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(3.3)</p>
+<p>В матричном виде систему можно
+записать в виде</p>
+<p><img src="img/lec2.files/image304.gif" border="0" height="20" width="75">,</p>
+<p>где
+<i>О&nbsp; </i>– нулевой столбец.</p>
+<p>Однородная система всегда
+совместна, так как при <img src="img/lec2.files/image305.gif" border="0" height="27" width="164">&nbsp;все уравнения
+превращаются в тождества <img src="img/lec2.files/image306.gif" border="0" height="20" width="41">. Такое решение называется <i>нулевым
+</i>или<i>
+тривиальным</i>. </p>
+<p>Следующая
+теорема даёт ответ на вопрос: при каких условиях
+однородная система имеет и ненулевые решения?</p>
+<p><i>Теорема.</span></i> <i>Для того, чтобы система
+линейных однородных
+уравнений имела ненулевые решения, необходимо и достаточно, чтобы ранг </i></span><i>r</span></i><i>
+ее основной матрицы был меньше числа </span></i><i><p>n</span></i><i> </i><i>неизвестных,
+т.е. <img src="img/lec2.files/image307.gif" border="0" height="17" width="44">.</i></p>
+<p><i>Доказательство. </i>1. <i>Необходимость</i><b>.
+</b>Так как ранг не может превосходить размерности матрицы, то очевидно, <img src="img/lec2.files/image308.gif" border="0" height="20" width="44">. Пусть <img src="img/lec2.files/image309.gif" border="0" height="16" width="44">. Тогда один из
+миноров размера <img src="img/lec2.files/image310.gif" border="0" height="17" width="41">&nbsp;отличен
+от нуля. Соответствующая система
+линейных уравнений имеет в этом случае единственное решение,
+определяемое
+формулами Крамера:</p>
+<p><img src="img/lec2.files/image311.gif" border="0" height="51" width="92">, так как <img src="img/lec2.files/image312.gif" border="0" height="27" width="113">.</p>
+<p>Значит, других, кроме тривиальных,
+решений нет. Итак,
+если есть нетривиальное решение, то <img src="img/lec2.files/image307.gif" border="0" height="17" width="44">.</p>
+<p>2.
+<i>Достаточность</i>. Пусть <img src="img/lec2.files/image307.gif" border="0" height="17" width="44">. Тогда
+однородная система, будучи совместной, является неопределенной. Значит,
+она имеет бесчисленное множество решений, т.е. имеет и ненулевые решения.</p>
+<p>Для <i>квадратной</i> однородной системы</p>
+<p><img src="img/lec2.files/image313.gif" border="0" height="120" width="241"></p>
+<p>критерий существования
+ненулевых решений даётся следующей теоремой.</p>
+<p><i>Теорема</span></i><b>. </b><i>Для
+того, чтобы однородная система </i><i>n</span></i><i> линейных уравнений с </i><i>n</i><i>
+неизвестными имела ненулевые решения, необходимо и достаточно, чтобы ее
+определитель <img src="img/lec2.files/image314.gif" border="0" height="20" width="17">&nbsp;был
+равен нулю, т.е.</i>
+<img src="img/lec2.files/image315.gif" border="0" height="21" width="47">.</p>
+<p><i>Доказательство. </i>Для квадратной матрицы утверждения:
+<img src="img/lec2.files/image307.gif" border="0" height="17" width="44">&nbsp;и  <img src="img/lec2.files/image315.gif" border="0" height="21" width="47">&nbsp;равносильны, откуда
+вытекает справедливость доказываемой теоремы.</p>
+<p>
+<i>Пример</i>.
+Однородная система </p>
+<p><img src="img/lec2.files/image316.gif" border="0" height="80" width="128"></sub></span></p>
+<p>имеет
+бесконечно много решений (в том числе и тривиальное – нулевое), так как
+определитель матрицы системы равен нулю (ввиду равенства столбцов –
+второго и
+третьего).</p>
+<p>Множество
+решений однородной системы (3.3) обладает рядом замечательных свойств.
+Обозначим различные матрицы-столбцы решений системы (3.3) </span></p>
+<p><img src="img/f009.png" border="0" height="116" width="252"></p>
+<p><i>Свойства
+решений однородной системы уравнений</i></p>
+<p><img src="img/lec2.files/image318.gif" align="left" height="30" width="42"><i> Если
+<b>с </b>– решение системы </span></i>(3.3)<i>,
+то <img src="img/f010.png" align="middle" border="0" height="21" width="23">,
+где <img src="img/f011.png" align="middle" border="0" height="16" width="14">&nbsp;-
+любое число, также является решением системы </i>(3.3).</p>
+<p><img src="img/lec2.files/image321.gif" align="left" height="30" width="42"><i> Если
+<img src="img/lec2.files/image322.gif" border="0" height="21" width="17">&nbsp;и <img src="img/lec2.files/image323.gif" border="0" height="21" width="20"><b>&nbsp;</b>–
+решения системы </i>(3.3)<i>, то <img src="img/lec2.files/image324.gif" border="0" height="21" width="49">&nbsp;также является
+решением системы </i>(3.3).</p>
+<p><img src="img/lec2.files/image325.gif" align="left" height="30" width="42"><i> Следствие.
+Любая линейная комбинация решений однородной системы также является её
+решением.</i></p>
+<p>Доказательства
+этих свойств вполне очевидны и мы предоставим их читателю.</p>
+<p>Среди
+всех решений однородной системы выделяется решения, которые можно
+назвать <i>главными
+решениями</i>. Через них выражаются другие решения. Чтобы
+разобраться в этом,
+применим понятие линейной зависимости к решениям системы (3.3).</p>
+<p>Решения
+<img src="img/lec2.files/image326.gif" border="0" height="25" width="85">&nbsp;однородной
+системы называются<i> линейно независимыми</i>, если
+линейная комбинация этих
+решений <img src="img/lec2.files/image327.gif" border="0" height="25" width="168">&nbsp;равна
+нулевому столбцу только при условии <img src="img/lec2.files/image328.gif" border="0" height="25" width="156">. </p>
+<p>Совокупность
+линейно независимых решений <img src="img/lec2.files/image329.gif" border="0" height="25" width="85">&nbsp;однородной системы
+уравнений называется <i>фундаментальной,</i>
+если общее решение системы является линейной комбинацией решений <sub><img src="img/lec2.files/image329.gif" border="0" height="25" width="85">&nbsp;</p>
+<p><i>Теорема.
+Если ранг <sub><img src="img/lec2.files/image330.gif" border="0" height="15" width="13">&nbsp;матрицы
+коэффициентов системы </span></i>(3.3)<i> меньше
+числа переменных <img src="img/lec2.files/image331.gif" border="0" height="16" width="15">,
+то существует фундаментальная
+совокупность <img src="img/lec2.files/image274.gif" border="0" height="16" width="40">&nbsp;линейно
+независимых решений, </i>т.е. любое решение системы можно
+представить в виде
+линейной комбинации <i><img src="img/lec2.files/image274.gif" border="0" height="16" width="40"></i>&nbsp;линейно
+независимых решений этой системы.</p>
+<p><i>Доказательство.</i>
+Согласно следствию 2 теоремы Кронекера – Капелли система имеет <i><img src="img/lec2.files/image330.gif" border="0" height="15" width="13"></i>&nbsp;базисных и
+<i><img src="img/lec2.files/image274.gif" border="0" height="16" width="40">&nbsp;</i>свободных
+переменных. Пусть свободные переменные <img src="img/lec2.files/image332.gif" border="0" height="27" width="99">&nbsp;принимают значения  {1,0,0,...,0},{0,1,0,...,0},{0,0,1,...,0},...,{0,0,0,...,1}. Такие наборы,
+очевидно, линейно независимы, а произвольный набор свободных переменных
+<img src="img/lec2.files/image337.gif" border="0" height="28" width="135">&nbsp;есть
+линейная
+комбинация данных наборов с коэффициентами <img src="img/lec2.files/image332.gif" border="0" height="27" width="99">&nbsp;соответственно.
+Следовательно,
+матрицы-столбцы решений системы</p>
+<p><img src="img/lec2.files/image338.gif" border="0" height="241" width="324"></p>
+<p>образуют
+фундаментальную совокупность решений. Теорема доказана.</span></p>
+<p><i>Пример</span></i>. Решить систему однородных
+уравнений, выделив
+какую-либо фундаментальную совокупность решений.</span></p>
+<p><img src="img/lec2.files/image339.gif" border="0" height="87" width="191"></p>
+<p><i>Решение</span></i>. Преобразуем матрицу
+коэффициентов, с помощью
+элементарных преобразований её строк, выделяя линейно независимые
+строки:</span></p>
+<p><img src="img/lec2.files/image340.gif" border="0" height="79" width="480">.</p>
+<p>Ранг
+матрицы равен 2, число свободных переменных равно <img src="img/lec2.files/image341.gif" border="0" height="17" width="64">. Возвращаясь к уравнениям, будем
+иметь></p>
+<p><img src="img/lec2.files/image342.gif" border="0" height="53" width="181"></p>
+<p>В
+качестве базисных переменных возьмём <img src="img/lec2.files/image343.gif" border="0" height="25" width="41">, тогда свободными переменными будут <img src="img/lec2.files/image344.gif" border="0" height="25" width="43">. Выразим <img src="img/lec2.files/image343.gif" border="0" height="25" width="41">:</p>
+<p><img src="img/lec2.files/image345.gif" border="0" height="45" width="189">.</p>
+<p>В
+матричном виде решение системы можно записать в виде:</p>
+<p><img src="img/lec2.files/image346.gif" border="0" height="145" width="297">.</p>
+<p>Обозначим
+<img src="img/lec2.files/image347.gif" align="middle" border="0" height="45" width="124">&nbsp;и
+запишем общее решение ещё раз:</p>
+<p><img src="img/lec2.files/image348.gif" border="0" height="105" width="161">, где <img src="img/lec2.files/image349.gif" border="0" height="24" width="65">.</p>
+<p>Фундаментальную
+совокупность решений образуют линейно независимые наборы {0,1,1,0} и
+{1,7,0,-5}.
+</p>
+<br><a name=4 class="anchor"></a>
+<h3>3.4. Метод Гаусса</h3>
+<p>Одним из наиболее
+универсальных и эффективных методов  решений
+систем линейных алгебраических уравнений является <i>метод
+Гаусса, </i>состоящий
+в по</span>следовательном исключении неизвестных. </span>Метод основан на том, что при
+помощи элементарных
+преобразований над строками расширенной матрицы системы (3.1) она
+приводится к
+треугольному (ступенчатому) виду.</p>
+<p>Как уже отмечалось, каждая строка
+расширенной матрицы
+имитирует уравнение системы (3.1), поэтому, применяя элементарные
+преобразования
+к строкам матрицы <img src="img/lec2.files/image352.gif" align="middle" border="0" height="33" width="52">,
+мы тем самым совершаем равносильные
+преобразования над уравнениями системы.</p>
+<p>Процесс
+решения по методу. Гаусса состоит из двух этапов. На первом этапе (прямой ход) система
+приводится к <i>ступенчатому
+</i>(в частности, <i>треугольному </i>)<i> </i>виду.</p>
+<p>Приведенная ниже система имеет ступенчатый вид</p>
+<p><img src="img/lec2.files/image353.gif" border="0" height="113" width="329">,</p>
+<p>где
+<img src="img/lec2.files/image354.gif" border="0" height="27" width="204">.
+Коэффициенты <img src="img/lec2.files/image355.gif" border="0" height="27" width="23">&nbsp;называются
+<i>главными </i>элементами системы. Под главными
+элементами в матрице системы стоят
+нули.</p>
+<p>На втором этапе (обратный ход) идет последовательное определение неизвестных из полученной
+ступенчатой системы.</p>
+<p>Разумеется,
+необязательно приводить расширенную матрицу к ступенчатому виду,
+начиная с
+первого столбца. Другими словами, «нулевым углом» может быть любой угол
+матрицы
+системы. </p>
+<p>Рассмотрим метод Гаусса на примерах.</p>
+<p"><i>Пример.</i>
+Решить систему линейных уравнений</p>
+<p><img src="img/lec2.files/image356.gif" border="0" height="99" width="177"></p>
+<p><i>Решение</i>.
+Произведем элементарные преобразования над расширенной матрицей
+системы.
+Последний столбец матрицы – столбец свободных членов.</p>
+<p><img src="img/f012.png" border="0" height="203" width="447"></p>
+<p>Таким образом
+исходная система свелась к ступенчатой:</p>
+<p><img src="img/lec2.files/image362.gif" border="0" height="59" width="193"></p>
+<p>Итак,
+система совместна и неопределенна. Ранги матрицы системы и расширенной
+системы
+равны 2. Число свободных переменных <img src="img/lec2.files/image363.gif" border="0" height="20" width="68">. В качестве свободных переменных
+удобно
+выбрать <img src="img/lec2.files/image287.gif" border="0" height="27" width="20">&nbsp;и
+<img src="img/lec2.files/image288.gif" border="0" height="27" width="21">. Из
+второго уравнения выразим <img src="img/lec2.files/image364.gif" border="0" height="24" width="139">, а из первого уравнения <img src="img/lec2.files/image365.gif" border="0" height="24" width="225">. Итак, общее
+решение системы есть </p>
+<p><img src="img/lec2.files/image366.gif" border="0" height="25" width="136">; &nbsp;&nbsp;<img src="img/lec2.files/image367.gif" border="0" height="24" width="137">; &nbsp;&nbsp;<img src="img/lec2.files/image368.gif" border="0" height="27" width="56">; &nbsp;&nbsp;<img src="img/lec2.files/image369.gif" border="0" height="27" width="59">.</p>
+<p>Здесь
+<img src="img/lec2.files/image370.gif" border="0" height="27" width="19">&nbsp;и <img src="img/lec2.files/image371.gif" border="0" height="27" width="20">&nbsp;могут
+принимать любые значения.</p>
+<p><i>Пример.
+</i> Решить
+систему:</p>
+<p><img src="img/lec2.files/image372.gif" border="0" height="99" width="133"></p>
+<p><i>Решение</span></i>. Произведем элементарные
+преобразования над строчками
+расширенной матрицы системы:</p>
+<p><img src="img/f013.png" height="99" width="506"></p>
+<p>Полученная матрица соответствует системе</p>
+<p><img src="img/lec2.files/image375.gif" border="0" height="75" width="109"></p>
+<p>Система
+совместна и определена. Ранг системы равен числу неизвестных. Свободных
+переменных нет. Осуществляя обратный ход, находим <img src="img/lec2.files/image376.gif" align="middle" border="0" height="24" width="159">.</p>
+<p>Пример</i>. Исследовать и решить систему</p>
+<p><img src="img/lec2.files/image377.gif" border="0" height="105" width="255"></p>
+<p><i>Решение.</i> 
+Проведем преобразование расширенной матрицы системы по методу Гаусса:</p>
+<p><img src="img/f014.png" height="103" width="382"></p>
+<p>Удалена нулевая строка
+матрицы.
+Полученная матрица ступенчатого вида. У соответствующей этой матрице
+системы
+два свободных неизвестных. В качестве таковых выберем <img src="img/lec2.files/image290.gif" border="0" height="27" width="21">&nbsp;и <img src="img/lec2.files/image288.gif" border="0" height="27" width="21">. Базисными неизвестными
+будут <img src="img/lec2.files/image380.gif" border="0" height="27" width="43">&nbsp;и
+<img src="img/lec2.files/image381.gif" border="0" height="27" width="20">. Общее
+решение можно представить в следующем виде:</p>
+<p><img src="img/lec2.files/image382.gif" border="0" height="41" width="485"></p>
+<p>Одну
+и ту же систему зачастую можно приводить к разным наборам базисных
+неизвестных.
+Рекомендуем читателю самостоятельно привести последнюю систему к такому
+виду,
+чтобы свободными неизвестными были <i>x</i><sub>1</sub>
+и <i>x</i><sub>2</sub>,
+а базисными – <i>x</i><sub>3</sub>,<i> x</i><sub>4</sub>,<i>
+x</i><sub>5</sub>.
+</p>
+<p>Разумеется,
+если получены два различных набора базисных неизвестных при различных
+способах
+нахождения решения одной и той же системы, то эти наборы содержат одно
+и то же
+число неизвестных, равное рангу системы.</p>
+<p>Как
+видим, метод Гаусса в процессе приведения расширенной матрицы к
+ступенчатому
+виду позволяет проверить совместность системы.</p>
+<p><i>Пример</span></i>. Исследовать систему</span></p>
+<p><img src="img/lec2.files/image383.gif" border="0" height="75" width="132">.</p>
+<p><i>Решение.</span></i> 
+Преобразуем матрицу системы по методу Гаусса:</p>
+<p><img src="img/f015.png" height="72" width="407"><br>
+</p>
+<p>Последняя строка последней
+матрицы соответствует не имеющему решения уравнению <img src="img/lec2.files/image386.gif" border="0" height="24" width="119">. Следовательно,
+исходная система несовместна.</p>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+
+<p style="border: medium none ; margin: 0cm 0cm 0.0001pt; padding: 0cm; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;" lang="X-NONE">&nbsp;</span></p>
+</div>
+<br>
+<p style="margin: 0cm 0cm 0.0001pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><img src="img/lec2.files/image387.jpg" align="left" height="298" hspace="12" width="233"></p>
+<p><b>Карл
+Фри&#769;дрих
+Га&#769;усс</b> 
+(1777 - 1855)—
+выдающийся немецкий математик,
+ астроном и физик, считается одним
+из величайших математиков всех времён.</p>
+<p>С именем Гаусса связаны фундаментальные исследования почти во всех
+основных
+областях математики: алгебре,
+дифференциальной 
+и неевклидовой геометрии,
+в математическом
+анализе, теории функций
+комплексного переменного, теории вероятностей,
+а также в астрономии, геодезии и механике.
+В каждой области глубина проникновения в материал, смелость мысли и
+значительность результата были поражающими. Гаусса называли «королем математиков».</p>
+<p>
+В частности, в
+алгебре Гаусс дал первое строгое доказательство  основной
+теоремы алгебры. Он открыл  кольцо целых комплексных
+гауссовых чисел делимости и с их
+помощью решил немало алгебраических проблем. Указал знакомую теперь
+всем геометрическую модель  комплексных
+чисел и действий с ними. Гаусс дал классическую теорию  сравнений,
+открыл конечное поле вычетов
+по простому модулю, глубоко проник в свойства вычетов.</p>
+
+<br>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+
+<p style="border: medium none ; margin: 0cm 0cm 0.0001pt; padding: 0cm; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;" lang="X-NONE">&nbsp;</span></p>
+</div>
+<br>
+<a name=5 class="anchor"></a>
+<h3>ЗАДАЧИ К ЧАСТИ 1 (для самостоятельного решения)</h3>
+<p><i>Вычислить определители</i></p>
+<p>1.1.
+ <img src="img/lec2.files/image388.gif" border="0" height="52" width="63">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 1.2. <img src="img/lec2.files/image389.gif" border="0" height="52" width="108">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.3. <img src="img/lec2.files/image390.gif" border="0" height="53" width="108">.</p>
+<p>1.4. <img src="img/lec2.files/image391.gif" border="0" height="52" width="113">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.5. <img src="img/lec2.files/image392.gif" border="0" height="52" width="211">.</p>
+<p>1.6. <img src="img/lec2.files/image393.gif" border="0" height="79" width="117">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.7. <img src="img/lec2.files/image394.gif" border="0" height="91" width="80">.&nbsp;&nbsp;&nbsp; 1.8. <img src="img/lec2.files/image395.gif" border="0" height="91" width="81">.&nbsp;&nbsp;&nbsp; 1.9. <img src="img/lec2.files/image396.gif" border="0" height="79" width="68">.</p>
+<p>1.10. В качестве элементов
+определителя третьего порядка
+взять все цифры от 1 до 9, но так, чтобы получился магический квадрат,
+т.е.
+сумма цифр в каждой строке, каждом столбце и по диагоналям была бы
+одинакова. Вычислить
+полученный определитель.</p>
+<p>1.11. Какова максимальная величина
+определителя
+третьего порядка, заполняемого цифрами 0 и 1.</p>
+<p>1.12. Какова максимальная величина
+определителя
+третьего порядка, заполняемого цифрами 1 и –1.</p>
+<p><i>Вычислить определители</span></i></p>
+<p>1.13. <img src="img/lec2.files/image397.gif" border="0" height="104" width="109">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.14. <img src="img/lec2.files/image398.gif" border="0" height="104" width="112">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.15. <img src="img/lec2.files/image399.gif" border="0" height="104" width="103">.</p>
+<p>1.16. <img src="img/lec2.files/image400.gif" border="0" height="104" width="142">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.17. <img src="img/lec2.files/image401.gif" border="0" height="104" width="129">.&nbsp;  1.18. <img src="img/lec2.files/image402.gif" border="0" height="131" width="156">.</p>
+<p>1.19. <img src="img/lec2.files/image403.gif" border="0" height="131" width="164">. 1.20. <img src="img/lec2.files/image404.gif" border="0" height="156" width="144"></p>
+<p>1.21. <em>Вычислить циркулянт</em> <img src="img/lec2.files/image405.gif" border="0" height="105" width="185"><br>
+
+</p>
+<p>1.22. Арифметический
+треугольник (треугольник Паскаля) расположен так, как показано ниже. Он
+состоит
+из натуральных чисел, каждое из которых равняется сумме верхнего и
+левого
+чисел. При этом первая строка и первый столбец состоят из единиц.
+Вычислить
+определитель из <img src="img/lec2.files/image406.gif" border="0" height="16" width="37">&nbsp;элементов,
+стоящих в левом верхнем углу этой
+таблицы: </p>
+<p><img src="img/lec2.files/image407.gif" border="0" height="120" width="135"></p>
+<p>1.23. Доказать,
+что <strong>(n+1)</strong>-ый
+член последовательности Фибоначчи u(n) &nbsp;(u(n)=u(n-2)+u(n-1))
+для n<img src="img/f_b_r.png" align="middle" height="17" width="14"> 3, </p>
+<p>u(1)=u(2)=1равен определителю
+порядка <i>n</i></p>
+<p><img src="img/lec2.files/image413.gif" border="0" height="131" width="172">.</p>
+
+<p><i>Решить систему линейных
+уравнений методом Крамера</i></p>
+<p>1.24.
+<img src="img/lec2.files/image414.gif" border="0" height="76" width="123">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.25. <img src="img/lec2.files/image415.gif" border="0" height="83" width="142">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.26. <img src="img/lec2.files/image416.gif" border="0" height="79" width="133"><br>
+1.27.
+<img src="img/lec2.files/image417.gif" border="0" height="81" width="123">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.28. <img src="img/lec2.files/image418.gif" border="0" height="80" width="143">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><p>&nbsp;&nbsp;&nbsp;&nbsp;1.29. <img src="img/lec2.files/image419.gif" border="0" height="79" width="137"></p>
+<p>1.30. Найти <img src="img/lec2.files/image420.gif" border="0" height="20" width="60">, <img src="img/lec2.files/image421.gif" border="0" height="31" width="64">, если <img src="img/lec2.files/image422.gif" border="0" height="52" width="93">, <img src="img/lec2.files/image423.gif" border="0" height="52" width="92">.</p>
+<p>1.31.
+Найти <img src="img/lec2.files/image424.gif" border="0" height="25" width="51">,
+<img src="img/lec2.files/image425.gif" border="0" height="25" width="52">&nbsp;для
+матрицы <img src="img/lec2.files/image426.gif" border="0" height="56" width="90">.</p>
+<p>1.32. Найти все матрицы второго порядка, квадраты
+которых равны нулевой матрице <img src="img/lec2.files/image427.gif" border="0" height="52" width="85">.</p>
+<p>1.33.
+Вычислить <img src="img/lec2.files/image428.gif" border="0" height="64" width="145">&nbsp;для
+произвольного натурального числа<i> </i><i>n</i>.</p>
+<p>1.34.
+Дана матрица <img src="img/lec2.files/image429.gif" align="middle" border="0" height="52" width="89">.
+Найти <img src="img/lec2.files/image430.gif" border="0" height="24" width="24">,
+ <img src="img/lec2.files/image431.gif" border="0" height="37" width="71">&nbsp;при <img src="img/lec2.files/image432.gif" border="0" height="23" width="79"></p>
+<br>
+
+<p><i>Вычислить произведение
+матриц:</i></p>
+<p>1.35.
+<img src="img/lec2.files/image433.gif" border="0" height="79" width="160">; 1.36.<img src="img/lec2.files/image434.gif" border="0" height="79" width="155">;&nbsp; 1.37.
+<img src="img/lec2.files/image435.gif" border="0" height="79" width="196">;<br>
+Вычислить значение многочлена <img src="img/lec2.files/image436.gif" border="0" height="24" width="41">&nbsp;от матрицы <img src="img/lec2.files/image437.gif" border="0" height="19" width="17">:</p>
+<p>1.38. <img src="img/lec2.files/image438.gif" border="0" height="29" width="168">; <img src="img/lec2.files/image439.gif" border="0" height="52" width="93">. 1.39. <img src="img/lec2.files/image440.gif" border="0" height="29" width="161">; <img src="img/lec2.files/image441.gif" border="0" height="79" width="108">.</p>
+<p>1.40. <img src="img/lec2.files/image442.gif" border="0" height="27" width="160">; <img src="img/lec2.files/image443.gif" border="0" height="79" width="119">.</p>
+<p><i>Найти обратную матрицу для данной
+матрицы:</i></p>
+<p>1.41.
+<img src="img/lec2.files/image444.gif" border="0" height="52" width="55">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.42.
+<img src="img/lec2.files/image445.gif" border="0" height="52" width="55">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.43.
+<img src="img/lec2.files/image446.gif" border="0" height="52" width="120">&nbsp;&nbsp;&nbsp;&nbsp;
+1.44.
+<img src="img/lec2.files/image447.gif" border="0" height="79" width="99"></p>
+<p>1.45.
+<img src="img/lec2.files/image448.gif" border="0" height="79" width="80">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.46. <img src="img/lec2.files/image449.gif" border="0" height="79" width="77">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.47.
+<img src="img/lec2.files/image450.gif" border="0" height="79" width="108"></p>
+<p><i>Решить матричные уравнения:</i></p>
+<p>1.48. <img src="img/lec2.files/image451.gif" border="0" height="52" width="164">.&nbsp;&nbsp; 1.49. <img src="img/lec2.files/image452.gif" border="0" height="52" width="156">.&nbsp;&nbsp;&nbsp;&nbsp;
+1.50. <img src="img/lec2.files/image453.gif" border="0" height="52" width="145">.&nbsp;&nbsp; </p>
+<p>1.51. <img src="img/lec2.files/image454.gif" border="0" height="52" width="213">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.52. <img src="img/lec2.files/image455.gif" border="0" height="52" width="241">.</p>
+<p>1.53. <img src="img/lec2.files/image456.gif" border="0" height="79" width="163">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  1.54. <img src="img/lec2.files/image457.gif" border="0" height="79" width="196">.</p>
+<p>1.55. <img src="img/lec2.files/image458.gif" border="0" height="79" width="240">.</p>
+<p><i>Привести
+матрицу к каноническому виду с помощью элементарных преобразований</i></p>
+<p>1.56. <img src="img/lec2.files/image459.gif" border="0" height="79" width="148">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.57. <img src="img/lec2.files/image460.gif" border="0" height="79" width="105">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;1.58. <img src="img/lec2.files/image461.gif" border="0" height="104" width="120"></p>
+<br>
+
+<p><i>Вычислить ранг матрицы</span></i></p>
+<p>1.59.
+<img src="img/lec2.files/image462.gif" border="0" height="79" width="149">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1.60. <img src="img/lec2.files/image463.gif" border="0" height="79" width="129">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.61. <img src="img/lec2.files/image464.gif" border="0" height="79" width="113"></p>
+<p>1.62.
+<img src="img/lec2.files/image465.gif" border="0" height="79" width="161"></p>
+<p><i>Исследовать
+систему линейных уравнений и в случае совместности найти её решение:</i></p>
+<p>1.63. <img src="img/lec2.files/image466.gif" border="0" height="79" width="133"></sub>&nbsp; 1.64. <img src="img/lec2.files/image467.gif" border="0" height="79" width="124">&nbsp;&nbsp;&nbsp; 1.65. <img src="img/lec2.files/image468.gif" border="0" height="107" width="191"></p>
+<p>1.66. <img src="img/lec2.files/image469.gif" border="0" height="133" width="139">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.67. <img src="img/lec2.files/image470.gif" border="0" height="107" width="227"></p>
+<p><i>Найти
+общее решение, выделить фундаментальную систему решений однородной
+системы
+линейных уравнений:</span></i></p>
+<p>1.68.
+<img src="img/lec2.files/image471.gif" border="0" height="79" width="125">&nbsp;&nbsp;&nbsp; 1.69. <img src="img/lec2.files/image472.gif" border="0" height="105" width="124">&nbsp;&nbsp;&nbsp; 1.70.
+<img src="img/lec2.files/image473.gif" border="0" height="107" width="181"></p>
+<br>
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl2.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl4.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

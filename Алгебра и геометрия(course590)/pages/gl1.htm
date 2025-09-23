@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 1. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 1. ЭЛЕМЕНТЫ ЛИНЕЙНОЙ АЛГЕБРЫ</h3>
+<h3>§1. Определители</h3>
+<a href="#1" class=punkt>1.1. Определитель второго порядка</a><br>
+<a href="#2" class=punkt>1.2. Определитель третьего порядка</a><br>
+<a href="#3" class=punkt>1.3. Свойства определителей</a><br>
+<a href="#4" class=punkt>1.4. Определитель произвольного порядка</a><br>
+<a href="#5" class=punkt>1.5. Применение определителей к решению систем линейных алгебраических уравнений. Формулы Крамера</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§1.
+ОПРЕДЕЛИТЕЛИ</h3>
+<a name=1 class="anchor"></a>
+<h3>1.1. Определитель второго порядка</h3>
+<p>Четыре числа <img src="img/lec1.files/image001.gif" height="24" width="77"> могут
+образовать <i>определитель второго
+порядка</i>. В этом случае эти числа располагаются в виде
+квадратной таблицы, обрамленной прямыми скобками. Величина определителя равна</p>
+<p><img src="img/lec1.files/image002.gif" height="60" width="52">&nbsp;=
+<img src="img/lec1.files/image003.gif" height="21" width="64">.</p>
+<p>Например,</p>
+<p><img src="img/lec1.files/f00.png" height="53" width="210"></p>
+<p>Числа, называемые <i>элементами</i>
+определителя,
+удобнее обозначать одной буквой, снабженной индексами. Квадратную
+таблицу такого
+рода называют <i>матрицей</i> и обозначают заглавной
+латинской буквой, например:</p>
+<p><img src="img/lec1.files/f01.png" height="60" width="130"></p>
+<p>Тогда обозначение и значение
+определителя второго
+порядка таковы:</p>
+<p><img src="img/lec1.files/f02.png" height="30" width="264">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.1)</p>
+<p>Элементы<i> </i>матрицы обозначены <img src="img/lec1.files/image008.gif" height="29" width="23">, где первый
+индекс – это номер
+строки, второй индекс – номер столбца. Элементы <img src="img/lec1.files/image009.gif" height="27" width="25"> и
+<img src="img/lec1.files/image010.gif" height="27" width="28"> образуют <i>главную
+диагональ</i>, <img src="img/lec1.files/image011.gif" height="27" width="27"> и
+<img src="img/lec1.files/image012.gif" height="27" width="27"> - <i>побочную диагональ </i>(<i>антидиагональ</i>).</p>
+<p>Обозначение «<b>det</b>» происходит от латинского «determino» – «определяю». </p>
+<p>Определитель второго порядка, таким
+образом, равен произведению элементов, стоящих на главной диагонали, минус
+произведение элементов, стоящих на побочной диагонали.</span><br>
+<br>
+</p>
+<a name=2 class="anchor"></a>
+<h3>1.2. Определитель
+третьего порядка</h3>
+<p>Пусть теперь девять чисел,
+расположены в виде квадратной таблицы (матрицы):</p>
+<p><img src="img/lec1.files/f03.png" height="88" width="161"></p>
+<p>Таблица содержит три строки и три столбца. Первый индекс, по-прежнему указывает
+номер строки, второй индекс – номер столбца. Элементы <img src="img/lec1.files/image009.gif" height="27" width="25">, <img src="img/lec1.files/image010.gif" height="27" width="28">, <img src="img/lec1.files/image015.gif" height="27" width="27"> образуют <i>главную диагональ </i>матрицы,
+элементы  <img src="img/lec1.files/image016.gif" height="27" width="27">, <img src="img/lec1.files/image010.gif" height="27" width="28">, <img src="img/lec1.files/image017.gif" height="27" width="27">
+- <i>побочную диагональ</i>. </p>
+<p><i>Определителем третьего порядка</span></i> называется число, определяемое
+следующим образом:</p>
+<p><img src="img/lec1.files/image018.gif" height="32" width="49"> <img src="img/lec1.files/image019.gif" height="27" width="328"></p>
+<p><img src="img/lec1.files/image020.gif" height="27" width="327">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.2)</p>
+<p>В формулу (1.2) входят шесть произведений элементов определителя, причём
+каждое из произведений содержит по одному элементу из каждой строки матрицы и
+по одному элементу из каждого столбца. Это замечание используем для того, чтобы
+понять, как устроен определитель произвольного порядка <i><span lang="EN-US">n</span></i>.</p>
+<p class="MsoCaption" style="margin-left: 0cm; text-align: justify; text-indent: 35.4pt;">Для
+вычисления определителя 3-го порядка пользуются также следующим «<i>правилом&nbsp;
+треугольника»</i>: </p>
+<p>1) со знаком «+» берется произведение элементов, стоящих на главной
+диагонали, а также произведения элементов, стоящих в углах треугольников,
+«ориентированных» вдоль главной диагонали; </p>
+<p>2) со знаком «&#8722;» берутся произведения, которые строятся таким же образом,
+но относительно побочной диагонали.</p>
+<p><img src="img/lec1.files/f04.png" height="101" width="272"><br>
+</p>
+<p><i>Пример</i>:</p>
+<p><img src="img/lec1.files/image022.gif"></p>
+<p><i>Минором </i><img src="img/lec1.files/image023.gif" align="middle" height="29" width="32"> элемента <img src="img/lec1.files/image008.gif" align="middle" height="29" width="23">&nbsp;матрицы
+третьего порядка называется определитель второго порядка, который получается,
+если из данной матрицы вычеркнуть <img src="img/lec1.files/image024.gif" height="17" width="21">ю
+строку и <img src="img/lec1.files/image025.gif" height="20" width="25"> й столбец.</p>
+<p><i>Алгебраическим дополнением</i> <img src="img/lec1.files/image026.gif" align="middle" height="29" width="24"> элемента
+<sub><img src="img/lec1.files/image008.gif" align="middle" height="29" width="23"> называется число, равное</p>
+<p><img src="img/lec1.files/image027.gif" height="33" width="137">, </p>
+<p>т.е. алгебраическое дополнение элемента <img src="img/lec1.files/image008.gif" height="29" width="23"> есть
+минор этого элемента, взятый со знаком «+», если сумма номеров строки и столбца, на пересечении которых он
+стоит, четная, &nbsp;и со знаком «-», если нечетная.</p>
+<p>В вышеприведенном примере, скажем, минор <img src="img/lec1.files/image028.gif" align="middle" height="55" width="127">, а
+алгебраическое дополнение <img src="img/lec1.files/f05.png" align="middle" height="33" width="185">.</p>
+<p>&nbsp;</p>
+<a name=3 class="anchor"></a>
+<h3>1.3. Свойства определителей</h3>
+<p>Приводимые свойства будут верны не только для
+определителей второго и третьего порядка, но и вообще для определителей
+любого большего порядка. </p>
+<p><img src="img/lec1.files/image030.gif" align="left" height="40" width="40"><i>Если у матрицы переставить две строки, то определитель этой матрицы изменит
+знак на противоположный.</i></p>
+<p>Например, для определителя матрицы
+второго порядка,
+меняя местами первую и вторую строку, получим:</p>
+<p><img src="img/lec1.files/image031.gif" height="61" width="229"><img src="img/lec1.files/image032.gif" height="60" width="95">.</p>
+<p>Аналогично, т.е. прямым вычислением, это
+свойство доказывается для определителя третьего порядка.</p>
+<p><img src="img/lec1.files/image033.gif" align="left" height="40" width="40"><b><i>&nbsp;</i></b><i>Если
+в матрице есть две одинаковых строки, то определитель этой матрицы
+равен нулю. </i></p>
+<p><i>Доказательство</span></i>. При перестановке двух одинаковых
+строк матрицы определитель её не изменится, но, с другой стороны, по свойству 1, он изменит знак
+на противоположный. Следовательно,&nbsp; <img src="img/lec1.files/image034.gif" height="20" width="67">,
+откуда следует: <img src="img/lec1.files/image035.gif" height="21" width="51">.</p>
+<p><img src="img/lec1.files/image036.gif" align="left" height="40" width="40"><b><i>&nbsp;</i></b><i>Если
+элементы какой-нибудь строки матрицы имеют один и тот же множитель <img src="img/lec1.files/image037.gif" height="19" width="15">, то этот множитель
+можно вынести за знак определителя этой матрицы.</i> </p>
+<p>Например, <b><img src="img/lec1.files/image038.gif" height="91" width="309">.</b></p>
+<p>Для доказательства заметим еще раз, что в определении
+определителя в каждом из слагаемых-произведений присутствует один
+представитель из каждой строки и один – из каждого столбца соответствующей матрицы.
+Поэтому каждое слагаемое будет иметь один и тот же множитель &#955;, который мы
+можем вынести за знак определителя.</p>
+<p><i>Следствие</i>:
+<i>если все элементы какой-либо строки матрицы равны 0, то
+определитель её равен 0</i>. </p>
+<p><img src="img/lec1.files/image039.gif" align="left" height="40" width="40"><b>&nbsp;</b><i>Если
+матрица имеет две пропорциональные строки, то определитель её равен 0</i>.</p>
+<p><i>Доказательство</i>.
+По свойству 3 множитель пропорциональности можно вынести за знак
+определителя,
+но тогда получится определитель матрицы, имеющей две одинаковых строки,
+и равный нулю по свойству 2. </p>
+<p><i>Пример</i>:</p>
+<p><b><img src="img/lec1.files/image040.gif" height="75" width="197"></b></p>
+<p><img src="img/lec1.files/image041.gif" align="left" height="40" width="40"><b>&nbsp;</b><i>Если элементы какой-либо
+(например, </i><i>i</i><i>-ой) строки матрицы представляют
+собой сумму, то определитель этой матрицы можно представить в виде суммы двух
+определителей, первый
+из которых в </i><i>i</i><i>-ой строке содержит первые
+слагаемые , а второй – в этой строке содержит вторые слагаемые.</i></p>
+<p>Например, для <img src="img/lec1.files/image042.gif" height="20" width="35">:</p>
+<p><img src="img/lec1.files/image043.gif" height="84" width="475">.</p>
+<p>Для доказательства достаточно раскрыть определители по
+«правилу&nbsp; треугольника» в левой и правой частях равенства.</span></p>
+<p><img src="img/lec1.files/image044.gif" align="left" height="40" width="40"><i>Если к элементам какой-нибудь строки матрицы прибавить соответствующие
+элементы другой строки, умноженные на некоторое число, то величина
+определителя этой матрицы не изменится</i>. </p>
+<p>Доказательство следует из свойств 5 и 2. </p>
+<p>В следующем примере к первой строке прибавляется
+вторая строка, умноженная на коэффициент <img src="img/lec1.files/f88.png" height="25" width="14">:</p>
+<p><img src="img/lec1.files/image045.gif" height="84" width="275"><img src="img/lec1.files/image046.gif" height="84" width="395">.</p>
+<p>Введем теперь одно из важных понятий в линейной алгебре – понятие линейной
+комбинации.</p>
+<p>Рассмотрим
+совокупность некоторых объектов <sub><img src="img/lec1.files/f05-06.png" align="middle" height="30" width="120"></sub>, для которых возможны две операции: 1)
+сложение и 2) умножение на числовые коэффициенты. Назовём <i>линейной
+комбинацией</i> объектов <img src="img/lec1.files/f05-06_2.png" align="middle" height="25" width="105"> выражение</p>
+<p><img src="img/lec1.files/f06.png" height="67" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.3)</p>
+<p>где
+<img src="img/lec1.files/f88.png" height="25" width="14"> -
+произвольные числовые коэффициенты, некоторые из которых (даже все)
+могут быть равными нулю. В качестве таких объектов могут быть числа, векторы,
+функции, уравнения и т.д. В частности, ими могут быть строки квадратной матрицы.
+</p>
+<p>Например,
+составим линейную комбинацию первых двух строк матрицы третьего
+порядка,
+запишем её в качестве третьей строки и вычислим определитель полученной
+матрицы:</p>
+<p><img src="img/lec1.files/f07.png" height="96" width="375"></p>
+<p>Очевидно,
+такой определитель равен нулю. Оказывается, верно и обратное
+утверждение,
+приводимое ниже.</p>
+<p><img src="img/lec1.files/image052.gif" align="left" height="40" width="40"><i>Если
+определитель какой-либо матрицы равен нулю, то одна из её строк есть
+линейная комбинация остальных</i>.</p>
+<p>Будем называть строки матрицы <i>линейно
+зависимыми</i>, если одна из них есть линейная комбинация
+остальных. Тогда
+предыдущее свойство можно сформулировать так:</p>
+<p><i>Определитель матрицы равен нулю тогда и
+только тогда, когда её строки линейно зависимы.</i></p>
+<p><img src="img/lec1.files/image053.gif" align="left" height="40" width="40"><i>Величина определителя
+матрицы равна сумме произведений элементов какой-либо строки этой
+матрицы на
+соответствующие этим элементам алгебраические дополнения:</i></p>
+<p><img src="img/lec1.files/image054.gif" height="85" width="371"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.4)</p>
+<p>Для доказательства положим, например, <img src="img/lec1.files/image042.gif" height="20" width="35"> и
+преобразуем правую часть, используя формулу (1.1): </p>
+<p><b><img src="img/lec1.files/image055.gif" height="57" width="513"></b></p>
+<p><img src="img/lec1.files/image056.gif" height="113" width="505"></p>
+<p>Аналогично свойство доказывается для любой другой
+строки. Формула (1.4) называется <i>разложением определителя по </i><i>i</i>-<i>ой
+строке</i>.</p>
+<p><img src="img/lec1.files/image057.gif" align="left" height="40" width="40"><i>Сумма произведений элементов
+какой-либо строки матрицы на алгебраические
+дополнения элементов другой строки равна нулю</i>. </p>
+<p>Доказательство в общем виде приводить не будем, но
+покажем, например, что для произвольной матрицы <i>А</i>
+сумма произведений элементов первой строки на алгебраические дополнения элементов второй
+строки равна нулю, т.е. </p>
+<p><img src="img/lec1.files/image058.gif" height="27" width="218">.</p>
+<p>В самом деле:</p>
+<p><img src="img/lec1.files/image059.gif" height="132" width="534"></p>
+<p><i>Транспонированием</i> матрицы называется операция
+перестановки столбцов на место строк, а
+строк на место столбцов так, что каждый элемент <img src="img/lec1.files/image060.gif" height="31" width="23">&nbsp;становится
+на место элемента <img src="img/lec1.files/image061.gif" height="29" width="25">. Другими словами,
+при транспонировании матрицы её строки и столбцы меняются местами.</p>
+<p><img src="img/lec1.files/image062.gif" align="left" height="40" width="40"><i>При
+транспонировании матрицы величина её определителя не меняется.</i></p>
+<p>Другими словами величина определителя матрицы не изменится при замене строк
+столбцами с сохранением их порядка:</p>
+<p><img src="img/lec1.files/image063.gif" height="99" width="103">=<img src="img/lec1.files/image064.gif" height="23" width="12"><img src="img/lec1.files/image065.gif" height="97" width="93">.</p>
+<p>Доказывается утверждение прямым
+вычислением. </p>
+<p>Это свойство устанавливает равноправность строк и
+столбцов. Принимая во внимание это положение, в формулировке свойств 1 – 8
+слово «строки» можно заменить словом «столбцы». При этом свойства
+останутся справедливыми.</p>
+<br>
+<a name=4 class="anchor"></a>
+<h3>1.4. Определитель
+произвольного порядка</h3>
+<p>Пусть для произвольного
+натурального числа <img src="img/lec1.files/image066.gif" height="19" width="36">&nbsp;заданы <img src="img/lec1.files/image067.gif" height="17" width="41">&nbsp;чисел
+расположенных в виде квадратной матрицы:</p>
+<p><img src="img/lec1.files/image068.gif" height="19" width="32">
+</sub><sub> <img src="img/lec1.files/image069.gif" align="middle">.</p>
+<p><i>Определителем порядка</span></i> <i>n</i>, соответствующим данной матрице,
+называется число,
+равное сумме произведений элементов какой-либо строки на
+соответствующие
+алгебраические дополнения этих элементов:</span></p>
+<p><img src="img/lec1.files/image070.gif" height="120" width="243">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.5)</p>
+<p>Алгебраическим дополнением <img src="img/lec1.files/image026.gif" height="29" width="24">&nbsp;элемента
+<img src="img/lec1.files/image008.gif" height="29" width="23">&nbsp;и в этом общем случае
+называется число, равное <img src="img/lec1.files/image071.gif" height="36" width="131">,
+где минор <sub><img src="img/lec1.files/image023.gif" height="29" width="32"></sub>&nbsp;есть
+определитель оставшейся квадратной матрицы после вычеркивания <i>i</i>-й
+строки и <i>j</i>-го столбца.</p>
+<p>Формула (1.5) даёт рекуррентное правило вычисления
+определителя порядка <i> n </i> путем разложения его по  <i> i</i>-ой строке.
+Свойство 7 является частным случаем этого правила при <img src="img/lec1.files/image072.gif" height="20" width="41">.
+Рекуррентность в данном случае заключается
+в том, что данное правило сводит вычисление определителя порядка <img src="img/lec1.files/image073.gif" height="16" width="15">&nbsp;к
+вычислению <img src="img/lec1.files/image073.gif" height="16" width="15">&nbsp;определителей
+порядка <img src="img/lec1.files/image074.gif" height="20" width="37">. В свою очередь
+вычисление каждого определителя порядка <img src="img/lec1.files/image074.gif" height="20" width="37">&nbsp;сводится
+к вычислению <img src="img/lec1.files/image074.gif" height="20" width="37">&nbsp;определителей
+порядка <img src="img/lec1.files/image075.gif" height="20" width="41">&nbsp;и так
+далее.</p>
+<p>Величина определителя не зависит от номера строки в
+формуле (1.5), которая называется <i>разложением определителя по
+</i><i>i</i><i>-ой строке</span></i>.
+Точно такой же результат мы
+получим, разложив определитель по <img src="img/lec1.files/image025.gif" height="20" width="25">ому
+столбцу:</p>
+<p><img src="img/lec1.files/f1_6.png" height="65" width="122">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.6)</p>
+<p>Однако, возможен и другой подход к определению
+определителя произвольного порядка <img src="img/lec1.files/image073.gif" height="16" width="15">.
+Для этого вспомним замечание, сделанное к формуле (1.2) и проделаем следующие действия.</p>
+<p>Выберем из <i>n<sup>2</sup></i> элементов
+исходной матрицы <i><span style="font-size: 12pt;" lang="EN-US">A</span></i>
+какие-либо <i>n</i> элементов
+так, чтобы они находились в разных строках и разных столбцах этой
+матрицы.</p>
+<p>На первый взгляд такой выбор
+кажется затруднительным,
+но в действительности он легко осуществим. В самом деле, выберем какой
+угодно элемент матрицы </span><i>A</span></i>, а затем вычеркнем из неё строку и
+столбец, на пересечении которых находится выбранный элемент. Останется квадратная
+матрица порядка <i>n-1</i>.
+Выберем из неё также какой-нибудь элемент, после чего исключим строку и
+столбец, в которых он расположен. Из оставшейся матрицы снова выберем
+элемент и
+т.д. Всего таким образом мы выберем </span><i><span style="font-size: 12pt;" lang="EN-US">n</span></i><span style="font-size: 12pt;"> элементов
+исходной матрицы </span><i><span style="font-size: 12pt;" lang="EN-US">A</span></i><i>. </span></i>Легко
+видеть, что эти элементы будут расположены в разных строках и в разных
+столбцах
+матрицы </span><i><span style="font-size: 12pt;" lang="EN-US">A</span></i>.</span></p>
+<p>Примером интересующего нас набора
+может служить</p>
+<p><img src="img/lec1.files/image079.gif" height="27" width="148">.</p>
+<p>Упорядочим выбранные элементы по
+первому индексу -
+номеру строки. Тогда каждый набор будет иметь вид</span></p>
+<p><img src="img/lec1.files/image080.gif" height="31" width="168">.</p>
+<p>Числа <img src="img/lec1.files/image081.gif" height="27" width="119"> - это номера столбцов, в которых
+расположены выбранные элементы. Поскольку по условию все эти числа
+различны, то</p>
+<p><img src="img/lec1.files/image082.gif" height="31" width="168"></p>
+<p>есть
+некоторая <i>перестановка</i> из чисел 1, 2, 3, …, </span><i><span style="font-size: 12pt;" lang="EN-US">n</span></i><span style="font-size: 12pt;">. </span></p>
+<p>Число
+всех перестановок, которые можно составить из <i>n</i>
+элементов, равно, как известно,
+<img src="img/lec1.files/f08.png" height="22" width="144">&nbsp;(факториал <img src="img/lec1.files/image084.gif" height="16" width="15">).
+Следовательно,
+существует ровно <img src="img/lec1.files/f09.png" align="middle" height="22" width="22">&nbsp;интересующих
+нас наборов.</p>
+<p>Назовём
+<i>инверсией</i> в перестановке </span><i><span style="font-size: 12pt;" lang="EN-US">J</span></i> любую пару чисел в этой
+перестановке, в которой большее число стоит левее меньшего, т.е.
+нарушается
+порядок возрастания чисел.</span></p>
+<p><i>Пример</i>.
+В перестановке <strong>(3,2,1,4)</strong>&nbsp;&nbsp;имеются
+3 инверсии (их образуют пары <strong>(3,2)</strong>, <strong>(3,1)</strong>,
+<strong>(2,1)</strong>).</span></p>
+<p>Обозначим
+общее число инверсий в перестановке </span><i><span style="font-size: 12pt;" lang="EN-US">J</span></i><span style="font-size: 12pt;"> через <img src="img/lec1.files/f10.png" align="middle" height="29" width="47">. Перестановка называется
+<i>четной</i>, если число <img src="img/lec1.files/f10.png" align="middle" height="29" width="47">&nbsp;четное, и <i>нечетной</i>,
+если число<img src="img/lec1.files/f10.png" align="middle" height="29" width="47">&nbsp;нечетное.</span></p>
+<p><i>Определителем
+матрицы</i> </span><i><span style="font-size: 12pt;" lang="EN-US">A</span></i> или просто <i>определителем
+</i></span><i><span style="font-size: 12pt;" lang="EN-US">n</span></i><i>-го
+порядка</span></i>
+назовём выражение</span></p>
+<p><img src="img/lec1.files/image092.gif" height="120" width="407"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.7)</span></p>
+<p>Символ
+</span><i>J</span></i>, помещенный под знаком суммы,
+указывает на то, что
+суммирование ведется по всевозможным перестановкам</p>
+<p><sub><img src="img/lec1.files/image082.gif" height="31" width="168"></sub>,</span></p>
+<p>которые
+можно составить из чисел 1, 2, 3, …, </span><i>n</span></i>. Таким
+образом, определитель </span><i>n</span></i><i>-</span></i>го порядка
+есть алгебраическая сумма всевозможных произведений его элементов,
+причём в каждом произведении имеется по одному представителю от каждой строки и
+по одному – от каждого столбца соответствующей матрицы, а само
+произведение имеет
+знак «плюс», если соответствующая перестановка </span><i><span style="font-size: 12pt;" lang="EN-US">J</span></i> четная, и
+знак «минус», если перестановка нечетная. </span></p>
+<p>Всего будет <strong>n!</strong>&nbsp;таких
+произведений. Так, например, для
+определителя третьего порядка имеем <strong>3!=6</strong>&nbsp;слагаемых,
+для определителя четвертого
+порядка таких слагаемых будет уже <strong>4!=24</strong>,
+а определитель пятого порядка содержит <strong>5!=120</strong>&nbsp;слагаемых,
+каждое из
+которых есть произведение каких-то пяти элементов данного определителя.</span></p>
+<p>Разумеется, вычисление определителя
+по формулам (1.5),
+(1.6) и (1.7) даст один и тот же результат.</span></p>
+<p>И, как уже было сказано, свойства 1
+– 10 справедливы
+для определителя произвольного порядка </span><i>n</span></i>. Этими
+свойствами пользуются для вычисления определителей больших порядков.
+Вычислим,
+например, определитель порядка 4:</span></p>
+<p><sub><img src="img/lec1.files/image096.gif" height="109" width="167"></sub>.</span></p>
+<p>Применяя свойство 6, получим нули в первом столбце. Для этого к 1-ой строке
+прибавим 2-ю строку, к 4-ой строке прибавим удвоенную 2-ю строку и, наконец, к 2-ой строке
+прибавим удвоенную 3-ю строку. Тогда определитель примет вид</span></p>
+<p><img src="img/lec1.files/image097.gif" height="105" width="177">.</p>
+<p>Разложим
+теперь определитель по первому столбцу (свойство 8 для столбцов или
+формула
+1.6), но т.к. в этом столбце только один ненулевой элемент <sub><img src="img/lec1.files/image098.gif" height="25" width="52"></sub>,
+то в правой части формулы 1.6
+останется только одно слагаемое:</span><br>
+</p>
+<p><img src="img/lec1.files/f11.png" height="111" width="347"></p>
+
+<br>
+<p>В полученном определителе третьего порядка прибавим к 1-му столбцу 3-ий
+столбец, умноженный на -3; затем к полученной 2-й строке прибавим 3-ю строку,
+умноженную на -2:</span></p>
+<p><img src="img/lec1.files/f12.png" height="83" width="394"></p>
+<p>Снова
+применим формулу 1.6 для разложения определителя по первому столбцу;
+затем закончим вычисление:</span></p>
+<p><img src="img/lec1.files/f13.png" height="85" width="441"></sub></p>
+<p>Способ,
+который был применен здесь, разумеется, лишь один из многих. Идея этого
+способа,
+впрочем, достаточно универсальна – получить в каком-нибудь подходящем
+ряду матрицы
+как можно больше нулей и, затем, разложить определитель по этому ряду,
+понижая
+тем самым порядок определителя.</span></p>
+<p>Определители широко используются в
+самых разных
+разделах высшей математики и её приложениях. Это связано, в частности,
+с тем,
+что определитель является важной характеристикой квадратной матрицы.
+Рассмотрим
+одно из применений определителей в линейной алгебре.</span></p>
+<p>&nbsp;</span></p>
+<a name=5 class="anchor"></a>
+<h3>1.5. Применение определителей к
+решению систем линейных алгебраических уравнений. Формулы Крамера</h3>
+<p>Рассмотрим систему линейных
+алгебраических уравнений
+порядка </span><i><span style="font-size: 12pt;" lang="EN-US">n</span></i>:</span></p>
+<p><img src="img/lec1.files/image103.gif" height="120" width="256"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.8)</span></p>
+<p>Здесь
+<img src="img/lec1.files/image104.gif" height="27" width="95"> –
+неизвестные; <img src="img/lec1.files/image008.gif" height="29" width="23"> – коэффициенты
+системы (<img src="img/lec1.files/image105.gif" height="24" width="105">), <img src="img/lec1.files/image106.gif" height="27" width="92"> –
+правые части (свободные члены).</span></p>
+<p><i>Решить </span></i>систему
+(1.8) означает найти числа <img src="img/lec1.files/image107.gif" height="27" width="83">,
+при подстановке которых вместо
+неизвестных, каждое уравнение системы обращается <i>в верное
+числовое равенство</i>.</span></p>
+<p>Обозначим <img src="img/lec1.files/image108.gif" height="20" width="17"></sub>&nbsp;-
+определитель, составленный из
+коэффициентов системы, и назовём его <i>определителем системы</i>.</span></p>
+<p><img src="img/lec1.files/image109.gif" height="119" width="181"></p>
+<p>Обозначим
+далее <img src="img/lec1.files/image110.gif" height="27" width="23"> определитель,
+полученный из определителя <img src="img/lec1.files/image111.gif" height="20" width="19">системы
+заменой первого столбца матрицы на
+столбец свободных членов. Вообще, <img src="img/lec1.files/image112.gif" height="29" width="23"> –
+определитель, полученный из определителя
+<img src="img/lec1.files/image111.gif" height="20" width="19"></sub>&nbsp;заменой </span><i>i</span></i>-го
+столбца матрицы столбцом свободных членов.</span></p>
+<p><img src="img/lec1.files/image113.gif" height="119" width="181">, <img src="img/lec1.files/image114.gif" height="119" width="184"></sub>&nbsp;и т.д. </span></p>
+<p><i>Теорема</span></i>. <i>Если </i><img src="img/lec1.files/f14.png" align="middle" height="20" width="49">&nbsp;<i>, то решение системы можно
+найти по
+формулам</i>:</span></p>
+<p><img src="img/lec1.files/image116.gif" height="51" width="63">,
+<img src="img/lec1.files/image117.gif" height="24" width="107">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(1.9)</p>
+<p>Эти
+формулы носят название <i>формул Крамера</i>.</span></p>
+<p><i>Доказательство</span></i>. Умножим первое уравнение системы
+на <img src="img/lec1.files/image118.gif" height="27" width="28"></sub>,&nbsp; второе
+уравнение на <img src="img/lec1.files/image119.gif" height="27" width="36"></sub> и так далее,
+наконец, <i>n</span></i><i>-</span></i>е уравнение умножим на <img src="img/lec1.files/image120.gif" height="27" width="29"></sub>и
+сложим почленно все уравнения. Приводя
+подобные, получим </span></p>
+<p><img src="img/lec1.files/image121.gif" height="71" width="564"></p>
+<p>Используя
+свойства определителей 8 и 9, заключаем, что первая скобка равна <img src="img/lec1.files/image108.gif" height="20" width="17"></sub>,
+вторая и все
+последующие скобки равны нулю, а выражение в правой части равно <img src="img/lec1.files/image110.gif" height="27" width="23"></sub>.
+В итоге получим: <img src="img/lec1.files/image122.gif" height="27" width="81"></sub>, что даёт первую
+из
+формул (1.9). </span></p>
+<p>Аналогично,
+умножая первое уравнение на <img src="img/lec1.files/image123.gif" height="27" width="29"></sub>,
+второе уравнение на <img src="img/lec1.files/image124.gif" height="27" width="31"></sub>,
+и т.д., &nbsp;</span><i>n</span></i>-е
+уравнение на <img src="img/lec1.files/image125.gif" height="27" width="31"></sub>,
+и складывая их почленно, получим, <img src="img/lec1.files/image126.gif" height="27" width="85"></sub>.
+</span></p>
+<p>Таким
+образом можно получить все </span><i><span style="font-size: 12pt;" lang="EN-US">n</span></i><i><span style="font-size: 12pt;" lang="EN-US"> </span></i>формул
+Крамера.</span></p>
+<p><i>Примечание</span></i>. Возможны три случая:</span></p>
+<p>1) если
+<img src="img/lec1.files/f14.png" height="20" width="49">, то решение системы (1.8) единственно;</span></p>
+<p>2) если
+<img src="img/lec1.files/f15.png" height="18" width="48">, но хотя бы один из определителей <img src="img/lec1.files/f16.png" align="middle" height="24" width="58">, то система решений не
+имеет;</span></p>
+<p>3) если
+<sub><img src="img/lec1.files/f15.png" height="18" width="48"></sub>&nbsp;и все определители <img src="img/lec1.files/f17.png" align="middle" height="25" width="160"></span>
+то
+система имеет бесконечно много решений. В этом случае, как можно
+увидеть, по
+крайней мере, одно из уравнений системы является линейной комбинацией
+остальных.</span></p>
+<p>Рассмотрим
+примеры.</span></p>
+<p><i>Пример</span></i> 1.
+Решить систему</span></p>
+<p><img src="img/lec1.files/image131.gif" height="80" width="144">;</p>
+<p><i>Решение</span></i>.</p>
+<p><img src="img/lec1.files/image132.gif" height="88" width="139">; <sub><img src="img/lec1.files/image133.gif" height="88" width="151">;
+<img src="img/lec1.files/image134.gif" height="88" width="165">; <img src="img/lec1.files/image135.gif" height="88" width="156">.
+Получаем: <img src="img/lec1.files/image136.gif" height="27" width="51">; <img src="img/lec1.files/image137.gif" height="27" width="64">;
+<img src="img/lec1.files/image138.gif" height="27" width="51">.</p>
+<p><i>Пример </i> 2.
+Решить систему</p>
+<p><img src="img/lec1.files/image139.gif" height="80" width="145">;</p>
+<p><i>Решение</span></i>.</span></p>
+<p><img src="img/lec1.files/image140.gif" height="88" width="149">;
+<img src="img/lec1.files/image141.gif" height="24" width="65">.</p>
+<p>Полученных
+значений определителей достаточно, чтобы сделать вывод: данная система
+не имеет
+решений.</span></p>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+
+<p style="border: medium none ; padding: 0cm; text-align: justify; text-indent: 35.45pt;"><span style="font-size: 2pt;">&nbsp;</span></p>
+
+</div>
+<p><b>КРАМЕР Габриель </b> (1704-1752) <img src="img/lec1.files/image142.jpg" space="12" align="left" height="224" hspace="12" vspace="12" width="224"> -
+швейцарский математик. Родился в Женеве. Был учеником и другом Иоганна
+Бернулли. Издатель трудов Иоганна и Якова
+Бернулли, переписки Г.Лейбница  с  И.
+Бернулли. Учился и работал в Женеве.
+Член Лондонского королевского общества.</p>
+<p>Основные труды по
+высшей алгебре и аналитической геометрии. Установил и опубликовал (1750 г.)
+правила решения систем n линейных уравнений с n неизвестными с
+буквенными
+коэффициентами (правило Крамера), заложил основы теории определителей,
+но при
+этом еще не пользовался удобным обозначением определителей. Во
+"Введении в
+анализ алгебраических кривых" (1750 г.) существенно развил идеи
+современников по аналитической геометрии; исследовал особые точки,
+ветви,
+кривизну алгебраических кривых высших порядков. В геометрии известен
+парадокс
+Крамера. </span></p>
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec_index.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl2.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

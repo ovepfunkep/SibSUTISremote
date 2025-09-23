@@ -1,0 +1,866 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Справочники. Алгебра и геометрия</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>СПРАВОЧНИК ПО ВЫСШЕЙ МАТЕМАТИКЕ</h3>
+<h3>3. Аналитическая геометрия</h3>
+
+<a href="#1" class=punkt>3.1. Линейные образы</a><br>
+
+       <a href="#1_1" class=punkt>3.1.1. Прямая на плоскости</a><br> 
+       <a href="#1_2" class=punkt>3.1.2. Плоскость в пространстве</a><br>
+       <a href="#1_3" class=punkt>3.1.3. Прямая в пространстве</a><br>
+
+<a href="#2" class=punkt>3.2. Кривые второго порядка</a><br>
+
+       <a href="#2_1" class=punkt>3.2.1. Окружность</a><br>
+       <a href="#2_2" class=punkt>3.2.2. Эллипс</a><br> 
+       <a href="#2_3" class=punkt>3.2.3. Гипербола</a><br> 
+       <a href="#2_4" class=punkt>3.2.4. Парабола</a><br>
+
+<a href="#3" class=punkt>3.3. Поверхности второго порядка</a><br>
+
+<a href="#4" class=punkt>3.4. Преобразование координат</a><br>
+
+       <a href="#4_1" class=punkt>3.4.1. Преобразование координат на плоскости</a><br>
+       <a href="#4_2" class=punkt>3.4.2. Преобразование координат в пространстве</a><br>
+
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>3.1. Линейные образы</h3>
+ <a name=1_1 class="anchor"></a>
+ <P> <b><i>3.1.1. Прямая на плоскости </i></b></P>
+ 
+ <P>Виды уравнений </P>
+ 
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH="80%">
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<P ALIGN="CENTER">Уравнение</FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P ALIGN="CENTER">Наименование</FONT></TD>
+<TD WIDTH="32%" VALIGN="TOP">
+<P ALIGN="CENTER">Параметры</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center">
+<FONT SIZE=3><P><IMG SRC="ims_v/Image538.gif" WIDTH=125 HEIGHT=24></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>общее уравнение прямой на плоскости</FONT></TD>
+<TD WIDTH="32%" VALIGN="TOP" ROWSPAN=7>
+<B><I></i></B>
+   <P><FONT SIZE=3><font face="Arial">n=(A,B) -</font></font><font size="3" face="Arial"></font><FONT SIZE=3> 
+   </FONT>нормальный вектор прямой;</font></P>
+   <P><FONT SIZE=3><IMG SRC="ims_v/Image539.gif" WIDTH=57 HEIGHT=25 align="bottom">,<IMG SRC="ims_v/Image540.gif" WIDTH=53 HEIGHT=25 align="bottom">,<IMG SRC="ims_v/Image541.gif" WIDTH=57 HEIGHT=25 align="bottom"></font> 
+   - координаты фиксированных точек на прямой;</font></P>
+<I></I>
+   <P><font size="3" face="Arial">k </font><font face="Arial" size="3"></font>- 
+   угловой коэффициент прямой;</font></P>
+<I></I>
+   <P><FONT SIZE=3><font face="Arial">a</font></font><font size="3" face="Arial"> 
+   - отрезок, отсекаемый прямой на оси х;</font></P>
+   <P> <font size="3" face="Arial">b - отрезок, отсекаемый прямой на оси 
+   </font><font face="Arial"><FONT SIZE=3>y;</font></font></P>
+   <P><font size="3" face="Arial">q=(l,m) - направляющий вектор прямой</font>
+  </TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center">
+<FONT SIZE=3><P><IMG SRC="ims_v/Image542.gif" WIDTH=196 HEIGHT=25></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>уравнение прямой, проходящей через данную точку</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center" >
+<FONT SIZE=3><P><IMG SRC="ims_v/Image543.gif" WIDTH=86 HEIGHT=24></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>уравнение прямой с данным угловым коэффициентом</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center">
+<FONT SIZE=3><P><IMG SRC="ims_v/Image544.gif" WIDTH=138 HEIGHT=25></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>уравнение прямой, проходящей через данную точку с данным угловым коэффициентом</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center">
+<FONT SIZE=3><P><IMG SRC="ims_v/Image545.gif" WIDTH=132 HEIGHT=52></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>уравнение прямой, проходящей через две точки</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center">
+<FONT SIZE=3><P><IMG SRC="ims_v/Image546.gif" WIDTH=74 HEIGHT=48></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>уравнение прямой в отрезках</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP" align="center" >
+<FONT SIZE=3><P><IMG SRC="ims_v/Image547.gif" WIDTH=126 HEIGHT=49></FONT></TD>
+<TD WIDTH="33%" VALIGN="TOP">
+<P>каноническое уравнение прямой</FONT></TD>
+</TR>
+</TABLE>
+</center>
+ <P>&nbsp;</P>
+ <P>Формулы для вычисления угла <I></I> 
+ между двумя прямыми на плоскости:</P>
+
+ <P ><IMG SRC="ims_v/Image548.gif" WIDTH=320 HEIGHT=58 align="absmiddle">; <IMG SRC="ims_v/Image549.gif" WIDTH=308 HEIGHT=58 align="absmiddle">,</P>
+</FONT>
+ <P>где </font><IMG SRC="ims_v/Image550.gif" WIDTH=93 HEIGHT=25 align="absmiddle"></FONT> 
+ и </FONT><IMG SRC="ims_v/Image551.gif" WIDTH=86 HEIGHT=25 align="absmiddle"></FONT> 
+ -нормальный и направляющий векторы первой прямой;</font></P>
+ <P><IMG SRC="ims_v/Image552.gif" WIDTH=100 HEIGHT=25 align="absmiddle"></font> 
+ и </FONT><IMG SRC="ims_v/Image553.gif" WIDTH=96 HEIGHT=25 align="absmiddle"></FONT> 
+ - нормальный и направляющий векторы второй прямой.</font></P>
+ 
+<P>Условия параллельности двух прямых на плоскости:</P>
+</FONT>
+ <OL>
+  </font> 
+ <LI><IMG SRC="ims_v/Image554.gif" WIDTH=145 HEIGHT=52 align="absmiddle">; 
+ <LI> <IMG SRC="ims_v/Image555.gif" WIDTH=138 HEIGHT=52 align="absmiddle">; 
+ <LI><IMG SRC="ims_v/Image556.gif" WIDTH=54 HEIGHT=25 align="absmiddle">, где 
+  <IMG SRC="ims_v/Image557.gif" WIDTH=18 HEIGHT=26 align="absmiddle"></FONT> 
+  и </FONT><IMG SRC="ims_v/Image558.gif" WIDTH=21 HEIGHT=25 align="absmiddle"></FONT> 
+  - угловые коэффициенты прямых.</font>
+ </font> 
+ </OL>
+ 
+
+<P>Условия перпендикулярности двух прямых на плоскости:</P>
+ </FONT> 
+ <OL>
+  </font><B><I></i></B> 
+ <LI><font face="Arial">n<SUB>1 <img src="ims_v/ort.gif" width="12" height="12" align="absmiddle"> 
+  </SUB> n<SUB>2</SUB> <img src="ims_v/sled.gif" width="25" height="17" align="absmiddle"></font> 
+  <font face="Arial"> n<SUB>1 <img src="ims_v/mul.gif" width="8" height="10" align="absmiddle"> 
+  </SUB>n<SUB>2</SUB>=0 </font></font>или A<SUB>1</SUB>A<SUB>2</SUB>+B<SUB>1</SUB>B<SUB>2</SUB>=0; 
+  </font></LI>
+ <LI><font size="3" face="Arial">q<SUB>1 <img src="ims_v/ort.gif" width="12" height="12" align="absmiddle"> 
+  </SUB> q<SUB>2</SUB> <img src="ims_v/sled.gif" width="25" height="17" align="absmiddle"> 
+  q<SUB>1 <img src="ims_v/mul.gif" width="8" height="10" align="absmiddle"> 
+  </SUB>q<SUB>2</SUB>=0 или l<SUB>1l</SUB><SUB>2</SUB>+m<SUB>1m</SUB><SUB>2</SUB>=0;</font></LI>
+ <font size="3" face="Arial"> </font> 
+ <LI><IMG SRC="ims_v/Image559.gif" WIDTH=84 HEIGHT=25 align="absmiddle">
+ </font> 
+ </OL>
+  <br><a name=1_2 class="anchor"></a>
+ <P><b><i>3.1.2. Плоскость в пространстве</i></b></P>
+
+ <P>Виды уравнений</P>
+
+ 
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH="80%">
+<TR><TD WIDTH="47%" VALIGN="TOP">
+<P ALIGN="CENTER">Уравнение</FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P ALIGN="CENTER">Наименование</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<P ALIGN="CENTER">Параметры</FONT></TD>
+</TR>
+<TR><TD WIDTH="47%" VALIGN="TOP" align="center">
+
+<P><IMG SRC="ims_v/Image560.gif" WIDTH=164 HEIGHT=24></FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+<P>общее уравнение плоскости в пространстве</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP" ROWSPAN=4>
+   <P><IMG SRC="ims_v/Image561.gif" WIDTH=97 HEIGHT=24 align="absmiddle"> 
+   - нормальный вектор плоскости;</font></P>
+   <P ALIGN="CENTER"> <IMG SRC="ims_v/Image562.gif" WIDTH=161 HEIGHT=25 align="absmiddle"><br><IMG SRC="ims_v/Image563.gif" WIDTH=78 HEIGHT=25 align="absmiddle"> 
+   - координаты фиксированных точек на плоскости;</font></P>
+   <P><font size="3" face="Arial">a,b,c – отрезки, отсекаемые плоскостью 
+   на осях координат;</font></P>
+   <P> <IMG SRC="ims_v/Image564.gif" WIDTH=133 HEIGHT=24 align="absmiddle"> 
+   - направляющие косинусы нормального вектора плоскости;</font></P>
+   <P ALIGN="CENTER">p - длина перпендикуляра, опущенного 
+   из начала координат на плоскость</font>
+  </TD>
+</TR>
+<TR><TD WIDTH="47%" VALIGN="TOP" align="center">
+<P><IMG SRC="ims_v/Image565.gif" WIDTH=217 HEIGHT=84></FONT></TD>
+  <TD WIDTH="19%" VALIGN="TOP"> 
+   <P ALIGN="CENTER"> уравнение </font>
+   
+   плоскости, </font>проходящей через три 
+   точки 
+   </FONT></TD>
+</TR>
+<TR>
+  <TD WIDTH="47%" VALIGN="TOP" align="center">  <img src="ims_v/Image566.gif" width=104 height=49 align="absmiddle">
+   <P>&nbsp; 
+   </FONT></TD>
+<TD WIDTH="19%" VALIGN="TOP">
+
+   <P ALIGN="CENTER">уравнение плоскости в отрезках
+   </FONT></TD>
+</TR>
+<TR>
+  <TD WIDTH="47%" VALIGN="TOP" align="center">
+<P><IMG SRC="ims_v/Image567.gif" WIDTH=138 HEIGHT=24></P>
+   <P> <IMG SRC="ims_v/Image568.gif" WIDTH=120 HEIGHT=24>
+   </FONT></TD>
+  <TD WIDTH="19%" VALIGN="TOP">
+<P>нормальное уравнение плоскости</FONT></TD>
+</TR>
+</TABLE>
+<br>
+<P>Выражение направляющих косинусов через координаты нормального вектора:</P>
+ 
+ <P><IMG SRC="ims_v/Image569.gif" WIDTH=189 HEIGHT=54 align="absmiddle"><IMG SRC="ims_v/Image570.gif" WIDTH=185 HEIGHT=54 align="absmiddle"><IMG SRC="ims_v/Image571.gif" WIDTH=181 HEIGHT=54 align="absmiddle">.</P>
+
+ <P>Формулы для вычисления угла </font><font face="Arial">между 
+ двумя плоскостями:</font></font></P>
+<P><IMG SRC="ims_v/Image572.gif" WIDTH=412 HEIGHT=58>;</P>
+ </FONT> 
+ <P>где</font><img src="ims_v/Image573.gif" width=124 height=25 align="absmiddle"></font> 
+ </font> и </FONT><IMG SRC="ims_v/Image574.gif" WIDTH=136 HEIGHT=25 align="absmiddle"></FONT> 
+ -нормальные векторы плоскостей.</font></P>
+ <P> Условие параллельности двух плоскостей: </font></P>
+ <P><IMG SRC="ims_v/Image575.gif" WIDTH=197 HEIGHT=53 align="absmiddle">.</font></P>
+ 
+ <P>Условие перпендикулярности двух плоскостей:</P>
+ </FONT></FONT><B><I></i></B> 
+ <P>n<SUB>1<img src="ims_v/ort.gif" width="12" height="12" align="absmiddle"> 
+ </SUB>n<SUB>2</SUB> <img src="ims_v/sled.gif" width="25" height="17" align="absmiddle">n<SUB>1<img src="ims_v/mul.gif" width="8" height="10" align="absmiddle"> 
+ </SUB>n<SUB>2</SUB>=0 или A<SUB>1</SUB>A<SUB>2</SUB>+B<SUB>1</SUB>B<SUB>2</SUB>+С</font><font face="Arial"><SUB><FONT SIZE=3>1</font></SUB>С</font><SUB>2</font></SUB>=0.</font></font><B><I><FONT FACE="arial" SIZE=3> 
+ </font></i></B></P>
+ <br>
+<a name=1_3 class="anchor"></a>
+
+ <h3>3.1.3. Прямая в пространстве</h3>
+  
+ <P>Виды уравнений</P>
+
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH="80%">
+<TR><TD WIDTH="47%" VALIGN="TOP">
+<P ALIGN="CENTER">Уравнение</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<P ALIGN="CENTER">Наименование</FONT></TD>
+<TD WIDTH="32%" VALIGN="TOP">
+<P ALIGN="CENTER">Параметры</FONT></TD>
+</TR>
+<TR><TD WIDTH="47%" VALIGN="TOP" align="center">
+<P><IMG SRC="ims_v/Image576.gif" WIDTH=205 HEIGHT=57></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<P>общие уравнения прямой в пространстве</FONT></TD>
+<TD WIDTH="32%" VALIGN="TOP" ROWSPAN=4>
+  <P><IMG SRC="ims_v/Image577.gif" WIDTH=119 HEIGHT=25 align="absmiddle"></font> 
+   и <br></FONT><IMG SRC="ims_v/Image578.gif" WIDTH=126 HEIGHT=25 align="absmiddle"></FONT> 
+   - нормальные векторы плоскостей;</font></P>
+  <P><IMG SRC="ims_v/Image579.gif" WIDTH=86 HEIGHT=25 align="absmiddle"></font>- 
+   направляющий вектор прямой;</font></P>
+  <P><IMG SRC="ims_v/Image580.gif" WIDTH=82 HEIGHT=25 align="bottom">,<br><IMG SRC="ims_v/Image581.gif" WIDTH=77 HEIGHT=25 align="bottom">,<br><IMG SRC="ims_v/Image582.gif" WIDTH=82 HEIGHT=25 align="bottom"></font>- 
+   координаты фиксированных точек на прямой</FONT>
+  </TD>
+</TR>
+<TR><TD WIDTH="47%" VALIGN="TOP" align="center">
+<P><IMG SRC="ims_v/Image583.gif" WIDTH=186 HEIGHT=48></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<P>канонические уравнения прямой в пространстве</FONT></TD>
+</TR>
+<TR><TD WIDTH="47%" VALIGN="TOP" align="center">
+<P><IMG SRC="ims_v/Image584.gif" WIDTH=100 HEIGHT=86></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<P>параметрические уравнения прямой в пространстве</FONT></TD>
+</TR>
+<TR><TD WIDTH="47%" VALIGN="TOP" align="center">
+<P><IMG SRC="ims_v/Image585.gif" WIDTH=204 HEIGHT=52></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<P>уравнения прямой, проходящей через две фиксированные точки</FONT></TD>
+</TR>
+</TABLE>
+<br>
+
+ <P>Формулы для вычисления угла между двумя прямыми в пространстве:</P>
+</FONT>
+ <P><IMG SRC="ims_v/Image586.gif" WIDTH=393 HEIGHT=58 align="absmiddle">,</P>
+</FONT>
+ <P>где </font><IMG SRC="ims_v/Image587.gif" WIDTH=117 HEIGHT=25 align="absmiddle"></FONT> 
+ и </FONT><IMG SRC="ims_v/Image588.gif" WIDTH=130 HEIGHT=25 align="absmiddle"></FONT>- 
+ направляющие векторы прямых.</font></P>
+
+</FONT><P>Условие параллельности двух прямых в пространстве:</P>
+</FONT>
+ <P><IMG SRC="ims_v/Image589.gif" WIDTH=186 HEIGHT=53 align="absmiddle">.</P>
+</FONT><P>Условие ортогональности двух прямых в пространстве:</P>
+ </FONT><B><I></i></B> 
+ <P><font size="3" face="Arial">q<SUB>1 <img src="ims_v/ort.gif" width="12" height="12" align="absmiddle"> 
+ </SUB> q<SUB>2 </SUB> <img src="ims_v/sled.gif" width="25" height="17" align="absmiddle"> 
+ q<SUB>1 <img src="ims_v/mul.gif" width="8" height="10" align="absmiddle"> 
+ </SUB>q<SUB>2</SUB>=0 или l<SUB>1</SUB>l<SUB>2</SUB>+m<SUB>1</SUB>m<SUB>2</SUB>+n<SUB>1</SUB>n<SUB>2</SUB>=0.</font></P>
+<br>
+<a name=2 class="anchor"></a>
+
+<h3>3.2. Кривые 
+ второго порядка</h3>
+<P>Общее уравнение кривой второго порядка:</P>
+<p><IMG SRC="ims_v/Image590.gif" WIDTH=300 HEIGHT=29>.</P>
+<br><a name=2_1 class="anchor"></a>
+ <P><b><i>3.2.1. Окружность</i></b></P>
+
+ <TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH="80%">
+<TR>
+  <TD VALIGN="TOP" COLSPAN=2 HEIGHT=149> <FONT SIZE=3>&nbsp; </FONT>
+<P>Каноническое уравнение:</P>
+</FONT><P ALIGN="CENTER"><IMG SRC="ims_v/Image591.gif" WIDTH=94 HEIGHT=28>.</P>
+
+</FONT><P>Радиус окружности: </font><I><FONT SIZE=3>a</font></I><FONT SIZE=3>.</FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=4 HEIGHT=149> <B><FONT SIZE=3> 
+   <P><img src="ims_v/Image592.gif" width="218" height="153">
+  </font></B></TD>
+</TR>
+<TR>
+  <TD WIDTH="37%" VALIGN="TOP">  
+   <P>Параметрическое уравнение:</FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=3> <FONT SIZE=3>
+<P><IMG SRC="ims_v/Image593.gif" WIDTH=88 HEIGHT=57></FONT></TD>
+  <TD WIDTH="27%" VALIGN="TOP">  
+   <P>Уравнение в полярных координатах:</FONT></TD>
+  <TD WIDTH="24%" VALIGN="middle"> <FONT SIZE=3> <IMG SRC="ims_v/Image594.gif" WIDTH=41 HEIGHT=16></FONT></TD>
+</TR>
+<TR>
+  <TD VALIGN="TOP" COLSPAN=3> 
+   <P>Уравнение окружности радиуса </font><IMG SRC="ims_v/Image595.gif" WIDTH=14 HEIGHT=16 align="absmiddle"></FONT> 
+   с центром в точке </font> с координатами 
+   </font><IMG SRC="ims_v/Image596.gif" WIDTH=60 HEIGHT=25 align="absmiddle">:</FONT></P>
+   </FONT> </TD>
+  <TD VALIGN="middle" COLSPAN=3> <FONT SIZE=3> 
+   
+<P><IMG SRC="ims_v/Image597.gif" WIDTH=190 HEIGHT=28></FONT></TD>
+</TR>
+</TABLE>
+
+ <P align="center">&nbsp;</P>
+<a name=2_2 class="anchor"></a>
+ <P><b><i>3.2.2. Эллипс</i></b></P>
+<br>
+ 
+ <table BORDER=1 cellspacing=1 cellpadding=7 width="74%" >
+  <tr> 
+  <td valign="TOP" colspan=2 > &nbsp; </font> 
+   <p>Каноническое уравнение:</p>
+   </font>
+   <p align="CENTER"><img src="ims_v/Image598.gif" width=92 height=50 align="absmiddle">.</p>
+   </font> 
+   <p>Полуоси эллипса: </font><img src="ims_v/Image599.gif" width=30 height=23 align="absmiddle">.</font><br>
+   Фокусное расстояние: </font>c. 
+   </font><br>
+   Фокусы: </font><img src="ims_v/Image600.gif" width=68 height=25 align="absmiddle"></font> 
+   и</font><img src="ims_v/Image601.gif" width=60 height=25 align="absmiddle"></font>, 
+   где </font><img src="ims_v/Image602.gif" width=92 height=24 align="absmiddle">.</font></p>
+  </td>
+  <td valign="middle" align="center" colspan=3 height=225> <font size=3> 
+   <p><img src="ims_v/Image603.gif" width="245" height="163"> 
+   </font></td>
+  </tr>
+  <tr> 
+  <td valign="TOP" height="84" width="24%"> &nbsp; </font> 
+   <p>Эксцентриситет:
+   </font></td>
+  <td valign="TOP" colspan=2 height="84"> <font size=3> 
+   <p><img src="ims_v/Image604.gif" width=46 height=48 align="absmiddle">, 
+   <img src="ims_v/Image605.gif" width=68 height=20 align="absmiddle">. 
+   </font></td>
+  <td valign="TOP" height="84" width="31%">  
+   <p>Параметрическое уравнение:
+   </font></td>
+  <td width="23%" valign="middle" height="84">  
+   <p><img src="ims_v/Image606.gif" width=88 height=57 align="absmiddle">. 
+   </font></td>
+  </tr>
+ </table>
+
+ <P>&nbsp;</P>
+ <a name=2_3 class="anchor"></a>
+ <P><b><i>3.2.3. Гипербола</i></b></P>
+ <br> 
+ <table border=1 cellspacing=1 cellpadding=7 width="80%">
+  <tr> 
+  <td valign="TOP" height="255" width="25%"> 
+   <p>Каноническое уравнение: </p>
+   </font> 
+   <p align="CENTER"><img src="ims_v/Image607.gif" width=92 height=50>.</p>
+   </font> 
+   <p>Действительная полуось: a, мнимая полуось: 
+   b.</font><br>
+   Фокусное расстояние: с.</font><br>
+   Фокусы: <img src="ims_v/Image608.gif" width=74 height=28 align="absmiddle"> 
+   и <img src="ims_v/Image609.gif" width=64 height=28 align="absmiddle">, 
+   где <img src="ims_v/Image610.gif" width=92 height=24 align="absmiddle">.</font> 
+  </td>
+  <td valign="middle" align="center" height="255" width="75%"colspan=2>  
+   <p><img src="ims_v/Image611.gif" > 
+   </font></td>
+  </tr>
+  <tr> 
+  <td valign="top" width="25%"> 
+   <p align="JUSTIFY">Эксцентриситет: </font><img src="ims_v/Image612.gif" width=44 height=48 align="absmiddle">; 
+   <img src="ims_v/im1.gif" width="37" height="20" align="absmiddle">; 
+  </td>
+  <td valign="top" width="25%">Асимптоты: </font><img src="ims_v/Image614.gif" width=73 height=48 align="absmiddle"></font> 
+  <TD WIDTH="25%" VALIGN="TOP"> 
+   <P ALIGN="JUSTIFY">Параметрическое <br>уравнение:</font><font size="3"><img src="ims_v/Image615.gif" width=93 height=57 align="absmiddle"></font> 
+  </TD>
+  </tr>
+ </table>
+
+
+ <P ALIGN="center">&nbsp;</P>
+<a name=2_4 class="anchor"></a>
+ <P><b><i>3.2.4. Парабола</i></b></P><br> 
+ <TABLE CELLSPACING=1 BORDER=1 CELLPADDING=7 WIDTH="80%">
+<TR><TD WIDTH="30%" VALIGN="TOP" HEIGHT=189>
+<P>Каноническое уравнение: </P>
+</FONT>
+  <P ALIGN="CENTER"><IMG SRC="ims_v/Image616.gif" WIDTH=73 HEIGHT=28 align="absmiddle">,</P>
+</FONT>
+  <P>Параметр: </font>p.</font><br>
+  Фокус: </font><IMG SRC="ims_v/Image617.gif" WIDTH=85 HEIGHT=57 align="absmiddle">;</font><br>
+  директриса: </font><IMG SRC="ims_v/Image618.gif" WIDTH=48 HEIGHT=46 align="absmiddle">.</FONT>
+  </TD>
+<TD WIDTH="70%" VALIGN="middle" align="center" HEIGHT=189>
+<P><IMG SRC="ims_v/Image619.gif" WIDTH=306 HEIGHT=170></FONT></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<a name=3 class="anchor"></a>
+<h3>3.3. Поверхности второго порядка</h3>
+<br>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH="90%">
+<TR><TD WIDTH="20%" VALIGN="TOP">
+<P ALIGN="CENTER">Каноническое уравнение</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+<P ALIGN="CENTER">Наименование</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+<P ALIGN="CENTER">Параметры</FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<P ALIGN="CENTER">Чертеж</FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP" HEIGHT=135>
+
+<P>&nbsp;</P>
+   <P><IMG SRC="ims_v/Image620.gif" WIDTH=138 HEIGHT=29 align="absmiddle">
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=135>
+
+<P>&nbsp;</P>
+</FONT><P>сфера</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=135>
+
+<P>&nbsp;</P>
+</FONT>
+   <P>a –</font><font face="Arial" size="3"></font> 
+   радиус</FONT>
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" HEIGHT=135> <FONT SIZE=3> 
+   <P><img src="ims_v/Image621Opt.gif" >
+   </FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="top" align="center" HEIGHT=112>
+
+   <P>&nbsp;
+   <P><IMG SRC="ims_v/Image622.gif" WIDTH=134 HEIGHT=53 align="absmiddle">.
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=112>
+&nbsp;
+
+</FONT>
+   <P>&nbsp;
+   <P><br>эллипсоид
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=112>
+&nbsp;
+
+</FONT>
+   <P>&nbsp;
+   <P><br><IMG SRC="ims_v/Image623.gif" WIDTH=45 HEIGHT=22 align="absmiddle"></font>- 
+   полуоси</FONT> 
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" HEIGHT=112> <FONT SIZE=3> 
+   <P><img src="ims_v/Image624Opt.gif" width="150" height="199">
+   </FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+<P><IMG SRC="ims_v/Image625.gif" WIDTH=134 HEIGHT=53></FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+</FONT><P>однополостный гиперболоид</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+   <P>&nbsp; </P>
+   <P><U><IMG SRC="ims_v/Image626.gif" WIDTH=30 HEIGHT=22 align="absmiddle"></u></font>-действитель-ные 
+   полуоси,</font></P>
+   <P><IMG SRC="ims_v/Image627.gif" WIDTH=13 HEIGHT=16 align="absmiddle"></font>- 
+   мнимая полуось </FONT>
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" > <FONT SIZE=3> 
+   <P><img src="ims_v/Image628Opt.gif" >
+   </FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+<P><IMG SRC="ims_v/Image629.gif" WIDTH=150 HEIGHT=54></FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+</FONT><P>двуполостный гиперболоид</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+<U></U>
+   <P>&nbsp;
+   <P><U><IMG SRC="ims_v/Image630.gif" WIDTH=13 HEIGHT=16 align="absmiddle"></u></font>-действитель-ная 
+   полуось, </FONT><IMG SRC="ims_v/Image631.gif" WIDTH=30 HEIGHT=22 align="absmiddle"></FONT>- 
+   мнимые полуоси</FONT>
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" > <FONT SIZE=3> 
+   <P><img src="ims_v/Image632Opt.gif">
+   </FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP" align="center">
+
+<P>&nbsp;</P>
+   <P><IMG SRC="ims_v/Image633.gif" WIDTH=96 HEIGHT=53 align="absmiddle">
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+</FONT><P>эллиптический</font><FONT SIZE=3> </FONT>параболоид</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+</FONT>
+   <P><U><IMG SRC="ims_v/Image634.gif" WIDTH=29 HEIGHT=22 align="absmiddle"></u></font>- 
+   полуоси</FONT>
+  </TD>
+<TD WIDTH="40%" VALIGN="TOP" >
+<P><IMG SRC="ims_v/Image635.gif" WIDTH=141 HEIGHT=133></FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP" align="center">
+<FONT SIZE=3>
+<P>&nbsp;</P>
+<P><IMG SRC="ims_v/Image636.gif" WIDTH=98 HEIGHT=56></FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+</FONT><P>гиперболический параболоид</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+   <P><U><IMG SRC="ims_v/Image634.gif" WIDTH=29 HEIGHT=22 align="absmiddle"></u></font>- 
+   полуоси</FONT></P>
+   </FONT> </TD>
+<TD WIDTH="40%" VALIGN="TOP" >
+<FONT SIZE=3><P><IMG SRC="ims_v/Image637Opt.gif" ></FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP" align="center">
+<p>
+</FONT></p>
+  
+   <P><img src="ims_v/Image638.gif" width="113" height="62">
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+   </FONT><br> конус</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+</FONT>
+   <P><br><U><IMG SRC="ims_v/Image634.gif" WIDTH=29 HEIGHT=23 align="absmiddle"></u></font>- 
+   полуоси</FONT>
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" > <FONT SIZE=3> 
+   <P><img src="ims_v/Image639Opt.gif" >
+   </FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP" align="center">
+
+<P>&nbsp;</P>
+<P><IMG SRC="ims_v/Image640.gif" WIDTH=77 HEIGHT=33></FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+
+<P>&nbsp;</P>
+   </FONT>
+   <P>параболический цилиндр
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP">
+<I>
+<P>&nbsp;</P>
+</FONT></I><P><I>р</i></font> - параметр</FONT></TD>
+  <TD WIDTH="40%" VALIGN="TOP" > <FONT SIZE=3> 
+   <P><img src="ims_v/Image641Opt.gif" >
+   </FONT></TD>
+</TR>
+<TR>
+  <TD WIDTH="20%" VALIGN="TOP" HEIGHT=125 align="center"> 
+   <p>&nbsp;</p>
+   <p><img src="ims_v/Image642.gif" width=94 height=56> </FONT></p>
+  <P>&nbsp;
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=125>
+
+<P>&nbsp;</P>
+</FONT><P>эллиптический цилиндр</FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=125>
+
+<P>&nbsp;</P>
+</FONT>
+   <P><U><IMG SRC="ims_v/Image634.gif" WIDTH=29 HEIGHT=22 align="absmiddle"></u></font>- 
+   полуоси</FONT>
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" HEIGHT=125 > <FONT SIZE=3> 
+   <P><img src="ims_v/Image643Opt.gif" >
+   </FONT></TD>
+</TR>
+<TR><TD WIDTH="20%" VALIGN="TOP" HEIGHT=18 align="center">
+
+   <P>&nbsp;
+   <P><IMG SRC="ims_v/Image644.gif" WIDTH=94 HEIGHT=56>
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=18>
+<FONT SIZE=3>&nbsp;
+</FONT>
+   <P>&nbsp;
+   <P>гиперболический цилиндр
+   </FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" HEIGHT=18>
+
+<P>&nbsp;</P>
+</FONT>
+   <P><FONT SIZE=3><U><IMG SRC="ims_v/Image634.gif" WIDTH=29 HEIGHT=22 align="absmiddle"></u></font>- 
+   полуоси</FONT>
+  </TD>
+  <TD WIDTH="40%" VALIGN="TOP" HEIGHT=18 > <FONT SIZE=3> 
+   <P><img src="ims_v/Image645Opt.gif" >
+   </FONT></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<a name=4 class="anchor"></a>
+
+<h3>3.4. Преобразование координат</h3>
+<br><a name=4_1 class="anchor"></a>
+ <P><b><i>3.4.1. Преобразование координат 
+ на плоскости</i></b></P>
+<P>Преобразование декартовой прямоугольной системы координат.</P>
+
+ <TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="80%">
+ <TR>
+  <TD WIDTH="20%" VALIGN="TOP"> 
+  <P>Параллельный перенос: <IMG SRC="ims_v/Image646.gif" WIDTH=88 HEIGHT=54 align="absmiddle">,</P>
+  </FONT><FONT SIZE=3>&nbsp;</FONT></TD>  
+  <TD WIDTH="80%" VALIGN="TOP"> <FONT SIZE=3> 
+  <P><img src="ims_v/Image647.gif" width="274" height="182">
+  </FONT></TD>
+</TR>
+</TABLE>
+<br>
+
+ <P>где координаты точки </font><font size="3" face="Arial">M</font><I><FONT SIZE=3> 
+ </font></I>в старой системе координат: </FONT><IMG SRC="ims_v/Image648.gif" WIDTH=45 HEIGHT=24 align="absmiddle">;</font></P>
+ <P>координаты точки </font><font size="3" face="Arial">M</font> 
+ в новой системе координат: </FONT><IMG SRC="ims_v/Image649.gif" WIDTH=54 HEIGHT=25 align="absmiddle">;</font></P>
+ <P>координаты нового начала координат: </font><IMG SRC="ims_v/Image650.gif" WIDTH=44 HEIGHT=24 align="absmiddle">.</font></P>
+
+ <TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="80%">
+ <TR>
+  <TD WIDTH="20%" VALIGN="TOP"> 
+  <P>Поворот: <IMG SRC="ims_v/Image651.gif" WIDTH=177 HEIGHT=57 align="absmiddle">,</P>
+  </FONT><FONT SIZE=3>&nbsp;</FONT></TD>  
+  <TD WIDTH="80%" VALIGN="TOP"> <FONT SIZE=3> 
+  <P><img src="ims_v/Image652.gif" width="288" height="192">
+  </FONT></TD>
+</TR>
+</TABLE>
+<p></P>
+
+ <P>где координаты точки </font><I><FONT SIZE=3>M </font></I>в 
+ старой системе координат: </FONT><FONT SIZE=3><IMG SRC="ims_v/Image648.gif" WIDTH=45 HEIGHT=24 align="absmiddle">;</font></P>
+ <P>координаты точки </font><I><FONT SIZE=3>M</font></I> 
+ в новой системе координат: </FONT><FONT SIZE=3><IMG SRC="ims_v/Image653.gif" WIDTH=58 HEIGHT=25 align="absmiddle">;</font></P>
+<P>угол поворота: <FONT FACE="Symbol">&#106;</FONT>
+</font><FONT SIZE=3>.</font></P>
+ <P>&nbsp;</P>
+<P ALIGN="RIGHT">
+ <TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="80%">
+ <TR> 
+  <TD WIDTH="20%" VALIGN="TOP"> 
+  <p><FONT SIZE=3> </FONT>Переход от декартовых 
+   прямоугольных координат </font><font size=3><img src="ims_v/Image654.gif" width=44 height=24 align="absmiddle"> 
+   </font>к полярным координатам</font><font size=3> 
+   <img src="ims_v/Image655.gif" width="43" height="24" align="absmiddle"> 
+   </font> и обратно. </font><IMG SRC="ims_v/Image656.gif" WIDTH=92 HEIGHT=54 align="absmiddle">;</p>
+  <p><FONT SIZE=3><img src="ims_v/Image657.gif" width=105 height=34 align="absmiddle">; 
+   <img src="ims_v/Image658.gif" width=66 height=48 align="absmiddle">; 
+   <img src="ims_v/Image659.gif" width=73 height=20 align="absmiddle">; 
+   <img src="ims_v/Image660.gif" width=88 height=21 align="absmiddle"></FONT></p>
+  </TD>
+  <TD WIDTH="80%%" VALIGN="TOP"> <FONT SIZE=3> 
+  <P><img src="ims_v/Image661.gif" width="292" height="219">
+  </FONT></TD>
+ </TR>
+ </TABLE>
+<br>
+<a name=4_2 class="anchor"></a>
+ <P><b><i>3.4.2. Преобразование координат в пространстве</i></b></P>
+ <P>Переход от декартовых координат </font><FONT SIZE=3><IMG SRC="ims_v/Image662.gif" WIDTH=60 HEIGHT=24 align="absmiddle"></FONT> 
+ к цилиндрическим координатам </FONT><FONT SIZE=3><IMG SRC="ims_v/Image663.gif" WIDTH=58 HEIGHT=24 align="absmiddle"></FONT> 
+ и обратно:</font></P>
+
+ <TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="80%">
+ <TR> 
+  <TD WIDTH="20%" VALIGN="TOP" HEIGHT=181> <FONT SIZE=3> <IMG SRC="ims_v/Image664.gif" WIDTH=92 HEIGHT=84 align="absmiddle"></FONT> 
+  <p><font size="3"><img src="ims_v/Image665.gif" width=105 height=34 align="absmiddle">; 
+   <img src="ims_v/Image666.gif" width=66 height=48 align="absmiddle">; 
+   </font><font size="3"><img src="ims_v/Image659.gif" width=73 height=20 align="absmiddle">; 
+   <img src="ims_v/Image660.gif" width=88 height=21 align="absmiddle"> 
+   </font></p>
+  </TD>
+  <TD WIDTH="80%" VALIGN="TOP" HEIGHT=181> <FONT SIZE=3> 
+  <P><img src="ims_v/Image667.gif" width="400" height="352">
+  </FONT></TD>
+ </TR>
+ </TABLE>
+<br>
+
+ <P>Переход от декартовых координат </font><FONT SIZE=3><IMG SRC="ims_v/Image662.gif" WIDTH=60 HEIGHT=24 align="absmiddle"></FONT> 
+ к сферическим координатам </FONT><FONT SIZE=3><IMG SRC="ims_v/Image668.gif" WIDTH=60 HEIGHT=24 align="absmiddle"></FONT> 
+ и обратно:</font></P>
+ <TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="80%">
+ <TR> 
+  <TD WIDTH="20%" VALIGN="TOP"> <FONT SIZE=3> 
+  <P><IMG SRC="ims_v/Image669.gif" WIDTH=128 HEIGHT=84 align="absmiddle"><br><font size="3"><img src="ims_v/Image670.gif" width=141 height=34 align="absmiddle">,</font></P>
+  </FONT> 
+  <p><font size="3"><img src="ims_v/Image658.gif" width=66 height=48 align="absmiddle">, 
+   <img src="ims_v/Image671.gif" width=126 height=56 align="absmiddle">;</font><font size="3"> 
+   <img src="ims_v/Image672.gif" width=176 height=46 align="absmiddle"></font></p>
+  </TD>
+  <TD WIDTH="80%" VALIGN="TOP"> <FONT SIZE=3> 
+  <P><img src="ims_v/Image673Opt.gif" >
+  </FONT></TD>
+ </TR>
+ </TABLE>
+
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="sp3.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="Spravka.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="sp5.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

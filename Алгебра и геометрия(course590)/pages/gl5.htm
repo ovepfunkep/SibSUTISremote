@@ -1,0 +1,865 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 5. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 2. ВЕКТОРНАЯ АЛГЕБРА</h3>
+<h3>§5. Вектор в системе координат</h3>
+<a href="#1" class=punkt>5.1. Линейная зависимость векторов</a><br>
+<a href="#2" class=punkt>5.2. Базис. Координаты вектора</a><br>
+<a href="#3" class=punkt>5.3. Операции над векторами в координатах</a><br>
+<a href="#4" class=punkt>5.4. Переход к другому базису</a><br>
+<a href="#5">ЗАДАЧИ К ЧАСТИ 2 (для самостоятельного решения)</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§5. ВЕКТОР В СИСТЕМЕ КООРДИНАТ</h3>
+<a name=1 class="anchor"></a>
+<h3>5.1. Линейная зависимость векторов</h3>
+
+<p>Два вектора называются <i>линейно зависимыми</i>, если
+один из них равен другому, умноженному на некоторое число. Векторы <b><i>a</i></b><b><i> </i></b> и <b><i>b</i></b><b><i> </i></b>– линейно зависимы, если &nbsp;<img style="width: 62px; height: 22px;" alt="" src="img/lec5.files/f00.png" align="middle">, где&nbsp;<img style="width: 16px; height: 20px;" alt="" src="img/lec5.files/f01.png" align="middle"><span style="font-size: 12pt; font-family: &quot;MT Symbol&quot;;"></span> - некоторое число.</p>
+
+<p>Если хотя бы один из векторов нулевой, то они,
+очевидно, линейно зависимы. Верно также и то, что <i>два </i><i>вектора </span></i><i>линейно зависимы тогда и только тогда, когда они коллинеарны</i>.</p>
+
+<p>Три вектора называются <i>линейно зависимыми</i>, если
+один из них есть линейная комбинация остальных. Этому определению можно придать
+симметричный вид: векторы <b><i>a</i></b>, <b><i>b</i></b> и <b><i>c</i></b> – линейно зависимы,
+если существуют числа <img style="width: 44px; height: 27px;" alt="" src="img/lec5.files/f02.png" align="middle">&nbsp;и<img style="width: 15px; height: 24px;" alt="" src="img/lec5.files/f03.png" align="middle">, <i>не все равные нулю</i>, такие, что&nbsp;<img style="width: 146px; height: 22px;" alt="" src="img/lec5.files/f04.png" align="middle">&nbsp;.</span></p>
+
+<p>Если три вектора <b><i>a</i></b>, <b><i>b</i></b> и <b><i>c</i></b> таковы,
+что из условия <img style="width: 146px; height: 22px;" alt="" src="img/lec5.files/f04.png" align="middle"></span>&nbsp;вытекает равенство&nbsp;</span><img style="width: 114px; height: 26px;" alt="" src="img/lec5.files/f06.png" align="middle">, то эти векторы называются
+<i>линейно независимыми</i>.</span></p>
+
+<p>Справедливо утверждение: <i>три вектора линейно
+зависимы тогда и только тогда, когда они компланарны.</i></p>
+
+<p>Рассмотрим теперь общий случай. Пусть имеется система <i>n
+</i>векторов&nbsp;<img style="width: 126px; height: 30px;" alt="" src="img/lec5.files/f07.png" align="middle">. Назовём <i>линейной комбинацией</i>
+векторов этой системы вектор, равный </p>
+
+<p><img style="width: 204px; height: 27px;" alt="" src="img/lec5.files/f08.png" align="middle"></span>,</p>
+
+<p>где&nbsp;<img style="width: 113px; height: 28px;" alt="" src="img/lec5.files/f09.png" align="middle"></span>&nbsp;&nbsp;-
+произвольные числа, называемые коэффициентами линейной комбинации. Линейная
+комбинация, в которой все её коэффициенты равны нулю&nbsp;<img style="width: 188px; height: 26px;" alt="" src="img/lec5.files/f10.png" align="middle">, называется <i>тривиальной</i>.</p>
+
+<p><i>Система векторов </span></i><img style="width: 126px; height: 31px;" alt="" src="img/lec5.files/f11.png" align="middle"><i>&nbsp;&nbsp;называется линейно зависимой,
+если существует нетривиальная линейная комбинация векторов этой системы, равная
+нулю</span></i>. </p>
+
+<p>Другими словами, система&nbsp;<img style="width: 126px; height: 31px;" alt="" src="img/lec5.files/f11.png" align="middle"> - линейно зависима, если существуют
+такие коэффициенты&nbsp;<img style="width: 113px; height: 29px;" alt="" src="img/lec5.files/f12.png" align="middle">, <i>не все равные нулю</i>, что </span></p>
+
+<p><img style="width: 236px; height: 30px;" alt="" src="img/lec5.files/f13.png" align="middle">.</p>
+
+<p>Легко понять, что в этом случае один из векторов
+системы можно выразить линейно через остальные. В самом деле, пусть, например, <img style="width: 61px; height: 29px;" alt="" src="img/lec5.files/f14.png" align="middle"></span>. Тогда&nbsp;</span><img style="width: 246px; height: 57px;" alt="" src="img/lec5.files/f15.png" align="middle"></span>. Справедливо
+и обратное утверждение: если один из векторов системы можно выразить через
+остальные, то система линейно зависима.</span></p>
+
+<p><i>Система векторов </span></i><img style="width: 126px; height: 31px;" alt="" src="img/lec5.files/f11.png" align="middle"></span><i>&nbsp;называется линейно независимой,
+если из равенства&nbsp;</span></i><img style="width: 236px; height: 30px;" alt="" src="img/lec5.files/f13.png" align="middle"></span><i>&nbsp;&nbsp;следует, что&nbsp;</span></i><img style="width: 188px; height: 26px;" alt="" src="img/lec5.files/f10.png" align="middle"></span><i>.</span></i></p>
+
+<br>
+<a name=2 class="anchor"></a>
+<h3>5.2. Базис. Координаты вектора</h3>
+
+<p>Рассмотрим совокупность векторов, параллельных
+некоторой плоскости. Любые два неколлинеарных вектора среди них образуют
+линейно независимую систему, а любые три – линейно зависимы. Следовательно,
+любой вектор рассматриваемой совокупности может быть выражен в виде линейной
+комбинации двух выделенных неколлинеарных векторов, которые назовём <i>базисом</i>.</span></p>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="210" valign="top"><p><img src="img/lec3.files/image233.gif" align="left" height="172" width="208"></p></td>
+      <td width="890" valign="top"><p>Выберем, например, в качестве векторов базиса векторы <img src="img/lec5.files/f16.png" width="18" height="22"  align="middle">&nbsp;и <img src="img/lec5.files/f17.png" width="18" height="22"  align="middle">&nbsp;(рис.2.25).
+Любой вектор </span><b><i>a</span></i></b> данной плоскости может быть представлен (причём единственным образом) в виде <img src="img/lec5.files/f18.png" width="119" height="26">. Такое представление называется <i>разложением вектора</i> </span><b><i>a</span></i></b><b><i> </span></i></b><i>по
+базису <img src="img/lec5.files/f19.png" width="60" height="30" align="absmiddle"></span></i>, а коэффициенты разложения <img src="img/lec5.files/f20.png" width="21" height="29" align="absmiddle">&nbsp;и<img src="img/lec5.files/f21.png" width="21" height="29" align="absmiddle">&nbsp;- <i>координатами</i>
+<i>вектора в этом базисе</i>. Будем писать в этом случае: <img src="img/lec5.files/f22.png" width="95" height="25" align="absmiddle">. </span></p></td>
+  </tr>
+<tr>
+      <td width="210" valign="top"><p><img src="img/lec3.files/image242.gif" align="left" height="147" width="183"></p></td>
+      <td width="890" valign="top"><p>Разумеется,
+векторами базиса могут быть любые неколлинеарные векторы, но удобнее всё-таки
+взять такие, чтобы они были, во-первых, единичные, а во-вторых, ортогональные.
+Обозначим их </span><b><i>i</span></i></b><b><i><span style="font-size: 12pt;" lang="EN-US"> </span></i></b>и<b><i> </i></b></span><b><i><span style="font-size: 12pt;" lang="EN-US">j</span></i></b> , причём так, чтобы кратчайший поворот от </span><b><i><span style="font-size: 12pt;" lang="EN-US">i</span></i></b><b><i> </span></i></b><span style="font-size: 12pt;">к<b><i>
+</i></b></span><b><i>j</span></i></b> происходил против часовой стрелки (рис.2.26). Векторы
+</span><b><i>i</span></i></b><b><i> </span></i></b>и<b><i> </i></b></span><b><i><span style="font-size: 12pt;" lang="EN-US">j</span></i></b> называются <i>ортами,</i> а сам базис – <i>ортонормированным
+декартовым </i>базисом (коротко – <i>ортобазисом</i>). Координаты вектора </span><b><i><span style="font-size: 12pt;" lang="EN-US">a</span></i></b> в этом базисе будем обозначать <img src="img/lec5.files/f23.png" width="104" height="32" align="absmiddle">. </span></p></td></tr>
+<tr><td width="210" valign="top"><p><img src="img/lec3.files/image241.gif" align="left" height="232" width="255"></p></td>
+<td width="890" valign="top"><p>Фиксируем некоторую точку, от которой будем
+откладывать орты, да и все остальные векторы; ось </span><i>Ox</span></i><span style="font-size: 12pt;" lang="EN-US">
+</span>направим вдоль орта </span><b><i><span style="font-size: 12pt;" lang="EN-US">i</span></i></b><b><i>, </span></i></b>а ось </span><i><span style="font-size: 12pt;" lang="EN-US">Oy</span></i>
+– вдоль орта <b><i>&nbsp;</i></b></span><b><i>j</span></i></b><span style="font-size: 12pt;" lang="EN-US"> </span>. Тем самым введена декартова прямоугольная система
+координат на плоскости. </span></p>
+<p>В трёхмерном пространстве (будем просто называть его
+пространством) базис образуют любые три некомпланарных вектора. Это означает,
+что любой четвертый вектор может быть представлен в виде линейной комбинации
+векторов базиса, т.е. разложен по этому базису. </span></p></td></tr>
+</table>
+<p>Выберем ортонормированный базис в пространстве. Это
+означает, что к ортам </span><b><i>i</span></i></b><b><i> </i></b>и<b><i> </i></b></span><b><i> j</span></i></b><b><i> </i></b>мы добавим еще один орт – вектор </span><b><i>k</span></i></b>. Выберем
+его так, чтобы тройка ортов </span><b><i><span style="font-size: 15pt;" lang="EN-US">i</span></i></b><b><i><span style="font-size: 15pt;">, </span></i></b><b><i><span style="font-size: 15pt;" lang="EN-US">j</span></i></b><b><i><span style="font-size: 15pt;">, </span></i></b><b><i><span style="font-size: 15pt;" lang="EN-US">k</span></i></b><b><i></i></b>была бы
+правой тройкой (рис.2.27). Итак, по условию:</span></p>
+
+<p><sub><img src="img/lec5.files/f24.png" width="281" height="29">; </span></p>
+
+<p>Декартов базис <sub><img src="img/lec5.files/f25.png" width="62" height="27" border="0" align="absmiddle">&nbsp;будем полагать заданным по умолчанию. </p>
+
+
+<p>Если фиксировать некоторую точку </span><i>O</span></i>  (начало
+координат), то, тем самым, в пространстве будет задана декартова прямоугольная
+система координат. Орт </span><b><i>i</span></i></b> определяет направление оси </span><i>Ox</span></i>,
+орт </span><b><i>j</span></i></b> </span>–
+направление оси </span><i>Oy</span></i>, наконец, орт </span><b><i>k</span></i></b>
+определяет направление оси </span><i>Oz</span></i>. </span></p>
+
+<p>Произвольный вектор </span><b><i><span style="font-size: 14pt;" lang="EN-US">a</span></i></b><b><i> </span></i></b>представляется
+в виде </span></p>
+
+<p><img src="img/lec5.files/f5_1.png" width="276" height="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.1)</span></p>
+
+<p>Такое представление единственно. В самом деле,
+допустим, что тот же самый вектор </span><b><i>a</span></i></b><b><i><span style="font-size: 12pt;" lang="EN-US"> </span></i></b>можно
+разложить по стандартному базису вторым способом, </span>т.е. <img src="img/lec5.files/f26.png" width="153" height="25" align="absmiddle">. Вычитая из первого выражения второе, получим:</span></p>
+
+<p><img src="img/lec5.files/f27.png" border="0" height="36" width="330"></p>
+
+<p>Если
+хотя бы одна из разностей в скобках не равна нулю, то получим нетривиальную линейную
+комбинацию, равную нулю. Это будет означать, что система векторов </span><sub><img src="img/lec5.files/f28.png" width="61" height="30" align="absmiddle">- линейно зависима, что противоречит
+условию.</span></p>
+
+<p>Итак, два вектора равны тогда и только тогда, когда
+равны их соответствующие координаты. Пусть<img src="img/lec5.files/f29.png" width="125" height="26" align="absmiddle"> </span>&nbsp;и <img src="img/lec5.files/f30.png" width="120" height="29" align="absmiddle"></span>. Тогда</span></p>
+
+<p><img src="img/lec5.files/f31.png" width="150" height="88"></p>
+
+<p>Зная координаты вектора <b><i><img src="img/lec5.files/f_a.png" width="13" height="16">,</i></b> можно легко
+найти выражение для модуля вектора:</span></p>
+
+<p><img src="img/lec5.files/f5_2.png" width="190" height="43">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.2)</span></p>
+
+<p>Пусть вектор <b><i><img src="img/lec5.files/f_a.png" width="13" height="16"></i></b> образует с ортами, а значит и с осями
+<img src="img/lec3.files/image255.gif" border="0" height="25" width="88">&nbsp;углы,
+соответственно равные <img src="img/lec5.files/f32.png" width="52" height="22" align="absmiddle">. Тогда:</span></p>
+
+<p><img src="img/lec3.files/image257.gif" align="left" height="25" hspace="12" width="13"><sub><img src="img/lec5.files/f5_3.png" width="375" height="32"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+(5.3)</span></p>
+
+<p>Углы<img src="img/lec5.files/f32.png" width="52" height="22" align="absmiddle">&nbsp;полностью определяют
+направление вектора </span><b><i><img src="img/lec5.files/f_a.png" width="13" height="16"></i></b><b><i><span style="font-size: 12pt;">, </span></i></b>поэтому
+числа </span></p>
+
+<p><img src="img/lec5.files/f33.png" width="302" height="56"></span></p>
+
+<p>называются
+<i>направляющими косинусами</i> вектора <b><i><img src="img/lec5.files/f_a.png" width="13" height="16"></i></b>.</span></p>
+
+<p>Подставив
+выражение (5.3) в равенство (5.2), получаем </span></p>
+
+<p><img src="img/lec5.files/f34.png" width="369" height="38"></p>
+
+<p>Сократив
+обе части равенства на <img src="img/lec5.files/f35.png" width="49" height="26" align="absmiddle">, получим важное соотношение:</p>
+
+<p><img src="img/lec5.files/f5_4.png" width="220" height="29"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.4)</p>
+
+<p>Направляющие
+косинусы служат координатами единичного вектора <img src="img/lec5.files/f36.png" width="19" height="21" align="absmiddle">&nbsp;</span></p>
+
+<p><img src="img/lec5.files/f37.png" width="200" height="27"></p>
+
+<br>
+<a name=3 class="anchor"></a>
+<h3>5.3. Операции над векторами в координатах</h3>
+
+<p><b><i>Линейные операции</span></i></b></p>
+
+<p>Пусть векторы <b><i>a</i></b> и <b><i>b</i></b> </span>заданы своими координатами:</p>
+
+<p><img src="img/lec5.files/f38.png" width="314" height="27" align="absmiddle">, то есть <img src="img/lec5.files/f39.png" width="243" height="32" align="absmiddle">.</p>
+
+<p>Линейные операции над
+векторами сводятся к соответствующим операциям над координатами этих векторов.</p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp; </span></span><i>При умножении вектора на число координаты вектора умножаются
+на это число. </span></i></p>
+
+<p><img src="img/lec5.files/f40.png" width="176" height="33"></p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp; </span></span><i>При сложении векторов их одноименные координаты
+складываются.</span></i></p>
+
+<p><img src="img/lec5.files/f41.png" width="264" height="31"></p>
+
+<p>Выясним условия коллинеарности векторов<i> </i><b><i><img src="img/lec5.files/f_a.png" width="13" height="16"></i></b> и </span><b><i>b</i></b>, заданных своими координатами. В этом случае <img src="img/lec5.files/f42.png" width="68" height="22" align="absmiddle">&nbsp;для некоторого
+числа <img src="img/lec5.files/f43.png" width="14" height="19">.
+Но это значит <img src="img/lec5.files/f44.png" width="221" height="25" align="absmiddle">, откуда следует:</span></p>
+
+<p><img src="img/lec5.files/f5_5.png" width="123" height="54">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.5)</span></p>
+
+<p>Таким образом, <i>координаты коллинеарных векторов
+пропорциональны.</i> Верно и обратное утверждение: векторы, имеющие
+пропорциональные координаты, коллинеарны.</span></p>
+
+<p>Пусть в пространстве задан стандартный базис и,
+соответственно, прямоугольная декартова система координат <img src="img/lec3.files/image273.gif" border="0" height="25" width="45">. Для любой точки <img src="img/lec3.files/image274.gif" border="0" height="20" width="25">&nbsp;вектор<i> </i><img src="img/lec3.files/image275.gif" border="0" height="27" width="39">&nbsp;называется <i>радиус-вектором</i>
+точки <img src="img/lec3.files/image274.gif" border="0" height="20" width="25">.
+Пусть <img src="img/lec3.files/image275.gif" border="0" height="27" width="39">=<img src="img/lec3.files/image276.gif" border="0" height="25" width="93">. Числа <img src="img/lec3.files/image277.gif" border="0" height="25" width="64">&nbsp;называют <i>координатами
+точки</i> <img src="img/lec3.files/image274.gif" border="0" height="20" width="25">:
+<img src="img/lec3.files/image278.gif" border="0" height="31" width="88">.</span></p>
+
+<p>Если известны координаты точек <img src="img/lec3.files/image279.gif" border="0" height="27" width="95">&nbsp;и <img src="img/lec3.files/image280.gif" border="0" height="27" width="103">, то координаты вектора
+<img src="img/lec3.files/image281.gif" border="0" height="27" width="61">&nbsp;найдём
+следующим образом: </span></p>
+
+<p><i><img src="img/lec3.files/image282.gif" border="0" height="33" width="328"></span></i><span style="font-size: 12pt;">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5.6)</span></p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp; </span></span><i>Чтобы найти координаты вектора, надо из координат
+конца вектора вычесть координаты его начала</i>.</span></p>
+
+<p><b><i>Скалярное произведение векторов</span></i></b></p>
+
+<p>Пусть заданы векторы <img src="img/lec5.files/f45.png" width="121" height="30" align="absmiddle">&nbsp;и <img src="img/lec5.files/f46.png" width="116" height="31" align="absmiddle">. Найдем скалярное произведение векторов, перемножая их как многочлены:</span></p>
+<p><img src="img/lec5.files/f47.png" width="442" height="89"></p>
+
+<p>Здесь использованы свойства ортонормированности базиса:
+</span></p>
+
+<p><img src="img/lec5.files/f48.png" width="309" height="29"></p>
+
+<p>Таким образом </p>
+
+<p><img src="img/lec5.files/f5_7.png" width="206" height="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.7)</span></p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp; </span></span><i>Скалярное произведение векторов равно сумме
+произведений их соответствующих координат.</span></i></p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;
+</span></span><i>Угол между векторами<img src="img/lec5.files/f45.png" width="121" height="30" align="absmiddle"> </span></i>&nbsp;и <img src="img/lec5.files/f46.png" width="116" height="31" align="absmiddle"></span>&nbsp;найдём, используя
+формулу (4.4):</span></p>
+
+<p><img src="img/lec5.files/f5_8.png" width="344" height="64">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5.8)</span></p>
+
+<p>В
+частности, условие перпендикулярности ненулевых векторов: </span></p>
+
+<p>&nbsp;&nbsp;&nbsp;<img src="img/lec5.files/f5_9.png" width="258" height="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.9)</span></p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;
+</span></span><i>Проекция вектора </span></i><img src="img/lec3.files/image025.gif" border="0" height="16" width="16">&nbsp;<i>на заданное направление</i>, задаваемое
+вектором<i> </i><img src="img/lec3.files/image296.gif" border="0" height="21" width="15">, вычисляется с использованием формулы
+(4.5):</span></p>
+
+<p><img src="img/lec5.files/f5_10.png" width="222" height="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.10)</span></p>
+
+<p><i>Задача.
+</span></i>Доказать, что диагонали
+четырехугольника, заданного координатами вершин <sub><img src="img/lec3.files/image298.gif" border="0" height="21" width="287">, взаимно перпендикулярны.</span></p>
+
+<p><i>Решение</span></i>. Составим вектора <img src="img/lec3.files/image299.gif" border="0" height="28" width="32">&nbsp;и <img src="img/lec3.files/image300.gif" border="0" height="28" width="32">, лежащие на диагоналях данного
+четырехугольника. Имеем: <img src="img/lec3.files/image301.gif" border="0" height="28" width="219">.</p>
+
+<p>Найдем скалярное произведение этих векторов: <img src="img/lec3.files/image302.gif" border="0" height="24" width="179">.</p>
+
+<p>Отсюда следует, что <img src="img/lec3.files/image303.gif" border="0" height="24" width="73">. Диагонали четырехугольника <img src="img/lec3.files/image304.gif" border="0" height="19" width="52">&nbsp;взаимно перпендикулярны.</span></p>
+
+<p><b><i>Векторное
+произведение векторов</span></i></b></p>
+
+<p>Рассмотрим, прежде всего, векторные произведения
+ортов. Принимая во внимание свойства векторного произведения, а также то, что
+тройка ортов – правая, имеем:</span></p>
+
+<p><img src="img/lec3.files/image305.gif" border="0" height="85" width="289">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5.11)</span></p>
+
+<p>Найдем
+теперь векторное произведение двух векторов <b><i><span lang="EN-US">a</span></i></b>
+и<b><i> </i></b><b><i><span lang="EN-US">b</span></i></b>, заданных своими координатами.
+Для этого перемножим их, используя формулы (5.11) и свойства векторного
+произведения:</p>
+
+<p><img src="img/lec3.files/image306.gif" border="0" height="29" width="351"></p>
+
+<p><img src="img/lec3.files/image307.gif" border="0" height="29" width="521"></p>
+
+<p><img src="img/lec3.files/image308.gif" border="0" height="29" width="431"></p>
+
+<p><img src="img/lec3.files/image309.gif" border="0" height="29" width="387"></p>
+
+<p><img src="img/lec3.files/image310.gif" border="0" height="29" width="408"></p>
+
+<p><img src="img/lec3.files/image311.gif" border="0" height="63" width="280">.</p>
+
+<p>Таким образом</p>
+
+<p><img src="img/lec3.files/image312.gif" border="0" height="63" width="320">.</p>
+
+<p>Полученную
+формулу можно записать еще короче:</p>
+
+<p><img src="img/lec3.files/image313.gif" border="0" height="96" width="161">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5.12)</p>
+
+<p><span style="font-family: Wingdings;">v<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;
+</span></span><i>Векторное произведение векторов можно представить в виде определителя
+матрицы третьего порядка, первая строка которой – орты, а вторая и третья –
+координаты векторов-сомножителей</i>.</p>
+
+<p><b><i>Смешанное
+произведение векторов</i></b></p>
+
+<p>Найдем смешанное
+произведение трёх векторов, заданных своими координатами, используя формулы
+(5.12) и (5.7):</span></p>
+
+<p><img src="img/lec3.files/image314.gif" border="0" height="96" width="347"></p>
+
+<p><img src="img/lec3.files/image257.gif" border="0" height="25" width="13"> <img src="img/lec3.files/image315.gif" border="0" height="67" width="452"></p>
+
+<p><img src="img/lec3.files/image316.gif" border="0" height="63" width="301">.</p>
+
+<p>Полученную
+формулу можно записать короче:</span></p>
+
+<p><img src="img/lec3.files/image317.gif" border="0" height="96" width="155">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(5.13)</span></p>
+
+<p><span style="font-size: 12pt; font-family: Wingdings;">v</span><i>&nbsp;&nbsp;Смешанное произведение векторов равно определителю
+третьего порядка, составленному из координат перемножаемых векторов</span></i>.</span></p>
+
+<p>Геометрический смысл и свойства смешанного произведения позволяют применить формулу (5.13) к
+определению ориентации тройки векторов и вычислению объёмов тел.</p>
+
+<p><span style="font-family: Wingdings;">v</span><i>&nbsp;&nbsp;Тройка векторов <img src="img/lec3.files/image146.gif" border="0" height="31" width="64">&nbsp;– правоориентированая, если <img src="img/lec3.files/image318.gif" border="0" height="21" width="64">&nbsp;и левоориентированная,
+если <img src="img/lec3.files/image319.gif" border="0" height="21" width="63">.</i></p>
+
+<p><i>Задача</i>.<i>
+</i>Найти объем пирамиды, вершинами которой служат точки </p>
+<p><br>
+    <img src="img/lec5.files/f49.png" width="342" height="23"><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><i>Решение</i>.
+Находим векторы <img src="img/lec5.files/f50.png" width="242" height="29" align="absmiddle">&nbsp;и <img src="img/lec5.files/f51.png" width="117" height="26" align="absmiddle">. Находим далее их векторное произведение:</p>
+
+<p><img src="img/lec3.files/image327.gif" border="0" height="79" width="435"></p>
+
+<p>Следовательно,
+<img src="img/lec3.files/image328.gif" width="97" height="45" border="0" align="absmiddle">.</p>
+
+ <br>
+<a name=4 class="anchor"></a>
+ <h3> 5.4. Переход к другому
+базису</h3>
+
+<p>До сих
+пор мы предполагали, что рассматривается один базис. Однако выбор базиса ничем
+не ограничен. Поэтому принципиальное значение имеет вопрос об изменении
+координат вектора при переходе к другому базису.</p>
+
+<p>Рассмотрим
+сначала двумерное пространство (так называемый «плоский случай»).</p>
+
+<p>Пусть
+имеется два ортонормированных базиса: «старый» <img src="img/lec5.files/f52.png" width="40" height="27" align="absmiddle">&nbsp;и «новый»<img src="img/lec5.files/f53.png" width="59" height="27" align="absmiddle">. Известны координаты векторов «нового» базиса в «старом»:</p>
+
+<p><sub><img src="img/lec5.files/f5_14.png" width="137" height="58">&nbsp;&nbsp;(5.14)</p>
+
+<p> Запишем эти формулы в матричной форме:</p>
+
+<p><img src="img/lec5.files/f54.png" width="253" height="60"></p>
+
+<p>или <img src="img/lec3.files/image332.gif" border="0" height="20" width="80">, где </p>
+
+<p><img src="img/lec5.files/f55.png" width="351" height="59"><br>
+</p>
+
+<p>Матрица <i>А
+</i>называется <i>матрицей перехода</i> от базиса <i>Е</i> к базису <img src="img/lec3.files/image334.gif" border="0" height="20" width="23">. Очевидно <img src="img/lec3.files/image335.gif" border="0" height="25" width="93">. </p>
+
+<p> Пусть координаты вектора <b><i><img src="img/lec5.files/f_a.png" width="13" height="16"></i></b>
+в базисе <em><img src="img/lec5.files/f56.png" width="42" height="29" align="absmiddle"></em>даны: <img src="img/lec5.files/f57.png" width="96" height="29" align="absmiddle">. Каковы
+будут его координаты в новом базисе? Допустим, что в новом базисе вектор<b><i><img src="img/lec5.files/f_a.png" width="13" height="16"></i></b>будет иметь координаты <img src="img/lec5.files/f58.png" width="96" height="30" align="absmiddle">. Это значит, что </p>
+
+<p><img src="img/lec5.files/f59.png" width="227" height="27"></p>
+
+<p>Используя
+формулы (5.14), получим</p>
+
+<p><img src="img/lec5.files/f60.png" width="371" height="24"></p>
+
+<p>откуда</p>
+
+<p><img src="img/lec5.files/f5_15.png" width="171" height="62">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5.15)</p>
+
+<p>В
+матричной форме <sub><img src="img/lec3.files/image341.gif" border="0" height="21" width="64">, где координаты векторов записаны в виде
+матриц-столбцов:</p>
+
+<p><img src="img/lec5.files/f61.png" width="228" height="69"></p>
+
+<p>Соответственно,
+<sub><img src="img/lec3.files/image343.gif" width="96" height="36" border="0" align="absmiddle">.</p>
+
+<p>Рассмотрим
+теперь трёхмерное пространство («пространственный случай»). Пусть имеются два
+базиса в пространстве: <img src="img/lec5.files/f67.png" width="81" height="27">&nbsp;и <img src="img/lec5.files/f68.png" width="83" height="28">. Первый базис назовём «старым», а второй –
+«новым». Пусть известны компоненты новых базисных векторов в старом базисе:</p>
+
+<p><img src="img/lec3.files/image346.gif" border="0" height="92" width="219">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5.16)</p>
+
+<p>Произвольный
+вектор <b><i><span lang="EN-US">a</span></i></b> имеет в старом базисе координаты
+<img src="img/lec3.files/image347.gif" border="0" height="27" width="168">.
+Разложим его по новому базису: <img src="img/lec3.files/image348.gif" border="0" height="27" width="168">. Подставляя в это равенство представления (5.16)
+новых базисных векторов через старые, получим</p>
+
+<p><img src="img/lec3.files/image349.gif" border="0" height="92" width="223">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5.17)</p>
+
+<p>Из коэффициентов
+<img src="img/lec3.files/image350.gif" border="0" height="29" width="25">&nbsp;в
+формулах (5.17) образуем в квадратную матрицу третьего порядка </p>
+
+<p><img src="img/lec3.files/image351.gif" border="0" height="84" width="163">.</p>
+
+<p>Эта
+матрица называется <i>матрицей перехода</i> от старого базиса к новому. В
+матричной форме равенства (5.17) имеют вид:</p>
+
+<p><img src="img/lec3.files/image352.gif" border="0" height="84" width="235">&nbsp;или <img src="img/lec3.files/image353.gif" border="0" height="21" width="73">.</p>
+
+<p>Координаты
+вектора в новом базисе выражаются через координаты вектора в старом базисе:</p>
+
+<p><img src="img/lec5.files/f62.png" width="97" height="27"></p>
+
+<p class="MsoBodyTextIndent" style="margin-right: 0.3pt; text-indent: 0cm;">или в
+развернутой матричной форме</p>
+
+<p><img src="img/lec5.files/f5_18.png" width="257" height="92">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(5.18)</p>
+
+<p><i>Задача</i>.
+В старом базисе<img src="img/lec5.files/f63.png" width="83" height="30" align="absmiddle">&nbsp;даны координаты вектора <img src="img/lec5.files/f64.png" width="91" height="19">&nbsp;и координаты
+векторов нового базиса <img src="img/lec5.files/f65.png" width="266" height="25">. Найти координаты вектора <b><i>а</i></b>
+в новом базисе <img src="img/lec5.files/f66.png" width="82" height="27">.</p>
+
+<p><i>Решение</i>.
+Выпишем матрицу перехода от старого базиса к новому и найдём обратную к ней:</p>
+
+<p><img src="img/lec3.files/image360.gif" border="0" height="79" width="109">,&nbsp; <sub><img src="img/lec3.files/image361.gif" border="0" height="79" width="160">.</p>
+
+<p>Координаты
+вектора в новом базисе:</p>
+
+<p><img src="img/lec3.files/image362.gif" border="0" height="79" width="355">.</p>
+
+<br>
+<a name=5 class="anchor"></a>
+
+<h3>ЗАДАЧИ К ЧАСТИ 2 (для самостоятельного решения)</h3>
+<br>
+
+<table class="MsoNormalTable" style="width: 477pt; margin-left: 5.4pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="636">
+ <tbody><tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p>2.1.</p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти модуль вектора <img src="img/lec3.files/image363.gif" border="0" height="20" width="87">, если&nbsp; <img src="img/lec3.files/image364.gif" border="0" height="31" width="195">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p>2.2.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти длину вектора&nbsp; <img src="img/lec3.files/image365.gif" border="0" height="24" width="91">&nbsp;&nbsp;если&nbsp; <img src="img/lec3.files/image366.gif" border="0" height="48" width="215">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p class="MsoNormal">2.3.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p style="margin: 6pt 3.6pt 0.0001pt 0cm; text-align: justify;">Вычислить <img src="img/lec3.files/image367.gif" border="0" height="23" width="61">, если <img src="img/lec3.files/image368.gif" border="0" height="23" width="296">&nbsp;<img src="img/lec3.files/image369.gif" border="0" height="48" width="96">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p class="MsoNormal">2.4.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти площадь параллелограмма построенного на
+ векторах&nbsp; <img src="img/lec3.files/image370.gif" border="0" height="20" width="57">&nbsp;и&nbsp;
+ <img src="img/lec3.files/image371.gif" border="0" height="20" width="56">,
+ где&nbsp; <img src="img/lec3.files/image372.gif" border="0" height="48" width="240">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p class="MsoNormal">2.5.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p class="MsoNormal">Найти площадь треугольника&nbsp;
+ <i>АВС</i>, если <img src="img/lec3.files/image373.gif" border="0" height="28" width="243">; <img src="img/lec3.files/image374.gif" border="0" height="23" width="55"><img src="img/lec3.files/image375.gif" border="0" height="48" width="92">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p>2.6.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти&nbsp; <img src="img/lec3.files/image376.gif" border="0" height="24" width="148">, если <img src="img/lec3.files/image377.gif" border="0" height="23" width="183">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p>2.7.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Вычислить площадь треугольника, построенного на
+ векторах <img src="img/lec3.files/image378.gif" border="0" height="20" width="51">и
+ <img src="img/lec3.files/image379.gif" border="0" height="20" width="60">,
+ где&nbsp; <img src="img/lec3.files/image380.gif" border="0" height="23" width="81">,
+ <img src="img/lec3.files/image381.gif" border="0" height="47" width="87">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p class="MsoNormal">2.8.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Разложить
+ вектор <img src="img/lec3.files/image382.gif" border="0" height="16" width="13">&nbsp;в
+ базисе <img src="img/lec3.files/image383.gif" border="0" height="24" width="68">,
+ если <img src="img/lec3.files/image384.gif" border="0" height="20" width="107">;&nbsp;
+ <img src="img/lec3.files/image385.gif" border="0" height="20" width="69">; <img src="img/lec3.files/image386.gif" border="0" height="24" width="89">;&nbsp; <img src="img/lec3.files/image387.gif" border="0" height="20" width="96">,&nbsp; где&nbsp; <img src="img/lec3.files/image388.gif" border="0" height="23" width="43">&nbsp;-
+ некомпланарны.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p class="MsoNormal">2.9.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Векторы
+ <img src="img/lec3.files/image389.gif" border="0" height="31" width="135">&nbsp;и
+ <img src="img/lec3.files/image390.gif" border="0" height="31" width="127">&nbsp;ортогональны.
+ Найти &#945;.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.10.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Векторы
+ <img src="img/lec3.files/image391.gif" border="0" height="31" width="143">&nbsp;и
+ <img src="img/lec3.files/image392.gif" border="0" height="31" width="95">&nbsp;ортогональны.
+ Найти &#945;.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.11.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>В
+ треугольнике <img src="img/lec3.files/image393.gif" border="0" height="21" width="45">&nbsp;<img src="img/lec3.files/image394.gif" border="0" height="31" width="75">, <img src="img/lec3.files/image395.gif" border="0" height="33" width="105">, <img src="img/lec3.files/image396.gif" border="0" height="33" width="119">. Найти координаты точки <i>С</i>.</span></p>
+
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.12.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>В
+ параллелограмме <img src="img/lec3.files/image397.gif" border="0" height="21" width="59">&nbsp;<img src="img/lec3.files/image398.gif" border="0" height="33" width="117">, <img src="img/lec3.files/image399.gif" border="0" height="33" width="123">, <img src="img/lec3.files/image400.gif" border="0" height="31" width="99">. Найти сумму координат точки <img src="img/lec3.files/image401.gif" border="0" height="21" width="19">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.13.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Даны
+ четыре точки: <img src="img/lec3.files/image402.gif" border="0" height="25" width="92">, <img src="img/lec3.files/image403.gif" border="0" height="25" width="73">, <img src="img/lec3.files/image404.gif" border="0" height="25" width="93">, <img src="img/lec3.files/image405.gif" border="0" height="25" width="92">.&nbsp; Найти проекцию вектора <img src="img/lec3.files/image406.gif" border="0" height="28" width="40">&nbsp;на <img src="img/lec3.files/image407.gif" border="0" height="28" width="41">.</span></p>
+ </td>
+ </tr>
+</tbody></table>
+
+<table class="MsoNormalTable" style="width: 477pt; margin-left: 5.4pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="636">
+ <tbody><tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.14.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти
+ угол между диагоналями параллелограмма, построенного на векторах&nbsp; <img src="img/lec3.files/image408.gif" border="0" height="24" width="100">&nbsp;и&nbsp;&nbsp; <img src="img/lec3.files/image409.gif" border="0" height="24" width="103">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.15.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти
+ угол между векторами: <img src="img/lec3.files/image410.gif" border="0" height="20" width="87">, <img src="img/lec3.files/image411.gif" border="0" height="24" width="120">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.16.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Разложить
+ вектор <img src="img/lec3.files/image412.gif" border="0" height="31" width="84">&nbsp;по
+ базису <img src="img/lec3.files/image413.gif" border="0" height="31" width="87">&nbsp;и
+ <img src="img/lec3.files/image414.gif" border="0" height="31" width="97">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.17.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Разложить
+ вектор <img src="img/lec3.files/image415.gif" border="0" height="31" width="88">&nbsp;по
+ базису <img src="img/lec3.files/image416.gif" border="0" height="31" width="88">&nbsp;и
+ <img src="img/lec3.files/image417.gif" border="0" height="31" width="73">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">2.18.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти координаты вектора <img src="img/lec3.files/image418.gif" border="0" height="20" width="87">в базисе&nbsp; <img src="img/lec3.files/image419.gif" border="0" height="28" width="200">&nbsp;<img src="img/lec3.files/image420.gif" border="0" height="28" width="81">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">2.19.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Убедиться в том, что векторы&nbsp; <img src="img/lec3.files/image421.gif" border="0" height="28" width="95">; <img src="img/lec3.files/image422.gif" border="0" height="28" width="199">образуют базис и
+ найти координаты вектора <img src="img/lec3.files/image423.gif" border="0" height="24" width="105">&nbsp;&nbsp;в этом базисе.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">2.20.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти&nbsp; координаты&nbsp;&nbsp; <img src="img/lec3.files/image424.gif" border="0" height="24" width="84">&nbsp;&nbsp;в&nbsp; базисе&nbsp; векторов&nbsp;&nbsp;&nbsp; <img src="img/lec3.files/image425.gif" border="0" height="24" width="93">,&nbsp;&nbsp; <img src="img/lec3.files/image426.gif" border="0" height="24" width="89">, <img src="img/lec3.files/image427.gif" border="0" height="24" width="80">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">2.21.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти
+ векторное произведение <img src="img/lec3.files/image428.gif" border="0" height="24" width="72">, где <i>А</i>(–1;1;3), <i>В</i>(2;0;1), <i>С</i>(1;1;0),
+ </span><i>D</span></i>(3;1;2).</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm; text-align: justify;">2.22.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти <img src="img/lec3.files/image429.gif" border="0" height="24" width="139">, если <img src="img/lec3.files/image430.gif" border="0" height="24" width="227">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm; text-align: justify;">2.23.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти проекцию вектора <img src="img/lec3.files/image431.gif" border="0" height="24" width="91">&nbsp;на вектор <img src="img/lec3.files/image432.gif" border="0" height="24" width="196">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm; text-align: justify;">2.24.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти <img src="img/lec5.files/f2_24.png" width="427" height="23"></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm; text-align: justify;">2.25.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти:<img src="img/lec5.files/f2_25.png" width="472" height="27" align="absmiddle"></span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.26.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Найти
+ объем пирамиды, построенной на векторах <img src="img/lec3.files/image437.gif" border="0" height="31" width="100">, <img src="img/lec3.files/image438.gif" border="0" height="31" width="103">&nbsp;и <img src="img/lec3.files/image439.gif" border="0" height="31" width="97">.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.27.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>При
+ каком значении <img src="img/lec3.files/image440.gif" border="0" height="16" width="17">&nbsp;векторы <img src="img/lec3.files/image441.gif" border="0" height="24" width="111">;<img src="img/lec3.files/image442.gif" border="0" height="20" width="87">;<img src="img/lec3.files/image443.gif" border="0" height="24" width="103"> будут компланарны .</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 36pt;" valign="top" width="48">
+ <p style="margin-right: -5.4pt;">2.28.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 441pt;" valign="top" width="588">
+ <p>Даны
+ векторы <img src="img/lec3.files/image444.gif" border="0" height="31" width="87">,
+ <img src="img/lec3.files/image445.gif" border="0" height="31" width="113">&nbsp;и
+ <img src="img/lec3.files/image446.gif" border="0" height="31" width="96">.
+ Найти двойные векторные произведения <img src="img/lec5.files/f2_28.png" width="180" height="26"></span></p>
+ </td>
+ </tr>
+</tbody></table>
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl4.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl6.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

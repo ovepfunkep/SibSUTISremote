@@ -1,0 +1,967 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 11. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 5. КРИВЫЕ ВТОРОГО ПОРЯДКА</h3>
+<h3>§11. Кривые второго порядка</h3>
+<a href="#1" class=punkt>11.1. Эллипс</a><br>
+<a href="#2" class=punkt>11.2. Гипербола</a><br>
+<a href="#3" class=punkt>11.3. Парабола</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§11. КРИВЫЕ ВТОРОГО ПОРЯДКА</h3>
+<a name=1 class="anchor"></a>
+
+<h3>11.1. Эллипс</h3>
+<p>Эллипсом называется кривая, имеющая в некоторой прямоугольной
+системе координат уравнение</p>
+<p><img src="img/lec6.files/image035.gif" height="53" width="96">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.2)</p>
+<p>Здесь <span lang="EN-US">a</span><span lang="EN-US"> </span><span style="font-style: normal;">и</span>
+<span lang="EN-US">b</span><span lang="EN-US">
+</span><span style="font-style: normal;">–
+некоторые положительные</span> <span style="font-style: normal;">величины; само
+уравнение называется </span>каноническим уравнением эллипса<span style="font-style: normal;">, а систему координат, в которой
+уравнение имеет этот
+вид, мы будем называть </span>канонической<span style="font-style: normal;">.</span></p>
+<p><span style="font-style: normal;">Выясним
+геометрический смысл параметров </span><span lang="EN-US">a</span><span lang="EN-US"> </span><span style="font-style: normal;">и</span> <span lang="EN-US">b</span><span style="font-style: normal;">, а также все существенные
+свойства этой кривой. </span></p>
+<p><img src="img/lec6.files/image036.gif" align="left" height="30" width="42"><i>Область определения
+переменных</i> <i>и
+параметры эллипса</i></p>
+<p>Заметим,
+что каждое из
+двух слагаемых левой части уравнения (10.2) не превосходит единицы,
+поскольку
+их сумма (а они оба положительны) равна единице:</p>
+<p><img src="img/lec6.files/image037.gif" align="left" height="231" width="307"><img style="width: 132px; height: 48px;" alt="" src="img/f11_000.png"></p>
+<p>отсюда найдем, что для всех точек эллипса:</span></p>
+<p><img src="img/lec6.files/image040.gif" height="19" width="87">,
+<img src="img/lec6.files/image041.gif" height="24" width="87"></sub>. &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; (10.3)</span></p>
+<p>Таким
+образом, эллипс – <i>ограниченная фигура</i>, целиком
+лежащая внутри прямоугольника,
+определяемого неравенствами (10.3) (рис.5.2). </span></p>
+<p>Для определенности будем считать,
+что <img src="img/lec6.files/image042.gif" height="21" width="44">. Отрезки <img src="img/lec6.files/image043.gif" height="25" width="39">&nbsp;и
+<img src="img/lec6.files/image044.gif" height="25" width="39">&nbsp;&nbsp;называют
+соответственно <i>большой</i>
+и <i>малой осями</i> эллипса; их длины равны
+соответственно 2</span><i><span style="font-size: 12pt;" lang="EN-US">a</span></i>
+и 2</span><i><span style="font-size: 12pt;" lang="EN-US">b</span></i>. Числа </span><i><span style="font-size: 12pt;" lang="EN-US">a</span></i> и </span><i><span style="font-size: 12pt;" lang="EN-US">b</span></i>&nbsp;
+часто называют большой и малой <i>полуосями</i> эллипса.
+Концы большой и малой
+осей эллипса – точки <img src="img/lec6.files/image045.gif" height="25" width="20">,
+<img src="img/lec6.files/image046.gif" height="25" width="23">, <img src="img/lec6.files/image047.gif" height="25" width="20">,
+<img src="img/lec6.files/image048.gif" height="25" width="23">&nbsp;– называют его <i>вершинами</i>.
+Точка <i>О –</i> <i>центр</i> эллипса.</span></p>
+<p><img src="img/lec6.files/image049.gif" align="left" height="30" width="42"><i>Симметрии
+эллипса</span></i></p>
+<p>Уравнение (10.2) сохраняет вид, если заменить <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;на <img src="img/lec6.files/image051.gif" height="16" width="28">&nbsp;или <img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;на
+<img src="img/lec6.files/image053.gif" height="20" width="29">&nbsp;(поскольку </span><i>x</span></i> и </span><i>y</span></i><span style="font-size: 12pt;" lang="EN-US"> </span>входят в
+уравнение лишь во второй степени). Из этого следует, что если на
+эллипсе лежит
+некоторая точка&nbsp;<img style="width: 79px; height: 22px;" alt="" src="img/fMx0_y0.png">,
+то одновременно с нею на эллипсе лежат и три точки&nbsp;</span><img style="width: 201px; height: 24px;" alt="" src="img/f11_001.png">&nbsp;и </span><img style="width: 111px; height: 24px;" alt="" src="img/f11_002.png">,
+симметричные с точкой <i>М</i>
+соответственно относительно оси </span><i><span style="font-size: 12pt;" lang="EN-US">Ox</span></i> , оси </span><i><span style="font-size: 12pt;" lang="EN-US">Oy</span></i>
+и начала координат (рис.5.3). Это означает, что эллипс имеет оси
+координат
+своими осями симметрии и поэтому для его построения достаточно
+построить его
+дугу, лежащую, например, в </span><span style="font-size: 12pt;" lang="EN-US">I</span> четверти, и затем отразить её относительно координатных осей.</span></p>
+<p><img src="img/lec6.files/image058.gif" align="right" height="187" width="320">Уравнение этой дуги получим,
+разрешая уравнение (10.2) относительно </span><i><span style="font-size: 12pt;" lang="EN-US">y</span></i>:</span></p>
+<p><img src="img/lec6.files/image059.gif" height="49" width="124"></sub>,
+<img src="img/lec6.files/image060.gif" height="20" width="72"></sub>.</span></p>
+<p><span style="font-style: normal;">Таким образом,
+эллипс обладает двумя осевыми симметриями и одной центральной
+симметрией.</span></p>
+<p><img src="img/lec6.files/image061.gif" align="left" height="30" width="42">Фокусы и характеристическое
+свойство эллипса</p>
+<p><i>Сумма расстояний от любой точки
+эллипса до двух
+фиксированных точек, называемых фокусами, есть величина постоянная,
+равная <img src="img/lec6.files/image062.gif" height="21" width="25">.</span></i></p>
+<p>Данное свойство является
+характеристическим для эллипса.
+Другими словами, <i>если для какой-либо кривой сумма расстояний
+от любой её
+точки до двух данных точек (фокусов) постоянна, то эта кривая – эллипс</i>.</span></p>
+<p>Докажем это последнее утверждение.</span></p>
+<p><img src="img/lec6.files/image063.gif" align="right" height="214" width="277">Обозначим фокусы через <img src="img/lec6.files/image064.gif" height="25" width="20">&nbsp;и
+<img src="img/lec6.files/image065.gif" height="25" width="21">, расстояние между ними через 2<i>с</i>,
+а сумму расстояний&nbsp; от произвольной точки кривой до фокусов –
+через 2<i>а</i>. Выберем
+систему координат <i>Оху,</i> так, чтобы фокусы <img src="img/lec6.files/image064.gif" height="25" width="20">&nbsp;и
+<img src="img/lec6.files/image065.gif" height="25" width="21">&nbsp;лежали на оси <i>Ох</i>,
+а начало
+координат совпадало с серединой отрезка <img src="img/lec6.files/image066.gif" height="25" width="37">.
+Другими словами, выберем <i>каноническую</i>
+систему координат. Тогда фокусы будут иметь следующие координаты: <img src="img/lec6.files/image067.gif" height="31" width="77">&nbsp;и
+<img src="img/lec6.files/image068.gif" height="31" width="80">.</p>
+<p>Пусть <img style="width: 73px; height: 31px;" alt="" src="img/lec6.files/image069.gif" align="middle">&nbsp;- произвольная точка кривой
+(рис.5.4). Тогда согласно условию, <img style="width: 136px; height: 27px;" alt="" src="img/lec6.files/image070.gif" align="middle">, т. е. </p>
+<p><img src="img/lec6.files/image071.gif" height="41" width="297">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.4)</p>
+<p>Преобразуем уравнение (10.4)
+к более простому виду. Перенесем
+второе слагаемое из левой в правую часть равенства и возведем обе части
+равенства в квадрат (одновременно раскрыв скобки):</p>
+<p><img src="img/lec6.files/image072.gif" height="36" width="552">.</span></p>
+<p>Перенося в полученном уравнении радикал в левую
+часть, а все остальные члены – в правую часть равенства, после
+приведения подобных членов и сокращения на общий множитель найдем:</p>
+<p><img src="img/lec6.files/image073.gif" height="36" width="249">.</span></p>
+<p>Снова возведем в квадрат обе части уравнения:</span></p>
+<p><img src="img/lec6.files/image074.gif" height="37" width="340">.</span></p>
+<p>Перенесем теперь члены с текущими координатами в левую часть равенства, а
+постоянные члены – в правую:</span></p>
+<p><img src="img/lec6.files/image075.gif" height="37" width="271"></sub>.</span></p>
+<p>Разделим
+левую и правую части на <img src="img/lec6.files/image076.gif" height="37" width="100">:</span></p>
+<p><img src="img/lec6.files/image077.gif" height="55" width="133">.</span></p>
+<p>Наконец, положив <img src="img/lec6.files/image078.gif" height="31" width="101">, окончательно
+получим</span></p>
+<p><img src="img/lec6.files/image002.gif" height="55" width="99">.</span></p>
+<p>Мы получили каноническое уравнение
+эллипса и, таким
+образом, утверждение доказано. Заметим, что все проведенные
+преобразования сохраняют
+равносильность уравнений. &nbsp;Следовательно, характеристическое
+свойство эллипса
+также можно считать доказанным. </span></p>
+<p>Это свойство лежит в основе хорошо
+известного способа
+вычерчивания эллипса. Зафиксировав концы нити длиной <img src="img/lec6.files/image062.gif" height="21" width="25">&nbsp;на
+расстоянии <img src="img/lec6.files/image079.gif" height="21" width="24">&nbsp;друг от
+друга, натяните её остриём карандаша. Водя карандашом и держа при этом нить натянутой,
+получите дугу эллипса.</span></p>
+<p>Подчеркнем
+еще раз связь фокусного расстояния с полуосями эллипса </span></p>
+<p><img src="img/lec6.files/image080.gif" height="31" width="101">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.5)</span></p><br>
+<p><img src="img/lec6.files/image081.gif" align="left" height="30" width="42"><i>Эксцентриситет эллипса</span></i></p>
+<p>Форма эллипса зависит от величины соотношения <img src="img/lec6.files/image082.gif" height="48" width="17">&nbsp;длин
+его малой и большой полуосей: чем больше это соотношение, тем эллипс будет менее "сплющенным", менее
+сжатым; при <img src="img/lec6.files/image083.gif" height="20" width="44">&nbsp;эллипс,
+как легко установить по его уравнению </span>(10.2)</span>,</span> превращается в
+окружность. </span></p>
+<p>Таким образом, эллипс есть «сжатая» окружность.
+Степень сжатия по оси <img src="img/lec6.files/image084.gif" height="21" width="28">&nbsp;характеризуется
+коэффициентом <img src="img/lec6.files/image082.gif" height="48" width="17">.</p><img style="width: 383px; height: 210px; float: left;" alt="" src="img/p11_5_5.png" hspace="7"></p>
+
+
+<p>В качестве характеристики
+формы эллипса
+в аналитической геометрии чаще пользуются не отношением его полуосей, а
+другой
+величиной – отношением половины фокусного расстояния <i>с</i>
+к большой полуоси
+<i>а</i>, которое называют эксцентриситетом и
+обозначают&nbsp; буквой <i>е </i>или
+греческой буквой "эпсилон" (<img src="img/lec6.files/image086.gif" height="17" width="13">):</p>
+<p><img src="img/lec6.files/image087.gif" height="65" width="152">. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+(10.6)</span></p><br>
+<p>Так как <img src="img/lec6.files/image088.gif" height="20" width="71">,
+то эксцентриситет для различных эллипсов
+может меняться в пределах от 0 до 1:&nbsp;<img style="width: 66px; height: 23px;" alt="" src="img/f0_e_1.png" align="middle">;
+чем больше эксцентриситет, тем больше расстояние
+от центра эллипса до его фокусов и тем более сплющен эллипс; чем ближе
+эксцентриситет
+к нулю, тем больше форма эллипса приближается к окружности. Если
+положить <img src="img/lec6.files/image090.gif" height="21" width="43">, то эллипс
+превращается
+в окружность; если положить <img src="img/lec6.files/image091.gif" height="21" width="40">,
+эллипс превращается в свою собственную
+большую ось. На рис.5.5 представлены эллипсы с одинаковой малой осью и
+различными эксцентриситетами.</span></p>
+<p>Как известно, орбита любой планеты
+представляет собой эллипс, в одном из фокусов которого находится Солнце. Так, например,
+эксцентриситет орбиты Земли составляет 0,02. Наибольшим эксцентриситетом 0,25 обладает
+орбита Плутона. Более вытянутые орбиты комет имеют большие эксцентриситеты.
+Так, для орбиты
+одной из наиболее известных - кометы Галлея <img src="img/lec6.files/image092.gif" height="24" width="59">.</span></p><br>
+<p><img src="img/lec6.files/image093.gif" align="left" height="30" width="42"><i>Касательные и оптическое свойство эллипса</span></i></p>
+<p>Найдём уравнение касательной к эллипсу в некоторой его
+точке. Выбирая, как обычно, каноническую систему координат и учитывая, что
+касательная в точке <img src="img/lec6.files/image094.gif" height="31" width="87">&nbsp;к
+кривой, заданной уравнением <img src="img/lec6.files/image095.gif" height="25" width="91">,
+имеет вид</span></p>
+<p><img src="img/lec6.files/image096.gif" height="29" width="215">,</span></p>
+<p>найдём частные производные <img src="img/lec6.files/image097.gif" height="27" width="23">&nbsp;и
+<img src="img/lec6.files/image098.gif" height="29" width="23">, дифференцируя
+уравнение (3.12):</span></p>
+<p><img src="img/lec6.files/image099.gif" height="51" width="68">;
+<img src="img/lec6.files/image100.gif" height="51" width="69">.</span></p>
+<p>Тогда</span></p>
+<p><img src="img/lec6.files/image101.gif" height="52" width="244">.</span></p>
+<p>Учитывая,
+что точка <img src="img/lec6.files/image094.gif" height="31" width="87">&nbsp;лежит
+на эллипсе, т.е. <img src="img/lec6.files/image102.gif" height="55" width="108">,
+после несложных преобразований получим <i>уравнение касательной
+к эллипсу</i>,
+проведенной в точке <i>М</i>:</span></p>
+<p><img src="img/lec6.files/image103.gif" height="52" width="111">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.7)</span></p>
+<p><img src="img/lec6.files/image104.gif" align="left" height="231" width="269">Допустим, что эллипс обладает
+свойством отражать лучи света, падающие
+на него. <i>Если поместить источник света в одном из фокусов, то
+все лучи, отраженные
+от эллипса, сфокусируются в другом фокусе</i> (рис.5.6). </span></p>
+<p>Допустим, что луч света исходит из фокуса <img src="img/lec6.files/image105.gif" height="25" width="69">&nbsp;и
+отражается от эллипса
+в точке <img src="img/lec6.files/image094.gif" height="31" width="87">&nbsp;(то
+есть от касательной к эллипсу в этой точке). Используя решение задачи
+10 из п.7.3 §7 можно найти уравнение отраженного луча и убедиться в том, что
+фокус <img src="img/lec6.files/image106.gif" height="31" width="68">&nbsp;лежит на
+полученной прямой. </span></p>
+<p><img src="img/lec6.files/image107.gif" align="left" height="30" width="42"><i>Директрисы
+эллипса</span></i></p>
+<p>Две прямые, перпендикулярные большой оси эллипса и расположенные на
+расстоянии <img src="img/lec6.files/image108.gif" height="49" width="19">&nbsp;от его
+центра, называются <i>директрисами</i> эллипса.</span></p>
+<p><img src="img/lec6.files/image109.gif" align="left" height="227" width="340">Поскольку
+величина <img src="img/lec6.files/image110.gif" height="49" width="49">, то
+директрисы проходят вне эллипса, а уравнения директрис (в канонической
+системе координат) можно записать следующим образом:</span></p>
+<p><img src="img/lec6.files/image111.gif" height="49" width="63">.</span></p>
+<p>Обозначим
+через <i>р</i> расстояние от фокуса до соответствующей
+этому фокусу директрисы.
+Очевидно </span></p>
+<p><img src="img/lec6.files/image112.gif" height="57" width="255">.</span></p>
+<p>Докажем следующее свойство
+директрисы эллипса,
+отличного от окружности.</span></p>
+<p><i>Отношение расстояния </span></i><i><span style="font-size: 12pt;" lang="EN-US">r</span></i><i> от
+точки М эллипса до фокуса </span></i><i><span style="font-size: 12pt;" lang="EN-US">F</span></i><i> к расстоянию </span></i><i><span style="font-size: 12pt;" lang="EN-US">d</span></i><i> от этой
+точки до соответствующей директрисы равно эксцентриситету е этого
+эллипса.</span></i></p>
+<p>Для доказательства выберем
+каноническую систему
+координат (рис.5.7). Тогда </span></p>
+<p><img src="img/lec6.files/image113.gif" height="41" width="149">.</span></p>
+<p>Выразим величину <img src="img/lec6.files/image114.gif" height="31" width="24">&nbsp;из
+канонического уравнения эллипса и после
+несложных преобразований получим </span></p>
+<p><img src="img/lec6.files/image115.gif" height="65" width="273">.</span></p>
+<p>С другой стороны
+</span></p>
+<p><img src="img/lec6.files/image116.gif" height="49" width="148">.</span></p>
+<p>Таким образом, </p>
+<p><img src="img/lec6.files/image117.gif" height="49" width="48"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; (10.8)</p>
+<p>Свойство доказано для левой директрисы, однако
+нетрудно повторить вывод и для правой. Это свойство объясняет название
+данных прямых («директрисы» - <i>направляющие</i>). В самом деле,
+если заданы две директрисы и два фокуса, то эллипс полностью определен. Кстати, это
+означает, что доказанное свойство есть характеристическое свойство эллипса.
+Другими словами, геометрическое место точек, для которых отношение расстояния
+до данной точки к расстоянию до данной прямой есть величина постоянная, меньшая
+единицы, есть эллипс.</p><br>
+<p><img src="img/lec6.files/image118.gif" align="left" height="30" width="42">Окружность, как частный случай
+эллипса</p>
+<p>Эллипс превращается
+в окружность, если <img src="img/lec6.files/image119.gif" height="21" width="45">.
+В этом случае оба фокуса сливаются в одну точку – центр окружности.
+Полуоси становятся радиусами, эксцентриситет окружности равен нулю, а директрис
+не существует. Каноническое уравнение записывается в виде </span></p>
+<p><img src="img/lec6.files/image120.gif" height="31" width="101"></sub>.</span></p>
+Окружность
+имеет бесконечное множество симметрий. Действительно, всякая прямая,
+проходящая
+через центр окружности, является её осью симметрии. Окружность – самая
+симметричная фигура на плоскости.</span></p><br>
+<p><img src="img/lec6.files/image121.gif" align="left" height="30" width="42">
+<p><i>Полярное
+уравнение эллипса</span></i></p>
+<p>Наиболее просто выглядит полярное уравнение окружности
+радиуса </span><i><span style="font-size: 12pt;" lang="EN-US">R</span></i>. Если полюс поместить в её центр,
+то оно будет иметь вид </span></p>
+<p><img src="img/lec6.files/image122.gif" height="20" width="47">.</span></p>
+<p><img src="img/lec6.files/image123.gif" align="right" height="204" width="337"> Поместим теперь полюс в левый фокус
+эллипса, а полярную ось направим
+вдоль его большой оси (рис.5.8). Пусть <i>М</i>
+произвольная точка эллипса.
+Тогда согласно свойству 6, </span></p>
+<p><img src="img/lec6.files/image124.gif" height="60" width="75">,
+</span></p>
+<p>где
+<img src="img/lec6.files/image125.gif" height="31" width="43">&nbsp;- расстояние от
+точки <i>М </i>до левой директрисы. Так как <img src="img/lec6.files/image126.gif" height="31" width="72">,
+а <img src="img/lec6.files/image127.gif" height="31" width="145">, где <br>
+</span><span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966; – </span>полярный угол</span> точки <i>М</i>, то
+получим следующее выражение для <img src="img/lec6.files/image128.gif" height="15" width="13">:</span></p>
+<p><img src="img/lec6.files/image129.gif" height="53" width="112">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.9)</span></p>
+<p style="text-align: justify;">Соотношение
+(10.9) представляет собой полярное уравнение эллипса (отличного от
+окружности).</span></p><br>
+<p style="margin: 9pt 0cm 6pt; text-align: justify;"><img src="img/lec6.files/image130.gif" align="left" height="30" width="42"><i>Параметрические
+уравнения эллипса</span></i></p>
+<p>Во многих задачах удобно иметь дело
+с уравнением
+эллипса в параметрической форме. В качестве параметра используют угол
+поворота
+вокруг начала координат. Тогда параметрические уравнения эллипса
+запишутся в
+виде</span></p>
+<p><img style="width: 98px; height: 57px;" alt="" src="img/f11_003.png"><br>
+</span></p>
+<p><img src="img/lec6.files/image132.gif" align="right" height="292" width="207">Значению параметра <img src="img/lec6.files/image133.gif" height="21" width="40">&nbsp;соответствует
+правая вершина эллипса, значению
+<img src="img/lec6.files/image134.gif" height="19" width="41">&nbsp;– левая вершина.
+</span></p>
+<p><i>Замечание</i>.
+Рассмотрим каноническое
+уравнение эллипса (10.2), но при условии&nbsp;<img style="width: 45px; height: 20px;" alt="" src="img/f11_004.png">&nbsp;.
+Другими словами, поменяем местами большую
+и малую оси эллипса.</p>
+<p>Очевидно, в этом случае большая ось
+и фокусы этого эллипса
+лежат на оси </span><i><span style="font-size: 12pt;" lang="EN-US">Oy</span></i>, а малая ось – на оси </span><i><span style="font-size: 12pt;" lang="EN-US">Ox</span></i> (рис.5.9).
+Следует лишь помнить, что для такого эллипса имеют место равенства:</span></p>
+<p><img src="img/lec6.files/image136.gif" height="31" width="101">;&nbsp;
+&nbsp;<img src="img/lec6.files/image137.gif" height="49" width="47">.</span></p>
+<p>Координаты фокусов такого эллипса: <img src="img/lec6.files/image138.gif" height="25" width="67">&nbsp;и
+<img src="img/lec6.files/image139.gif" height="25" width="59">.</span></p>
+<p><i>Задача. </span></i>Найти
+простейшее уравнение эллипса и построить его, если его большая ось
+расположена
+на оси </span><i><span style="font-size: 13pt;" lang="EN-US">Ox</span></i><span style="font-size: 13pt;"> симметрично относительно начала координат и имеет
+длину <img src="img/lec6.files/image140.gif" height="20" width="61">, а
+эксцентриситет эллипса <img src="img/lec6.files/image141.gif" height="21" width="53">.</span></p>
+<p><span class="a2"><i>Решение</span></i></span>.
+Пользуясь формулой (3.16), находим <i>с</i>:</span></p>
+<p><img src="img/lec6.files/image142.gif" height="21" width="139">.</span></p>
+<p>Затем по формуле (3.17) определяем <img src="img/lec6.files/image143.gif" height="28" width="116">.
+Зная теперь </span><i><span style="font-size: 13pt;" lang="EN-US">a</span></i><span style="font-size: 13pt;">
+и </span><i><span style="font-size: 13pt;" lang="EN-US">b</span></i><span style="font-size: 13pt;">, получаем простейшее уравнение
+эллипса:</span></p>
+<p><img src="img/lec6.files/image144.gif" height="47" width="84">.</span></p>
+<br>
+<a name=2 class="anchor"></a>
+<h3>11.2. Гипербола</h3>
+<p><i>Гиперболой называется кривая, имеющая в некоторой прямоугольной
+системе координат уравнение </span></i></p>
+<p><img src="img/lec6.files/image145.gif" height="55" width="93">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.10)</p>
+<p>Здесь параметры a и b – произвольные положительные числа.
+Само уравнение называется
+каноническим уравнением гиперболы, а соответствующую систему координат
+будем называть канонической.</span></a></p>
+<p>Выясним геометрический смысл параметров a и b, а также все существенные
+свойства этой кривой. </span></p>
+<p><img src="img/lec6.files/image146.gif" align="left" height="30" width="42"><i>Область определения
+переменных</i> <i>и
+параметры гиперболы</i></p>
+<p>В отличие от эллипса
+гипербола – неограниченная кривая. Анализируя уравнение (10.10), можно
+заметить, что ордината <i>у </i>может принимать любые
+значения, а вот значения абсциссы
+<i>х </i>удовлетворяют неравенству&nbsp;<img style="width: 55px; height: 52px;" alt="" src="img/f11_005.png" align="middle">,
+откуда следует&nbsp;<img style="width: 53px; height: 27px;" alt="" src="img/f11_006.png" align="middle">.&nbsp;
+</p>
+<p><img style="width: 352px; height: 272px; float: left;" alt="" src="img/p11_5_10.png" hspace="10" vspace="7"> Таким
+образом, гипербола –
+неограниченная фигура, лежащая вне полосы&nbsp;<img style="width: 93px; height: 18px;" alt="" src="img/f11_007.png" align="middle">&nbsp;(рис.5.10).
+Следовательно, гипербола состоит из двух частей, называемых <i>ветвями</i>. Левая ветвь гиперболы расположена
+во <span lang="EN-US">II</span> и <span lang="EN-US">III</span> четвертях, правая –
+в <span lang="EN-US">I</span> и <span lang="EN-US">IV</span> четвертях.</p>
+<p>Точки <img src="img/lec6.files/image151.gif" height="31" width="80">&nbsp;и
+<img src="img/lec6.files/image152.gif" height="31" width="71">&nbsp;называются <i>вершинами</i>
+гиперболы, а
+расстояние между ними, равное <img src="img/lec6.files/image062.gif" height="21" width="25">,
+называется её <i>действительной осью</i>.
+Соответственно, величина <img src="img/lec6.files/image153.gif" height="16" width="16"> называется
+действительной полуосью, а
+величина <img src="img/lec6.files/image154.gif" height="21" width="15">&nbsp;– <i>мнимой</i>
+полуосью гиперболы.</p>
+
+<p><img src="img/lec6.files/image155.gif" align="left" height="29" width="42"><i>Симметрии
+гиперболы</span></i></a></p>
+<p>Так же
+как и для эллипса, оси координат служат осями
+симметрии гиперболы, так как в уравнении (10.10)
+переменные <i><span style="font-size: 12pt;" lang="EN-US">x</span></i> и </span><i><span style="font-size: 12pt;" lang="EN-US">y</span></i>
+входят лишь в четных степенях. Если на гиперболе лежит некоторая
+точка&nbsp;<img style="width: 74px; height: 25px;" alt="" src="img/f11_008.png" align="middle"></span>,
+то одновременно с нею
+на гиперболе (той или иной ветви её) лежат и три точки&nbsp;</span><img style="width: 89px; height: 23px;" alt="" src="img/f11_009.png" align="middle"></span>,
+</span><img style="width: 100px; height: 24px;" alt="" src="img/f11_010.png" align="middle"></span>&nbsp;и </span><img style="width: 110px; height: 22px;" alt="" src="img/f11_011.png" align="middle"></span>,
+симметричные с точкой <i>М</i>
+соответственно относительно оси </span><i><span style="font-size: 12pt;" lang="EN-US">Ox</span></i> , оси </span><i><span style="font-size: 12pt;" lang="EN-US">Oy</span></i>
+и начала координат. Поэтому достаточно построить дугу гиперболы,
+лежащую в </span><span style="font-size: 12pt;" lang="EN-US">I</span>
+четверти.</span></a></p>
+<p>Уравнение
+этой дуги получим, разрешая уравнение  (10.10)
+относительно <i><span style="font-size: 12pt;" lang="EN-US">y</span></i>:</span></a></p>
+<p><img src="img/lec6.files/image156.gif" height="49" width="124">,
+<img src="img/lec6.files/image157.gif" height="20" width="45">.&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+(10.11)</p>
+<p>Таким образом, гипербола
+как и эллипс обладает двумя осевыми симметриями и одной центральной
+симметрией. Заметим, что ось абсцисс пересекает гиперболу в двух точках (вершинах),
+а ось ординат
+не имеет с гиперболой общих точек и поэтому называется мнимой осью 
+гиперболы.</p>
+<p><img src="img/lec6.files/image158.gif" align="left" height="30" width="42">Фокусы и
+характеристическое свойство гиперболы</p>
+<p>Следующее свойство является характеристическим свойством
+гиперболы.</p>
+<p><i>Разность
+расстояний от любой точки гиперболы до двух
+фиксированных точек, называемых фокусами, взятая по абсолютной
+величине, есть
+величина постоянная, равная <img src="img/lec6.files/image062.gif" height="21" width="25">.</span></i></p>
+<p>Верно также и обратное утверждение: <i>если для
+какой-либо кривой разность расстояний от любой её точки до двух данных
+точек (фокусов), взятая по абсолютной величине, постоянна, то эта кривая –
+гипербола</i>.</p>
+<p>Доказательство этого утверждения весьма похоже на соответствующее доказательство
+характеристического свойства эллипса.</p>
+<p>Обозначим расстояние между фокусами <img src="img/lec6.files/image159.gif" height="25" width="20">&nbsp;и
+<img src="img/lec6.files/image160.gif" height="25" width="21">&nbsp;через <img src="img/lec6.files/image079.gif" height="21" width="24">&nbsp;и выберем каноническую систему
+координат (рис.5.11). Тогда координаты фокусов будут <img src="img/lec6.files/image161.gif" height="31" width="80">&nbsp;и
+<img src="img/lec6.files/image162.gif" height="31" width="71">.</p>
+<p><img src="img/lec6.files/image163.gif" align="left" height="268" width="375">Возьмем
+произвольную точку <img src="img/lec6.files/image069.gif" height="31" width="73">,
+лежащую на гиперболе. По определению гиперболы для точек кривой,
+лежащих в </span><span style="font-size: 12pt;" lang="EN-US">I</span>
+и </span><span style="font-size: 12pt;" lang="EN-US">IV</span>
+четвертях имеем:</span></p>
+<p><img src="img/lec6.files/image164.gif" height="27" width="136">,&nbsp;&nbsp;
+(10.12)</p>
+<p>а для точек, лежащих во </span><span style="font-size: 12pt;" lang="EN-US">II</span><span style="font-size: 12pt;"> и </span><span style="font-size: 12pt;" lang="EN-US">III</span>
+четвертях:</span></p>
+<p><img src="img/lec6.files/image165.gif" height="27" width="136">.&nbsp;&nbsp;(10.13)</p>
+<p>Заметим,
+что для гиперболы в отличие от эллипса <img src="img/lec6.files/image166.gif" height="21" width="47">&nbsp;(2<i>а</i> есть
+разность двух сторон треугольника <img src="img/lec6.files/image167.gif" height="25" width="52">,
+а 2<i>с</i> – его третья сторона). Выражая через координаты точек
+<img src="img/lec6.files/image159.gif" height="25" width="20">,
+<img src="img/lec6.files/image160.gif" height="25" width="21">&nbsp; и <img src="img/lec6.files/image168.gif" height="25" width="28"> &nbsp;длины
+отрезков <img src="img/lec6.files/image169.gif" height="27" width="41"> &nbsp;и <img src="img/lec6.files/image170.gif" height="27" width="44"> &nbsp;оба
+равенства  (10.12)  и  (10.13) можно
+записать в виде:</p>
+<p><img src="img/lec6.files/image171.gif" height="41" width="308">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.14)</p>
+<p>Производя над этим уравнением те же преобразования,
+что и над уравнением (10.4) в случае эллипса, мы в конечном счете
+придем к тому же самому уравнению (10.10):</p>
+<p><img src="img/lec6.files/image075.gif" height="37" width="271">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.15)</p>
+<p>в котором, однако, теперь <img src="img/lec6.files/image172.gif" height="31" width="92">.
+(Рекомендуется читателю произвести это
+преобразование самостоятельно.)</p>
+<p>Деля левую и правую части уравнения (10.15)  на <img src="img/lec6.files/image076.gif" height="37" width="100">&nbsp;и
+учитывая, что теперь
+<img src="img/lec6.files/image172.gif" height="31" width="92">, запишем
+результат в виде:</p>
+<p><img src="img/lec6.files/image173.gif" height="55" width="133">.</p>
+<p>Наконец,
+полагая <img src="img/lec6.files/image174.gif" height="31" width="101">,
+получим каноническое уравнение гиперболы:</p>
+<p><img src="img/lec6.files/image175.gif" height="55" width="97">.</p>
+<p>Выпишем ещё раз связь между фокусным расстоянием и полуосями гиперболы:</p>
+<p><img src="img/lec6.files/image177.gif" height="27" width="97">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>(10.16)</p><br>
+<p><img src="img/lec6.files/image176.gif" align="left" height="29" width="42"></p>
+<p><i>Асимптоты гиперболы</span></i></p>
+<p>Рассмотрим
+дугу гиперболы, расположенную в I четверти и описываемую уравнением (10.11). Эта
+кривая имеет наклонную асимптоту, уравнение <br>
+которой</a></span></p>
+<p><img src="img/lec6.files/image178.gif" height="49" width="65">.</p>
+<p>Для доказательства покажем, что разность между значениями ординат гиперболы
+и её асимптоты стремится к нулю при неограниченном возрастании аргумента <i>х</i>.</a></span></p>
+<p><img src="img/lec6.files/image179.gif" height="77" width="599">.</p>
+<p><img src="img/lec6.files/image180.gif" align="left" height="208" width="279">В силу
+симметрии гиперболы у нее есть и вторая асимптота: <img src="img/lec6.files/image181.gif" height="48" width="73">.
+</p>
+<p>Асимптоты гиперболы служат диагоналями так называемого
+<i>прямоугольника гиперболы</i>. Стороны этого
+прямоугольника образуют прямые <img src="img/lec6.files/image182.gif" height="25" width="57">,
+<img src="img/lec6.files/image183.gif" height="20" width="57">, центр его совпадает с центром
+гиперболы (рис.5.12). Прямоугольник гиперболы используют для построения
+этой
+кривой. Отметим на оси <img src="img/lec6.files/image084.gif" height="21" width="28">&nbsp;точки
+с координатами <img src="img/lec6.files/image184.gif" height="20" width="27">&nbsp;(вершины),
+на оси <img src="img/lec6.files/image185.gif" height="25" width="28">&nbsp;точки с
+координатами <img src="img/lec6.files/image186.gif" height="21" width="27">. Построим
+прямоугольник гиперболы, проведём в нём диагонали (асимптоты) и продолжим их во все
+стороны. Теперь построим ветви гиперболы, проходящие через вершины и стремящиеся
+к асимптотам.</p>
+<p>Заметим, что уравнения обеих асимптот можно записать в
+виде:</p>
+<p><img src="img/lec6.files/image187.gif" height="56" width="180">&nbsp;или
+<img src="img/lec6.files/image005.gif" height="55" width="99">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(10.17)</p>
+<p>Две гиперболы, у которых оси совпадают и равны, но
+вещественная ось одной служит мнимой осью другой и наоборот, называются
+<i>сопряженными</i>;
+асимптоты таких гипербол также совпадают (поскольку совпадают их осевые
+прямоугольники), но гиперболы располагаются в смежных углах между
+асимптотами.
+На рис.5.12 сопряженная гипербола изображена пунктиром.</a></span></p>
+<p>Нетрудно видеть, что если уравнением одной из
+сопряженных гипербол является уравнение (10.10):</p>
+<p><img src="img/lec6.files/image188.gif" height="55" width="99">,</p>
+<p>то уравнение второй будет иметь вид:</p>
+<p><img src="img/lec6.files/image189.gif" height="49" width="92">,
+или <img src="img/lec6.files/image190.gif" height="49" width="104">,</p>
+<p>поскольку меняются ролями оси <i><span style="font-size: 12pt;" lang="EN-US">Ox</span></i> и </span><i><span style="font-size: 12pt;" lang="EN-US">Oy</span></i> и полуоси гипербол <i>а</i>
+и </span><i><span style="font-size: 12pt;" lang="EN-US">b</span></i>.</span></p><br>
+<p><img src="img/lec6.files/image191.gif" align="left" height="30" width="42"><i>Эксцентриситет
+гиперболы</span></i></p>
+<p>Форма гиперболы зависит от угла наклона асимптоты к
+вещественной оси, т. е. от величины отношения <img src="img/lec6.files/image082.gif" height="48" width="17">:
+чем эта величина меньше, тем меньше угол между асимптотами, в котором заключена гипербола, и тем более сжата
+сама гипербола; чем больше величина <img src="img/lec6.files/image082.gif" height="48" width="17">,
+тем круче располагаются ветви гиперболы.</p>
+<p><img src="img/lec6.files/image192.gif" align="left" height="307" width="303">Но, так же как и для эллипса, в
+качестве характеристики формы гиперболы
+в аналитической геометрии пользуются не величиной отношения <img src="img/lec6.files/image082.gif" height="48" width="17">,
+а величиной <img src="img/lec6.files/image193.gif" height="48" width="17">, называемой <i>эксцентриситетом</i>
+гиперболы и обозначают той же буквой <i>е</i>, как и для
+эллипса:</p>
+<p><img src="img/lec6.files/image194.gif" height="65" width="152">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.18)</p>
+<p>Так как у гиперболы <img src="img/lec6.files/image166.gif" height="21" width="47">, то
+эксцентриситет гиперболы <img src="img/lec6.files/image195.gif" height="21" width="40">.
+Если острый угол
+наклона асимптоты к вещественной оси обозначен через <img src="img/lec6.files/image196.gif" height="21" width="20">,
+то</span></p>
+<p><img src="img/lec6.files/image197.gif" height="49" width="69"></p><br>
+<p>и, следовательно:</p>
+<p><img src="img/lec6.files/image198.gif" height="49" width="77">,</p>
+<p>т.е. эксцентриситет гиперболы <i><span style="font-size: 16pt;">е</span></i> равен величине, обратной косинусу угла наклона асимптоты к вещественной оси. </p>
+<p>На рис.5.13 изображены ветви гипербол с одинаковым фокусным расстоянием
+(т.е. с совпадающим центром и фокусом), но с разными эксцентриситетами. </p><br>
+<p><img src="img/lec6.files/image200.gif" align="left" height="29" width="42"><i>Равносторонняя гипербола</span></i></p>
+<p><img src="img/lec6.files/image199.gif" align="left" height="292" width="290"> Важным
+частным случаем гиперболы является <i>равносторонняя
+(равноосная) гипербола</i> – такая гипербола, у которой равны
+длины вещественной и мнимой полуосей: <img src="img/lec6.files/image201.gif" height="25" width="47">.</p>
+<p>Уравнение этой гиперболы имеет вид:</p>
+<p><img src="img/lec6.files/image202.gif" height="31" width="105">.</p>
+<p>У равносторонней гиперболы асимптоты перпендикулярны
+(рис.5.14), а эксцентриситет <img src="img/lec6.files/image203.gif" height="28" width="59">.
+Отметим, что у сопряженных гипербол эксцентриситеты <br>
+различные: <img src="img/lec6.files/image204.gif" height="49" width="56">, <img src="img/lec6.files/image205.gif" height="49" width="55">;
+<img src="img/lec6.files/image206.gif" height="27" width="55">&nbsp;(если только гиперболы не
+являются равносторонними).</p>
+<p>Рассмотрим равностороннюю гиперболу, имеющую уравнение </p>
+<p><img src="img/lec6.files/image207.gif" height="31" width="95">,</p>
+<p>и произведём поворот системы координат на 45° по часовой стрелке (рис.5.14).
+Зависимость новых координат <img src="img/lec6.files/image208.gif" height="31" width="57">&nbsp;от
+старых <img src="img/lec6.files/image209.gif" height="31" width="49">&nbsp;выражается
+формулами </p>
+<p><img src="img/lec6.files/image210.gif" height="101" width="140"></p>
+<p>Подставляя эти формулы в уравнение параболы, получим </p>
+<p><img src="img/lec6.files/image211.gif" height="49" width="229">,</p>
+<p>и после упрощения, </p>
+<p><img src="img/lec6.files/image212.gif" height="25" width="64">,
+т.е., <img src="img/lec6.files/image213.gif" height="25" width="51">, или, наконец, <img src="img/lec6.files/image214.gif" height="49" width="49">.</p>
+<p>Мы получили уравнение знакомой, «школьной» гиперболы.</p><br>
+<p><img src="img/lec6.files/image215.gif" align="left" height="30" width="42"><i>Касательные
+и оптическое свойство гиперболы</span></i></p>
+<p>Допустим, что источник света находится в одном из
+фокусов гиперболы. Тогда <i>лучи после зеркального отражения
+&nbsp;от гиперболы, кажутся исходящими из другого фокуса</i> (рис.5.15). </p>
+<p>В этом заключается <i>оптическое свойство</i> гиперболы.
+</p>
+<p>Выведем уравнение касательной, проведенной к гиперболе
+в произвольной её точке <img src="img/lec6.files/image216.gif" height="31" width="87">.
+Уравнение будет иметь вид</p>
+<p><img src="img/lec6.files/image217.gif" align="left" height="257" width="402"><img src="img/lec6.files/image218.gif" height="27" width="203">, где </p>
+<p><img src="img/lec6.files/image219.gif" height="51" width="100">&nbsp;и
+<img src="img/lec6.files/image220.gif" height="51" width="116"></p>
+<p>&nbsp;-коэффициенты,
+полученные дифференцированием уравнения (10.10) по <img src="img/lec6.files/image221.gif" height="16" width="15">&nbsp;и
+по <img src="img/lec6.files/image222.gif" height="20" width="16">. Учитывая, что </p>
+<p><img src="img/lec6.files/image223.gif" height="55" width="107">,</p>
+<p>получим <i>уравнение касательной к гиперболе</i>, проведенной в
+точке <img src="img/lec6.files/image216.gif" height="31" width="87">:</p>
+<p><img src="img/lec6.files/image103.gif" height="52" width="111">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(10.19)</p><br>
+<p><img src="img/lec6.files/image224.gif" align="left" height="30" width="42"><i>Директрисы гиперболы</span></i></p>
+<p><img src="img/lec6.files/image225.gif" align="left" height="306" width="288"> Две прямые, перпендикулярные действительной оси гиперболы и расположенные на
+расстоянии <img src="img/lec6.files/image108.gif" height="49" width="19">&nbsp;от
+его центра, называются <i>директрисами</i> гиперболы
+(рис.5.16). В канонической системе координат уравнения директрис (также как у эллипса):</p>
+<p> <img src="img/lec6.files/image111.gif" height="49" width="63">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(10.20)</p>
+<p> Очевидно,
+обе директрисы проходят между ветвями гиперболы, т.к. из условия <img src="img/lec6.files/image195.gif" height="21" width="40"> &nbsp;следует  <img src="img/lec6.files/image226.gif" height="49" width="48">.</p>
+<p> Имеет место следующее свойство директрис гиперболы,
+являющееся для неё характеристическим.</p>
+<p><i> Отношение расстояния </span></i><i><span style="font-size: 12pt;" lang="EN-US">r</span></i><i> от
+точки М гиперболы до фокуса </span></i><i><span style="font-size: 12pt;" lang="EN-US">F</span></i><i> к расстоянию </span></i><i><span style="font-size: 12pt;" lang="EN-US">d</span></i><i>
+от этой точки до отвечающей этому фокусу директрисы равно эксцентриситету е этой
+гиперболы.</span></i></p>
+<p>Доказательство этого свойства аналогично
+доказательству соответствующего свойства эллипса, что позволяет
+предоставить его читателю.</p><br>
+<p><img src="img/lec6.files/image130.gif" align="left" height="30" width="42"><i>Полярное
+уравнение гиперболы</span></i></p>
+<p>Схожесть свойств эллипса и гиперболы (несмотря на
+такую непохожесть самих кривых) подтверждается еще одним: сходством
+полярных уравнений.</p>
+<p>Для получения полярного уравнения гиперболы расположим
+полюс в один из фокусов (например, в правом <img src="img/lec6.files/image227.gif" height="20" width="20">),
+полярную ось направим вдоль действительной
+оси (рис.5.16). Пусть <i>е</i> – эксцентриситет, <i>р</i> – расстояние от фокуса
+<img src="img/lec6.files/image227.gif" height="20" width="20">&nbsp;до соответствующей
+директрисы гиперболы. Пусть <i>М</i> – произвольная точка,
+расположенная на правой ветви гиперболы, т.е. той, которая относится к выбранному
+фокусу. Тогда, в соответствии со свойством 8, </p>
+<p><img src="img/lec6.files/image124.gif" height="60" width="75"></sub>,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.21)</p>
+<p>где
+<img src="img/lec6.files/image125.gif" height="31" width="43">&nbsp;- расстояние
+от точки <i>М </i>до директрисы. Так как <img src="img/lec6.files/image126.gif" height="31" width="72">,
+а <img src="img/lec6.files/image127.gif" height="31" width="145">, где <span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966; – полярный угол точки <i>М</i>,
+то получаем следующее выражение для <img src="img/lec6.files/image128.gif" height="15" width="13">:</p>
+<p><img src="img/lec6.files/image129.gif" height="53" width="112">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(10.22)</p>
+<p>Для другой ветви гиперболы полярное уравнение имеет
+иной вид. Пусть точка <i>М </i>лежит на левой ветви
+гиперболы. Заметим, во-первых, что соотношение (10.21) верно и в этом случае. А так как теперь угол
+<span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966;&nbsp;– тупой, то выражение для <img src="img/lec6.files/image125.gif" height="31" width="43">&nbsp;будет
+таково:&nbsp; </p>
+<p><img src="img/lec6.files/image228.gif" height="31" width="156">.</p>
+<p>Тогда полярное уравнение левой ветви гиперболы имеет вид</p>
+<p><img src="img/lec6.files/image229.gif" height="53" width="112">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.23)</p><br>
+<p><img src="img/lec6.files/image230.gif" align="left" height="28" width="54"><i>Параметрические уравнения гиперболы</span></i></a></p>
+<p>Для описания гиперболы нередко используют
+параметрические уравнения этой кривой. Для этого применяются
+гиперболические функции </p>
+<p><img src="img/lec6.files/image231.gif" height="53" width="120">&nbsp;(гиперболический синус) и</p>
+<p><img src="img/lec6.files/image232.gif" height="53" width="123"></sub>&nbsp;(гиперболический косинус).</p>
+<p>Одно из
+тождеств, которому удовлетворяют эти функции
+(аналог основного тригонометрического тождества), имеет вид: <img src="img/lec6.files/image233.gif" height="27" width="129">. Оно позволяет
+записать <i>параметрические уравнения гиперболы</i>:</p>
+<p><img src="img/lec6.files/image234.gif" height="60" width="91">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.24)</p>
+
+<br>
+<a name=3 class="anchor"></a>
+<h3>11.3. Парабола</h3>
+<p>Третий канонический вид уравнения кривой второго
+порядка определяет параболу. </p>
+<p><i>Кривая,
+уравнение которой в некоторой прямоугольной системе координат имеет вид</i></span></p>
+<p><i><img src="img/lec6.files/image235.gif" height="35" width="81">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></i>(10.25)</span></p>
+<p><i>называется параболой.</span></i></p>
+<p>Здесь </span><i><span style="font-size: 15pt;">р</span></i><span style="font-size: 16pt;"> </span>– некоторое
+число, называемое <i>параметром параболы</i>, уравнение
+(10.25) называется <i>каноническим
+уравнением параболы</i>, а соответствующая система координат – <i>канонической</i>.</span></p><br>
+<p><img src="img/lec6.files/image236.gif" align="left" height="30" width="42"><i>Область
+определения переменных и параметр параболы</span></i></p>
+<p>Если
+параметр параболы положителен, т.е.&nbsp;<img style="width: 49px; height: 23px;" alt="" src="img/f11_012_pre.png" align="middle">,
+то и координата <i>х</i> может принимать
+только неотрицательные значения. Следовательно, кривая расположена в </span><span style="font-size: 12pt;" lang="EN-US">I</span> и </span><span style="font-size: 12pt;" lang="EN-US">IV</span>
+четвертях. Если же&nbsp;</span><img style="width: 47px; height: 21px;" alt="" src="img/f11_012.png" align="middle"></span>,
+то и&nbsp;</span><img style="width: 45px; height: 19px;" alt="" src="img/f11_013.png" align="middle"></span>, и
+парабола располагается во&nbsp;&nbsp; </span>II</span>&nbsp;
+и </span>III четвертях.
+</span></p>
+<p><img src="img/lec6.files/image240.gif" align="right" height="237" width="273">Точка <img src="img/lec6.files/image241.gif" height="31" width="63">&nbsp;называется
+<i>вершиной </i>параболы (рис.5.17).</span></p>
+<p>Будем
+далее полагать для определенности, что параметр
+положителен. </span></p><br>
+<p><img src="img/lec6.files/image242.gif" align="left" height="30" width="42"><i>Симметрии
+параболы</span></i></p>
+<p>У
+параболы только одна ось симметрии – ось абсцисс. Она
+называется также <i>осью параболы</i>. Если точка&nbsp;</span><img style="width: 79px; height: 25px;" alt="" src="img/f11_014.png" align="middle"></span>&nbsp;лежит
+на кривой, то и точка&nbsp;</span><img style="width: 91px; height: 22px;" alt="" src="img/f11_015.png" align="middle"></span>&nbsp;тоже
+лежит на кривой.
+Верхняя ветвь параболы имеет уравнение <img src="img/lec6.files/image243.gif" height="32" width="84">,
+нижняя&nbsp; <img src="img/lec6.files/image244.gif" height="32" width="95">.</span></p><br>
+
+<p><img src="img/lec6.files/image245.gif" align="left" height="30" width="42"><i>Фокус,
+директриса и характеристическое свойство параболы</span></i></p>
+<p>В
+канонической системе координат точка <img src="img/lec6.files/image246.gif" height="52" width="71">&nbsp;называется
+<i>фокусом</i>
+параболы, а прямая, имеющая уравнение <img src="img/lec6.files/image247.gif" height="49" width="64">,
+называется <i>директрисой</i> этой кривой.
+</span></p>
+<p><i>Расстояние
+от любой точки параболы до фокуса равно
+расстоянию от неё до директрисы.</span></i></p>
+<p>Свойство
+является характеристическим для параболы. Это
+означает, что <i>если для любой точки некоторой кривой
+расстояния от неё до
+фиксированной точки&nbsp; и до фиксированной прямой равны, то эта
+кривая – парабола</i>.</span></p>
+<p><img src="img/lec6.files/image248.gif" align="left" height="253" width="312">Рассмотрим
+уравнение (10.25) параболы в канонической системе координат<i>.</i>
+Преобразуем
+это уравнение следующим образом </span></p>
+<p><img src="img/lec6.files/image249.gif" height="48" width="257">.</span></p>
+<p>Отсюда
+получим (имея в виду, что <img src="img/lec6.files/image250.gif" height="21" width="44">&nbsp;и&nbsp;</span><img style="width: 49px; height: 23px;" alt="" src="img/f11_012_pre.png" align="middle"></span>):</span></p>
+<p><img src="img/lec6.files/image251.gif" height="60" width="187">.&nbsp; &nbsp; &nbsp; &nbsp;
+(10.26)</span></p>
+<p>Левая
+часть равенства (10.26) есть расстояние от точки <img src="img/lec6.files/image069.gif" height="31" width="73">&nbsp;до
+фокуса <img src="img/lec6.files/image227.gif" height="20" width="20">&nbsp;(рис.5.18),
+правая часть – расстояние от
+той же точки до директрисы. Свойство доказано. </span></p>
+<p>Равенство
+расстояний до фокуса и директрисы позволяет говорить, что парабола
+имеет эксцентриситет, равный единице.</span></p>
+<p>&nbsp;</span></p>
+<p><img src="img/lec6.files/image252.gif" align="left" height="30" width="42"><i>Хорды
+параболы</span></i></p>
+<p><img src="img/lec6.files/image253.gif" align="left" height="232" width="197">При
+построении параболы полезно помнить, что ордината
+точки <img src="img/lec6.files/image254.gif" height="20" width="20">&nbsp;параболы,
+лежащей над ее фокусом, равна параметру параболы <img src="img/lec6.files/image255.gif" height="20" width="17">&nbsp;(рис.5.19).
+В самом деле, при <img src="img/lec6.files/image256.gif" height="47" width="49">&nbsp;из
+уравнения параболы (10.25)
+находим:</span></p>
+<p><img src="img/lec6.files/image257.gif" height="47" width="129">,</span></p>
+<p>откуда <img src="img/lec6.files/image258.gif" height="23" width="59">.</span></p>
+<p>Таким
+образом, длина хорды параболы, проходящей через
+ее фокус перпендикулярно оси параболы, равна <img src="img/lec6.files/image259.gif" height="24" width="27">.</span></p>
+<br><br>
+<p><img src="img/lec6.files/image260.gif" align="left" height="29" width="42"><i>Касательные
+и оптическое свойство параболы</span></i></p>
+<p>Уравнение
+касательной к параболе получим, рассуждая также
+как в случае эллипса и гиперболы. Уравнение касательной в точке <img src="img/lec6.files/image261.gif" height="31" width="65">&nbsp;параболы
+можно записать в виде:</span></p>
+<p><img src="img/lec6.files/image262.gif" height="31" width="143">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.27)</span></p>
+<p><i>Лучи света, исходящие из фокуса параболы, после
+зеркального отражения от параболы образуют пучок, параллельный оси
+параболы</span></i>.
+Доказательство этого оптического свойства
+предоставим читателю.</span></p>
+<p>Заметим, что парабола обладает ещё и следующим
+замечательным свойством: <i>если источник света расположен в
+фокусе, то фронт,
+отраженной от параболы световой волны, есть прямая, перпендикулярная
+оси параболы</i>.</span></p>
+<p><img style="width: 275px; height: 285px;" alt="" src="img/p11_5_20.png"></span></p>
+<p>В самом деле, рассмотрим прямую,перпендикулярную 
+оси параболы, и, следовательно, параллельную её директрисе (рис.5.20). Пусть <i>Р</i>
+– произвольная точка этой прямой. Пусть <img src="img/lec6.files/image271.gif" height="20" width="37">&nbsp;-
+луч, приходящий в <i>Р</i> после отражения
+от параболы. Тогда&nbsp; отраженный луч <i>МР</i>&nbsp;
+параллелен оси параболы и, если <img src="img/lec6.files/image272.gif" height="20" width="20">&nbsp;-
+точка пересечения
+прямой <i>МР</i> с директрисой, то <img src="img/lec6.files/image273.gif" height="20" width="89"></sub>.
+Следовательно, <img src="img/lec6.files/image274.gif" height="20" width="184">&nbsp;и эта
+сумма не зависит от точки <i>М</i>.
+Это доказывает, что рассматриваемая прямая – фронт отраженной световой
+волны. </span></p><br>
+<p><img src="img/lec6.files/image275.gif" align="left" height="30" width="42"><i>Простейшие
+модификации</span></i>
+</span></p>
+<p>Повернув параболу на угол 90°, мы тем самым&nbsp; поменяем
+местами координаты <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и
+<img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;в уравнении (10.25)
+и оно примет вид:</span></p>
+<p><img src="img/lec6.files/image276.gif" height="27" width="73"></span>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.28)</span></p>
+<p><img src="img/lec6.files/image277.gif" align="left" height="255" width="289"></p>
+<p><img src="img/lec6.files/image278.gif" align="left" height="255" width="219">Если при этом <img src="img/lec6.files/image279.gif" height="25" width="63">,
+то уравнение параболы примет знакомый вид </span></p>
+<p><img src="img/lec6.files/image280.gif" height="31" width="53"></sub>.</span></p>
+<p>Вершиной
+этой параболы по-прежнему является начало координат,
+но осью её станет ось <img src="img/lec6.files/image281.gif" height="24" width="27">.
+Фокусом этой параболы будет точка <img src="img/lec6.files/image282.gif" height="31" width="80">;
+директрисой – прямая <img src="img/lec6.files/image283.gif" height="25" width="73">&nbsp;(рис.5.21).</span></p>
+<p>Нетрудно
+далее убедиться в том, что уравнения:</span></p>
+<p><img src="img/lec6.files/image284.gif" height="27" width="84"> &nbsp;&nbsp;и&nbsp;&nbsp;&nbsp;
+<img src="img/lec6.files/image285.gif" height="31" width="88"></span></p>
+<p>&nbsp;(в
+обоих случаях <img src="img/lec6.files/image286.gif" height="24" width="45">)
+также определяют параболы, которые от парабол, определяемых уравнениями
+(10.25)
+и (10.28), отличаются только тем, что они направлены в сторону,
+противоположную
+направлению соответствующих координатных осей: первая – вдоль
+отрицательной оси
+<img src="img/lec6.files/image287.gif" height="20" width="27">, вторая –
+вдоль отрицательной оси <img src="img/lec6.files/image281.gif" height="24" width="27">&nbsp;(см.
+пунктир на рис.5.21 и 5.22).</span></p>
+<p>Рекомендуем
+читателю самому найти координаты фокусов
+этих парабол и уравнения их директрис.</p><br>
+<p><img src="img/lec6.files/image288.gif" align="left" height="30" width="42"><i>Подобие
+парабол</span></i></p>
+<p><img src="img/lec6.files/image289.gif" align="right" height="244" width="231"><i>Любые две параболы подобны друг
+другу.</span></i>
+</span></p>
+<p>Для
+доказательства этого свойства рассмотрим канонические уравнения двух
+парабол&nbsp; <img src="img/lec6.files/image290.gif" height="31" width="84">&nbsp;&nbsp;и&nbsp;
+<img src="img/lec6.files/image291.gif" height="31" width="85">. Пусть <img src="img/lec6.files/image292.gif" height="25" width="55">&nbsp;–
+уравнение произвольной прямой,
+проходящей через начало координат и пересекающей параболы в точках <img src="img/lec6.files/image293.gif" height="31" width="88">&nbsp;и
+<img src="img/lec6.files/image294.gif" height="31" width="95">. Координаты этих точек будут
+таковы:</span></p>
+<p><img src="img/lec6.files/image295.gif" height="51" width="73">;&nbsp;
+<img src="img/lec6.files/image296.gif" height="49" width="75">;&nbsp;&nbsp; <img src="img/lec6.files/image297.gif" height="51" width="77">;&nbsp;
+<img src="img/lec6.files/image298.gif" height="49" width="79"></sub>.</span></p>
+<p style="text-align: justify;">Из
+этих формул вытекает:</span></p>
+<p><img src="img/lec6.files/image299.gif" height="55" width="71">&nbsp;
+и&nbsp; <img src="img/lec6.files/image300.gif" height="55" width="72">,</span></p>
+<p>что
+и означает подобие парабол относительно их вершин.</span></p><br>
+<p><img src="img/lec6.files/image301.gif" align="left" height="30" width="42"><i>Полярное
+уравнение параболы</span></i></p>
+<p>Вывод
+полярного уравнения параболы полностью повторяет
+вывод такого уравнения для эллипса. Если полюс находится в фокусе, а
+полярная
+ось направлена вдоль оси параболы, то её полярное уравнение примет вид:</span></p>
+<p><img style="width: 107px; height: 46px;" alt="" src="img/f11_10_29.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.29)</span></p>
+<p>Значение
+<img style="width: 45px; height: 21px;" alt="" src="img/f11_016.png"> соответствует вершине
+параболы.</span></p>
+
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl10.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl12.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

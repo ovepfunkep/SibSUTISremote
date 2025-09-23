@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 6. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+  <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3><a href="#">6. Функции</a></h3>
+<a href="#1" class=punkt>6.1. Основные сведения</a><br>
+<a href="#2" class=punkt>Контрольные вопросы</a><br>
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>6.1. Основные сведения</h3>
+<P>Часто в программе требуется повторить определенную последовательность
+ операторов в разных частях программы. Для того, чтобы описывать эту последовательность
+ один раз, а применять многократно, в языках программирования применяются
+ подпрограммы. Подпрограмма - автономная часть программы, выполняющая определенный
+ алгоритм и допускающая обращение к ней из различных частей общей программы.
+ </p>
+<P>В языке Си существует один вид подпрограмм - функции.
+ Каждая программа в своем составе должна иметь<B> </B>главную функцию main(),
+ служащую точкой входа в программу. Кроме функции main(), в программу может
+ входить произвольное число функций, выполнение которых инициализируется
+ вызовами из функции main(). Каждая функция по отношению к другой является
+ внешней. Для того, чтобы функция была доступной, необходимо, чтобы до
+ ее вызова о ней было известно компилятору. Форма записи функции:</P>
+<P>&lt;тип &gt; &lt;имя функции&gt;(&lt;формальные параметры&gt;){&lt;тело
+ функции &gt;}</P>
+<P>Если тип возвращаемого функцией значения не указан, то
+ подразумевается int. Если с именем функции не связан результат, то нужно
+ указать тип функции void. Параметры, записываемые в обращении к функции,
+ называются фактическими; параметры, указанные в описании функции - формальными.
+ Фактические параметры должны соответствовать формальным по количеству,
+ порядку следования и типу. Объекты, объявленные вне функции, действуют
+ в любой функции и называются глобальными. Объекты, объявленные в функции,
+ действуют только в ней и называются локальными. В теле функции обычно
+ присутствует оператор return &lt;выражение&gt;, определяющий возвращаемое
+ функцией значение. </P>
+<P>Все параметры функции, кроме массивов, передаются по
+ значению, т.е. внутри функции создаются локальные копии параметров. Если
+ необходимо передать саму переменную, а не её копию, то в функцию передаётся
+ адрес этой переменной. Таким образом, через параметры можно передавать
+ результат выполнения функции. То есть, параметры, с помощью которых результаты
+ должны передаваться из функции в точку вызова, описываются как указатели.
+ Вызов функции может быть оформлен в виде оператора, если с именем функции
+ не связано возвращаемое значение, или в виде выражения, если возвращаемое
+ значение связано с именем функции. </P>
+<P>Прототип функции может указываться до вызова функции
+ вместо описания функции для того, чтобы компилятор мог выполнить проверку
+ соответствия типов аргументов и параметров. Прототип функции по форме
+ такой же, как и заголовок функции. В конце него ставится “;”.</P>
+<P>Функции можно подключать с помощью директивы #include
+ &lt;имя файла&gt;. Такие файлы с функциями удобно использовать в диалоговых
+ программах с пользовательским меню, позволяющих выбрать один из режимов.</P>
+<P></P><P>&nbsp;</P>
+<P><B>Пример 1: </b>Функция с параметрами-значениями. Результат связан с
+ именем функции. В программе объявляется прототип функции, а сама функция
+ описывается ниже.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+int max(int,int); //Прототип функции
+
+void main()
+
+{int x,y,z;
+
+  printf(" input x,y ");
+
+  scanf("%d%d",&x,&y);
+
+  z=max(x,y); //Вызов функции с фактическими параметрами
+
+  printf("x=%d y=%d max=%d",x,y,z);
+
+  getch();
+
+}
+
+int max(int a ,int b) //Заголовок функции с формальными параметрами
+
+{int c;
+
+  if (a>b) c=a;
+
+  else c=b;
+
+  return c;
+
+}
+</pre>
+<P><B>Пример 2: </b>Функция с параметрами-указателями. Здесь передаются адреса фактических параметров, по которым и получаем результат. Функция меняет местами переменные x,y.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+void swap(float *, float *); // Прототип функции с параметрами - указателями
+
+main()
+
+{ float x,y;
+
+  printf("\n введите x,y ");
+
+  scanf("%f%f",&x,&y);
+
+  swap(&x,&y); // Передаём адреса переменных
+
+  printf("\n x=%4.2f y=%4.2f ",x,y);
+
+  getch();
+
+}
+
+void swap(float * a, float * b)
+
+{ float c;
+
+  c=*a; // *a - содержимое по адресу a
+
+  *a=*b;
+
+  *b=c;
+
+}
+
+</pre>
+<P><B>Пример 3: </b>Подключение файлов с функциями и создание меню.</P>
+<P>! Внимание! Следите за тем, чтобы константы, объявленные директивой #define,
+ не переобъявлялись в функциях.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include "lab3.c"
+
+#include "lab4.c"
+
+#include "lab5.c"
+
+main()
+
+{int nom;
+
+ while(1)
+
+  {clrscr();
+
+    printf("\n 1. Сумма ряда \n");
+
+    printf(" 2. Матрица \n");
+
+    printf(" 3. Строки \n");
+
+    printf(" 4. Выход \n");
+ 
+    scanf("%d",&nom);
+
+    switch(nom)
+
+   {
+
+      case 1:lab3();break;
+
+      case 2:lab5();break;
+
+      case 3:lab6();break;
+
+      case 4:return 0;
+
+      default:printf("Неверный режим");
+
+   }
+
+ }
+ 
+ getch();
+
+}
+</Pre>
+<P><B>Пример 4: </b>Передача в функцию массива с использованием указателя.
+ Результат – элементы массива возводятся в квадрат. Функция описывается
+ до вызова, поэтому прототип не объявляется. </P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+void quart(int n, float * x) // Можно void quart(int n, float x[])
+
+{int i;
+
+  for (i=0;i&lt;n;i++)
+
+     x[i]=x[i]*x[i];
+
+}
+
+main()
+
+{float z[]={1,2,3,4};
+
+  int j;
+
+  clrscr();
+
+  for (j=0; j&lt;4; j++)
+
+     printf(" %6.2f",z[j]);
+
+  quart(4,z);
+
+  for (j=0; j&lt;4; j++)
+
+      printf("\n %6.2f",z[j]);
+
+  getch();
+
+}
+</pre>
+<br>
+ <a name=2 class="anchor"></a>
+<h3>6.2. Контрольные вопросы</h3>
+<P></P>
+<P>1. Описание функции. Для чего объявляется прототип?</P>
+<P>2. Что такое формальные и фактические параметры?</P>
+<P>3. Как определяются локальные и глобальные параметры?</P>
+<P>4. Как можно передавать массив в функцию? </P>
+<P>5. Способы вызова функций. </P>
+<P>6. Как можно передать результат выполнения функции
+ ?</P>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec5.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec7.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

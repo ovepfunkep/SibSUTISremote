@@ -1,0 +1,973 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 2. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 1. ЭЛЕМЕНТЫ ЛИНЕЙНОЙ АЛГЕБРЫ</h3>
+<h3>§2. Матрицы</h3>
+<a href="#1" class=punkt>2.1. Понятие матрицы. Виды матриц</a><br>
+<a href="#2" class=punkt>2.2. Линейные операции над матрицами</a><br>
+<a href="#3" class=punkt>2.3 Умножение матриц</a><br>
+<a href="#4" class=punkt>2.4. Обращение матриц</a><br>
+<a href="#5" class=punkt>2.5. Матричная запись системы линейных уравнений и её решение с помощью обратной матрицы</a><br>
+<a href="#6" class=punkt>2.6. Элементарные преобразования матриц. Эквивалентность матриц</a><br>
+<a href="#7" class=punkt>2.7. Ранг матрицы</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§2. МАТРИЦЫ</h3>
+<a name=1 class="anchor"></a>
+ <h3>2.1. Понятие матрицы. Виды матриц.</h3>
+
+<p><i>Числовой матрицей</i> размерности <img src="img/lec2.files/image001.gif" height="16" width="40">&nbsp;(<i>m</i> и <i>n</i>
+– натуральные числа) называется таблица, состоящая из чисел, имеющая <i>m</i>
+строк и <i>n</i> столбцов:</p>
+
+<p><img style="width: 230px; height: 129px;" alt="" src="img/lec2.files/f01.png">.</p>
+
+<p> Индексированные
+величины <img src="img/lec2.files/image003.gif" height="27" width="117"> –
+элементы матрицы. Как и ранее, первый индекс есть номер строки, второй – номер
+столбца. Между индексами не ставятся никакие знаки препинания и, лишь в
+необходимых случаях – пробелы. Элементы матрицы также отделяются друг от друга
+пробелами. </p>
+
+<p> Будем
+обозначать матрицы заглавными латинскими буквами. Иногда для краткости будем
+записывать:</p>
+
+<p><img src="img/lec2.files/image004.gif" height="20" width="33"><img style="width: 39px; height: 29px;" alt="" src="img/lec2.files/image005.gif" align="middle">, <i>i</i><i> </i>= 1, 2, …, <i>m</i>;&nbsp;&nbsp;
+<i>j</i><i> </i>=
+1, 2, …, <i>n</i>;&nbsp; или, еще короче,&nbsp; <img style="width: 30px; height: 34px;" alt="" src="img/lec2.files/f02.png" align="middle">.</p>
+
+<p>Выделим
+некоторые наиболее часто встречающиеся виды матриц.</p>
+
+<p>1<i>. Квадратная матрица </i>– матрица, у которой
+число строк и столбцов совпадают.</p>
+
+<p>2. <i>Матрица-строка</i> – матрица, состоящая из одной
+строки:</p>
+
+<p><img src="img/lec2.files/image007.gif" height="27" width="133">.</p>
+
+<p>3. <i>Матрица-столбец</i> – матрица, состоящая из
+одного столбца:</p>
+
+<p><img src="img/lec2.files/image008.gif" height="107" width="65">.</p>
+
+<p>4. <i>Диагональная матрица </i>– квадратная матрица, у
+которой все элементы кроме, возможно, стоящих на главной диагонали, равны нулю:</p>
+
+<p><img src="img/lec2.files/image009.gif" height="105" width="173">.</p>
+
+<p>5. <i>Единичная матрица </i>– квадратная матрица, у
+которой диагональные элементы равны единице, а все&nbsp; остальные – нули.</p>
+
+<p><img src="img/lec2.files/image010.gif" height="104" width="145">.</p>
+
+<p>6. <i>Симметрическая матрица </i>– квадратная матрица, у которой элементы, расположенные симметрично относительно главной диагонали
+равны между собой:</p>
+
+<p><img style="width: 233px; height: 28px;" alt="" src="img/lec2.files/f03.png" align="middle">.</p>
+
+<p>7. <i>Нулевая матрица </i>– матрица, все элементы которой равны нулю: </p>
+
+<p><img style="width: 172px; height: 122px;" alt="" src="img/lec2.files/f04.png" align="top"></p>
+
+<p>8. <i>Треугольная матрица</i> – квадратная матрица,
+элементы которой расположенные ниже (выше) главной диагонали равны нулю:</p>
+
+<p><img style="width: 160px; height: 116px;" alt="" src="img/lec2.files/f05.png" align="middle"> или
+<img style="width: 161px; height: 113px;" alt="" src="img/lec2.files/f06.png" align="middle"><b>.</b></span></p>
+
+<p>Матрицы
+<i>A</i> и <i>B</i> </span>называются
+<i>равными</i>, если, во-первых, они имеют одинаковые размеры и, во-вторых, все
+элементы матрицы </span><i>A</span></i> равны соответствующим элементам матрицы <i>B</i>:
+<img style="width: 60px; height: 29px;" alt="" src="img/lec2.files/image017.gif" align="middle">, где<i>
+</i></span><i>i</span></i><i> </span></i>=
+1, 2, …, </span><i>m</span></i>; </span><i><span style="font-size: 12pt;" lang="EN-US">j</span></i><i> </span></i>=
+1, 2, …, </span><i>n</span></i>. </span></p>
+
+<p>Транспонирование матрицы </span></i>заключается в том, что элементы матрицы <sub><img style="width: 23px; height: 31px;" alt="" src="img/lec2.files/image018.gif" align="middle"></sub>&nbsp;и <sub><img style="width: 25px; height: 31px;" alt="" src="img/lec2.files/image019.gif" align="middle"></sub>&nbsp;меняются местами. Таким образом,
+транспонированная по отношению к данной матрице </span><i>A</span></i>
+– матрица <img style="width: 28px; height: 25px;" alt="" src="img/lec2.files/image020.gif" align="middle">, получается из матрицы <i>A</i>
+заменой её строк столбцами, с сохранением их порядка. Например:<img src="img/lec2.files/image021.gif" height="23" width="12"></p>
+
+<p><img src="img/lec2.files/image022.gif" height="79" width="83">,&nbsp;&nbsp; <img src="img/lec2.files/image023.gif" height="53" width="111">.</p>
+
+<p> Пусть
+дана квадратная матрица порядка <i>n</span></i>. Важной числовой характеристикой
+такой матрицы является её определитель, обозначаемый <img style="width: 85px; height: 20px;" alt="" src="img/lec2.files/f08.png">.</p>
+
+<p><img style="width: 510px; height: 127px;" alt="" src="img/lec2.files/f07.png"></p>
+
+<p>Квадратная
+матрица </span><i>A</span></i> называется <i>неособенной</i> (<i>невырожденной</i>),
+если её определитель отличен от нуля: <img style="width: 82px; height: 21px;" alt="" src="img/lec2.files/f09.png">.</p>
+
+<p> В
+противном случае (если <img style="width: 80px; height: 20px;" alt="" src="img/lec2.files/f10.png">) квадратную матрицу называют <i>особенной</i>
+(<i>вырожденной</i>).<br>
+<br>
+</p>
+<a name=2 class="anchor"></a>
+<h3>2.2. Линейные операции над матрицами</h3>
+
+<p> Определим
+основные алгебраические операции, производимые над матрицами. В первую очередь
+рассмотрим так называемые <i>линейные операции </i>–умножение матрицы на число
+и сложение матриц.</p>
+
+<p><b><i>Умножение матрицы на число</span></i></b></p>
+
+<p>Пусть
+дана матрица <img src="img/lec2.files/f11.png" align="middle" height="28" width="85">&nbsp;размерности
+<img src="img/lec2.files/image030.gif" height="16" width="44">. Пусть <span style="font-size: 12pt; font-family: Symbol;" lang="EN-US">a</span> - произвольное число. <i>Умножить </i>матрицу <i>A</i>  <i>на число </i> </span><span style="font-size: 12pt; font-family: Symbol;">a</span><i> </span></i>означает: все элементы матрицы </span><i>A</span></i>
+умножить на </span><span style="font-size: 12pt; font-family: Symbol;">a</span>:</span></p>
+
+<p><img src="img/lec2.files/f12.png" align="middle" height="30" width="208"></sub></span><i>,</i> где </span><i>
+i</span></i> =
+1, 2, …, </span><i>m</span></i>;&nbsp;&nbsp; </span><i>j</span></i> =
+1, 2, …, </span><i>n</span></i>.</span></p>
+
+<p>Очевидно,
+допустимо умножение любой матрицы на любое число.</span></p>
+
+<p><b><i>Сложение матриц</span></i></b></p>
+
+<p> Пусть
+даны две матрицы одинаковой размерности <sub><img src="img/lec2.files/image030.gif" height="16" width="44"></sub>&nbsp;</span></p>
+
+<p><img src="img/lec2.files/image033.gif" height="113" width="196">,&nbsp; <img src="img/lec2.files/image034.gif" height="113" width="191">.</p>
+
+<p><i>Суммой</i> матриц <i>A</i> и <i>B</i>
+называется матрица <img src="img/lec2.files/image035.gif">,
+элементы которой равны сумме соответствующих элементов матриц-слагаемых:</p>
+
+<p><img src="img/lec2.files/image035.gif" height="21" width="84"></sub>&nbsp;<sub><img src="img/lec2.files/image036.gif" height="17" width="24"></sub>&nbsp;<sub><img src="img/lec2.files/image037.gif" height="31" width="21"></sub>=<sub><img src="img/lec2.files/image038.gif" height="31" width="23"></sub>+ <sub><img src="img/lec2.files/image039.gif" height="31" width="21"></sub>,&nbsp; где<i> </i></span><i>i</i><i>
+</span></i>= 1, 2, …, </span><i>m</span></i>;&nbsp;&nbsp;
+</span><i>j</span></i><i> </span></i>=
+1, 2, …, </span><i>n</span></i>.</span></p>
+
+<p>Таким образом, </p>
+
+<p><img src="img/lec2.files/image040.gif" height="113" width="351">.</p>
+
+<p> Очевидно,
+складывать можно только матрицы одинаковой размерности,&nbsp; причём матрица-сумма
+имеет ту же размерность, что и матрицы-слагаемые.</span></p>
+
+<p> Операции
+сложения и умножения матриц на число подчиняются тем же общим алгебраическим
+законам, что и соответствующие операции над числами.</span></p>
+
+<p><i>Свойства
+линейных операций:</span></i></p>
+
+<p><img src="img/lec2.files/image041.gif" align="left" height="30" width="42"><i>Коммутативность сложения матриц</span></i>:<i>
+</i></span></p>
+
+<p><img src="img/lec2.files/f13.png" height="24" width="124">.</p>
+
+<p><img src="img/lec2.files/image043.gif" align="left" height="30" width="42"><i>Ассоциативность сложения матриц</span></i>:<i>
+</i></span></p>
+
+<p><img src="img/lec2.files/f14.png" height="27" width="220">.</p>
+
+<p><img src="img/lec2.files/image045.gif" align="left" height="30" width="42"><i>Коммутативность умножения на число</span></i>: <sub><img src="img/lec2.files/f15.png" height="18" width="106"></sub>.</span></p>
+
+<p><img src="img/lec2.files/image047.gif" align="left" height="30" width="42"><i>Ассоциативность
+относительно числового множителя: </span></i></p>
+
+<p><img src="img/lec2.files/f16.png" height="25" width="141">.</p>
+
+<p><img src="img/lec2.files/image049.gif" align="left" height="30" width="42"><i>Дистрибутивность умножения на число относительно сложения
+матриц</span></i>:</span></p>
+
+<p><img src="img/lec2.files/f17.png" height="22" width="176">&nbsp;.</span></p>
+
+<p>Для
+операции транспонирования матриц верно также свойство:</span></p>
+
+<p><img src="img/lec2.files/image051.gif" align="left" height="29" width="42"><i>Транспонирование суммы</span></i>: </span></p>
+
+<p><img src="img/lec2.files/f18.png" height="26" width="160">.</p>
+
+
+
+<p>Доказательства
+этих свойств предлагаем читателю в виде самостоятельного упражнения.</span></p>
+<br>
+<a name=3 class="anchor"></a>
+<h3>2.3. Умножение матриц</h3>
+
+<p>Пусть даны матрица <i>А </i>размерности <img src="img/lec2.files/image053.gif" height="17" width="48">&nbsp;и матрица <i>B</i>
+размерности <img src="img/lec2.files/image054.gif" height="23" width="40">: </p>
+
+<p><img src="img/lec2.files/image055.gif" height="113" width="476"></p>
+
+<p> <i>Произведением
+</i>матриц <i>A</span></i> и <i>B</i> называется матрица </span><i>C</span></i>, элемент <img src="img/lec2.files/image037.gif" height="31" width="21">&nbsp;которой равен сумме
+произведений элементов </span><i>i</span></i>-ой строки матрицы </span><i>A</span></i> на
+соответствующие элементы </span><i>j</span></i>-го столбца матрицы </span><i>B</span></i> </span></p>
+
+<p><img src="img/lec2.files/f19.png" height="30" width="536"></p>
+<p>Таким
+образом:</span></p>
+
+<p><img src="img/lec2.files/f20.png" height="59" width="448"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2.1)</span></p>
+
+<p>По
+этому определению, перемножать можно только те матрицы, у которых размеры
+согласованы, т.е. <i>число столбцов матрицы-первого сомножителя равно числу
+строк матрицы-второго сомножителя.</i> При этом у матрицы-произведения столько
+же строк, сколько у первой матрицы и столько же столбцов, сколько у второй. </span></p>
+
+<p>Например,
+для вычисления элемента <sub><img src="img/lec2.files/image060.gif" align="middle"></sub>&nbsp;изобразим схематично умножение
+соответствующих элементов:</span>&nbsp;</span></p>
+
+<p><img src="img/lec2.files/f21.png" height="118" width="236"></p>
+
+<p><i>Пример</span></i>.</span></p>
+
+<p><img src="img/lec2.files/image062.gif" height="79" width="293"></sub>.</span></p>
+
+<p> Операция
+умножения матриц не обладает коммутативностью. Это вытекает из самого
+определения операции, так как при перестановке сомножителей размеры могут стать
+не согласованными. Например, <sub><img src="img/lec2.files/image063.gif" align="middle" height="27" width="133"></sub>. Однако, произведение <sub><img src="img/lec2.files/image064.gif" align="middle" height="27" width="80"></sub>&nbsp;не имеет смысла.</span></p>
+
+<p>Матрицы
+<i>А</i> и <i>В</i> называются <i>перестановочными </i>или <i>коммутирующими</i>,
+если для них выполняется условие: <img src="img/lec2.files/image065.gif" height="20" width="76"><i>. </i>Очевидно, такими могут быть только
+квадратные матрицы.</p>
+
+<p>Нетрудно
+убедиться в том, что единичная матрица порядка <i>n</span></i>
+перестановочна с любой квадратной матрицей того же порядка, причем <sub><img src="img/lec2.files/image066.gif" height="20" width="109"></sub><i>.</i></span></p>
+
+<p>Итак,
+операция произведения матриц не подчиняется коммутативному закону. Можно
+доказать, что остальные два алгебраических закона – ассоциативность и
+дистрибутивность – остаются в силе при умножении матриц. Перечислим эти свойства
+(в предположении, что операции имеют смысл).</span></p>
+
+<p><i>Свойства произведения
+матриц</span></i>:</span></p>
+
+<p><img src="img/lec2.files/image067.gif" align="left" height="30" width="42"><i> Ассоциативность произведения</span></i>:
+<sub><img src="img/lec2.files/image068.gif" height="31" width="176"></sub>;</span></p>
+
+<p><img src="img/lec2.files/image069.gif"><i>Дистрибутивность произведения относительно сложения:</i></p>
+
+<p><i><img src="img/lec2.files/image070.gif"> <img src="img/lec2.files/image071.gif" height="31" width="201">&nbsp;(<i>левая дистрибутивность</i>); <sub><img src="img/lec2.files/image072.gif" height="31" width="201"></sub>&nbsp;(<i>правая дистрибутивность</i>).</i></p>
+
+<p><i><i>Ассоциативность произведения относительно умножения на
+число</span></i>:</span></i></p>
+
+<p><i><sub><img src="img/lec2.files/image073.gif" height="31" width="239"></sub>.</i></span></p>
+
+<p><i>Для
+операции транспонирования матриц верно также свойство:</i></span></p>
+
+<p><i><img src="img/lec2.files/image074.gif"><i> Транспонирование произведения</i>: <img src="img/lec2.files/image075.gif" align="middle" height="36" width="144"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2.2)</i></p>
+
+<p>Докажем
+это последнее равенство. Допустим, что размерность матрицы <img src="img/lec2.files/image076.gif" height="25" width="77">, матрицы <img src="img/lec2.files/image077.gif" height="25" width="73">. Тогда размерность произведения
+матриц <img src="img/lec2.files/image078.gif" height="25" width="93">, а
+транспонированной матрицы – <img src="img/lec2.files/image079.gif" height="21" width="37">. С другой стороны, размерности матриц <img src="img/lec2.files/image080.gif" height="25" width="28">&nbsp;и <img src="img/lec2.files/image020.gif" height="25" width="28">&nbsp;равны, соответственно, <img src="img/lec2.files/image081.gif" height="21" width="41">&nbsp;и <img src="img/lec2.files/image082.gif" height="17" width="45">, а их произведения <img src="img/lec2.files/image083.gif" height="23" width="40">. Итак, размерности
+матриц в правой и левой части равенства совпадают. Докажем равенство элементов.
+Введем обозначения: <img src="img/lec2.files/image084.gif" height="36" width="128">,
+<img src="img/lec2.files/image085.gif" height="39" width="169">&nbsp;и <img src="img/lec2.files/image086.gif" height="36" width="155">. По определению
+произведения матриц, <img src="img/lec2.files/image087.gif" align="middle" height="62" width="129">,
+тогда <img src="img/lec2.files/image088.gif" align="middle" height="62" width="119">. Но <img src="img/lec2.files/image089.gif" align="middle" height="62" width="175">, что и доказывает наше
+утверждение.</p>
+
+<p>Квадратные
+матрицы одного порядка всегда можно перемножать между собой. В этом случае
+выполняется свойство, приводимое без доказательства:</span></p>
+
+<p><img src="img/lec2.files/image090.gif"><i> Определитель произведения матриц равен произведению определителей
+сомножителей</i>.</p>
+
+<p><img src="img/lec2.files/image091.gif">.&nbsp;&nbsp;&nbsp;&nbsp;(2.3)<br>
+  <br>
+</p>
+<a name=4 class="anchor"></a>
+<h3>2.4. Обращение матриц</h3>
+
+<p>Пусть <i>А </i>– невырожденная (т.е. с отличным от
+нуля определителем) квадратная матрица порядка </span><i>n</span></i>. Матрица <img src="img/lec2.files/image092.gif" height="25" width="32">&nbsp;называется
+<i>обратной</i> по отношению к матрице <img src="img/lec2.files/image093.gif" height="20" width="19">, если выполняется условие: </p>
+
+<p><img src="img/lec2.files/image094.gif"></sub>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2.4)</p>
+
+<p>где
+<i>E</span></i> – единичная матрица того же порядка, что и матрица <img src="img/lec2.files/image093.gif" height="20" width="19">.</p>
+
+<p>Нижеследующее утверждение содержит критерий
+существования и единственности обратной матрицы.</span></p>
+
+<p><i>Теорема</span></i>. <i>Всякая невырожденная квадратная матрица имеет
+обратную и притом только одну</i>. </span></p>
+
+<p><i>Доказательство</span></i>. Пусть <img src="img/lec2.files/image095.gif" height="20" width="19">&nbsp;– невырожденная квадратная матрица,
+например, третьего порядка. Для матрицы <img src="img/lec2.files/image095.gif" height="20" width="19">&nbsp;будем строить обратную. Для этого составим
+матрицу из алгебраических дополнений элементов матрицы </span><i>A</span></i>:</span></p>
+
+<p><img src="img/lec2.files/image096.gif" height="80" width="150">; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<sub><img src="img/lec2.files/image097.gif" height="80" width="163"></sub>.</span></p>
+
+<p>Найдем
+произведение матриц </span><i>A</span></i> и <img src="img/lec2.files/image098.gif" align="middle">:</span></p>
+
+<p><img src="img/lec2.files/image099.gif" height="80" width="345"></p>
+
+<p><img src="img/lec2.files/image100.gif" height="93" width="428"></p>
+
+<p><img src="img/lec2.files/image101.gif" height="53" width="192"></p>
+
+<p><img src="img/lec2.files/image102.gif" height="80" width="391">,</p>
+
+<p>Таким
+же образом можно убедиться, что <img src="img/lec2.files/f22.png" align="middle" height="38" width="165">. Очевидно, матрица <img src="img/lec2.files/f23.png" align="middle" height="51" width="103">&nbsp;удовлетворяет определению
+обратной матрицы. </p>
+
+<p>Докажем
+единственность обратной матрицы. Пусть <img src="img/lec2.files/image105.gif" height="29" width="29">&nbsp;и <img src="img/lec2.files/image106.gif" height="29" width="29">&nbsp;-две матрицы, удовлетворяющие определению
+(2.4). Обе части равенства <img src="img/lec2.files/image107.gif" height="31" width="129">&nbsp;умножим слева на <img src="img/lec2.files/image106.gif" height="29" width="29">. Имеем</p>
+
+<p><img src="img/lec2.files/image108.gif" align="middle" height="36" width="203">&nbsp;<img src="img/lec2.files/image109.gif" height="17" width="23">&nbsp;<img src="img/lec2.files/image110.gif" align="middle" height="29" width="111"></sub>&nbsp;<sub><img src="img/lec2.files/image109.gif" height="17" width="23"></sub>&nbsp;<sub><img src="img/lec2.files/image111.gif" align="middle" height="29" width="75">.</span></p>
+
+<p>Обобщая
+результат для матриц произвольного порядка, получим формулу для вычисления
+обратной матрицы</span></p>
+
+<p><img src="img/lec2.files/image112.gif" height="46" width="136"></sub>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(2.5)</p>
+
+<p>где
+<img src="img/lec2.files/image113.gif" align="middle" height="33" width="77">&nbsp;- матрица,
+составленная из алгебраических дополнений элементов матрицы <i>A</i><i> </span></i>(её
+называют <i>присоединённой</i> к матрице <i>А</i>).</span></p>
+
+<p><i>Пример</span></i>. Найти матрицу, обратную по отношению к матрице <sub><img src="img/lec2.files/image114.gif" height="79" width="117"></sub>.</span></p>
+
+<p><i>Решение</span></i>. 1. Находим определитель матрицы <sub><img src="img/lec2.files/image115.gif" height="22" width="72"></sub>.</span></p>
+
+<p>2. Вычисляем алгебраические дополнения элементов
+матрицы: </span></p>
+
+<p><img src="img/lec2.files/image116.gif" height="55" width="374"></sub></span></p>
+
+<p><img src="img/lec2.files/image117.gif" height="47" width="417"></sub></span></p>
+
+<p><img src="img/lec2.files/image118.gif" height="50" width="405"></sub>.</span></p>
+
+<p>3. Составляем присоединённую матрицу:</span></p>
+
+<p><img src="img/lec2.files/image119.gif" height="75" width="137"></sub> ;&nbsp;&nbsp; <sub><img src="img/lec2.files/image120.gif" height="75" width="157"></sub>;</span></p>
+
+<p style="margin-left: 54pt; text-align: justify; text-indent: -18pt;">4.<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Получаем обратную матрицу:</span></p>
+
+<p><img src="img/lec2.files/image121.gif" height="98" width="313"></sub>.</span></p>
+
+<p><i>Свойства обращения матриц</span></i></p>
+
+<p><img src="img/lec2.files/image122.gif"><i>Определитель обратной матрицы есть число, обратное определителю самой
+матрицы</i>.</span></p>
+
+<p><img src="img/lec2.files/f2_6.png" height="49" width="150"><img src="img/lec2.files/image069.gif" align="left" height="30" width="42"><i>&nbsp;&nbsp;
+</span></i>(2.6)</span></p>
+
+<p style="margin-left: 35.45pt; text-align: justify; text-indent: -11.45pt;"><i> Обращение произведения матриц</span></i>: </span></p>
+
+<p><img src="img/lec2.files/f2_7.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2.7)</p>
+
+<p><img src="img/lec2.files/image125.gif"><i>Транспонирование обратной матрицы</span></i><span style="font-size: 12pt;">:</span></p>
+
+<p><img src="img/lec2.files/f2_8.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2.8)</p>
+
+<p>Для доказательства первого из этих свойств можно применить формулу (2.3) к
+равенству <sub><img src="img/lec2.files/image127.gif" height="24" width="73"></sub>.
+Тогда </span></p>
+
+<p><img src="img/lec2.files/f24.png" height="31" width="331"></sub></span></p>
+
+<p>Доказательство
+второго свойства основано на свойстве (2.2), а третьего – на двух очевидных
+свойствах <img src="img/lec2.files/f25.png" align="middle" height="39" width="90">&nbsp;&nbsp;и&nbsp;
+<img src="img/lec2.files/f26.png" align="middle" height="38" width="100">&nbsp;</span></p>
+
+<p><i>Замечание</span></i>. Формула (2.5) даёт простой способ вычисления
+обратной матрицы для невырожденной квадратной матрицы второго порядка. В этом
+случае следует поменять местами элементы, стоящие на главной диагонали, а у
+элементов, стоящих на побочной диагонали поменять знаки. После этого остаётся
+лишь разделить все элементы на определитель матрицы.</span></p>
+
+<p><img src="img/lec2.files/f27.png" height="62" width="242"></sub></span><br>
+ <br>
+</p>
+<a name=5 class="anchor"></a>
+<h3>2.5.
+Матричная запись системы линейных уравнений и её решение с помощью обратной матрицы</h3>
+
+<p>В п.1.5 предыдущего параграфа мы уже
+рассматривали систему линейных алгебраических уравнений порядка <i>п</i> и её
+решение по формулам Крамера. Покажем, что эту систему можно, во-первых,
+записать иным, матричным способом, а во-вторых, решить её с помощью обратной
+матрицы. Итак, рассмотрим систему:</span></p>
+
+<p><img src="img/lec2.files/image132.gif" height="113" width="236"></sub></span></p>
+
+<p>Пусть
+<i>А</i> – матрица коэффициентов системы, <i>Х</i> – столбец неизвестных, <i>В</i>
+– столбец свободных членов:</span></p>
+
+<p><img src="img/lec2.files/image133.gif" height="113" width="195"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/lec2.files/image134.gif" height="113" width="80">&nbsp;&nbsp; <img src="img/lec2.files/image135.gif" height="113" width="69">.</p>
+
+<p>Тогда,
+следуя закону произведения матриц, система запишется в виде:</p>
+
+<p><img src="img/lec2.files/f28.png" height="130" width="304">,
+т.е. <img src="img/lec2.files/image137.gif">.&nbsp;&nbsp;&nbsp;&nbsp; (2.9)</p>
+
+<p>Допустим, что <i>система невырождена</i>, т.е.
+определитель её не равен нулю: <img src="img/lec2.files/image138.gif" height="21" width="108">. Тогда матрица <img src="img/lec2.files/image095.gif" height="20" width="19">&nbsp;имеет обратную матрицу <img src="img/lec2.files/image139.gif" height="25" width="32">. Для решения матричного
+уравнения (2.9) умножим обе части уравнения слева на <img src="img/lec2.files/image140.gif" height="27" width="40">&nbsp;</p>
+
+<p><img src="img/lec2.files/image141.gif" height="24" width="136">.</p>
+
+<p>Получим</p>
+
+<p><img src="img/lec2.files/image142.gif" height="24" width="77">.</p>
+
+<p>Итак, чтобы найти решение системы (2.9), нужно найти
+матрицу, обратную матрице системы и умножить её на <img src="img/lec2.files/image143.gif" height="20" width="19"> справа.</p>
+
+<p><i>Пример</i>.
+Найдем матричным методом решение системы:</p>
+
+<p><img src="img/lec2.files/image144.gif" height="80" width="144"></p>
+
+<p><i>Решение</i>. Имеем <img src="img/lec2.files/image145.gif" align="middle" height="79" width="115">&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/lec2.files/image146.gif" align="middle" height="79" width="65">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/lec2.files/image147.gif" align="middle" height="79" width="129">. </p>
+
+<p>Вычислим
+обратную матрицу:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/lec2.files/image148.gif" align="middle" height="79" width="168">.</p>
+
+<p>Тогда
+решение имеет вид:</p>
+
+<p><img src="img/lec2.files/image149.gif" height="79" width="352">.</p>
+
+<p><i>Ответ</i>:&nbsp; <img src="img/lec2.files/image150.gif" height="24" width="217"></p>
+
+<p><i>Пример</i>. Найти решение матричного уравнения <img src="img/lec2.files/image151.gif" height="21" width="103">, где </p>
+
+<p><img src="img/lec2.files/image152.gif" height="52" width="99">&nbsp; <img src="img/lec2.files/image153.gif" height="52" width="91"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="img/lec2.files/image154.gif" height="52" width="121">.</p>
+
+<p><i>Решение</i>. Умножим обе части данного уравнения на <img src="img/lec2.files/image139.gif" height="25" width="32">&nbsp;и <img src="img/lec2.files/image155.gif" height="25" width="32">&nbsp;слева и справа соответственно: <img src="img/lec2.files/image156.gif" height="31" width="269">. Получим <img src="img/lec2.files/image157.gif" height="27" width="131">. Найдем теперь <img src="img/lec2.files/image139.gif" height="25" width="32">&nbsp;и <img src="img/lec2.files/image155.gif" height="25" width="32">:</p>
+
+<p><img src="img/lec2.files/image158.gif" height="52" width="128">;&nbsp; <img src="img/lec2.files/image159.gif" height="52" width="104">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/lec2.files/image160.gif" height="52" width="105">.</p>
+
+<p><img src="img/lec2.files/image161.gif" height="21" width="72"></sub>;&nbsp;&nbsp; <img src="img/lec2.files/image162.gif" height="52" width="109">;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/lec2.files/image163.gif" height="52" width="116">.</p>
+
+<p><img src="img/lec2.files/image164.gif" height="52" width="513"></p>
+
+<p><i>Ответ</i>: &nbsp;<sub><img src="img/lec2.files/image165.gif" height="52" width="101"></p>
+
+
+ <br>
+<a name=6 class="anchor"></a>
+ <h3> 2.6. Элементарные
+преобразования матриц. Эквивалентность матриц</h3>
+
+<p>Очевидно, любая матрица может быть подвергнута самым
+разным преобразованиям. Одни преобразования изменяют размеры матрицы, другие –
+только её элементы. Среди этих последних мы рассмотрим так называемые<i>
+элементарные преобразования</i>.</span></p>
+
+<p>К элементарным преобразованиям матриц относят следующие
+действия:</span></p>
+
+<p><img src="img/lec2.files/image166.gif" align="left" height="29" width="42"><i>Перестановка
+строк (столбцов) матрицы.</i></p>
+
+<p><img src="img/lec2.files/image069.gif" align="left" height="30" width="42"><i> Умножение
+какой-либо строки (столбца) матрицы на одно и то же число, не равное нулю. </i></p>
+
+<p><img src="img/lec2.files/image125.gif" align="left" height="29" width="42"><i>Прибавление к какой-либо строке (столбцу) матрицы другой строки
+(столбца), умноженной на одно и то же число.</span></i></p>
+
+<p>Очевидно, что для каждого элементарного преобразования
+существует обратное преобразование, которое также является элементарным.</span></p>
+
+<p>Матрицы <i>А </i>и<i> В </i>называются <i>эквивалентными
+</i>(</span><i>A</span></i><i> </span></i>~
+</span><i>B</span></i>), если одна из них может быть получена из другой с
+помощью элементарных преобразований. </span></p>
+
+<p>При помощи элементарных преобразований любую матрицу
+можно привести к матрице, у которой в правом верхнем («северо-западном») углу
+находится единичная матрица, а остальные элементы равны нулю. Такая матрица
+называется <i>канонической</i>. Примером может служить матрица</span></p>
+
+<p><img src="img/lec2.files/image167.gif" height="104" width="129"></sub>.</span></p>
+
+<p><i>Пример</span></i>. Привести к каноническому виду матрицу</span></p>
+
+<p><img src="img/lec2.files/image168.gif" height="53" width="117"></sub>.</span></p>
+
+<p><i>Решение</i>. Применим к матрице <img src="img/lec2.files/image095.gif"> следующие элементарные преобразования:</p>
+
+<p>1) переставим строки матрицы;</span></p>
+
+<p>2) ко второй строке прибавим первую строку, умноженную
+на (-2);</p>
+
+<p>3) умножим вторую строку на (-1/5);</span></p>
+
+<p>4) ко второму столбцу прибавим третий столбец, умноженный
+на (-2);</span></p>
+
+<p>5) умножим вторую строку на (-1);</span></p>
+
+<p>6) прибавим к третьему столбцу второй столбец;</span></p>
+
+<p>7) прибавим к третьему столбцу первый столбец, умноженный
+на (-2).</span></p>
+
+<p>Таким образом:</p>
+
+<p><img src="img/lec2.files/image170.gif" height="53" width="88">&nbsp;~ <img src="img/lec2.files/image171.gif" height="53" width="88">&nbsp;~ <img src="img/lec2.files/image172.gif" height="53" width="99">&nbsp;~ <img src="img/lec2.files/image173.gif" height="53" width="81">~ <br>
+~ <img src="img/lec2.files/image174.gif" height="53" width="89">&nbsp;~ <img src="img/lec2.files/image175.gif" height="53" width="88">&nbsp;~ <img src="img/lec2.files/image176.gif" height="53" width="80">>&nbsp;~ <img src="img/lec2.files/image177.gif" height="53" width="80">.</p>
+
+<p>Последняя матрица имеет канонический
+вид.</p>
+
+<p>Сделаем очень важное замечание. </p>
+
+<p><i>Каждое элементарное преобразование равносильно
+умножению матрицы справа или слева на квадратную матрицу, полученную из
+единичной матрицы, над которой произведено именно это элементарное
+преобразование. </i></p>
+
+<p>Например, преобразование, состоящее в перестановке<i> </i></span><i>i</span></i><i>-</span></i>ой<i> </i>и </span><i>j</span></i><i>-</span></i>ой строк матрицы </span><i><span style="font-size: 12pt;" lang="EN-US">A</span></i><i>,</span></i> можно осуществить следующим образом: умножим матрицу </span><i>A</span></i><i><span style="font-size: 12pt;" lang="EN-US"> </span></i><i>слева</span></i> на матрицу <i>Е'</i>. Такую матрицу<i> Е'</i> получим
+из единичной матрицы перестановкой соответственно<i> </i></span><i>i</span></i><i>-</span></i>ой<i> </i>и </span><i><span style="font-size: 12pt;" lang="EN-US">j</span></i><i>-</span></i>ой строк. </span></p>
+
+<p>Покажем это на примере:</span></p>
+
+<p><img src="img/lec2.files/f29.png" height="97" width="410"></p>
+
+<p>Аналогично,
+произведение строки данной матрицы на число получится, если умножить эту матрицу
+слева на матрицу, полученную из единичной, умножением соответствующей строки на
+это число. Другими словами, для того, чтобы произвести над матрицей какое-либо
+элементарное преобразование, нужно это преобразование произвести над единичной
+матрицей. Далее, такую матрицу-сомножитель следует умножить на данную матрицу
+слева (для преобразований над строками) или справа (для преобразований над
+столбцами).</span></p>
+
+<p>Все такие матрицы-сомножители – невырождены. В самом
+деле, все они получаются из единичной матрицы; перестановка строк (столбцов) может
+изменить лишь знак определителя матрицы; умножение строки (столбца) на
+ненулевое число влечет умножение определителя на это число; что же касается
+третьего вида элементарных преобразований, то оно вообще не меняет значения
+определителя.</span></p>
+
+<p>Из сказанного вытекает следующий критерий эквивалентности
+матриц.</span></p>
+
+<p><i>Матрицы <img src="img/lec2.files/image095.gif" height="20" width="19">&nbsp;и <img src="img/lec2.files/image182.gif" height="20" width="19">&nbsp;эквивалентны тогда и только тогда, когда
+найдутся две невырожденные матрицы <img src="img/lec2.files/image183.gif" height="21" width="17">&nbsp;и <img src="img/lec2.files/image184.gif" height="20" width="17">&nbsp;такие, что <img src="img/lec2.files/image185.gif" height="21" width="96">.</i></p>
+
+<p>Если сама <img src="img/lec2.files/image095.gif" height="20" width="19">&nbsp;- квадратная невырожденная матрица, то она эквивалентна единичной матрице того же порядка. Другими словами, <i>единичная
+матрица порядка n является канонической для всех невырожденных квадратных
+матриц порядка n.</i></p>
+
+<p><b><i>Вычисление обратной
+матрицы методом элементарных преобразований</span></i></b></p>
+
+<p>Пусть дана невырожденная квадратная матрица <i>A</i> порядка <i>n</i>. Припишем к ней справа единичную
+матрицу того же порядка. Получим матрицу&nbsp; <img src="img/lec2.files/image186.gif" height="28" width="92">, имеющую <i>n </i>строк и 2<i>n</i> столбцов. Применяя к матрице <img src="img/lec2.files/image187.gif" height="19" width="24"></sub>&nbsp;элементарные преобразования,
+причем только с её «длинными» строками, можно привести матрицу к виду <sub><img src="img/lec2.files/image188.gif" height="28" width="55">. Тогда <i>В</i> есть
+обратная матрица для <i>А</i>:</p>
+
+<p><img src="img/lec2.files/image189.gif" height="31" width="59">&nbsp;~ <img src="img/lec2.files/image190.gif" height="33" width="167">.</p>
+
+<p>В самом деле, пусть последовательность матриц специального
+вида <i><span lang="EN-US">E</span></i><sub>1</sub>,<i> </i><i><span lang="EN-US">E</span></i><sub>2</sub>,…,<i>
+</i><i><span lang="EN-US">E<sub>k</sub></span></i><span lang="EN-US"> &nbsp;</span>такова,
+что <img src="img/lec2.files/image191.gif" height="31" width="225">. Это
+означает, что <img src="img/lec2.files/image192.gif" height="28" width="176">,
+т.е. <img src="img/lec2.files/image193.gif" height="29" width="151">. Но <img src="img/lec2.files/image194.gif" height="25" width="161">, и, следовательно, <img src="img/lec2.files/image195.gif" height="24" width="63">.</p>
+
+<p><i>Пример</i>. Найти<i> </i>обратную матрицу для матрицы </p>
+
+<p><img src="img/lec2.files/image196.gif" height="76" width="131">.</p>
+
+<p><i>Решение</i>. Применим к матрице <i>А </i>алгоритм, описанный выше
+(для определенности будем производить элементарные преобразования только со строками):</p>
+
+<p><img src="img/lec2.files/image197.gif" height="80" width="496"></p>
+
+<p><img src="img/lec2.files/image198.gif" height="80" width="529">.</p>
+
+<p>При
+этом были выполнены следующие элементарные преобразования:</p>
+
+<p>1) к третьей строке прибавили первую строку; </p>
+
+<p>2) ко второй строке прибавили третью строку;</p>
+
+<p>3) из третьей строки вычли утроенную вторую строку;</p>
+
+<p>4) из второй строки вычли третью;</p>
+
+<p>5) из первой строки вычли удвоенную сумму второй и третьей строки.</p>
+
+<p>В результате слева получена единичная матрица, а справа – обратная матрица</p>
+
+<p><img src="img/lec2.files/image199.gif" height="74" width="142">.</p>
+<br>
+<a name=7 class="anchor"></a>
+<h3>2.7. Ранг матрицы</h3>
+
+<p>Среди всех эквивалентных между собой матриц
+каноническая матрица имеет наиболее простой вид. Она характеризуется числом
+единиц на главной диагонали. Оказывается, это число служит важной
+характеристикой матрицы.</span></p>
+
+<p>Рассмотрим матрицу <i>А</i> размера </span><i>m</span></i><i><span style="font-size: 12pt; font-family: Symbol;" lang="EN-US">&#180;</span></i><i>n</span></i>
+и выделим в ней </span><i>k</span></i> строк и </span><i>k</span></i> </span>столбцов где <img src="img/lec2.files/image200.gif" height="25" width="112">. Из элементов, стоящих на пересечении выделенных
+строк и столбцов, составим определитель <i>k</i><i>-</i>го порядка. Все такие определители называются <i>минорами
+</i>этой матрицы. Для примера в матрице <i>А</i> пунктиром выделен один из
+миноров 3-го порядка.</span></p>
+<p><img src="img/lec2.files/f30.png" height="150" width="260"></p>
+<p>Наибольший порядок отличного от нуля минора данной
+матрицы называется <i>рангом матрицы</i> <i>А</i>. </p>
+
+<p>Ранг&nbsp; <i>r</i> матрицы <i>А </i>будем обозначать
+также <i>r</i>(<i>A</i>) или <i>rang</i><i> </i><i>A</i>.</p>
+
+<p>Очевидно,
+что 0 <span style="font-size: 12pt; font-family: Symbol;" lang="EN-US">&#163;</span> <i>r</i><i>
+</span></i><span style="font-size: 12pt; font-family: Symbol;" lang="EN-US">&#163;</span><span style="font-size: 12pt;" lang="EN-US"> </span><i>min</span></i>(</span><i>m</i><i>;</i><i>n</i>).
+Ранг равен нулю только у нулевой матрицы.</span>
+<p>Минор, порядок которого определяет ранг матрицы,
+называется <b><i>&nbsp;</i></b><i>базисным<b>. </b></i>У матрицы может быть
+несколько базисных миноров.</span></p>
+
+<p>Отметим, что если ранг матрицы равен <i>r</i>,
+то все миноры порядка <img src="img/lec2.files/image203.gif" height="20" width="39">&nbsp;(если
+они существуют) равны нулю.</p>
+
+<p><i>Пример.</i> Найти ранг матрицы</span></p>
+
+<p><img src="img/lec2.files/image204.gif">.</p>
+
+<p><i>Решение</i>. Все миноры 3-го порядка равны нулю, поскольку содержат
+нулевой столбец. Есть минор 2-го порядка, отличный от нуля&nbsp; <img src="img/lec2.files/image205.gif" align="middle" height="46" width="108">. Значит, <img src="img/lec2.files/image206.gif" align="middle" height="31" width="75">. Этот базисный минор стоит
+на пересечении второй и третьей строки с первым и третьим столбцом.</p>
+
+<p><i>Свойства ранга матрицы</span></i></p>
+
+<p><img src="img/lec2.files/image207.gif" align="left" height="29" width="42"><i>При транспонировании матрицы ее ранг не меняется</i>.</p>
+
+<p><img src="img/lec2.files/image208.gif" align="left" height="30" width="42"><i>Ранг матрицы не изменяется при элементарных преобразованиях</i>. </p>
+
+<p><img src="img/lec2.files/image209.gif"><i>Ранг канонической матрицы равен числу единиц на главной диагонали.</i></p>
+
+<p><i>Пример.</i> Найти ранг матрицы</span></p>
+
+<p><img src="img/lec2.files/image210.gif" height="74" width="134">.</p>
+
+<p><i>Решение.</i> С помощью элементарных преобразований матрица <i>А </i>приводится
+к виду</p>
+
+<p><img src="img/lec2.files/image211.gif" height="74" width="126">.</p>
+
+<p>Следовательно,
+ранг матрицы <i>А </i>равен <strong>r(A)=2</strong>.</p>
+
+<p>Прежде чем сформулировать теорему о ранге матрицы,
+необходимо напомнить понятие линейной зависимости применительно к строкам
+матрицы. Строки матрицы линейно зависимы, если какая-нибудь одна из них есть
+линейная комбинация других строк. Например, в матрице </p>
+
+<p><img src="img/lec2.files/image213.gif" height="81" width="221"></p>
+
+<p>третья
+строка есть линейная комбинация первой и второй строк. Коэффициенты <img src="img/lec2.files/image214.gif" align="middle" height="29" width="21">&nbsp;могут быть любыми
+числами, в том числе и нулями. </p>
+
+<p>Соответственно, строки матрицы являются линейно
+независимыми, если ни одна из них не является линейной комбинацией других.</p>
+
+<p><i>Теорема
+</i><b>(</span></b><i>о ранге матрицы</i>).
+<i>Ранг матрицы равен числу её линейно независимых строк.</i></p>
+
+<p><i>Доказательство</i>. Заметим, прежде всего, что при перестановке строк
+или столбцов ранг матрицы не меняется. Поскольку такой перестановкой мы можем добиться
+того, чтобы базисный минор порядка <i>r</i> матрицы <i>А </i>оказался в левом
+верхнем углу, при доказательстве мы можем без ограничения общности предполагать,
+что </p>
+
+<p><img src="img/lec2.files/image215.gif" height="76" width="147">.</p>
+
+<p>Допустим
+теперь, что число линейно независимых строк матрицы <i>А </i>равно <i>р.</i>
+Если бы первые <i>r </i>строк матрицы были линейно зависимы, то строки матрицы определителя
+<sub><img src="img/lec2.files/image216.gif" height="20" width="19"></sub>&nbsp;также,
+очевидно, оказались бы линейно зависимы и потому определитель был бы равен
+нулю. Это доказывает, что первые <i>r </i>строк матрицы <i>А </i>линейно
+независимы, и, следовательно, <img src="img/lec2.files/image217.gif" height="24" width="47">. Поэтому для доказательства равенства <img src="img/lec2.files/image218.gif" height="20" width="47">&nbsp;достаточно установить,
+что любая <i>i </i>–ая строка при <img src="img/lec2.files/image219.gif" height="20" width="39">&nbsp;линейно выражается через первые <i>r </i>строк
+матрицы <i>А</i>. С этой целью рассмотрим определитель порядка <img src="img/lec2.files/image203.gif" height="20" width="39">:</p>
+
+<p><img src="img/lec2.files/image220.gif" height="102" width="136">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2.10)</p>
+
+<p>где
+<img src="img/lec2.files/image221.gif" height="25" width="71">. Если <img src="img/lec2.files/image222.gif" height="25" width="69">, то матрица
+определителя (2.10) имеет два одинаковых столбца и потому определитель равен
+нулю. Если же <img src="img/lec2.files/image223.gif" height="25" width="97">,
+то определитель (2.10) представляет собой минор матрицы <i>А</i> порядка <img src="img/lec2.files/image203.gif" height="20" width="39">&nbsp;(получающийся выбором
+первых <i>r</i> строк и столбцов и, кроме того, <i>j</i>-го столбца
+и </span><i>i</span></i>-ой строки) и потому также равен нулю. Следовательно,
+разложив этот определитель по последнему столбцу, мы при любом <img src="img/lec2.files/image224.gif" height="25" width="87">&nbsp;получим равенство вида </span></p>
+
+<p><img src="img/lec2.files/image225.gif" height="29" width="283">,</p>
+
+<p>где
+<img src="img/lec2.files/image226.gif" height="27" width="124">&nbsp;-
+алгебраические дополнения элементов этого столбца. Эти алгебраические
+дополнения зависят только от элементов, находящихся в первых <i>r </i>столбцах матрицы
+определителя (2.10), и, в частности, одни и те же для всех <i>j</i>. И так как <img src="img/lec2.files/image227.gif" height="21" width="47">, то это доказывает, что
+строка с номером <i>i</i> линейно выражается через первые <i>r</i> строк.
+Следовательно, <img src="img/lec2.files/image228.gif" height="20" width="47">.
+Теорема доказана.</p>
+
+<p>Так как при транспонировании ранг матрицы не меняется,
+можно сделать вывод: ранг матрицы по строкам (число линейно независимых строк)
+и ранг по столбцам (число линейно независимых столбцов) совпадают.</p>
+
+<p>Пусть <i>А</i> – матрица размерности <img src="img/lec2.files/image082.gif" height="17" width="45"><i>, В </i>– матрица
+размерности&nbsp; <img src="img/lec2.files/image229.gif" height="21" width="37">.
+Тогда определена матрица <i>АВ</i> размерности <img src="img/lec2.files/image230.gif" height="21" width="41">. Пусть <img src="img/lec2.files/image231.gif" height="25" width="41">&nbsp;- ранг матрицы <i>А</i> и <img src="img/lec2.files/image232.gif" height="25" width="41">&nbsp;-
+ранг матрицы <i>В</i>. Что можно сказать о ранге <img src="img/lec2.files/image233.gif" height="25" width="55">&nbsp;матрицы&nbsp; <i>АВ</i>? </p>
+
+<p>Оказывается,
+что в общем случае можно лишь утверждать, что ранг <img src="img/lec2.files/image233.gif" height="25" width="55">&nbsp;не превосходит наименьшего из рангов
+<img src="img/lec2.files/image231.gif" height="25" width="41">&nbsp;и <img src="img/lec2.files/image232.gif" height="25" width="41">.</p>
+
+<p><i>Теорема</i>. <i>Имеют место неравенства</i>: <i><img src="img/lec2.files/image234.gif" height="25" width="252"></i>.</p>
+
+<p><i>Доказательство</i>. Пусть <img src="img/lec2.files/image235.gif" height="36" width="73">, <img src="img/lec2.files/image236.gif" height="36" width="72">, <img src="img/lec2.files/image237.gif" height="36" width="84">. По определению умножения матриц <img src="img/lec2.files/image238.gif" height="56" width="123">; <img src="img/lec2.files/image239.gif" height="21" width="153">. Обозначим строки матриц <i>В</i>
+и <i>С</i> соответственно <img src="img/lec2.files/image240.gif" height="31" width="199">&nbsp;и <img src="img/lec2.files/image241.gif" height="31" width="187">. Тогда формулы для <img src="img/lec2.files/image242.gif" height="29" width="21">&nbsp;можно переписать в следующем
+виде:</p>
+
+<p><img src="img/lec2.files/image243.gif" height="56" width="120">, &nbsp; <img src="img/lec2.files/image244.gif" height="24" width="84">.</p>
+
+<p>Это
+означает, что строки <img src="img/lec2.files/image245.gif" height="27" width="71">&nbsp;линейно
+выражаются через строки <img src="img/lec2.files/image246.gif" height="27" width="68">, т.е. являются их линейными комбинациями.
+Отсюда следует, что ранг матрицы <i>С</i> не превосходит ранга матрицы<i> В</i>,
+<i><img src="img/lec2.files/image247.gif" height="25" width="111"></i>. </p>
+
+<p>Неравенство <i><img src="img/lec2.files/image248.gif" height="25" width="111"></i>&nbsp;доказывается аналогично (следует
+только вместо строк рассмотреть столбцы матрицы). Таким образом, теорема
+доказана.</p>
+
+<p>Если <i>В </i>является квадратной невырожденной
+матрицей, то <i><img src="img/lec2.files/image249.gif" height="25" width="111"></i>.
+В самом деле, в этом случае <img src="img/lec2.files/image155.gif" height="25" width="32">&nbsp;- также квадратная невырожденная матрица и
+</p>
+
+<p><img src="img/lec2.files/f31.png" height="31" width="233"></p>
+
+<p>Следовательно,
+<i><img src="img/lec2.files/image249.gif" align="middle" height="25" width="111"></i>.
+Другими словами, <i>при умножении на невырожденную матрицу ранг матрицы не меняется</i>.</p>
+
+<p>Подводя
+итог, можно сказать, что все матрицы одинаковых размеров можно разделить на
+классы – <i>классы эквивалентности</i>, причём в один и тот же класс попадут
+все эквивалентные между собой матрицы, т.е. матрицы, имеющие один и тот же
+ранг. Представителем класса может служить матрица канонического вида. Если
+размеры матрицы <span style="font-weight: bold; font-style: italic;">m x n</span>,
+то таких классов будет <span style="font-weight: bold; font-style: italic;">k=min(m,n)</span>.</p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+
+<p style="border: medium none ; padding: 0cm; text-align: justify; text-indent: 35.45pt;"><span style="font-size: 2pt;">&nbsp;</span></p>
+
+</div>
+
+<p><img src="img/lec2.files/image252.jpg" align="right" height="247" hspace="12" width="183"><b>КЭЛИ
+Артур </b>&nbsp;(1821–1895), английский математик. </span></p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+
+<p style="border: medium none ; padding: 0cm; text-align: justify;">Родился в
+Ричмонде, но вырос в Петербурге, где его отец занимался торговлей. Окончил
+Тринити-колледж Кембриджского университета. Первые работы по математике
+опубликовал в 1841 г. В 1843 г. стал адвокатом в Лондоне и в течение следующих
+20 лет совмещал адвокатскую практику с занятиями математикой. С 1863 г. -
+профессор кафедры математики в Кембриджском университете, где преподавал почти
+30 лет. Кэли принадлежит более 600 работ, посвященных различным областям науки.
+Одним из первых (наряду с У.Гамильтоном) использовал понятие матрицы. Кэли
+первым начал исследования геометрии <i>n</i>-мерного пространства и достиг
+успехов в уяснении взаимоотношений между проективной и метрической геометриями,
+развил теорию алгебраических инвариантов. Ввел принятое ныне обозначение для
+определителя.</span></p>
+
+</div>
+
+<p class="MsoNormal"><img src="img/lec2.files/image253.jpg" align="right" height="246" hspace="12" width="177"><a name="1008580-A-101"></a></p>
+
+<p class="MsoNormal"><b><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; color: black;">СИЛЬВЕСТР Джеймс Джозеф</b> 
+(1814–1897), английский математик. Один из создателей (совместно с
+А.Кэли) матричной
+алгебры и теории алгебраических инвариантов. В 1837 г. окончил
+Кембриджский университет и в последующие годы часто менял место
+жительства и род занятий.
+Он был профессором натурфилософии в Юниверсити-колледж (Лондон), в
+Королевской
+военной академии в Вулвиче (Англия). в университете Джонса Хопкинса в
+Балтиморе
+(США), в Оксфорде (Англия). </p>
+
+<p>Его
+многие алгебраические работы стали классическими. Он явился создателем новой
+дисциплины – теории инвариантов. Сильвестр обладал исключительно живым и
+разносторонним умом, был не только математиком, но и поэтом. Учреждена медаль
+его имени, присуждаемая за выдающиеся достижения в области математики. </p>
+
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl1.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl3.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

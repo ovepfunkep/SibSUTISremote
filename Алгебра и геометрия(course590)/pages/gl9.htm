@@ -1,0 +1,1611 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 9. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 4. АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ В ПРОСТРАНСТВЕ</h3>
+<h3>§9. Плоскость и прямая в пространстве</h3>
+<a href="#1" class=punkt>9.1. Уравнения поверхностей и линий в пространстве</a><br>
+<a href="#2" class=punkt>9.2. Уравнения плоскости в пространстве</a><br>
+<a href="#3" class=punkt>9.3. Уравнения прямой в пространстве</a><br>
+<a href="#4" class=punkt>9.4. Типовые задачи в пространстве</a><br>
+<a href="#5">ЗАДАЧИ К ЧАСТИ 4 (для самостоятельного решения)</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§ 9. ПЛОСКОСТЬ И ПРЯМАЯ В ПРОСТРАНСТВЕ</h3>
+<a name=1 class="anchor"></a>
+<h3>9.1. Уравнения поверхностей и линий в пространстве</h3>
+
+<p><b><i>Уравнение поверхности в пространстве</span></i></b></p>
+
+<p>Поверхность
+в пространстве можно рассматривать как геометрическое место точек, удовлетворяющих
+какому-либо условию.</p>
+
+<p>Например,
+<i>сфера </i>радиуса </span><i>R</span></i> с центром в точке <i>О</i> есть геометрическое место
+всех точек пространства, находящихся от точки <i>О</i> на расстоянии <i>R</i>.</p>
+
+<p>Простейшие
+поверхности (плоскость, сфера, круговой цилиндр и конус) легко поддаются
+исследованию средствами элементарной геометрии. Исследование сложных поверхностей,
+встречающихся в различных задачах, требующих применения математики, нуждается в
+более совершенных методах алгебры и анализа. В основе этих методов лежит
+некоторый единообразный способ задания поверхности, а именно, задание с помощью
+уравнения.</p>
+
+<p>Свойство,
+общее всем точкам поверхности, можно записать в виде уравнения, связывающего
+координаты всех точек поверхности.</p>
+
+<p><i>Уравнением
+данной поверхности</i> в прямоугольной
+системе координат <i>Oxyz</i> называется такое уравнение </p>
+
+<p><img style="width: 116px; height: 27px;" alt="" src="img/f9_1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.1)</p>
+
+<p>с тремя переменными <i>x</i>, <i>у</i> и <i>z</i>, которому
+удовлетворяют координаты каждой точки, лежащей на поверхности, и не
+удовлетворяют координаты точек, не лежащих на этой поверхности. Переменные <i>x</i>,
+<i>у</i> и <i>z</i> в уравнении поверхности называются<b> </b><i>текущими
+координатами</i> точек поверхности (рис.4.8).</p>
+
+<p>Уравнение
+поверхности позволяет изучение геометрических свойств поверхности заменить
+исследованием его уравнения. Так, для того, чтобы узнать, лежит ли точка<img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle">&nbsp;&nbsp;на
+данной поверхности, достаточно подставить координаты точки <img src="img/lec5.files/image079.gif" height="19" width="24">&nbsp;в
+уравнение поверхности вместо переменных: если эти координаты удовлетворяют
+уравнению, то точка лежит на поверхности, если не удовлетворяют – не лежит.</p>
+
+<p><img src="img/lec5.files/image080.gif" align="right" height="215" width="215">Всякое
+уравнение вида (9.1), вообще говоря, определяет в пространстве некоторую
+поверхность.</p>
+
+<p>Выражение
+«вообще говоря» означает, что в отдельных случаях уравнение (9.1) может определять не поверхность, а точку, линию или вовсе не
+определять никакой геометрический образ. В этом случае говорят, «поверхность
+вырождается».</p>
+
+<p>Так,
+уравнению <img src="img/lec5.files/image081.gif" height="31" width="155">&nbsp;не удовлетворяют никакие действительные значения <i>x</i>,
+<i>y</i>, <i>z</i><i>.</i> Уравнению <img src="img/lec5.files/image082.gif" height="31" width="129">&nbsp;удовлетворяют
+лишь координаты одной точки – начала координат. Уравнению <img src="img/lec5.files/image083.gif" height="31" width="92">&nbsp;удовлетворяют
+координаты точек, лежащих на оси <i>О</i><i>z</i>.</p>
+
+<p>Итак, поверхность в пространстве можно задать геометрически и аналитически. Соответственно,
+можно говорить о постановке двух задач:</p>
+
+<p>1. Дана поверхность как геометрическое место точек. Найти уравнение этой поверхности.</p>
+
+<p>2. Дано уравнение&nbsp;<img style="width: 116px; height: 27px;" alt="" src="img/f9_1.png" align="middle">.
+Исследовать форму поверхности, определяемой этим уравнением.</p>
+
+<br>
+<p><b><i>Уравнения линии в пространстве</i></b></p>
+<p>В аналитической геометрии линия в пространстве рассматривается как линия пересечения
+двух поверхностей, т.е. как геометрическое место точек, общих двум поверхностям
+(рис.4.9).</p>
+
+<p><img src="img/lec5.files/image084.gif" align="left" height="218" width="264"><br> Если <img src="img/lec5.files/image085.gif" height="27" width="111">&nbsp;и <img src="img/lec5.files/image086.gif" height="27" width="113">&nbsp;–
+уравнения двух поверхностей, определяющих линию <i>L</i>, то координаты
+точек этой линии удовлетворяют системе двух уравнений с тремя неизвестными:</span></p>
+
+<p><img style="width: 130px; height: 61px;" alt="" src="img/f9_2.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.2)</span></p>
+
+<p> Уравнения
+системы (9.2) называются <i>уравнениями линии в пространстве<b>.</b></i> </p>
+<br>
+<p>Например, <img src="img/lec5.files/image088.gif" height="60" width="61">&nbsp;есть
+уравнения оси <i>Ох.</i></p>
+
+<p>Линию в пространстве можно рассматривать как траекторию движения точки. В этом случае
+ее задают <i>векторным уравнением </i></p>
+
+<p><img style="width: 64px; height: 24px;" alt="" src="img/f9_3.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.3)</p>
+
+<p>или <i>параметрическими
+уравнениями</i></p>
+
+<p><img style="width: 89px; height: 88px;" alt="" src="img/f9_4.png" align="middle"></span><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></i>(9.4)</p>
+
+<p>проекций вектора (9.3) на оси координат.</p>
+
+<p>Например, параметрические уравнения <i>винтовой линии</i> имеют вид</p>
+
+<p><img style="width: 112px; height: 133px;" alt="" src="img/f9_000.png" align="middle"></p>
+<p><img src="img/lec5.files/image090.gif" align="right" height="220" width="249"></p>
+<p>Если
+точка <i>М</i> равномерно движется по образующей кругового цилиндра, а сам цилиндр
+равномерно вращается вокруг оси <i>Oz</i>, то точка <i>М</i>
+описывает винтовую линию <i>C</i> (рис.4.10).</p>
+
+<p>В дальнейшем мы ограничимся рассмотрением алгебраических поверхностей и линий в пространстве.</p>
+
+<p><i>Алгебраической поверхностью</i> называется множество
+точек пространства, которое в какой-нибудь декартовой системе координат может
+быть задано уравнением </p>
+
+<p><img style="width: 277px; height: 28px;" alt="" src="img/f9_5.png" align="middle">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.5)</p>
+
+<p>где все показатели степени
+– целые неотрицательные числа. Наибольшая из сумм <img src="img/lec5.files/image094.gif" height="25" width="195">&nbsp;называется <i>степенью уравнения</i>,
+а также <i>порядком поверхности</i>. Порядок поверхности есть <i>инвариант</i>,
+т.е. сохраняет своё значение при замене одной декартовой системы координат на
+другую.</p>
+
+<p><i>Алгебраическая
+линия</span></i> задаётся пересечением
+алгебраических поверхностей. В этом случае оба уравнения (9.2) имеют вид (9.5):</p>
+
+<p><img src="img/lec5.files/image095.gif" height="33" width="335">.</p>
+<br>
+<p><b><i>Необходимые критические замечания</i></b></p>
+
+<p>Все сказанное выше следует понимать с известной долей
+критики и с условностью. Так, например, уравнение <img src="img/lec5.files/image096.gif" height="20" width="64"></sub>&nbsp;в трёхмерном пространстве определяет
+плоскость, параллельную координатной плоскости <i>Oyz</i>; в
+двухмерном пространстве (на плоскости) оно определяет прямую, параллельную оси
+ординат; наконец, в одномерном пространстве (на прямой) оно же определяет
+точку. </p>
+
+<p>Далее,
+следующие уравнения:</p>
+
+<p><img src="img/lec5.files/image097.gif" height="25" width="183">; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub><img src="img/lec5.files/image098.gif" height="36" width="92"></sub>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub><img src="img/lec5.files/image099.gif" height="37" width="184"></p>
+
+<p>на самом деле всё то же уравнение <img src="img/lec5.files/image100.gif" height="20" width="39">, хотя степень каждого
+из них разная. </p>
+
+<p>Кроме того, уравнение <img src="img/lec5.files/image101.gif" height="21" width="68">&nbsp;может
+определять единичную сферу, если <i>х </i>обозначает радиус в сферических
+координатах. </p>
+
+<p>Итак, предполагается, что уравнения, рассматриваемые в
+данном пособии, по возможности приведены к простому виду. Что касается
+обозначений, то, по умолчанию, <img src="img/lec5.files/image102.gif" height="31" width="65">&nbsp;считаются декартовыми прямоугольными координатами.</p>
+
+<p>Еще одно замечание по поводу уравнений линий в
+пространстве. Всякую фигуру, задаваемую системой двух уравнений, можно задать
+одним уравнением. Действительно, если фигура задается системой</span></p>
+
+<p><img src="img/lec5.files/image103.gif" height="60" width="124"></sub>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.6</span>)</p>
+
+<p>то
+она же, очевидно, задаётся одним уравнением</span></p>
+
+<p><img src="img/lec5.files/image104.gif" height="31" width="224"></sub>,</span></p>
+
+<p>и при этом, между прочим, степень уравнения увеличилась в два раза.</span></p>
+
+<p>Удобнее, однако, иметь дело с системой (9.6). Это упрощает решение геометрических задач, связанных с исследованием
+линий в пространстве.
+</p><br>
+<a name=2 class="anchor"></a>
+<h3>9.2. Уравнения плоскости в пространстве</h3>
+<p>Простейшей поверхностью является плоскость. Плоскость в пространстве можно задать разными
+способами. Каждому из них соответствует определенный вид уравнения.</span></p>
+
+<p><img src="img/lec5.files/image105.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Общее уравнение плоскости</span></i></b></p>
+
+<p>Рассмотрим алгебраическое уравнение
+первой степени с тремя переменными </span><i>x</span></i>, <i>у</i> и </span><i>z</span></i>
+в общем виде</span></p>
+
+<p><img src="img/lec5.files/image106.gif" height="29" width="175">, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.7)</p>
+
+<p>причём предполагается, что
+коэффициенты не равны нулю одновременно, т.е. <img src="img/lec5.files/image107.gif" height="27" width="140">.</p>
+
+<p>Уравнение (9.7) называется <i>общим уравнением плоскости. </i>Из
+теоремы об инвариантности порядка следует, что любая плоскость в пространстве
+может быть задана уравнением вида (9.7).</span></p>
+
+<p>Частные случаи общего уравнения плоскости:</span></p>
+
+<p>1. Если<i> </i></span><i>D</span></i> = 0, то оно принимает вид <img src="img/lec5.files/image108.gif" height="25" width="137">. Этому уравнению удовлетворяет
+точка<span style="font-style: italic;"> O</span>(0;0;0).
+Следовательно, в этом случае <i>плоскость проходит через начало координат.</i></span></p>
+
+<p>2. Если<i> С</i> = 0, то имеем уравнение </span><i><span style="font-size: 15pt;">Ах
++ </span></i><i><span style="font-size: 15pt;" lang="EN-US">By</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">D</span></i><span style="font-size: 15pt;"> = 0</span>. В этом случае <i>плоскость параллельна оси </i></span><i>Oz</span></i>. Аналогично, если <i>В</i> = 0, то плоскость<i> </i>параллельна оси <i>Оу</i>,&nbsp; а
+если <i>А</i> = 0 – параллельна оси <i>Ох.</i></span></p>
+
+<p>3. Если<i> С</i> = </span><i>D</span></i> = 0, то плоскость проходит через&nbsp;</span><span style="font-style: italic;">O</span>(0;0;0)</span>&nbsp;параллельно оси </span><i>Oz</span></i>,
+т. е. плоскость </span><sub><img src="img/lec5.files/image110.gif" height="24" width="92"></sub></span>&nbsp;</span><i>проходит
+через ось </span></i><i>Oz</span></i><i>.</span></i>
+Аналогично, уравнениям <img src="img/lec5.files/image111.gif" height="24" width="91">и <img src="img/lec5.files/image112.gif" height="20" width="92"> отвечают плоскости, проходящие соответственно через
+оси <i>Ох</i> и <i>Оу.</i></span></p>
+
+<p><img src="img/lec5.files/image113.gif" align="right" height="239" width="229">4. Если<i>
+А</i> = <i>В</i> = 0, то уравнение (9.7) принимает вид </span><i>Cz</span></i><i> + </span></i><i>D</span></i>
+= 0, &nbsp;т. е. <img src="img/lec5.files/image114.gif" height="48" width="63">. Плоскость <i>параллельна плоскости Оху.</i> На рис.4.11</span> это плоскость <span style="font-size: 16pt;">&#960;<sub>1
+.</sub></span> Аналогично, уравнениям <img src="img/lec5.files/image115.gif" height="20" width="85">&nbsp;и <img src="img/lec5.files/image116.gif" height="24" width="85">отвечают
+плоскости, соответственно параллельные плоскостям </span><i>Oyz</span></i> и </span><i>Oxz</span></i><i>. </span></i>На рис. 4.11 это плоскости </span><span style="font-size: 16pt;">&#960;<sub>2</sub></span>
+и </span><span style="font-size: 16pt;">&#960;<sub>3</sub></span>.</span></p>
+
+<p>5. Если<i>&nbsp; А</i> = <i>В</i> = </span><i>D</span></i> = 0, то уравнение (9.7</span>) примет вид </span><i>Cz</span></i>
+= 0, т. е. </span><i>z</span></i> = 0. Это <i>уравнение плоскости Ох</i></span><i>y</span></i>.
+Аналогично: <i>у</i> = 0 – уравнение плоскости </span><i>Oxz</span></i><i>;<img src="img/lec5.files/image117.gif" height="20" width="41"></i> – уравнение плоскости </span><i>Oyz</span></i><i>.</i></p>
+<br>
+<p><img src="img/lec5.files/image118.gif" align="left" height="40" width="40"></p>
+<p><b><i>Уравнение плоскости, проходящей через данную точку, с данным нормальным вектором</span></i></b></p>
+
+<p><img src="img/lec5.files/image119.gif" align="left" height="220" width="209">Пусть некоторая плоскость задана точкой
+<img src="img/lec5.files/image120.gif" height="27" width="116">&nbsp;и
+вектором <img src="img/lec5.files/image121.gif" height="25" width="107">, перпендикулярным этой плоскости (рис.4.12). Выведем уравнение этой плоскости<i>.</i>
+Возьмем на ней произвольную точку </span><i><span style="font-size: 15pt;" lang="EN-US">M</span></i><i><span style="font-size: 15pt;" lang="EN-US"> </span></i><span style="font-size: 15pt;">(</span><i><span style="font-size: 15pt;" lang="EN-US">x</span></i><i><span style="font-size: 15pt;">; </span></i><i><span style="font-size: 15pt;" lang="EN-US">y</span></i><i><span style="font-size: 15pt;">; </span></i><i><span style="font-size: 15pt;" lang="EN-US">z</span></i><span style="font-size: 15pt;">) и составим вектор <img src="img/lec5.files/image122.gif" height="31" width="239"><i>. </span></i>Векторы </span><img src="img/lec5.files/image123.gif" height="20" width="19">&nbsp;и <img src="img/lec5.files/image124.gif" height="27" width="48">&nbsp;взаимно перпендикулярны при любом расположении точки <i>М</i>
+на данной плоскости и поэтому их скалярное произведение равно нулю: <img src="img/lec5.files/image125.gif" height="31" width="104">, т.е.</span></p>
+
+<p>  <img src="img/lec5.files/image126.gif" height="31" width="297">. &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;(9.8)</p>
+
+<p>Уравнение (9.8) называется <i>уравнением плоскости, проходящей через
+данную точку</i><b> </b></span><b><img src="img/lec5.files/image120.gif" height="27" width="116"></span></b>&nbsp;</span><i>перпендикулярно
+вектору </span></i><i><img src="img/lec5.files/image127.gif" height="25" width="108"></span></i><b>. </span></b>Вектор </span><i><img src="img/lec5.files/image121.gif" height="25" width="107"></span></i>&nbsp;называется
+<i>нормальным вектором плоскости.</i></span></p>
+
+<p><i>Замечание</span></i>. На рисунке 4.12 нормальный вектор изображен так, что
+его начало находится на плоскости. Однако, следует помнить, что все векторы, которые
+мы рассматриваем, считаются свободными и могут быть перенесены в любую точку,
+оставаясь равными себе. Вектор <i><img src="img/lec5.files/image121.gif" height="25" width="107"></span></i><i>&nbsp;</span></i><i>исходит
+из начала координат</span></i>, как это показано на рисунке пунктиром. </span></p>
+
+<p>Придавая коэффициентам <i>А</i>, <i>В</i> и <i>С</i> уравнения (9.8) различные значения, можно получить уравнение любой плоскости,
+проходящей через точку <img src="img/lec5.files/image128.gif" height="25" width="28">. Совокупность таких плоскостей называется <i>связкой плоскостей </i>(см. далее п.6)<i>.</i></span></p><br>
+
+<p><img src="img/lec5.files/image129.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Уравнение плоскости, проходящей через три данные точки</i></b></p>
+
+
+<p><img src="img/lec5.files/image130.gif" align="left" height="228" width="272"> Три
+точки пространства, не лежащие на одной прямой, определяют единственную
+плоскость. Найдем уравнение плоскости<i>,</i> проходящей через три данные точки
+<img src="img/lec5.files/image131.gif" height="27" width="107">, <img src="img/lec5.files/image132.gif" height="27" width="116">&nbsp;и </span><img src="img/lec5.files/image133.gif" height="27" width="113">, не лежащие на одной прямой (рис.4.13).</p>
+
+<p>Возьмем на плоскости произвольную точку&nbsp;<img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle"></span>&nbsp;и составим векторы <img src="img/lec5.files/image134.gif" height="31" width="231">, <img src="img/lec5.files/image135.gif" height="31" width="263">, <img src="img/lec5.files/image136.gif" height="31" width="259">.</p>
+<p> Эти векторы лежат в плоскости </span>&#960;</span>,<b> </b>следовательно, они компланарны. Используем
+условие компланарности трех векторов (их смешанное произведение равно нулю), получаем
+<img src="img/lec5.files/image137.gif" height="31" width="191">,
+т.е.</span></p>
+
+<p><b><img src="img/lec5.files/image138.gif" height="111" width="269"></sub></span></b><b>.&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b>(9.9)</span></p>
+
+<p>Уравнение (9.9) есть <i>уравнение плоскости, проходящей через три
+данные точки</i>.</p><br>
+
+<p><img src="img/lec5.files/image139.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Уравнение плоскости в отрезках</i></b></p>
+
+<p>Пусть плоскость отсекает на
+осях <i>О</i></span><i>x</span></i><i>, </span></i><i>Oy</span></i> и </span><i>Oz</span></i>
+соответственно отрезки <i>а</i>, </span><i>b</span></i> и <i>с</i>, т. е. проходит
+через три точки <img src="img/lec5.files/image140.gif" height="31" width="80">,
+<img src="img/lec5.files/image141.gif" height="31" width="79">&nbsp;и <img src="img/lec5.files/image142.gif" height="31" width="79">&nbsp;(рис.4.14).</span></p>
+<p><img src="img/lec5.files/image143.gif" height="220" width="269"></p>
+
+<p>Подставляя
+координаты этих точек в уравнение (9.9), получаем</span></p>
+
+<p><img src="img/lec5.files/image144.gif" height="86" width="130">.</span></p>
+
+<p>Раскрыв определитель, имеем </p>
+
+<p><i><span style="font-size: 15pt;" lang="EN-US">bcx</span></i><i><span style="font-size: 15pt;"> – </span></i><i><span style="font-size: 15pt;" lang="EN-US">abc</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">abz</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">acy</span></i><span style="font-size: 15pt;">
+= 0,</span> т. е.</span></p>
+
+<p><i><span style="font-size: 15pt;" lang="EN-US">bcx</span></i><span style="font-size: 15pt;">
++ <i>асу + </i></span><i><span style="font-size: 15pt;" lang="EN-US">abz</span></i><span style="font-size: 15pt;"> = </span><i><span style="font-size: 15pt;" lang="EN-US">abc</span></i> </span>или</span></p>
+
+<p><img src="img/lec5.files/image145.gif" height="53" width="112"></sub></span><span style="font-size: 12pt;">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.10)</span></p>
+
+<p>Уравнение (9.10) называется <i>уравнением плоскости в отрезках (на осях).</i> </span></p>
+
+<p>&nbsp;</span></p>
+
+<p><img src="img/lec5.files/image146.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Нормальное
+уравнение плоскости</i></b></p>
+
+<p>Положение
+плоскости вполне определяется заданием единичного вектора </span><b><i>e</span></i></b>, имеющего направление перпендикуляра <i>ОК,</i> опущенного на
+плоскость из начала координат, и длиной </span><i>p</span></i> этого перпендикуляра
+(рис.4.15).</p>
+<p><img src="img/lec5.files/image147.gif"  height="242" width="251"></p>
+
+<p>Пусть <i>ОК</i> = </span><i>p</span></i>, а&nbsp;<img style="width: 53px; height: 22px;" alt="" src="img/f9_001.png" align="middle">&nbsp;&nbsp;– углы, образованные
+единичным вектором </span><b><i>е</span></i></b> с осями <i>Ох, Оу</i> и </span><i>Oz</span></i><i>.</span></i> Тогда&nbsp;</span><img style="width: 182px; height: 23px;" alt="" src="img/f9_002.png" align="middle"></span>. </span></p>
+
+<p>Возьмем
+на плоскости произвольную точку </span><i><span style="font-size: 15pt;" lang="EN-US">M</span></i><span style="font-size: 15pt;">(</span><i><span style="font-size: 15pt;" lang="EN-US">x</span></i><i><span style="font-size: 15pt;">; у; </span></i><i><span style="font-size: 15pt;" lang="EN-US">z</span></i>)
+и соединим ее с началом координат. Образуем вектор <img src="img/lec5.files/image150.gif" height="31" width="147"></span><i>. </span></i>При любом положении точки <i>М</i> на плоскости
+проекция радиус-вектора </span><b><i><span style="font-size: 16pt;" lang="EN-US">r</span></i></b><i> </i>на
+направление вектора </span><b><i><span style="font-size: 16pt;" lang="EN-US">e</span></i></b> всегда равна </span><i>p</span></i></p>
+
+<p><img src="img/lec5.files/image151.gif" height="28" width="79">,
+т.е. &nbsp;<img src="img/lec5.files/image152.gif" height="21" width="67">&nbsp;&nbsp;или</span></p>
+
+<p><img src="img/lec5.files/image153.gif" height="25" width="93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.11)</p>
+
+<p>Уравнение
+(9.11) называется <i>нормальным уравнением плоскости в
+векторной форме.</i> Зная координаты векторов </span><b><i><span style="font-size: 16pt;" lang="EN-US">r</span></i></b><b><span style="font-size: 12pt;" lang="EN-US"> </span></b>и </span><b><i><span style="font-size: 16pt;" lang="EN-US">e</span></i></b>, уравнение (9.11) перепишем в виде</span></p>
+
+<p></span><img style="width: 274px; height: 32px;" alt="" src="img/f9_12.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.12)</span></p>
+
+<p>Уравнение
+(9.12) называется <i>нормальным уравнением плоскости в
+координатной форме.</i></span></p>
+
+<p>Отметим,
+что общее уравнение плоскости (9.7) можно привести к нормальному уравнению (9.12) так, как это делалось для уравнения прямой на плоскости. А именно:
+умножить обе части уравнения (9.7) на нормирующий множитель <img src="img/lec5.files/image155.gif" height="56" width="173">, где
+знак берется противоположным знаку свободного члена </span><i>D</span></i> общего
+уравнения плоскости. </span></p>
+
+<p>В этом случае <img src="img/lec5.files/image156.gif" height="20" width="17">&nbsp;(расстояние
+от начала координат до плоскости) будет иметь положительное значение. Заметим,
+что таким образом мы вводим <br>
+различие между двумя сторонами плоскости: сторона, обращенная к началу координат,
+становится «положительной», а противоположная сторона этой же плоскости –
+«отрицательной». Разумеется, такое различие носит искусственный характер, но
+может пригодится при решении некоторых задач.</span></p>
+
+<p>Если
+свободный член <img src="img/lec5.files/image157.gif" height="20" width="20">&nbsp;равен
+нулю, то это различие исчезает, а знак нормирующего множителя&nbsp;</span><img style="width: 12px; height: 18px;" alt="" src="img/lec6.files/f_lambda.png" align="middle"></span>&nbsp;выбирается произвольно.</span></p>
+<br>
+<p><img src="img/lec5.files/image158.gif" align="left" height="40" width="40"> <b><i>Связка и пучок
+плоскостей</span></i></b></p>
+
+<p><i>Связкой
+плоскостей</span></i> называют совокупность
+плоскостей, проходящих через фиксированную точку – <i>центр связки</i>. Пусть
+три плоскости с уравнениями</span></p>
+
+<p><img src="img/lec5.files/image159.gif" height="27" width="193">,</p>
+
+<p><img src="img/lec5.files/image160.gif" height="27" width="203">,</p>
+
+<p><img src="img/lec5.files/image161.gif" height="27" width="200"></p>
+
+<p>пересекаются в единственной
+точке <img src="img/lec5.files/image162.gif" height="27" width="31">. Тогда
+уравнение</span></p>
+
+<p><img style="width: 561px; height: 25px;" alt="" src="img/f9_13.png" align="middle"></span>,&nbsp; (9.13)</span></p>
+
+<p><img src="img/lec5.files/image164.gif" align="right" height="180" width="155">где коэффициенты&nbsp;</span><img style="width: 53px; height: 22px;" alt="" src="img/f9_001.png" align="middle"></span>&nbsp;одновременно
+не равны нулю (что равносильно равенству&nbsp;</span><img style="width: 132px; height: 25px;" alt="" src="img/f9_003.png" align="middle"></span>), называется <i>уравнением связки</i> <i>плоскостей</i>
+с центром в точке <img src="img/lec5.files/image162.gif" height="27" width="31">.</p>
+
+<p>Любая плоскость, проходящая через точку <img src="img/lec5.files/image162.gif" height="27" width="31">, может быть задана
+уравнением вида (9.13), т.е. для неё можно подобрать соответствующие
+коэффициенты&nbsp;</span><img style="width: 53px; height: 22px;" alt="" src="img/f9_001.png" align="middle"></span>.
+И наоборот, любое уравнение вида (9.13), где&nbsp;</span><img style="width: 53px; height: 22px;" alt="" src="img/f9_001.png" align="middle"></span>&nbsp;одновременно не равны нулю, определяет плоскость,
+проходящую через точку <img src="img/lec5.files/image162.gif" height="27" width="31">. Доказательство этого предложения можно найти в [3].</span></p>
+
+<p>Заметим, что условием того, что три плоскости
+пересекаются в одной точке, является <i>некомпланарность</i> их нормальных
+векторов, т.е. отличие от нуля их смешанного произведения </p>
+
+<p><img style="width: 89px; height: 26px;" alt="" src="img/f9_004.png" align="middle"></span></span>&nbsp;или </span><img style="width: 142px; height: 93px;" alt="" src="img/f9_005.png" align="middle"></span>.</span></p>
+
+<p><i>Пучком плоскостей</span></i> называется совокупность плоскостей, проходящих через фиксированную
+прямую – <i>ось пучка</i>. </span></p>
+
+<p>Если какие-либо две плоскости пучка заданы уравнениями</span></p>
+
+<p><img src="img/lec5.files/image159.gif" height="27" width="193">&nbsp;и <sub><img src="img/lec5.files/image160.gif" height="27" width="203"></sub>,</span></p>
+
+<p>то уравнение пучка плоскостей
+может быть задано уравнением</span></p>
+
+<p></span><img style="width: 412px; height: 23px;" alt="" src="img/f9_14.png" align="middle"></span>, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.14)</p>
+
+<p>где коэффициенты <img src="img/lec5.files/image169.gif" height="17" width="17">&nbsp;и <img src="img/lec5.files/image170.gif" height="21" width="13">&nbsp;одновременно не равны нулю, т.е.
+<sub><img src="img/lec5.files/image171.gif" height="31" width="93"></sub>.</span></p>
+
+<p>Отсюда
+следует, что задавать прямую можно уравнениями каких-либо двух непараллельных
+плоскостей, пересекающихся по этой прямой.
+</p>
+<br>
+<a name=3 class="anchor"></a>
+<h3>9.3. Уравнения прямой в пространстве</h3>
+
+<p><img src="img/lec5.files/image172.gif" align="left" height="40" width="40"></p>
+<p><b><i>Общие уравнения прямой</i></b></p>
+<br>
+<p><img src="img/lec5.files/image173.gif" align="left" height="230" width="215">Как уже говорилось, линия в
+пространстве рассматривается как пересечение двух поверхностей и определяется
+заданием двух уравнений. В частности, прямую в пространстве можно задать как
+линию пересечения двух плоскостей. Рассмотрим систему двух уравнений первой
+степени </span></p>
+
+<p><img src="img/lec5.files/image174.gif" height="61" width="221">&nbsp;&nbsp;&nbsp;&nbsp; (9.15) </p>
+
+<p>Каждое из уравнений этой
+системы определяет плоскость. Если плоскости не параллельны и не совпадают, то
+система (9.15) определяет прямую </span><i>L</span></i> как
+геометрическое место точек пространства, координаты которых удовлетворяют
+каждому из уравнений системы (рис.4.17). Уравнения (9.15) называют <i>общими уравнениями прямой.</i> </p>
+
+<p> Пусть первое
+уравнение системы (9.15) определяет плоскость </span><span style="font-size: 15pt;">&#960;<sub>1</sub></span>, второе
+уравнение – плоскость </span><span style="font-size: 15pt;">&#960;<sub>2</sub></span>. Тогда нормальные векторы этих плоскостей </span><sub><img src="img/lec5.files/image175.gif" height="31" width="127"></sub></span>&nbsp;и <img src="img/lec5.files/image176.gif" height="31" width="137">&nbsp;не
+коллинеарны. Следовательно, координаты этих векторов не пропорциональны. Это
+условие необходимо и достаточно, чтобы система ( 9.15 ) определяла бы
+прямую в пространстве. </span></p>
+
+<p>Через
+каждую прямую проходит бесконечно много плоскостей. Очевидно, существует
+бесконечно много возможностей выбрать из них какие-нибудь две из них. Отсюда следует,
+что каждую прямую можно определить двумя уравнениями бесконечно многими
+различными способами. В частности, любая линейная комбинация данных двух уравнений
+(9.15) определяет плоскость, которая тоже содержит данную прямую. </p>
+<br>
+<p><img src="img/lec5.files/image177.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Канонические уравнения прямой</i></b></p>
+
+<p>Пусть дана какая-нибудь
+прямая. Любой ненулевой вектор, лежащий на этой прямой или параллельной ей,
+называется <i>направляющим вектором</i> этой прямой. </span></p>
+
+<p><img src="img/lec5.files/image178.gif" align="left" height="208" width="207"> Пусть </span><img src="img/lec5.files/image179.gif" height="25" width="93"><i>&nbsp;—</span></i> направляющий вектор прямой </span><i>L</span></i>
+и <img src="img/lec5.files/image120.gif" height="27" width="116">&nbsp;— точка, лежащая на этой прямой. Пусть&nbsp;<img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle"> &nbsp;произвольная
+(«текущая») точка прямой. (рис.4.18). Вектор <img src="img/lec5.files/image180.gif" height="31" width="52"></span>,
+соединяющий точку <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;с точкой&nbsp;</span><img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle"></span>&nbsp;прямой </span><i>L</span></i>, коллинеарен вектору </span><b><i>q</span></i></b>. Поэтому координаты векторов <img src="img/lec5.files/image122.gif" height="31" width="239">&nbsp;и <img src="img/lec5.files/image179.gif" height="25" width="93">&nbsp; пропорциональны:</span></p>
+
+<p>  <img src="img/lec5.files/image181.gif" height="52" width="185"></sub></span>.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.16)</span></p>
+
+<p>Уравнения (9.16<) называются <i>каноническими уравнениями прямой </i>в пространстве.</p>
+
+<p><i>Замечание</span></i>. Обращение в нуль одного из знаменателей уравнений (9.16) означает обращение в нуль соответствующего числителя.</span></p>
+
+<p>Например,
+уравнения <img src="img/lec5.files/image182.gif" height="45" width="145">&nbsp;задают прямую, проходящую через точку&nbsp;<img style="width: 105px; height: 24px;" alt="" src="img/f9_006.png" align="middle"></span>&nbsp;</span></span>перпендикулярно
+оси </span><i>Oz</span></i> (проекция вектора </span><b><i>q</span></i></b> на ось
+</span><i>Oz</span></i> равна нулю). Но это означает, что прямая лежит в
+плоскости&nbsp; </span><i>z</span></i> = 1. Её общие уравнения могут быть записаны в виде</span></p>
+
+<p><img src="img/lec5.files/image184.gif" height="73" width="111"></p>
+
+<p> Другой пример.
+Уравнения <img src="img/lec5.files/image185.gif" height="45" width="100">&nbsp;задают прямую, проходящую через точку&nbsp;<img style="width: 91px; height: 25px;" alt="" src="img/f9_007.png" align="middle">&nbsp;</span></span>с
+направляющим вектором – ортом&nbsp;<img style="width: 89px; height: 24px;" alt="" src="img/f9_008.png" align="middle"></span>. Следовательно, эта прямая совпадает с осью </span><i>Oz</span></i>.</span></p>
+<br>
+<p><img src="img/lec5.files/image188.gif" align="left" height="40" width="40"></p>
+<p><b><i>Уравнение прямой, проходящей через две точки</span></i></b></p>
+
+<p><img src="img/lec5.files/image189.gif" align="left" height="202" width="170">  Пусть
+прямая </span><i>L</span></i> проходит через точки <img src="img/lec5.files/image131.gif" height="27" width="107">&nbsp;и <img src="img/lec5.files/image132.gif" height="27" width="116">. В
+качестве направляющего вектора </span><b><i>q</span></i></b> можно взять вектор <img src="img/lec5.files/image190.gif" height="31" width="267">, т.е. <img src="img/lec5.files/image191.gif" height="31" width="87"> &nbsp;(рис.4.19). </span></p>
+
+<p>Следовательно,
+<img src="img/lec5.files/image192.gif" height="27" width="81">,  <img src="img/lec5.files/image193.gif" height="27" width="92">,  <img src="img/lec5.files/image194.gif" height="27" width="84">. Поскольку
+прямая проходит через точку <img src="img/lec5.files/image131.gif" height="27" width="107">, то, согласно уравнениям (9.16), уравнения прямой </span><i>L</span></i><i> </span></i>имеют вид</span></p>
+
+<p>  <img src="img/lec5.files/image195.gif" height="56" width="201">.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.17)</span></p>
+
+<p>Уравнения (9.17) называются <i>уравнениями прямой, проходящей через две данные точки.</i></span></p>
+<br>
+<p><img src="img/lec5.files/image196.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Векторное уравнение прямой </i></b></p>
+
+<p>Положение прямой в пространстве вполне определено, если задать какую-либо точку <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;на прямой и направляющий вектор <b><i>q</i></b>, т.е. вектор, коллинеарный этой
+прямой (рис.4.20). Пусть прямая </span><i>L</span></i> задана точкой <img src="img/lec5.files/image120.gif" height="27" width="116">&nbsp;и направляющим вектором <img src="img/lec5.files/image179.gif" height="25" width="93">. </span></p>
+
+<p>Возьмем на прямой </span><i>L</span></i> произвольную точку&nbsp;</span><img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle"></span><i>,</span></i> О6oзначим
+радиус-векторы точек <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;</span>и </span><i><span style="font-size: 15pt;">М</span></i><span style="font-size: 15pt;"> </span>соответственно
+через </span><b><i><span style="font-size: 16pt;" lang="EN-US">r</span></i></b><sub>0</span></sub> и </span><b><i><span style="font-size: 16pt;" lang="EN-US">r</span></i></b>. Очевидно, что три вектора </span><b><i><span style="font-size: 16pt;" lang="EN-US">r</span></i></b><sub>0</span></sub>, </span><b><i><span style="font-size: 16pt;" lang="EN-US">r</span></i></b> и </span><span style="font-size: 12pt;" lang="EN-US"><sub><img src="img/lec5.files/image180.gif" height="31" width="52"></sub></span><i>&nbsp;</span></i>связаны соотношением</span></p>
+
+<p><img src="img/lec5.files/image197.gif" align="left" height="195" width="207"><img src="img/lec5.files/image198.gif" height="31" width="113">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.18)</span></p>
+
+<p>Вектор <img src="img/lec5.files/image180.gif" height="31" width="52">,
+лежащий на прямой </span><i>L</span></i>, коллинеарен направляющему вектору <b><i>q</i></b><i>,</i>
+поэтому <img src="img/lec5.files/image199.gif" height="31" width="87"><i>, </span></i>где </span><i>t</span></i><i>
+—</span></i> скалярный множитель, называемый <i>параметром,</i>
+может принимать различные значения в зависимости от положения точки <i>М</i> на
+прямой. Уравнение (9.18) можно записать в виде</span></p>
+
+<p><img src="img/lec5.files/image200.gif" height="27" width="83">.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.19)</span></p>
+
+<p>Полученное уравнение
+называется <i>векторным уравнением прямой</i>. Такая форма удобна при описании
+инвариантных, не зависящих от координат, процессов, поскольку использует
+геометрическую природу вектора.</span></p>
+<br>
+<p><img src="img/lec5.files/image201.gif" align="left" height="40" width="40"></p>
+
+<p><b><i>Параметрические уравнения прямой</span></i></b></p>
+
+<p>Расписывая уравнение (9.19) по координатам, получим равенства</span></p>
+
+<p><img src="img/lec5.files/image202.gif" height="92" width="113">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.20)</span></p>
+
+<p>Они называются <i>параметрическими уравнениями прямой</i> в пространстве. Те же равенства можно получить из
+канонических уравнений прямой (9.16). В этом случае общее отношение обозначим через <i>t</span></i>:</span></p>
+
+<p><img src="img/lec5.files/image203.gif" height="51" width="220">,</span></p>
+
+<p>и выразим каждое из
+переменных </span><i>x</span></i><i>, </span></i><i>y</span></i><i>, </span></i>и<i> </i></span><i>z</span></i> через параметр </span><i>t</span></i>.
+В результате получим равенства (9.20).</span></p>
+
+<p><i>Пример</span></i>. Прямая линия имеет канонические уравнения </span></p>
+
+<p><img src="img/lec5.files/image204.gif" height="45" width="145">.</span></p>
+
+<p>Тогда
+её параметрические уравнения будут иметь вид: <sub><img style="width: 85px; height: 79px;" alt="" src="img/lec5.files/image205.gif" align="middle"></p>
+
+<p><i>Замечание</span></i><b>. </span></b>&nbsp;Канонические
+уравнения прямой, также как и уравнения прямой, проходящей через две данные
+точки, записываются в виде одной формулы, но надо понимать, что это лишь удобная
+форма записи <i>нескольких</i> уравнений в одной формуле, то есть в виде двойного
+или тройного равенства.</span></p>
+<br>
+<a name=4 class="anchor"></a>
+<h3>9.4. Типовые задачи в пространстве</h3>
+
+<p><b>1.&nbsp;&nbsp;&nbsp;
+</b><b>Как найти угол между плоскостями</b></p>
+
+<p><img src="img/lec5.files/image206.gif" align="right" height="206" width="267">Пусть
+две непараллельные плоскости <img src="img/lec5.files/image207.gif" height="25" width="20">&nbsp;и </span><img src="img/lec5.files/image208.gif" height="25" width="23">&nbsp;заданы своими общими уравнениями:</span></p>
+
+<p><img src="img/lec5.files/image159.gif" height="27" width="193">,</span></p>
+
+<p><img src="img/lec5.files/image160.gif" height="27" width="203">.</span></p>
+
+<p>Под <i>углом между плоскостями </i><img src="img/lec5.files/image207.gif" height="25" width="20">&nbsp;и <img src="img/lec5.files/image208.gif" height="25" width="23">&nbsp;понимается меньший из двугранных углов, образованных
+этими<span style="text-transform: uppercase;"> </span>плоскостями. Как известно,
+он измеряется величиной соответствующего линейного угла, образованного двумя
+перпендикулярами в этих плоскостях к их общей прямой (рис.4.21).</span></p>
+
+<p>Как следует из равенства углов с соответственно перпендикулярными сторонами, угол </span><span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966;</span><i> </span></i>между
+нормальными векторами <img src="img/lec5.files/image209.gif" height="27" width="125">&nbsp;и <img src="img/lec5.files/image210.gif" height="27" width="135">&nbsp;плоскостей </span><img src="img/lec5.files/image207.gif" height="25" width="20">&nbsp;и <img src="img/lec5.files/image208.gif" height="25" width="23">&nbsp;равен
+или этому линейному углу или его дополнению до 180°. Отсюда вытекает формула
+для вычисления угла между плоскостями:</span></p>
+
+<p><img src="img/lec5.files/image211.gif" height="56" width="127">&nbsp;или <img src="img/lec5.files/image212.gif" height="61" width="319">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.21)</span></p>
+
+<p><i>Пример</span></i>. Найдем угол <span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966;</span> между плоскостями <img src="img/lec5.files/image213.gif" height="24" width="117">&nbsp;и <img src="img/lec5.files/image214.gif" height="24" width="119">. Поскольку нормальные векторы
+плоскостей <img src="img/lec5.files/image215.gif" height="27" width="107">&nbsp;и <img src="img/lec5.files/image216.gif" height="27" width="108">, то <img src="img/lec5.files/image217.gif" height="48" width="153">. Следовательно,
+опуская знак «минус», <img src="img/lec5.files/image218.gif" height="45" width="129">.</p>
+<br>
+<p><b>2.&nbsp;&nbsp;&nbsp; </b><b>Когда две плоскости перпендикулярны</b></p>
+
+<p><img src="img/lec5.files/image219.gif" align="left" height="176" width="171">Если плоскости <img src="img/lec5.files/image207.gif" height="25" width="20">&nbsp;и <img src="img/lec5.files/image208.gif" height="25" width="23">&nbsp;перпендикулярны
+(рис.4.22), то их нормальные векторы ортогональны, т. е. <img src="img/lec5.files/image220.gif" height="25" width="56">. Но
+тогда скалярное произведение этих векторов равно нулю: <img src="img/lec5.files/image221.gif" height="27" width="80">. Записывая это равенство в декартовых координатах, получим</span></p>
+
+<p><img src="img/lec5.files/image222.gif" height="27" width="187"><i>.</span></i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.22)</span></p>
+
+<p>Полученное равенство есть <i>условие перпендикулярности двух данных плоскостей</i>.</span></p>
+
+<p><i>Пример</span></i>. Плоскости <img src="img/lec5.files/image223.gif" height="24" width="149">&nbsp;и <img src="img/lec5.files/image224.gif" height="24" width="161">&nbsp;перпендикулярны, т.к. их нормальные
+векторы <img src="img/lec5.files/image225.gif" height="27" width="103">&nbsp;и</span>
+<img src="img/lec5.files/image226.gif" height="25" width="121">&nbsp;ортогональны</span>: <img src="img/lec5.files/image227.gif" height="25" width="75">.</p>
+
+<p><b>&nbsp;</span></b></p>
+
+<p><b>3.&nbsp;&nbsp;&nbsp;</b><b>Когда две плоскости параллельны</b></p>
+
+<p>Пусть
+плоскости <img src="img/lec5.files/image207.gif" height="25" width="20">&nbsp;и <img src="img/lec5.files/image208.gif" height="25" width="23">&nbsp;параллельны и не совпадают (рис.4.23). Тогда их нормальные векторы
+коллинеарны: <img src="img/lec5.files/image228.gif" height="25" width="19"><b>||</b><img src="img/lec5.files/image229.gif" height="25" width="20">. В этом случае, как
+известно, координаты векторов пропорциональны: </span></p>
+
+<p><img src="img/lec5.files/image230.gif" align="left" height="191" width="169"><img src="img/lec5.files/image231.gif" height="55" width="164">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(9.23)</span></p>
+
+<p>Последнее неравенство
+«предохраняет» наши плоскости от совпадения. Формула (9.23) даёт <i>условue</span></i> </span><i>параллельности двух данных плоскостей</span></i>. </span></p>
+
+<p><i>Пример</span></i>. Плоскость <img src="img/lec5.files/image232.gif" height="24" width="160">&nbsp;параллельна плоскости <img src="img/lec5.files/image233.gif" height="24" width="168">, т.к. их нормальные векторы <img src="img/lec5.files/image234.gif" height="25" width="103">&nbsp;и <img src="img/lec5.files/image235.gif" height="23" width="109">&nbsp;коллинеарны.</span></p>
+<br>
+<p><b>4.&nbsp;&nbsp;&nbsp; </b><b>Как найти расстояние от точки до плоскости</span></b></p>
+
+<p><img src="img/lec5.files/image236.gif" align="left" height="215" width="183">  Пусть дана
+точка <img src="img/lec5.files/image120.gif" height="27" width="116">&nbsp;и плоскость &#960;, заданная своим уравнением <img src="img/lec5.files/image237.gif" height="25" width="171">. Расстояние </span><i>d</span></i>
+от точки <img src="img/lec5.files/image162.gif" height="27" width="31"> &nbsp;до плоскости &#960; находится по формуле </span></p>
+
+<p><img src="img/lec5.files/image238.gif" height="60" width="207">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.24)</p>
+
+<p>Ниже следует вывод этой
+формулы (сравните с выводом соответствующей формулы на плоскости, пункт 7.3, задача 7).</p>
+
+<p>Пусть <img src="img/lec5.files/image131.gif" height="27" width="107">&nbsp;–
+произвольная точка плоскости &#960;. Расстояние <i>d</span></i> от точки <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;до
+плоскости &#960;</span> равно модулю проекции вектора <img src="img/lec5.files/image239.gif" height="28" width="53">&nbsp;</span>на направление нормального
+вектора <img src="img/lec5.files/image240.gif" height="25" width="104">&nbsp;(рис.4.24). Следовательно,</span></p>
+
+<p><img src="img/lec5.files/image241.gif" height="67" width="549"></p>
+
+<p><img src="img/lec5.files/image242.gif" height="60" width="295">.</span></p>
+
+<p>Но так как точка <img src="img/lec5.files/image131.gif" height="27" width="107">&nbsp;принадлежит
+плоскости &#960;</span>, то <img src="img/lec5.files/image243.gif" height="27" width="188">, т.е. <img src="img/lec5.files/image244.gif" height="27" width="172">. </span></p>
+
+<p>Поэтому <img src="img/lec5.files/image238.gif" height="60" width="207">. </span></p>
+
+<p>Отметим, что если плоскость &#960; задана уравнением&nbsp;<img style="width: 258px; height: 23px;" alt="" src="img/f9_009.png" align="middle">, то расстояние от точки <img src="img/lec5.files/image120.gif" height="27" width="116">&nbsp;до плоскости &#960; может быть найдено по формуле</span></p>
+
+<p><img style="width: 298px; height: 29px;" alt="" src="img/f9_010.png" align="middle"></p>
+<br>
+<p><b>5.&nbsp;&nbsp;&nbsp; </b><b>Когда плоскость пересекает отрезок</b></p>
+
+<p>Пусть плоскость &#960; задана общим уравнением <img src="img/lec5.files/image247.gif" align="left" height="217" width="178"> <img src="img/lec5.files/image237.gif" height="25" width="171">, а отрезок координатами
+своих концов  <img src="img/lec5.files/image131.gif" height="27" width="107">&nbsp;и <img src="img/lec5.files/image132.gif" height="27" width="116">&nbsp;(рис.4.25). Ответим на вопрос, пересекает ли
+плоскость отрезок <img src="img/lec5.files/image038.gif" height="25" width="51">?
+</span></p>
+
+<p>Если при подстановке координат концов отрезка в левую часть уравнения плоскости
+получатся значения разных знаков, то эти точки лежат по разные стороны от
+плоскости. Это условие является необходимым и достаточным, чтобы плоскость
+пересекала бы отрезок. </span></p>
+
+<p><i>Пример</span></i>. Пусть даны точки <i>A(-1;-1;3), B(3;3;1), C(1;1;1)</i>  и плоскость с уравнением <img src="img/lec5.files/image251.gif" height="21" width="121">. Подставляя координаты
+точек в уравнение, получаем, что в точках <i>А </i>и <i>С </i>левая часть
+уравнения отрицательна, а в точке <i>В </i>- положительна. Следовательно, отрезок
+<i>АВ</i> пересекается плоскостью, а точки <i>А</i> и <i>С</i> лежат по одну
+сторону от плоскости.</span></p>
+<br>
+<p><b>6. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><b>Как перейти от общих уравнений прямой к каноническим
+уравнениям</b></p>
+<p><img src="img/lec5.files/image252.gif" align="left" height="242" width="175"></p>
+<p>От общих уравнений (9.15) перейдем к каноническим уравнениям (9.16). Координаты точки <img src="img/lec5.files/image253.gif" height="25" width="28">&nbsp;напрямой </span><i>L</span></i> получаем из системы уравнений (9.15), придав одной из координат произвольное значение (например, </span><i>z</span></i>= 0).</span></p>
+
+<p>Так как прямая </span><i>L</span></i> перпендикулярна векторам <b><i>n</i></b><sub>1</sub>
+и </span><b><i>n</span></i></b><sub>2</span></sub>, то за
+направляющий вектор </span><b><i>q</span></i></b><i> </i>прямой
+</span><i>L</span></i> можно принять векторное произведение <img src="img/lec5.files/image254.gif" height="27" width="55">:</span></p>
+
+<p><img src="img/lec5.files/image255.gif" height="91" width="213">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.25)</span></p>
+
+<p><i>Пример.</span></i> Написать канонические уравнения прямой </span><i>L</span></i>,
+заданной уравнениями &nbsp;<img src="img/lec5.files/image256.gif" height="53" width="143"></p>
+
+<p>Решение: Положим <img src="img/lec5.files/image257.gif" height="21" width="44">&nbsp;и решим систему <img style="width: 93px; height: 53px;" alt="" src="img/lec5.files/image258.gif" align="middle">.
+Находим точку </span><sub><img src="img/lec5.files/image259.gif" height="24" width="83"></sub></span>, принадлежащую прямой </span><i>L</i>. Найдем
+направляющий вектор прямой по формуле (9.25):</span></p>
+
+<p><img src="img/lec5.files/image260.gif" height="79" width="199">.</p>
+
+<p>Итак, запишем канонические
+уравнения данной прямой:</p>
+
+<p><img src="img/lec5.files/image261.gif" height="45" width="131">.</p>
+
+<p><i>Замечание:</span></i> Канонические уравнения прямой можно получить, взяв
+две какие-либо точки на ней и применяя уравнения (9.17) прямой, проходящей через две точки. </span></p>
+
+<p>В приведенном выше примере была найдена точка <img src="img/lec5.files/image259.gif" height="24" width="83">на прямой </span><i>L</span></i>. Положим <img src="img/lec5.files/image262.gif" height="21" width="41">&nbsp;и решим систему <img src="img/lec5.files/image263.gif" height="53" width="99">.
+Находим вторую точку </span><sub><img src="img/lec5.files/image264.gif" height="24" width="77"></sub></span>&nbsp;на прямой </span><i>L</span></i><i>.</span></i> Запишем уравнение прямой </span><i>L</span></i>,
+проходящей через точки <img src="img/lec5.files/image265.gif" height="24" width="25">&nbsp;и <img src="img/lec5.files/image266.gif" height="24" width="27">: <img src="img/lec5.files/image267.gif" height="45" width="121">. Нетрудно увидеть, что получен тот же ответ.</p>
+<br>
+<p><b>7.&nbsp;&nbsp;&nbsp; </b><b>Как найти угол между двумя прямыми </b></p>
+
+<p>Пусть
+прямые <img src="img/lec5.files/image268.gif" height="27" width="20">&nbsp;и <img src="img/lec5.files/image269.gif" height="27" width="23">&nbsp;заданы своими каноническими уравнениями:</span></p>
+
+<p><img src="img/lec5.files/image270.gif" align="left" height="199" width="167"><img src="img/lec5.files/image271.gif" height="55" width="187">&nbsp;и <img src="img/lec5.files/image272.gif" height="55" width="195">.</span></p>
+
+<p>Найдём угол между их направляющими
+векторами <img src="img/lec5.files/image273.gif" height="27" width="116">&nbsp;и <img src="img/lec5.files/image274.gif" height="27" width="125">&nbsp;(рис.4.27). Используя известную формулу для косинуса
+угла между векторами, получаем: <img style="width: 124px; height: 56px;" alt="" src="img/lec5.files/image275.gif" align="middle">&nbsp;или</span></p>
+
+<p><img src="img/lec5.files/image276.gif" height="61" width="299">. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.26)</span></p>
+
+<p>Очевидно,
+взяв абсолютную величину правой части равенства (9.26), получим острый угол
+между данными прямыми. Случай, когда правая часть равна нулю, рассмотрен ниже.</span></p>
+
+<p><i>Пример.</i>
+Найти угол между прямыми</span></p>
+
+<p><img src="img/lec5.files/image277.gif" height="45" width="124">&nbsp;и  <img src="img/lec5.files/image278.gif" height="53" width="143"></p>
+
+<p><i>Решение</span></i>. Очевидно, <img src="img/lec5.files/image279.gif" height="24" width="83">, </span>a</span> <img src="img/lec5.files/image280.gif" height="24" width="84"><i>,</span></i> где <img src="img/lec5.files/image281.gif" height="24" width="93">, <img src="img/lec5.files/image282.gif" height="24" width="97">. Отсюда
+следует, что <img src="img/lec5.files/image283.gif" height="24" width="108">. Тогда <img style="width: 253px; height: 48px;" alt="" src="img/lec5.files/image284.gif" align="middle">. Взяв абсолютную величину этого значения,
+вычислим острый угол между данными прямыми:&nbsp;<img style="width: 178px; height: 25px;" alt="" src="img/f9_011.png">&nbsp;.</span></p>
+<br>
+<p><b>8.&nbsp;&nbsp;&nbsp; </span></span></b><b>Когда две прямые перпендикулярны</span></b></p>
+
+<p>Если <i>прямые</i> <img src="img/lec5.files/image286.gif" height="25" width="19">&nbsp;</span><i>и </span></i><i><img src="img/lec5.files/image287.gif" height="25" width="21"></i><i>&nbsp;перпендикулярны,</span></i> то в этом и только в этом случае имеем <img src="img/lec5.files/image288.gif" height="24" width="72">. Тогда
+числитель дроби (9.26) равен нулю, т.е.</span></p>
+
+<p><img src="img/lec5.files/image289.gif" height="27" width="169">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.27)</span></p>
+
+<p>Равенство (9.27) есть <i>условие перпендикулярности</i> двух прямых.</span></p>
+
+<p><i>Пример</span></i>. Прямые <img src="img/lec5.files/image290.gif" height="45" width="173">&nbsp;и <img src="img/lec5.files/image291.gif" height="45" width="153">&nbsp;перпендикулярны, так как их направляющие векторы  <img src="img/lec5.files/image292.gif" height="24" width="93">&nbsp;и  <img src="img/lec5.files/image293.gif" height="24" width="85">&nbsp;ортогональны.</span></p>
+<br>
+<p><b>9. &nbsp;&nbsp;&nbsp; </b><b>Когда две прямые параллельны</span></b></p>
+
+<p>Если <i>прямые</i> <img src="img/lec5.files/image286.gif" height="25" width="19">&nbsp;</span><i>и </span></i><i><img src="img/lec5.files/image287.gif" height="25" width="21"></i><i>&nbsp;параллельны,</span></i> то коллинеарны их направляющие векторы <img src="img/lec5.files/image294.gif" height="25" width="17">&nbsp;и <img src="img/lec5.files/image295.gif" height="25" width="20">. Следовательно, координаты этих векторов пропорциональны, т.е. </span></p>
+
+<p><img src="img/lec5.files/image296.gif" height="55" width="109">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.28)</span></p>
+
+<p>При выполнении этих
+равенств прямые <img src="img/lec5.files/image286.gif" height="25" width="19">&nbsp;</span>и<i> </i></span><i><img src="img/lec5.files/image287.gif" height="25" width="21"></i>&nbsp;параллельны,
+но могут и совпадать. В последнем случае любая точка, лежащая на одной из
+прямых, лежит и на другой. Поэтому при совпадении прямых, наряду с (9.28), имеем </span></p>
+
+<p><img src="img/lec5.files/image297.gif" height="55" width="212">.</span></p>
+
+<p>Если хотя бы одно из этих
+последних равенств не выполняется, а равенства (9.28) имеют место,
+то прямые <img src="img/lec5.files/image286.gif" height="25" width="19">&nbsp;</span>и<i> </i></span><i><img src="img/lec5.files/image287.gif" height="25" width="21"></i>&nbsp;параллельны
+(и при этом не совпадают).</p>
+
+<p><i>Пример</span></i>. Прямые <img src="img/lec5.files/image290.gif" height="45" width="173">&nbsp;и <img src="img/lec5.files/image298.gif" height="45" width="161">&nbsp;параллельны, так как их направляющие векторы <img src="img/lec5.files/image292.gif" height="24" width="93">&nbsp;и <img src="img/lec5.files/image299.gif" height="24" width="107">&nbsp;коллинеарны,
+а условие совпадения прямых не выполняется: точка <img src="img/lec5.files/image300.gif" height="24" width="83">&nbsp;не
+принадлежит прямой </span><i><img src="img/lec5.files/image301.gif" height="24" width="20"></span></i>.</span></p>
+<br>
+<p><b>10.&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Когда две прямые лежат в
+одной плоскости</span></b></p>
+
+<p>Пусть прямые <img src="img/lec5.files/image268.gif" height="27" width="20">&nbsp;и <img src="img/lec5.files/image269.gif" height="27" width="23">&nbsp;заданы каноническими уравнениями </span></p>
+
+<p><img src="img/lec5.files/image302.gif" align="left" height="216" width="227"><img src="img/lec5.files/image271.gif" height="55" width="187">&nbsp;и <img src="img/lec5.files/image303.gif" height="55" width="195">.</span></p>
+
+<p>Их направляющие векторы равны
+&nbsp;<img src="img/lec5.files/image273.gif" height="27" width="116">&nbsp;и <img src="img/lec5.files/image274.gif" height="27" width="125">&nbsp;(рис.4.28). </span></p>
+
+<p>Прямая <img src="img/lec5.files/image268.gif" height="27" width="20">&nbsp;проходит
+через точку <img src="img/lec5.files/image131.gif" height="27" width="107"></sub></span>, а прямая </span><sub><img src="img/lec5.files/image269.gif" height="27" width="23">&nbsp;проходит через точку <img src="img/lec5.files/image132.gif" height="27" width="116">. Тогда
+</span><sub><img src="img/lec5.files/image190.gif" height="31" width="267">.</span></p>
+
+<p>Прямые
+<img src="img/lec5.files/image268.gif" height="27" width="20">&nbsp;и <img src="img/lec5.files/image269.gif" height="27" width="23">&nbsp;лежат
+в одной плоскости, если векторы </span><b><i>q</span></i></b><sub>1</span></sub>, </span><b><i>q</span></i></b><sub>2</span></sub><b><i> </span></i></b>и <img src="img/lec5.files/image304.gif" height="31" width="57"></span>&nbsp;компланарны. Условием компланарности векторов является
+равенство нулю их смешанного произведения: <img src="img/lec5.files/image305.gif" height="31" width="129">, т.e</span>. </span></p>
+
+<p><img src="img/lec5.files/image306.gif" height="84" width="220">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.29)</span></p>
+
+<p>При выполнении этого
+условия прямые <img src="img/lec5.files/image307.gif" height="25" width="19">&nbsp;и <img src="img/lec5.files/image308.gif" height="25" width="21"></sub></span>&nbsp;лежат в одной плоскости, то есть либо пересекаются,
+если <img src="img/lec5.files/image309.gif" height="25" width="64">, либо параллельны, если <img src="img/lec5.files/image310.gif" height="25" width="48">. В последнем случае, заметим, прямые могут и
+совпадать, но этот тривиальный случай можно не рассматривать.</span></p>
+
+<p>Если
+прямые не параллельны и не пересекаются, то они скрещиваются. Нарушение условия
+(9.29) есть критерий скрещиваемости прямых.</span></p>
+
+<p>Точку
+пересечения двух пересекающихся прямых можно найти, решая совместно данную
+систему уравнений.</span></p>
+
+<p><i>Пример</span></i>. Даны канонические уравнения двух прямых:</span></p>
+
+<p><img src="img/lec5.files/image311.gif" height="45" width="145">&nbsp;и <img src="img/lec5.files/image312.gif" height="45" width="143">.</span></p>
+
+<p>Доказать, что прямые
+пересекаются и найти их точку пересечения.</span></p>
+
+<p><i>Решение</span></i>. Координаты точек <img src="img/lec5.files/image313.gif" height="25" width="92">и <img src="img/lec5.files/image314.gif" height="25" width="80">, направляющие векторы прямых <img src="img/lec5.files/image315.gif" height="24" width="81"></span>&nbsp;и <img src="img/lec5.files/image316.gif" height="24" width="101">&nbsp;подставим
+в определитель формулы (9.29):</span></p>
+
+<p><img src="img/lec5.files/image317.gif" height="79" width="277">.</span></p>
+
+<p>Таким образом заключаем,
+что данные прямые пересекаются. </span></p>
+
+<p>Для
+того, чтобы найти координаты точки пересечения, решим систему, составленную,
+например, из первых равенств в уравнениях этих прямых</span></p>
+
+<p><img src="img/lec5.files/image318.gif" height="93" width="107"></p>
+
+<p>Находим <img src="img/lec5.files/image319.gif" height="19" width="48">; <img src="img/lec5.files/image320.gif" height="21" width="41">. Используя оставшееся равенство, находим <img src="img/lec5.files/image321.gif" height="19" width="47">. Итак, точка пересечения
+данных прямых <i>M<sub>0</sub>(-2;2;-5)</i>.</p>
+
+<p>&nbsp;</span></p>
+
+<p><b>11.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>Как найти угол между прямой
+и плоскостью</span></b></p>
+
+<p><img src="img/lec5.files/image323.gif" align="left" height="194" width="282">Пусть
+плоскость &#960; задана уравнением <img src="img/lec5.files/image237.gif" height="25" width="171">, а прямая </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i>уравнениями </span><img src="img/lec5.files/image324.gif" height="48" width="181"></span>.</span></p>
+
+<p>Углом между прямой и плоскостью называется <i>меньший из двух смежных углов</i>,
+образованных прямой и ее проекцией на плоскость. Обозначим через </span><span style="font-size: 12pt; font-family: Symbol;" lang="EN-US">j</span> угол между плоскостью &#960; и прямой </span><i><span style="font-size: 12pt;" lang="EN-US">L</span></i>,
+а через </span><span style="font-size: 12pt; font-family: Symbol;" lang="EN-US">q</span><i>&nbsp; –</span></i> угол
+между векторами </span><sub><img src="img/lec5.files/image240.gif" height="25" width="104"></sub></span>&nbsp;и </span><sub><img src="img/lec5.files/image179.gif" height="25" width="93"></sub></span>&nbsp;(рис.4.29). </span></p>
+
+<p> Заметим,
+что <img src="img/lec5.files/image325.gif" height="47" width="73">. Отсюда <img src="img/lec5.files/image326.gif" height="23" width="107">; <img src="img/lec5.files/image327.gif" height="56" width="161">&nbsp;(учитывая, что <img src="img/lec5.files/image328.gif" height="23" width="71">).
+Окончательно, получаем</p>
+
+<p><img src="img/lec5.files/image329.gif" height="56" width="285">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.30)</span></p>
+
+<p><i>Пример</span></i>. Найти угол между прямой </span><i>L</span></i>, уравнения
+которой <img src="img/lec5.files/image330.gif" height="45" width="144">, и плоскостью &#960; с уравнением <img src="img/lec5.files/image331.gif" height="21" width="127">.</span></p>
+
+<p>Решение. Используя формулу (9.30), получим</span></p>
+
+<p><img src="img/lec5.files/image332.gif" height="53" width="467">.</span></p>
+
+<p>Отсюда <img src="img/lec5.files/image333.gif" height="25" width="187"></p>
+
+<p><b>&nbsp;</span></b></p>
+
+<p><b>12.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>Когда прямая параллельна
+плоскости</span></b></p>
+
+<p>Если
+<i>прямая </i></span><i>L</span></i><i> параллельна плоскости</span></i> &#960;, то векторы </span><b><i><span style="font-size: 12pt;" lang="EN-US">n</span></i></b> и </span><b><i>q</span></i></b> перпендикулярны, а потому&nbsp; <img style="width: 64px; height: 18px;" alt="" src="img/f9_012.png"></span>, т. е.</span></p>
+
+<p><i><span style="font-size: 15pt;" lang="EN-US">Al</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">Bm</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">Cn</span></i><span style="font-size: 15pt;"> = 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.31)</p>
+
+<p>&nbsp;что и является <i>условием
+параллельности</i> прямой и плоскости.</p>
+
+<p><i>Пример</i>. Прямая <img src="img/lec5.files/image335.gif" height="45" width="169">&nbsp;параллельна плоскости <img src="img/lec5.files/image336.gif" height="23" width="145">, т.к. направляющий вектор прямой <img src="img/lec5.files/image337.gif" height="21" width="87">&nbsp;и нормальный
+вектор плоскости <img src="img/lec5.files/image338.gif" height="21" width="87">&nbsp;ортогональны:</span></p>
+
+<p><img src="img/lec5.files/image339.gif" height="21" width="175">.</span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>13.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>Когда прямая
+перпендикулярна плоскости</span></b></p>
+
+<p>Если
+<i>прямая </i></span><i>L</span></i><i> перпендикулярна плоскости</span></i> &#960;, то векторы </span><b><i>n</span></i></b> и </span><b><i>q</span></i></b> коллинеарны.
+Поэтому равенства</span></p>
+
+<p><img src="img/lec5.files/image340.gif" height="48" width="89">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.32)</span></p>
+
+<p>являются<b> </b><i>условиями
+перпендикулярности</i> прямой и плоскости.</span></p>
+
+<p><i>Пример</span></i>. Прямая <img src="img/lec5.files/image341.gif" height="23" width="91">&nbsp;с направляющим вектором <img src="img/lec5.files/image342.gif" height="21" width="69">&nbsp;перпендикулярна
+плоскости, отсекающей на осях координат одинаковые отрезки. В самом деле,
+нормальный вектор такой плоскости <img src="img/lec5.files/image343.gif" height="25" width="95">&nbsp;и условие (9.32) очевидно выполнено.</span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>14.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>Как опустить перпендикуляр
+на плоскость</span></b></p>
+
+<p>Пусть дана точка <img src="img/lec5.files/image344.gif" height="31" width="112">&nbsp;и
+плоскость &#960;, заданная общим уравнением <img src="img/lec5.files/image237.gif" height="25" width="171">. Требуется найти уравнение прямой,
+проходящей через точку <i>М</i> перпендикулярно данной плоскости (рис.4.30).</span></p>
+
+<p><img src="img/lec5.files/image345.gif" align="left" height="169" width="187">Очевидно,
+следует использовать канонические уравнения прямой (9.16), где в качестве её направляющего вектора можно взять нормальный
+вектор плоскости <img src="img/lec5.files/image240.gif" height="25" width="104">. Таким образом получаем уравнения искомой прямой</span></p>
+
+<p><img src="img/lec5.files/image346.gif" height="51" width="193">.</span></p>
+
+<p>&nbsp;</span></p>
+<br>
+<p><b>15.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</b><b>&nbsp;Как найти точку
+пересечения прямой с плоскостью</span></b></p>
+
+<p>Пусть
+требуется найти точку пересечения прямой </span><i>L</span></i>, заданной
+уравнениями <img src="img/lec5.files/image347.gif" height="51" width="193">&nbsp;</span>с
+плоскостью &#960;: <img src="img/lec5.files/image237.gif" height="25" width="171">&nbsp;(рис.4.29).
+</span></p>
+
+<p>Для этого надо решить систему </span></p>
+
+<p><img src="img/lec5.files/image348.gif" height="84" width="204">.</span></p>
+
+<p>Проще всего это сделать,
+записав уравнения прямой в параметрическом виде:</span></p>
+
+<p><img src="img/lec5.files/image349.gif" height="27" width="273">.</span></p>
+
+<p>Подставляя выражения для </span><i>x</span></i>,
+<i>у</i> и </span><i>z</span></i> в уравнение плоскости, получаем уравнение </span></p>
+
+<p><sub><img src="img/lec5.files/image350.gif" height="27" width="347"></sub></span>&nbsp;</span></p>
+
+<p>или</span></p>
+
+<p><img src="img/lec5.files/image351.gif" height="27" width="355"></sub></span>.</span></p>
+
+<p>Если прямая </span><i>L</span></i>
+не параллельна плоскости, т. е. если </span><i><span style="font-size: 15pt;" lang="EN-US">Al</span></i><i><span style="font-size: 15pt;"> + В</span></i><i><span style="font-size: 15pt;" lang="EN-US">m</span></i><span style="font-size: 15pt;">
++ <i>С</i></span><i><span style="font-size: 15pt;" lang="EN-US">n</span></i><i><span style="font-size: 15pt;" lang="EN-US"> </span></i><i><span style="font-size: 15pt; font-family: Symbol;" lang="EN-US">&#185;</span></i><span style="font-size: 15pt;"> 0</span>, то из этого равенства
+находим значение </span><i>t</span></i><i>:</span></i></p>
+
+<p><img src="img/lec5.files/image352.gif" height="51" width="208">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.33)</span></p>
+
+<p>Подставляя найденное
+значение </span><i>t</span></i> в параметрические уравнения прямой, найдем координаты
+точки пересечения прямой с плоскостью.</span></p>
+
+<p><i>Пример</span></i>. Воспользуемся примером задачи №11. Запишем
+параметрические уравнения прямой </span><i>L</span></i>: &nbsp;<img src="img/lec5.files/image353.gif" height="23" width="239">.</span></p>
+
+<p>Подставляя
+выражения для <i>х</i>, </span><i>y</span></i> и </span><i>z</span></i> в уравнение плоскости&nbsp; &#960; <img style="width: 140px; height: 26px;" alt="" src="img/f9_013.png">, получим: <img style="width: 255px; height: 21px;" alt="" src="img/f9_014.png">. Отсюда: <img src="img/lec5.files/image356.gif" height="19" width="69">; <img src="img/lec5.files/image357.gif" height="21" width="69">.</span></p>
+
+<p>Полученное
+значение параметра </span><i>t</span></i> подставим в параметрические уравнения прямой и найдем
+координаты искомой точки пересечения прямой </span><i>L</span></i><i><span style="font-size: 12pt;" lang="EN-US">
+</span></i>и плоскости &#960;: <img src="img/lec5.files/image358.gif" height="21" width="64">; <img src="img/lec5.files/image359.gif" height="21" width="72">; <img src="img/lec5.files/image360.gif" height="19" width="39">.</span></p>
+
+<p><b>&nbsp;</span></b></p>
+
+<p><b>16.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Когда прямая лежит в
+плоскости </span></b></p>
+
+<p>Рассмотрим
+теперь случай, когда </span><i><span style="font-size: 15pt;" lang="EN-US">Al</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">Bm</span></i><i><span style="font-size: 15pt;"> + </span></i><i><span style="font-size: 15pt;" lang="EN-US">Cn</span></i><span style="font-size: 15pt;">
+= 0</span> (то есть прямая </span><i>L</span></i><i><span style="font-size: 12pt;" lang="EN-US"> </span></i>параллельна
+плоскости &#960;). Тогда возможны два случая:</span></p>
+
+<p>&nbsp;&nbsp;&nbsp; а) если <img src="img/lec5.files/image361.gif" height="27" width="231">, то
+прямая </span><i>L</span></i> параллельна плоскости и пересекать ее не будет;</span></p>
+
+<p>&nbsp;&nbsp;&nbsp; б) если <img src="img/lec5.files/image362.gif" height="27" width="195">, то
+любая точка прямой является точкой пересечения прямой и плоскости. Заключаем:
+прямая лежит в плоскости. Таким образом, одновременное выполнение равенств</span></p>
+
+<p><img src="img/lec5.files/image363.gif" height="60" width="209">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.34)</span></p>
+
+<p>является <i>условием
+принадлежности прямой плоскости.</i></span></p>
+
+<p>&nbsp; </span></p>
+
+<p><b>17. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как провести плоскость
+через точку перпендикулярно прямой</span></b></p>
+
+<p><img src="img/lec5.files/image364.gif" align="left" height="200" width="219">Пусть дана точка <img src="img/lec5.files/image344.gif" height="31" width="112">&nbsp;и прямая <i>L</i>, заданная своими каноническими
+уравнениями <img src="img/lec5.files/image365.gif" height="49" width="187">.
+Требуется найти уравнение плоскости &#960;, проходящей через точку <i>М</i>,
+перпендикулярно прямой <i>L </i>(рис.4.31). </span></p>
+
+<p>Для решения этой задачи воспользуемся уравнением (9.8)
+плоскости, проходящей через данную точку с данным нормальным вектором. В
+качестве нормального вектора можно взять направляющий вектор прямой <i>L</i>,
+т.е. <img src="img/lec5.files/image366.gif" height="31" width="187">.
+Уравнение искомой плоскости &#960; будет иметь вид</span></p>
+
+<p><img src="img/lec5.files/image367.gif" height="31" width="295">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.35)</span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>18.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как провести плоскость
+через точку и прямую</b></p>
+
+<p><img src="img/lec5.files/image368.gif" align="left" height="244" width="259">Пусть дана точка <img src="img/lec5.files/image369.gif" height="31" width="119">&nbsp;и прямая <i>L</i>, заданная своими каноническими
+уравнениями <img src="img/lec5.files/image365.gif" height="49" width="187">.
+Требуется найти уравнение плоскости &#960;, проходящей через точку </span><i><span style="font-size: 15pt;">М</span></i><sub><span style="font-size: 15pt;">0</span></sub> и прямую <i>L</i> (рис.4.32). Предполагается, что точка </span><i><span style="font-size: 15pt;">М</span></i><sub>0</sub> не лежит на прямой <i>L</i> (иначе задача имеет бесконечно много решений).</span></p>
+
+<p>Рассмотрим три вектора: направляющий вектор прямой <img style="width: 95px; height: 29px;" alt="" src="img/f9_100.png" align="middle">; вектор <img src="img/lec5.files/image371.gif" height="31" width="56">, где&nbsp; <img style="width: 111px; height: 27px;" alt="" src="img/f9_101.png" align="middle"></span>&nbsp;- точка, лежащая на
+прямой <i>L</i>; а также вектор <img src="img/lec5.files/image372.gif" height="31" width="49">, где&nbsp;<img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle">&nbsp;- текущая точка искомой плоскости.
+Очевидно, эти три вектора лежат в одной плоскости – искомой плоскости &#960;.
+Условие компланарности этих векторов – равенство нулю их смешанного произведения.</span></p>
+
+<p><img src="img/lec5.files/image373.gif" height="82" width="212">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.36)</span></p>
+
+<p>Полученное уравнение и есть уравнение искомой
+плоскости &#960;.</span></p>
+
+<p><i>Пример.</i>Дана точка&nbsp;<img style="width: 86px; height: 27px;" alt="" src="img/f9_102.png" align="middle">&nbsp;и прямая <i>L</i> с
+каноническими уравнениями <img src="img/lec5.files/image375.gif" height="45" width="148">. Требуется найти уравнение плоскости,
+содержащей прямую</span> <i>L</i></span> и точку <img src="img/lec5.files/image162.gif" height="27" width="31">. </span></p>
+
+<p> Подставим
+координаты точки <img style="width: 31px; height: 27px;" alt="" src="img/lec5.files/image162.gif" align="middle">,
+точки <img style="width: 97px; height: 29px;" alt="" src="img/f9_103.png" align="middle"></span>&nbsp;&nbsp;,
+лежащей на прямой </span><i>L</span></i><span style="font-size: 15pt;">, а также координаты направляющего вектора прямой&nbsp;</span><img style="width: 102px; height: 28px;" alt="" src="img/f9_104.png" align="middle"></span><span style="font-size: 15pt;"></span>&nbsp;в уравнение (9.36):</span></p>
+
+<p><img src="img/lec5.files/image378.gif" height="79" width="173">.</span></p>
+
+<p>Уравнение
+плоскости будет иметь вид:&nbsp;</span><img style="width: 263px; height: 21px;" alt="" src="img/f9_105.png" align="middle"></span>. Упрощая, получим уравнение искомой
+плоскости&nbsp;</span><img style="width: 176px; height: 24px;" alt="" src="img/f9_106.png" align="middle"></span>. </span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>19.&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как провести плоскость,
+содержащую прямую и параллельную другой прямой</span></b></p>
+
+<p>Две прямые заданы своими каноническими уравнениями:</span></p>
+
+<p><img src="img/lec5.files/image381.gif" align="left" height="185" width="238"><i>L</span></i><sub>1</span></sub>: <img src="img/lec5.files/image271.gif" height="55" width="187">&nbsp;,</span></p>
+
+<p><i>L</span></i><sub>2</span></sub>: <img src="img/lec5.files/image272.gif" height="55" width="195">.</span></p>
+
+<p>Требуется найти уравнение плоскости, содержащей прямую <i>L</i><sub>1 </sub>, и
+параллельной прямой <i>L</i><sub>2</sub> . Предполагается, что эти прямые не
+параллельны (иначе задача имеет множество решений).</span></p>
+
+<p>Уравнение искомой плоскости удобно искать в виде
+уравнения (9.8) плоскости, проходящей через данную точку с данным
+нормальным вектором (рис.4.33). Для этого найдем нормальный вектор <img src="img/lec5.files/image382.gif" height="31" width="105">&nbsp;искомой плоскости. Очевидно,
+вектор <b><i>п</i></b> ортогонален направляющим векторам данных прямых </span><b><i>q</span></i></b><sub>1</span></sub> и <b><i>q</i></b><sub>2</sub>&nbsp; и поэтому<b><i> </i></b></span></p>
+
+<p><img src="img/lec5.files/image383.gif" height="91" width="204">.</span></p>
+
+<p>Итак, уравнение искомой плоскости будет иметь вид</span></p>
+
+<p><img src="img/lec5.files/image384.gif" height="31" width="297">.</span></p>
+
+<p>Однако, как и в предыдущей задаче, можно рассмотреть три компланарных вектора,
+смешанное произведение которых равно нулю. Это векторы </span><b><i>q</span></i></b><sub>1</span></sub> и <b><i>q</i></b><sub>2</sub> , а также вектор <img src="img/lec5.files/image385.gif" height="31" width="49">, где&nbsp;</span><img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle"></span>&nbsp;- текущая точка искомой
+плоскости. Тогда</span></p>
+
+<p><img src="img/lec5.files/image386.gif" height="91" width="211"></sub>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(9.37)</span></p>
+<p>что также является уравнением плоскости, проходящей через прямую <i>L</i><sub>1</sub>
+параллельно прямой <i>L</i><sub>2 </sub>.</span></p>
+
+<p><b>&nbsp;</span></b></p>
+
+<p><b>20.&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как провести плоскость
+через две параллельные прямые</span></b></p>
+
+<p>Две параллельные прямые заданы своими каноническими
+уравнениями:</span></p>
+
+<p><i>L</span></i><sub>1</span></sub>: <img src="img/lec5.files/image365.gif" height="49" width="187">&nbsp;и <i>L</i><sub>2</sub>: <img src="img/lec5.files/image387.gif" height="49" width="195">.</span></p>
+
+<p><img src="img/lec5.files/image388.gif" align="left" height="240" width="186">Требуется найти уравнение плоскости,
+содержащей обе прямые (рис.4.34). Рассмотрим три вектора: вектор <img src="img/lec5.files/image135.gif" height="31" width="263">,
+вектор&nbsp;<img style="width: 93px; height: 28px;" alt="" src="img/f9_015.png">&nbsp; &nbsp;и вектор <img src="img/lec5.files/image134.gif" height="31" width="231">, где&nbsp;</span><img style="width: 88px; height: 25px;" alt="" src="img/f8_003.png" align="middle"></span>&nbsp;- текущая точка искомой плоскости. Так как эти
+векторы компланарны, их смешанное произведение равно нулю:</span></p>
+
+<p><img src="img/lec5.files/image389.gif" height="87" width="223">. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.38)</span></p>
+
+<p><i>Пример.</span></i> Уравнения прямых </span><i>L<sub></i>1</span></sub> &nbsp;и </span><i>L</span></i><sub>2</span></sub>&nbsp; </span>имеют
+вид <img src="img/lec5.files/image390.gif" height="45" width="151">&nbsp;и <img src="img/lec5.files/image391.gif" height="45" width="173">. Очевидно, эти прямые
+параллельны: <i>q<sub>1</sub>=(2;3;-1)=-q<sub>2</sub></i>.
+Найдем вектор, соединяющий точку M<sub>1</sub>(-1;1;0)&nbsp;прямой <i>L</i><sub>1</sub> и точку M<sub>2</sub>(3;-2;-3)&nbsp;прямой </span><i>L</span></i><sub>2</span></sub><sub> </span></sub>, <img src="img/lec5.files/image395.gif" height="31" width="145">. Подставляя полученные
+значения в формулу (9.38), получим </span></p>
+
+<p><img src="img/lec5.files/image396.gif" height="70" width="131">,</span></p>
+
+<p>или <img style="width: 200px; height: 20px;" alt="" src="img/f9_016.png">. Упрощая это уравнение, получим</span></p>
+
+<p><img style="width: 142px; height: 24px;" alt="" src="img/f9_017.png">.</span></p>
+<br>
+<p><b>21. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как опустить перпендикуляр
+из точки на прямую</span></b></p>
+
+<p>Пусть дана точка </span><img src="img/lec5.files/image369.gif" height="31" width="119">&nbsp;и
+прямая </span><i>L</span></i>, заданная своими каноническими уравнениями: </span></p>
+
+<p><img src="img/lec5.files/image399.gif" align="left" height="261" width="257"><img src="img/lec5.files/image365.gif" height="49" width="187">.</span></p>
+
+<p>Требуется найти уравнение
+прямой </span><i>L</span></i><span style="font-size: 15pt;">'</span>, проходящей через
+точку <img src="img/lec5.files/image162.gif" height="27" width="31">,
+перпендикулярно прямой </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i> и пересекающей эту прямую (рис.4.35).</span></p>
+
+<p>Проще всего искать прямую <i>L</span></i><span style="font-size: 15pt;">'</span> как пересечение
+двух плоскостей. Первая из них – плоскость &#960;<sub>1</sub>, проходящая через
+точку <img src="img/lec5.files/image162.gif" height="27" width="31">,
+перпендикулярно прямой </span><i>L</span></i> (задача № 17). Вторая – плоскость </span><span style="font-size: 15pt;">&#960;<sub>2</sub></span>,
+проходящая через прямую </span><i>L</span></i> и точку <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;(задача № 18). </span></p>
+
+<p>Вектор&nbsp;<img style="width: 93px; height: 28px;" alt="" src="img/f9_015.png">&nbsp;-
+направляющий вектор прямой </span><i>L</span></i><i> </i>служит
+нормальным вектором плоскости </span><span style="font-size: 15pt;">&#960;<sub>1</sub>. Её
+уравнение имеет вид </span></p>
+
+<p><img src="img/lec5.files/image367.gif" height="31" width="295">.</span></p>
+
+<p>Уравнение плоскости &#960;<sub>2 </sub></span>&nbsp;</span>запишется в&nbsp; виде </span></p>
+
+<p><img src="img/lec5.files/image400.gif" height="91" width="235">,</span></p>
+
+<p>которое приводится к виду <img src="img/lec5.files/image401.gif" height="31" width="304">, где</span>
+<img src="img/lec5.files/image402.gif" height="33" width="204">&nbsp;-
+нормальный вектор плоскости </span><span style="font-size: 15pt;">&#960;<sub>2 </sub>.</span></p>
+
+<p>Теперь запишем уравнения
+искомой прямой</span></p>
+
+<p><img src="img/lec5.files/image403.gif" height="68" width="319">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.39)</p>
+
+<p>Переход от этих общих уравнений прямой к каноническим уравнениям рассмотрен в задаче №.6 этого
+раздела.</span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>22. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как найти расстояние от
+точки до прямой </span></b></p>
+
+<p>Заметим,
+что эта задача решается не так просто, как соответствующая задача на плоскости.
+Используем обозначения и формулы предыдущей задачи.</span></p>
+
+<p><img src="img/lec5.files/image404.gif" align="left" height="253" width="209"> Пусть
+дана точка <img src="img/lec5.files/image369.gif" height="31" width="119">&nbsp;</span>и
+прямая </span><i>L</span></i>, заданная своими каноническими уравнениями <img src="img/lec5.files/image365.gif" height="49" width="187">. Требуется
+найти расстояние от точки <img src="img/lec5.files/image253.gif" height="25" width="28">&nbsp;до прямой </span><i>L</span></i>, которое мы обозначим </span><i>d</span></i>.</span></p>
+
+<p>Заметим,
+что расстояние это равно расстоянию между точкой </span><i><span style="font-size: 15pt;">М</span></i><sub><span style="font-size: 15pt;">0 </span></sub><span style="font-size: 15pt;">&nbsp;</span>и основанием</span><span style="font-size: 15pt;"> пер</span>пендикуляра,
+опущенного из точки </span><i><span style="font-size: 15pt;">М</span></i><sub>0</span></sub> на
+данную прямую </span><i>L</span></i><i> </span></i>(рис.4.36) </p>
+
+<p>Проведя
+через точку <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;плоскость
+</span><span style="font-size: 15pt;">&#963;</span>,
+перпендикулярную к данной прямой </span><i>L</span></i>, найдем точку </span><i><span style="font-size: 15pt;">М'</span></i><span style="font-size: 15pt;">,</span> в которой эта плоскость пересекает прямую </span><i>L</span></i><i><span style="font-size: 12pt;" lang="EN-US"> </span></i>(задача
+№15). И остаётся лишь вычислить расстояние между двумя точками <img src="img/lec5.files/image162.gif" height="27" width="31">&nbsp;и </span><i><span style="font-size: 15pt;">М'</span></i>. </span></p>
+
+<p><img src="img/lec5.files/image405.gif" align="right" height="261" width="293"> Однако,
+можно пойти другим путём. Если провести плоскость </span>&#960;</span>,
+проходящую через прямую </span><i>L</span></i>, перпендикулярно прямой </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i><span style="font-size: 15pt;">'</span> (рис.4.37), то задача сведется к вычислению расстояния
+от точки до плоскости (задача № 4). Направляющий вектор прямой </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i><span style="font-size: 15pt;">'</span> будет служить нормальным вектором плоскости </span>&#960;</span>.
+Этот вектор (обозначим его <b><i>р</i></b>) можно найти как двойное векторное
+произведение <img src="img/lec5.files/image406.gif" height="37" width="215">. Таким образом&nbsp; (см. задачу № 21),</span></p>
+
+<p><img src="img/lec5.files/image407.gif" height="91" width="216">,</span></p>
+
+<p>Уравнение плоскости &#960;
+будет иметь вид <img src="img/lec5.files/image408.gif" height="31" width="301">. Расстояние от точки <img src="img/lec5.files/image369.gif" height="31" width="119">&nbsp;до
+прямой </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i><span style="font-size: 15pt;" lang="EN-US"> </span>найдется
+по формуле</span></p>
+
+<p><img src="img/lec5.files/image409.gif" height="64" width="336">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (9.40)</p>
+
+<p><i>Пример</span></i>. Найти расстояние от точки <img src="img/lec5.files/image410.gif" height="28" width="76">&nbsp;до прямой <img src="img/lec5.files/image411.gif" height="45" width="145">.</span></p>
+
+<p><i>1 способ</span></i>. Плоскость &#963; имеет уравнение&nbsp;<img style="width: 224px; height: 23px;" alt="" src="img/f9_018.png">, или&nbsp;<img style="width: 149px; height: 18px;" alt="" src="img/f9_019.png">. Вычисляя
+точку пересечения этой плоскости с прямой, получим координаты точки </span><i><span style="font-size: 15pt;">М'</span></i><span style="font-size: 15pt;">:</span> <img src="img/lec5.files/image414.gif" height="33" width="52">, <img src="img/lec5.files/image415.gif" height="33" width="53">, <img src="img/lec5.files/image416.gif" height="33" width="64">. Искомое расстояние &nbsp;<img style="width: 379px; height: 45px;" alt="" src="img/f9_020.png">.</span></p>
+
+<p><i>2 способ</span></i>. Вычислим координаты вектора <img src="img/lec5.files/image418.gif" height="31" width="131">, вектора&nbsp; <img src="img/lec5.files/image419.gif" height="29" width="193">&nbsp;и координаты вектора&nbsp;<img style="width: 163px; height: 23px;" alt="" src="img/f9_021.png">&nbsp;. Тогда уравнение
+плоскости &#963;: <img style="width: 257px; height: 22px;" alt="" src="img/f9_022.png">&nbsp;или&nbsp;<img style="width: 151px; height: 22px;" alt="" src="img/f9_023.png">. Искомое расстояние <sub><img src="img/lec5.files/image423.gif" height="48" width="216">.</span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>23.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как найти общий
+перепендикуляр двух прямых</span></b></p>
+
+<p>Если две прямые в пространстве не параллельны, то существует единственная прямая,
+пересекающая их и перпендикулярная им. Другими словами, существует общий перпендикуляр
+этих двух прямых. Пусть непараллельные прямые <img src="img/lec5.files/image268.gif" height="27" width="20">&nbsp;и <img src="img/lec5.files/image269.gif" height="27" width="23">&nbsp;заданы каноническими уравнениями:</span></p>
+
+<p><img src="img/lec5.files/image271.gif" height="55" width="187">&nbsp;и <img src="img/lec5.files/image303.gif" height="55" width="195">.</span></p>
+
+<p><img src="img/lec5.files/image424.gif" align="left" height="275" width="291">Их
+направляющие векторы соответственно <img src="img/lec5.files/image273.gif" height="27" width="116">&nbsp;и <img src="img/lec5.files/image274.gif" height="27" width="125">&nbsp;(рис.4.38). Их общий перпендикуляр на рисунке обозначен
+пунктиром. На этой прямой реализуется кратчайшее расстояние между данными прямыми.
+</span></p>
+
+<p>Предварительно
+найдем уравнение плоскости &#960;, проходящей через одну из этих прямых (например,
+</span><sub><img src="img/lec5.files/image286.gif" height="25" width="19"></sub></span>),
+параллельно другой прямой (</span><i>L</span></i><sub>2</span></sub>) (см. задачу
+№19). Уравнение общего перпендикуляра двух прямых будем искать в общем виде,
+т.е. как пересечение двух плоскостей. Одна из них – это плоскость &#960;<sub>1</sub>,
+проходящая через заданную прямую </span><sub><img src="img/lec5.files/image286.gif" height="25" width="19"></sub></span>&nbsp;и перпендикулярную плоскости &#960; (задача №18). Другая
+плоскость &#960;<sub>2</sub> проходит через заданную прямую </span><sub><img src="img/lec5.files/image287.gif" height="25" width="21"></sub></span>&nbsp;перпендикулярно
+той же плоскости &#960;. </span></p>
+
+<p>Рассмотрим эту задачу на примере.&nbsp; </span></p>
+
+<p><i>Пример</span></i>. Даны прямые </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i><sub><span style="font-size: 15pt;">1</span></sub>:</span><sub><img src="img/lec5.files/image425.gif" height="45" width="147"></sub></span> и&nbsp; </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i><sub><span style="font-size: 15pt;">2</span></sub>:</span><span style="font-size: 12pt;" lang="EN-US"><sub><img src="img/lec5.files/image426.gif" height="45" width="141"></sub></span>. </span></p>
+
+<p>Используя формулу (9.37), запишем уравнение плоскости &#960;:</span></p>
+
+<p><img src="img/lec5.files/image427.gif" height="79" width="167">&nbsp;или <img src="img/lec5.files/image428.gif" height="21" width="140">.</span></p>
+
+<p>Составим уравнение плоскости &#960;<sub>1 </sub>, используя формулу (9.36</span>): </span></p>
+
+<p><img src="img/lec5.files/image429.gif" height="79" width="167">.</span></p>
+
+<p>Упрощая, получим&nbsp; <img src="img/lec5.files/image430.gif" height="21" width="131">. Аналогично, для
+плоскости &#960;<sub>2</sub> :</span></p>
+
+<p><img src="img/lec5.files/image431.gif" height="79" width="161">, или <img src="img/lec5.files/image432.gif" height="21" width="161">.</span></p>
+
+<p>Таким образом, уравнение
+искомой прямой: <img src="img/lec5.files/image433.gif" height="53" width="175"></span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>24.&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как найти расстояние между двумя прямыми </span></b></p>
+
+<p>Пусть скрещивающиеся прямые заданы каноническими уравнениями</span></p>
+
+<p><img src="img/lec5.files/image434.gif" height="49" width="191">&nbsp;и <img src="img/lec5.files/image435.gif" height="49" width="199">.</span></p>
+
+<p>Требуется найти расстояние </span><i>d</span></i> </span>между
+ними (рис.4.38). </span></p>
+
+<p>Эта задача решается в два этапа. </span></p>
+
+<p>На первом этапе строится плоскость &#960;, проходящая
+через прямую </span><i><span style="font-size: 15pt;" lang="EN-US">L</span></i><sub><span style="font-size: 15pt;">1</span></sub> параллельно
+второй прямой (задача № 19). Уравнение плоскости &#960; имеет вид</span></p>
+
+<p><img src="img/lec5.files/image436.gif" height="79" width="184">.</span></p>
+
+<p>На втором этапе вычисляется расстояние от точки <img src="img/lec5.files/image132.gif" height="27" width="116">&nbsp;до построенной
+плоскости &#960; (задача № 4). В итоге получим</span></p>
+
+<p><img src="img/lec5.files/image437.gif" height="139" width="260">,</span></p>
+
+<p>где
+в числителе следует брать абсолютную величину.</span></p>
+
+<p>&nbsp;</span></p>
+
+<p><b>25.&nbsp;&nbsp;&nbsp;</b><b>&nbsp;Как найти проекцию прямой на плоскость</span></b></p>
+
+<p><img src="img/lec5.files/image438.gif" align="left" height="221" width="254">Требуется найти проекцию прямой <img src="img/lec5.files/image439.gif" height="20" width="17">, уравнения которой имеют вид <img src="img/lec5.files/image440.gif" height="45" width="168">, на плоскость <img src="img/lec5.files/image441.gif" height="15" width="15">&nbsp;с уравнением <img src="img/lec5.files/image442.gif" height="21" width="151">.</span></p>
+
+<p>Рассмотрим три вектора: направляющий вектор <img src="img/lec5.files/image179.gif" height="25" width="93"> &nbsp;прямой <img src="img/lec5.files/image439.gif" height="20" width="17">, нормальный вектор <img src="img/lec5.files/image121.gif" height="25" width="107">&nbsp;плоскости <img src="img/lec5.files/image016.gif" height="16" width="16">&nbsp;и вектор, <img src="img/lec5.files/image443.gif" height="33" width="240">, соединяющий некоторую
+текущую точку <img src="img/lec5.files/image444.gif" height="31" width="88">&nbsp;искомой
+прямой <img src="img/lec5.files/image445.gif" height="20" width="21">>&nbsp;с
+данной точкой <img src="img/lec5.files/image446.gif" height="31" width="119">&nbsp;на
+прямой <img src="img/lec5.files/image439.gif" height="20" width="17">&nbsp;(рис.4.39).
+</span></p>
+
+<p>Очевидно, эти три вектора компланарны. Они лежат в
+проектирующей плоскости <img src="img/lec5.files/image447.gif" height="21" width="20">. Проектирующая плоскость содержит данную
+прямую <img src="img/lec5.files/image439.gif" height="20" width="17">&nbsp;и
+перпендикулярна данной плоскости <img src="img/lec5.files/image016.gif" height="16" width="16">. Условие компланарности - равенство нулю
+их смешанного произведения. Следовательно, уравнение, определяющее проектирующую
+плоскость <img src="img/lec5.files/image447.gif" height="21" width="20">,
+можно записать в виде:</span></p>
+
+<p><img src="img/lec5.files/image448.gif" height="91" width="217"></p>
+
+<p>Тогда уравнение искомой прямой <img src="img/lec5.files/image445.gif" height="20" width="21">&nbsp;можно получить в общем виде (пересечения двух плоскостей <img src="img/lec5.files/image016.gif" height="16" width="16">&nbsp;и
+<img src="img/lec5.files/image447.gif" height="21" width="20">):</span></p>
+
+<p><img src="img/lec5.files/image449.gif" height="124" width="232"></p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+
+<p style="border: medium none ; padding: 0cm; text-align: justify;">&nbsp;</span></p>
+
+</div>
+
+<p><img src="img/lec5.files/image450.jpg" align="right" height="232" hspace="12" width="203"><b>ФЕРМА Пьер </b>(1601 — 1665) — французский математик,
+один из создателей аналитической геометрии, математического анализа, теории
+вероятностей и теории чисел. </span></p>
+<p>По профессии юрист, советник парламента в Тулузе.
+Работа советника, однако, не мешала Ферма заниматься математикой. Постепенно он
+приобрёл славу одного из первых математиков Франции, хотя и не писал книг
+(научных журналов ещё не было), ограничиваясь лишь письмами к коллегам.</p>
+
+<p>В отличие от Галилея, Декарта
+и Ньютона, Ферма был чистым математиком. Независимо от Декарта он создал аналитическую геометрию. Раньше Ньютона
+умел использовать дифференциальные методы для проведения касательных,
+нахождения максимумов и вычисления площадей.</span></p>
+
+<p>Развив идею Декарта,
+Ферма применил аналитическую геометрию к пространству. </p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+
+<p>С именем Ферма связаны две знаменитые теоремы из области теории чисел: малая
+теорема Ферма (<i>если a не делится на простое число p, то число a</i><i><sup>p</sup></i><i><sup><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"> &#8722; 1</span></sup></i></span><i><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">
+&#8722; 1</span></i></span><i>
+всегда делится на p)</span></i> и
+«великая» теорема Ферма, одна из самых известных и феноменальных математических
+теорем. Наследие Ферма, опубликованное только после его смерти, неисчерпаемо по
+глубине содержания.</span></p></div><br>
+<a name=5 class="anchor"></a>
+
+<h3>ЗАДАЧИ К ЧАСТИ 4 (для самостоятельного решения)</h3>
+<br>
+
+<table class="MsoNormalTable" style="width: 495.7pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="661">
+ <tbody><tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin-right: -5.4pt;">4.1.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="text-align: justify;">Через
+ линию пересечения плоскостей <sub><img src="img/lec5.files/image451.gif" border="0" height="25" width="145"></sub>&nbsp;и <sub><img src="img/lec5.files/image452.gif" border="0" height="25" width="139"></sub>&nbsp;провести плоскость: а)
+ проходящую через точку (1;1;1); б) перпендикулярную к плоскости <sub><img src="img/lec5.files/image454.gif" border="0" height="25" width="148"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 3pt -5.4pt 0.0001pt 0cm;">4.2.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 3pt; text-align: justify;">Найти уравнение плоскости, перпендикулярной к
+ плоскости <sub><img src="img/lec5.files/image455.gif" border="0" height="24" width="140"></sub>&nbsp;и
+ пересекающей её по прямой, лежащей в плоскости <sub><img src="img/lec5.files/image456.gif" border="0" height="25" width="37"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.3.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Найти уравнение перпендикуляра, опущенного из точки A(2;3;1)&nbsp;на прямую <sub><img src="img/lec5.files/image458.gif" border="0" height="48" width="136"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.4.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Через точку A(4;0;-1)&nbsp;провести прямую так, чтобы она пересекала
+ две данные прямые <sub><img src="img/lec5.files/image460.gif" border="0" height="48" width="153"></sub>&nbsp;и <sub><img src="img/lec5.files/image461.gif" border="0" height="48" width="129"></sub>.</span></p>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.5.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Составить уравнение общего перпендикуляра двух
+ прямых <sub><img src="img/lec5.files/image462.gif" border="0" height="47" width="157"></sub>&nbsp;и
+ <sub><img src="img/lec5.files/image463.gif" border="0" height="48" width="151"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" width="43">
+ <p style="margin-right: -5.4pt;">4.6.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Найти проекцию точки&nbsp;</span>A(4;-3;1)</span>&nbsp;на плоскость <sub><img src="img/lec5.files/image465.gif" border="0" height="25" width="139"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 18pt -5.4pt 0.0001pt 0cm;">4.7.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Через прямую <sub><img src="img/lec5.files/image466.gif" border="0" height="48" width="155"></sub>&nbsp;провести плоскость, перпендикулярную к
+ плоскости <sub><img src="img/lec5.files/image467.gif" border="0" height="25" width="149"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 12pt -5.4pt 0.0001pt 0cm;">4.8.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="text-align: justify;">Проверить,
+ что прямые <sub><img src="img/lec5.files/image468.gif" border="0" height="48" width="155"></sub>&nbsp;&nbsp;и <sub><img src="img/lec5.files/image469.gif" border="0" height="48" width="153"></sub>&nbsp;пересекаются, и найти уравнение
+ плоскости, проходящей через эти прямые.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.9.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Составить уравнение плоскости, проходящей через
+ точку </span>P(4;-3;1)</span>&nbsp;и
+ параллельной двум прямым: <sub><img src="img/lec5.files/image471.gif" border="0" height="48" width="89"></sub>&nbsp;и <sub><img src="img/lec5.files/image472.gif" border="0" height="48" width="155"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 12pt -5.4pt 0.0001pt 0cm;">4.10.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Через прямую <sub><img src="img/lec5.files/image473.gif" border="0" height="48" width="132"></sub>&nbsp;провести плоскость, параллельную плоскости
+ <sub><img src="img/lec5.files/image474.gif" border="0" height="25" width="137"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 12pt -5.4pt 0.0001pt 0cm;">4.11.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Найти расстояние от точки</span> M(7;9;7)</span>&nbsp;до прямой <sub><img src="img/lec5.files/image476.gif" border="0" height="48" width="129"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.12.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="text-align: justify;">Через
+ точку </span>P(1;0;7)</span>&nbsp;параллельно
+ плоскости <sub><img src="img/lec5.files/image478.gif" border="0" height="25" width="156"></sub>&nbsp;провести
+ прямую так, чтобы она пересекала прямую <sub><img src="img/lec5.files/image479.gif" border="0" height="47" width="128"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 18pt -5.4pt 0.0001pt 0cm;">4.13.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">На прямой<sub><img src="img/lec5.files/image480.gif" border="0" height="57" width="160"></sub> найти точку, одинаково удаленную от точек
+ </span>A(3;11;4)</span>&nbsp;и </span>B(-5;-13;-2)</span>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.14.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Найти расстояние между двумя параллельными прямыми:</span></p>
+ <p style="text-align: justify;"><span style="font-size: 12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub><img src="img/lec5.files/image483.gif" border="0" height="48" width="129"></sub>&nbsp;и
+ <sub><img src="img/lec5.files/image484.gif" border="0" height="48" width="155"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr>
+ <td style="padding: 0cm 5.4pt; width: 32.4pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.15.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Вычислить расстояние между прямыми: </span></p>
+ <p style="text-align: justify;"><span style="font-size: 12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<sub><img src="img/lec5.files/image485.gif" border="0" height="48" width="156"></sub>&nbsp;и
+ <sub><img src="img/lec5.files/image486.gif" border="0" height="48" width="156"></sub>.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 32.4pt; height: 36.7pt;" valign="top" width="43">
+ <p style="margin: 6pt -5.4pt 0.0001pt 0cm;">4.16.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 463.3pt; height: 36.7pt;" valign="top" width="618">
+ <p style="margin-top: 6pt; text-align: justify;">Даны вершины треугольника&nbsp;</span>A(4;1;-2)</span>, </span>B(2;0;0), </span>C(-2;3;-5)</span>. Составить уравнения
+ его высоты, опущенной из вершины <i>В</i>.</span></p>
+ </td>
+ </tr>
+</tbody></table>
+
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl8.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl10.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

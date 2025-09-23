@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 9. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+  <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3><a href="#">9. Программные средства для работы с файлами</a></h3>
+<a href="#1" class=punkt>9.1. Основные понятия</a><br>
+<a href="#2" class=punkt>9.2. Текстовые файлы</a><br>
+<a href="#3" class=punkt>Контрольные вопросы</a><br>
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>9.1. Основные понятия</h3>
+<P>Файл - это упорядоченная последовательность однотипных компонентов, расположенных 
+ на внешнем носителе. Файлы предназначены только для хранения информации, 
+ а обработка этой информации осуществляется программами. Использование 
+ файлов целесообразно в случае:</p>
+ <UL TYPE="SQUARE">
+ <UL TYPE="SQUARE">
+  <P>
+   <LI>долговременного хранения данных;</LI>
+  <P></P>
+  <P>
+   <LI>доступа различных программ к одним и тем же данным;</LI>
+  <P></P>
+  <P>
+   <LI>обработки больших массивов данных, которые невозможно целиком разместить 
+     в оперативной памяти компьютера.</LI>
+  <P></P>
+ </UL>
+ </UL>
+<P>Файл, не содержащий ни одного элемента, называется пустым. 
+ Создается файл путем добавления новых записей в конец первоначально пустого 
+ файла. Длина файла, т.е. количество элементов, не задается при определении 
+ файла. При вводе и выводе данные рассматриваются как поток байтов. Физически 
+ поток – это файл или устройство (клавиатура или дисплей). В Си поток можно 
+ открыть для чтения и/или записи в текстовом или бинарном (двоичном) режиме. 
+ В текстовых файлах не употребляются первые 31 символ кодовой таблицы ASCII 
+ (управляющие), а символы конца строки 0x13 (возврат каретки, CR) и 0x10 
+ (перевод строки LF) преобразуются при вводе в одиночный символ перевода 
+ строки \n (при выводе выполняется обратное преобразование). Эти символы 
+ добавляются в конце каждой строки, записываемой в текстовый файл. При 
+ обнаружении в текстовом файле символа с кодом 26 (0x26), т.е. признака 
+ конца файла, чтение файла в текстовом режиме заканчивается, хотя файл 
+ может иметь продолжение. </P>
+<P>В двоичном режиме эти преобразования не выполняются, 
+ чтение продолжается, пока не встретится физический конец файла. При чтении 
+ символы не преобразуются и не анализируются. </P>
+<P>Функция открытия потока fopen возвращает указатель на 
+ предопределенную структуру типа FILE (содержащую всю необходимую для работы 
+ с потоком информацию) при успешном открытии потока, или NULL в противном 
+ случае. </P>
+<P>В заголовочном файле stdio.h содержится описание файлового 
+ типа FILE, с которым связывается файловая переменная (указатель на файл). 
+ При открытии файла указатель на файл связывается с конкретным файлом на 
+ диске и определяется режим открытия файла:</P>
+<P> r (r+) - файл открывается для чтения (чтения и записи);</P>
+<P> w (w+) - открывается пустой файл для записи (чтения 
+ и записи). Если файл с таким именем существует, он стирается;</P>
+<P> a (а+)- файл открывается для дополнения в конец (чтения 
+ и дополнения).</P>
+<P>Режим открытия может также содержать символы t (текстовый 
+ файл) и b (двоичный файл), указывающий на вид открываемого файла: rb, 
+ wb, ab, rt, wt, at, rb+, wb+, ab+ и т.д.</P>
+<P> &#9;Закрытие файла (текстового или бинарного) выполняется 
+ функцией fclose(), установка указателя на начало файла - функцией rewind(). 
+ Если при попытке чтения данных из файла встречается символ конца файла, 
+ то возвращается специальное значение EOF. Функции feof(), ferror() сообщают 
+ о причинах, по которым операция ввода/вывода не выполнилась. Запись данных 
+ в файл и чтение данных из файла можно выполнять разными способами:</P>
+ <OL>
+<P>
+ <LI>функциями форматного ввода-вывода fscanf(), fprintf();</LI>
+<P></P>
+<P>
+ <LI>функциями неформатного ввода-вывода fread(), fwrite().</LI>
+<P></P>
+ </OL>
+<P>Если требуется сохранять и восстанавливать числовые данные 
+ без потери точности, то лучше использовать fread(), fwrite(). Если обрабатывается 
+ текстовая информация, которая будет просматриваться обычными текстовыми 
+ редакторами, то используется fgetс()- посимвольное чтение файла, посимвольная 
+ запись в файл - fputc() или функции fscanf(), fprintf(). Для чтения из 
+ файла и записи в файл строки используются функции fgets() и fputs().</P>
+<P>&nbsp;</P>
+<a name=2 class="anchor"></a>
+<h3>9.2. Текстовые файлы</h3>
+
+<P><b>Пример программы с использованием текстовых файлов</b></P>
+<P></P>
+<P> Создать текстовый файл "new1.txt" записав в него строку 
+ из 50 символов. Все символы, отличные от пробела, переписать в новый файл 
+ "new2.txt":</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include &lt;string.h&gt;
+
+main()
+
+{char ch, sl[50];
+
+ char text[]="one to tree four";
+
+ FILE *pf, *pr; // Указатели на файлы
+
+ pf=fopen("new1.txt","w"); // Создание нового файла new1.txt
+
+ clrscr();
+
+ fprintf(pf,"%s\n",text); // Запись в файл строки text
+
+ fclose(pf); // Закрытие файла pf
+
+ pf=fopen("new1.txt","r"); // Открытие файла pf для чтения
+
+ pr=fopen("new2.txt","w"); // Создание нового файла new2.txt
+
+ while (!feof(pf)) // Пока не конец файла
+
+ {
+    ch=getc(pf); // Чтение символа ch из файла pf
+
+    if (ch != ' ')
+
+       putc(ch,pr); // Запись в файл pr символа ch
+
+ }
+
+ fclose(pr); // Закрытие файла pr
+
+ rewind(pf); // Возврат указателя на начало файла pf
+
+ fgets(sl,50,pf); // Чтение из файла pf строки в переменную sl
+
+ printf("%s\n",sl); // Вывод строки sl на дисплей
+
+ pr=fopen("new2.txt","r"); // Открытие файла pr для чтения
+
+ while (!feof(pr)) // Пока не конец файла pr
+
+ {
+     ch=getc(pr); // Чтение символа из файла pr
+
+     putchar(ch); // Вывод символа ch на дисплей
+
+ }
+
+ fclose(pf); // Закрытие файлов
+
+ fclose(pr);
+
+ getch();
+
+}
+</Pre>
+<P>&#9;При чтении текстовых файлов лучше использовать функции 
+ getc или fgets, так как при использовании fscanf (pr, “%s”, sl) читается 
+ только очередное слово до пробела или символа табуляции и требуется повторение 
+ этой функции многократно для других слов.</P>
+
+<P>&nbsp;</P>
+<a name=3 class="anchor"></a>
+<h3>9.3. Контрольные вопросы</h3>
+<P></P>
+<P>1. Чем отличается файл от массива?</P>
+<P>2. Особенности организации текстовых файлов.</P>
+<P>3. Что понимается под чтением, и что под записью 
+ в файл?</P>
+<P>4. Какие функции можно применять для записи в файл?</P>
+<P>5. Какие функции можно применять для чтения из файла? 
+ </P>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec8.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec10.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

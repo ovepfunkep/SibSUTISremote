@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 12. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 5. КРИВЫЕ ВТОРОГО ПОРЯДКА</h3>
+<h3>§12. Приведение уравнения второго порядка к каноническому виду</h3>
+<a href="gl12.htm#1" class=punkt>12.1. Преобразование общего уравнения второго порядка</a><br>
+<a href="gl12.htm#2" class=punkt>12.2. Примеры приведения кривой второго порядка к каноническому виду</a><br>
+<a href="gl12.htm#3">ЗАДАЧИ К ЧАСТИ 5 (для самостоятельного решения)</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§ 12. ПРИВЕДЕНИЕ УРАВНЕНИЯ ВТОРОГО ПОРЯДКА К КАНОНИЧЕСКОМУ ВИДУ</h3>
+<a name=1 class="anchor"></a>
+
+<h3>12.1. Преобразование общего уравнения второго порядка</h3>
+
+<p>Общее уравнение второй степени
+относительно переменных <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и <img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;можно записать в виде:</p>
+
+<p><img style="width: 320px; height: 24px;" alt="" src="img/f12_10_30.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10.30)</span></p>
+
+<p>В §10 были указаны 9
+канонических типов, к которым сводится уравнение (10.30) при подходящем
+преобразовании системы координат. Как известно (см. п.6.3 §6 главы 3), всякое
+преобразование системы координат на плоскости, сохраняющее расстояния, сводится
+к поворотам, параллельным переносам и отражениям. </p>
+
+<p>Докажем, что <i>можно
+повернуть оси координат так, чтобы в уравнении</i> (10.30) <i>исчез член с</i> <img src="img/lec6.files/image305.gif" height="20" width="23">.</p>
+
+<p>Повернем координатные оси на некоторый угол <img src="img/lec6.files/image306.gif" height="16" width="17">. Новые оси координат обозначим
+через <img src="img/lec6.files/image307.gif" height="21" width="31">&nbsp;и <img src="img/lec6.files/image308.gif" height="25" width="32">. Тогда старые
+координаты будут выражаться через новые по формулам:</span></p>
+<p><img style="width: 168px; height: 49px;" alt="" src="img/f12_000.png"></span><br></p>
+<p>Подставляя эти значения <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и <img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;в уравнение (10.30), после приведения подобных
+членов приведем его к виду:</span></p>
+
+<p><img src="img/lec6.files/image311.gif" height="66" width="648">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p> Это уравнение как и уравнение (10.30) можно записать в
+виде:</span></p>
+
+<p><img style="width: 349px; height: 27px;" alt="" src="img/f12_10_31.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.31)</span></p>
+
+<p>где</span></p>
+
+<p><img style="width: 491px; height: 104px;" alt="" src="img/f12_001.png"><br><span style="font-size: 12pt;"><br></span></p>
+
+<p>(значения
+новых коэффициентов <img src="img/lec6.files/image314.gif" height="25" width="23">&nbsp;и
+<img src="img/lec6.files/image315.gif" height="25" width="21">, несущественные
+для дальнейшего, мы не описываем.).</span></p>
+
+<p>Выберем теперь угол&nbsp;<img style="width: 20px; height: 17px;" alt="" src="img/alfa.png" align="middle">&nbsp;таким, чтобы новый коэффициент <img src="img/lec6.files/image047.gif" height="25" width="20">&nbsp;в уравнении (10.31)
+обратился бы в нуль; это дает нам для определения угла&nbsp;</span><img style="width: 20px; height: 17px;" alt="" src="img/alfa.png" align="middle"></span>&nbsp;уравнение:</span></p>
+
+<p><img src="img/lec6.files/image317.gif" height="42" width="184">,</span></p>
+
+<p>откуда
+находим:</span></p>
+
+<p><img src="img/lec6.files/image318.gif" height="41" width="92">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10.32)</span></p>
+
+<p>Формула (10.32) определяет два значения угла&nbsp;</span><img style="width: 20px; height: 17px;" alt="" src="img/alfa.png" align="middle"></span>, разность между которыми
+равна <img src="img/lec6.files/image319.gif" height="25" width="28">; поэтому
+безразлично, какое из них выбрать: переход от одного к другому равносилен
+перестановке новых осей координат <img src="img/lec6.files/image307.gif" height="21" width="31">&nbsp;и <img src="img/lec6.files/image308.gif" height="25" width="32">.</span></p>
+
+<p>После того, как угол&nbsp;</span><span style="font-size: 12pt;"><img style="width: 20px; height: 17px;" alt="" src="img/alfa.png" align="middle"></span>&nbsp;определен по формуле (10.32), уравнение (10.31)
+приводится к виду:</span></p>
+
+<p><img style="width: 279px; height: 27px;" alt="" src="img/f12_10_33.png" align="middle"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (10.33)</span></p>
+
+<p><i>Если
+в уравнении</i> (10.33) <i>коэффициент </i><img src="img/lec6.files/image321.gif" height="25" width="49">&nbsp;(<img src="img/lec6.files/image322.gif" height="25" width="49">), <i>то член с</i> <img src="img/lec6.files/image323.gif" height="21" width="19"><i>&nbsp;</i>(<img src="img/lec6.files/image324.gif" height="25" width="20">) <i>можно исключить переносом
+начала координат</i>.</span></p>
+
+<p>Перенесём
+начало в точку <img src="img/lec6.files/image325.gif" height="54" width="71">,
+так что <img src="img/lec6.files/image326.gif" height="47" width="136">.
+Тогда</span></p>
+
+<p><img style="width: 565px; height: 56px;" alt="" src="img/f12_002.png" align="middle"></span></p>
+
+<p>Итак,
+в случае <img src="img/lec6.files/image321.gif" height="25" width="49">&nbsp;и <img src="img/lec6.files/image322.gif" height="25" width="49">, с помощью параллельного
+переноса мы можем избавиться от линейных членов в уравнении (10.33) и оно приведётся
+к виду</span></p>
+
+<p><img src="img/lec6.files/image328.gif" height="29" width="164">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(10.34)</span></p>
+
+<p>Уравнение
+(10.34) в случае, если <img src="img/lec6.files/image329.gif" height="25" width="48">приводится к каноническому виду 1), 2) или
+9) (эллипс, гипербола или мнимый эллипс). Если же <img src="img/lec6.files/image330.gif" height="25" width="48">, то имеем 4) или 7) (пара действительных
+или мнимых пересекающихся прямых). </span></p>
+
+<p>Если
+же один из коэффициентов <img src="img/lec6.files/image331.gif" height="25" width="44">&nbsp;обращается в нуль, то уравнение (10.33)&nbsp;
+приводится к каноническому виду 3), 5), 6), 8) (парабола, либо пара
+действительных или мнимых параллельных или совпадающих прямых).</span></p>
+
+<p>В заключении этой главы рассмотрим пример исследования
+и построения кривой второго порядка по ее уравнению вида (10.30).</span><br>
+<br>
+</p>
+<a name=2 class="anchor"></a>
+<h3>12.2. Примеры
+приведения кривой второго порядка к каноническому виду</h3>
+
+<p><i>Пример
+</span></i>1<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image332.gif" height="25" width="187">.</span></p>
+
+<p><img src="img/lec6.files/image333.gif" align="left" height="279" width="185"><i>Решение</span></i>. Дополняем члены с <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и <img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;до полных квадратов и переносим свободный
+член в правую часть равенства:</span></p>
+
+<p><img style="width: 168px; height: 25px;" alt="" src="img/f12_003.png"></span></p>
+
+<p>Деля
+обе части на 16, получаем уравнение эллипса:</span></p>
+
+<p><img style="width: 160px; height: 49px;" alt="" src="img/f12_004.png"></span></p>
+
+<p>Координаты
+центра эллипса&nbsp;<img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(1;-1);
+полуоси <img src="img/lec6.files/image337.gif" height="24" width="44">, <img src="img/lec6.files/image338.gif" height="20" width="41">&nbsp;&nbsp;&nbsp;(см.рис.5.24).</span></p>
+
+<p><i>Пример
+</span></i>2<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image339.gif" height="25" width="188">.</span></p>
+
+<p><i>Решение</span></i>. Это уравнение с помощью тех же преобразований, что и
+в примере 1, приводится к виду </span></p>
+
+<p><img src="img/lec6.files/image340.gif" height="31" width="163"></span></p>
+
+<p>и
+определяет единственную точку&nbsp;</span>&nbsp;<img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(-3;1)</span>.</span></p>
+
+<p><i>Пример
+</span></i>3<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image342.gif" height="25" width="188">.</span></p>
+
+<p><i>Решение</span></i>. Уравнение приводится к виду:</span></p>
+
+<p><img src="img/lec6.files/image343.gif" height="31" width="181">,</span></p>
+
+<p>или</span></p>
+
+<p><img src="img/lec6.files/image344.gif" height="51" width="167">.</span></p>
+
+<p>Это
+уравнение мнимого эллипса.</span></p>
+
+<p><i>Пример
+</span></i>4<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image345.gif" height="25" width="180">.</span></p><p style="text-align: center; text-indent: 1cm;" align="center"><img style="width: 373px; height: 174px; float: left;" alt="" src="img/p12_5_25.png" hspace="7" vspace="7"></span></p>
+
+<p><i>Решение</span></i>. Дополняя члены с <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и <img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;до полных квадратов, получаем:</span></p>
+
+<p><img src="img/lec6.files/image347.gif" height="31" width="169">.</span></p>
+
+<p>Деля
+на 12, получаем уравнение гиперболы:</span></p>
+
+<p><img src="img/lec6.files/image348.gif" height="51" width="153">.</span></p>
+
+<p>Центр
+гиперболы –&nbsp;</span>&nbsp;<img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(3;-1)</span>;
+полуоси: вещественная <img src="img/lec6.files/image350.gif" height="25" width="61">,
+мнимая <img src="img/lec6.files/image351.gif" height="25" width="52">;
+вещественная ось параллельна оси <img src="img/lec6.files/image287.gif" height="20" width="27">&nbsp;(см.рис.5.25).</span></p>
+
+<p><i>Пример
+</span></i>5<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image352.gif" height="25" width="195">.</span></p>
+
+<p><i>Решение</span></i>. Уравнение преобразуется к виду:</span></p>
+
+<p><img src="img/lec6.files/image353.gif" height="51" width="167">.</span></p>
+
+<p>Это
+уравнение гиперболы с центром в точке&nbsp;</span><img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(-2;1)</span>, с вещественной полуосью <img src="img/lec6.files/image355.gif" height="25" width="53">&nbsp;и мнимой <img src="img/lec6.files/image356.gif" height="25" width="52">; вещественная ось
+гиперболы параллельна оси <img src="img/lec6.files/image281.gif" height="24" width="27">.</span></p>
+
+<p><i>Пример
+</span></i>6<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image357.gif" height="25" width="187">.</span></p>
+
+<p><i>Решение</span></i>. После дополнения членов с <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и <img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;до полных квадратов приходим к уравнению:</span></p>
+
+<p><img src="img/lec6.files/image358.gif" height="31" width="163">.</span></p>
+
+<p>Левая
+часть этого уравнения разлагается на множители и уравнение может быть записано
+в виде:</span></p>
+
+<p><img src="img/lec6.files/image359.gif" height="27" width="201">.</span></p>
+
+<p>Это
+уравнение определяет две пересекающиеся прямые: <img src="img/lec6.files/image360.gif" height="21" width="99">&nbsp;и <img src="img/lec6.files/image361.gif" height="21" width="99">.</span></p>
+
+<p><i>Пример
+</span></i>7<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image362.gif" height="25" width="147">.</span></p>
+
+<p><i>Решение</span></i>. Дополняя до полного квадрата, приводим уравнение к виду:</span></p>
+
+<p><img src="img/lec6.files/image363.gif" height="31" width="141">.</span></p>
+
+<p><img src="img/lec6.files/image364.gif" align="left" height="248" width="226">Перенесем
+<img src="img/lec6.files/image365.gif" height="20" width="23">&nbsp;и&nbsp; свободный
+член в правую часть и вынесем в правой части за скобку коэффициент при <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;(т. е. <img src="img/lec6.files/image366.gif" height="20" width="27">):</span></p>
+
+<p><img src="img/lec6.files/image367.gif" height="31" width="140">.</span></p>
+
+<p>Это
+уравнение параболы, где <img style="width: 83px; height: 45px;" alt="" src="img/lec6.files/image368.gif" align="middle">. Вершина параболы находится в точке&nbsp;</span><img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(-1;-3)</span>, а осью симметрии
+служит прямая <img src="img/lec6.files/image370.gif" height="21" width="51">,
+параллельная оси <img src="img/lec6.files/image371.gif" height="19" width="25">;
+ветви параболы обращена влево; параметр параболы равен 1,5.</span></p>
+
+<p>Для ее построения на чертеже (рис.5.26) полезно по исходному
+уравнению определить точки пересечения параболы с осями координат и
+использовать тот факт, что длина фокальной хорды параболы, перпендикулярной ее
+оси, равна <img src="img/lec6.files/image259.gif" height="24" width="27">.</span></p>
+
+<p>Фокус параболы находится в точке <img src="img/lec6.files/image372.gif" height="24" width="87">. Директрисой этой параболы
+служит прямая <img src="img/lec6.files/image373.gif" height="21" width="72">.</span></p>
+
+<p><i>Пример
+</span></i>8<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image374.gif" height="25" width="116">.</span></p>
+
+<p><i>Решение</span></i>. При помощи тех же преобразований, что и в предыдущем
+примере, приводим это уравнение к виду <img src="img/lec6.files/image375.gif" height="30" width="129">.</span></p>
+
+<p>Это уравнение параболы с параметром <img src="img/lec6.files/image376.gif" height="24" width="72">. Вершина параболы находится
+в точке</span><img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(-2;-2)</span>; осью
+параболы служит прямая <img src="img/lec6.files/image378.gif" height="20" width="53">, параллельная оси <img src="img/lec6.files/image281.gif" height="24" width="27">; парабола обращена в положительную
+сторону оси <img src="img/lec6.files/image281.gif" height="24" width="27">.</span></p>
+
+<p><i>Пример
+</span></i>9<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image379.gif" height="24" width="105">.</span></p>
+
+<p><i>Решение</span></i>. Уравнение совсем не содержит одну из координат, а
+именно <img src="img/lec6.files/image050.gif" height="16" width="15">. Являясь
+квадратным уравнением относительно <img src="img/lec6.files/image052.gif" height="20" width="16">, оно определяет два значения <img src="img/lec6.files/image052.gif" height="20" width="16">: <img src="img/lec6.files/image380.gif" height="24" width="53">&nbsp;и <img src="img/lec6.files/image381.gif" height="24" width="55">; таким образом, исходное уравнение в
+данном случае определяет две параллельные между собой и параллельные оси <img src="img/lec6.files/image287.gif" height="20" width="27">&nbsp;прямые.</span></p>
+
+<p>Как мы уже указывали ранее, если бы в аналогичном
+случае (отсутствие одной из координат) корни уравнения были равными или
+комплексными, то соответствующее уравнение также определяло бы две параллельные
+прямые, но слившиеся в одну в первом случае и мнимые – во втором случае.</span></p>
+
+<p>Например, уравнение <img src="img/lec6.files/image382.gif" height="25" width="113">&nbsp;определяет «сдвоенную» прямую <img src="img/lec6.files/image383.gif" height="20" width="44">, параллельную оси <img src="img/lec6.files/image281.gif" height="24" width="27">; уравнение <img src="img/lec6.files/image384.gif" height="27" width="105">&nbsp;определяет две мнимые
+прямые:</span></p>
+
+<p><img src="img/lec6.files/image385.gif" height="46" width="94">&nbsp;и <img src="img/lec6.files/image386.gif" height="47" width="96">.</span></p>
+
+<p><i>Пример
+</span></i>10<i>. </i>Привести к каноническому
+виду уравнение</span></p>
+
+<p><img src="img/lec6.files/image387.gif" height="25" width="291">.</span></p>
+
+<p><i>Решение</span></i>. По формуле (10.32) определяем угол поворота осей <img src="img/lec6.files/image388.gif" height="20" width="20">:</span></p>
+
+<p><img src="img/lec6.files/image389.gif" height="45" width="149">.</span></p>
+
+<p>&nbsp;Определяем&nbsp;</span><img style="width: 52px; height: 17px;" alt="" src="img/f12_008.png" align="middle"></span>:</span></p>
+
+<p><img src="img/lec6.files/image391.gif" height="53" width="208">.</span></p>
+
+<p>Выберем
+в правой части знак минус (при этом будем иметь <img style="width: 81px; height: 45px;" alt="" src="img/lec6.files/image392.gif" align="middle">&nbsp;и сам угол&nbsp;</span><img style="width: 20px; height: 17px;" alt="" src="img/alfa.png" align="middle"></span>&nbsp;острый). Теперь по <img style="width: 99px; height: 45px;" alt="" src="img/lec6.files/image393.gif" align="middle">&nbsp;находим&nbsp;<img style="width: 42px; height: 16px;" alt="" src="img/f12_006.png">&nbsp;и </span><span style="font-size: 12pt;"><img style="width: 42px; height: 16px;" alt="" src="img/f12_007.png"></span><span style="font-size: 12pt;">&nbsp;(в силу выбора угла&nbsp;</span><img style="width: 20px; height: 17px;" alt="" src="img/alfa.png" align="middle"></span>&nbsp;они оба положительны):</span></p>
+
+<p><img src="img/lec6.files/image396.gif" height="49" width="177">,</span></p>
+
+<p><img src="img/lec6.files/image397.gif" height="49" width="179">.</span></p>
+
+<p>Используя формулы поворота, записываем преобразования
+координат:</span></p>
+
+<p><img src="img/lec6.files/image398.gif" height="45" width="99">, <img src="img/lec6.files/image399.gif" height="45" width="100">.</span></p>
+
+<p>Подставляя
+эти значения <img src="img/lec6.files/image050.gif" height="16" width="15">&nbsp;и
+<img src="img/lec6.files/image052.gif" height="20" width="16">&nbsp;в уравнение
+кривой, приводим его к виду:</span></p>
+
+<p><img src="img/lec6.files/image400.gif" height="25" width="256">.</span></p>
+
+<p>После
+сокращения всех членов полученного уравнения на 5 находим:</span></p>
+
+<p><img src="img/lec6.files/image401.gif" height="25" width="212">.</span></p>
+
+<p>Дополняем
+члены с <img src="img/lec6.files/image323.gif" height="21" width="19">&nbsp;и <img src="img/lec6.files/image324.gif" height="25" width="20">&nbsp;до полных квадратов:</span></p>
+
+<p><img style="width: 195px; height: 30px;" alt="" src="img/f12_009.png"></span></p>
+
+<p>откуда,
+деля все члены на 36, приходим окончательно к уравнению:</span></p>
+
+<p><img style="width: 171px; height: 47px;" alt="" src="img/f12_010.png"></span></p>
+
+<p>определяющему
+эллипс с полуосями <img src="img/lec6.files/image404.gif" height="20" width="41">&nbsp;и
+<img src="img/lec6.files/image405.gif" height="20" width="41">, центр
+которого по отношению к координатным осям <img src="img/lec6.files/image406.gif" height="21" width="31">&nbsp;и <img src="img/lec6.files/image407.gif" height="25" width="31">&nbsp;находится в точке&nbsp;</span><span style="font-size: 12pt;"></span><img style="width: 20px; height: 21px;" alt="" src="img/f12_005_o.png" align="middle">(-1;2)</span></span>&nbsp;и оси которого параллельны этим
+осям.</span></p>
+
+<p>Расположение эллипса в старой и в новой системе координат
+представлено на рис.5.27.</span></p>
+
+<p><img src="img/lec6.files/image409.gif" align="left" height="349" width="414"></p>
+
+<p>&nbsp;</span></p>
+
+<p>&nbsp;</span></p>
+
+<p>&nbsp;</span></p>
+<p>&nbsp;</span></p>
+
+<p>&nbsp;</span></p>
+
+<p>&nbsp;</span></p>
+
+<p>&nbsp;</span>&nbsp;</span></p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+
+<p style="border: medium none ; padding: 0cm; text-align: justify;"><span style="font-size: 8pt;">&nbsp;</span></p>
+<p style="border: medium none ; padding: 0cm; text-align: justify;"><span style="font-size: 8pt;">&nbsp;</span></p>
+<p style="border: medium none ; padding: 0cm; text-align: justify;"><span style="font-size: 8pt;">&nbsp;</span></p>
+<br>
+</div>
+
+<p style="margin: 0cm 0cm 0.0001pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: justify;"><b><span style="font-size: 11pt; font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">&nbsp;</span></b></p>
+
+<p><img src="img/lec6.files/image410.jpg" align="left" height="257" hspace="12" width="210"><b>АПОЛЛОНИЙ Пергский</span></b> (262 до н. э. - 190 до
+н. э.) наряду с Евклидом 
+и Архимедом 
+традиционно входит в тройку «великих геометров античности». </span></p>
+
+<p>Прославился
+в первую очередь выдающейся работой «Конические
+сечения», в которой дал содержательную общую теорию трёх важных
+кривых: эллипса, параболы и гиперболы.
+Именно Аполлоний предложил классические названия данных кривых. Он ввёл и
+другие математические термины, латинские аналоги которых навсегда вошли в
+науку, в частности: асимптота,
+абсцисса, ордината, аппликата.</p>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt; background: rgb(248, 252, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+
+<p>Каким образом Аполлоний, не владея математическим
+анализом, сумел сделать свои открытия, неясно. Возможно, у него, как у Архимеда,
+был некий метод бесконечно малых, который он использовал в эвристических целях.
+</span></p>
+
+<p>Аполлоний переработал астрономическую модель,
+введя эпициклы и эксцентрики для объяснения неравномерности движения планет.
+Эту теорию позднее развили Гиппарх и Птолемей. Он также дал решение задачи о
+построении окружности, касающейся трёх заданных окружностей («окружность
+Аполлония»), изучал спиральные линии, занимался геометрической оптикой.</span></p>
+</div>
+<br>
+<a name=3 class="anchor"></a>
+<h3>ЗАДАЧИ
+К ЧАСТИ 5 (для самостоятельного
+решения)</h3>
+
+<table class="MsoNormalTable" style="width: 494.45pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="659">
+ <tbody><tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.1.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p style="margin-top: 6pt; text-align: justify;">Найти полуоси, координаты фокусов, эксцентриситет и
+ уравнения директрис эллипса <img src="img/lec6.files/image411.gif" border="0" height="25" width="107">.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.2.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p style="margin-top: 6pt; text-align: justify;">Составить каноническое уравнение эллипса, если его
+ большая полуось равна 10, а эксцентриситет равен 0,8.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.3.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p class="MsoNormal">Расстояние между фокусами
+ эллипса равно 24, а его эксцентриситет <img src="img/lec6.files/image412.gif" border="0" height="48" width="51">. Составить уравнение эллипса.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.4.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p class="MsoNormal">Малая полуось эллипса равна
+ <img src="img/lec6.files/image413.gif" border="0" height="27" width="37">,
+ расстояние между фокусами равно 8.</span></p>
+ <p class="MsoNormal">Найти уравнение эллипса.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.5.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p style="margin-top: 6pt; text-align: justify;">Расстояние между фокусами гиперболы равно 20,
+ уравнения асимптот: <img src="img/lec6.files/image414.gif" border="0" height="21" width="83">. Составить каноническое уравнение и
+ найти эксцентриситет.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.6.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p class="MsoNormal">Найти уравнение гиперболы и
+ построить ее, если асимптоты заданы урав-</span></p>
+ <p class="MsoNormal">нениями <img src="img/lec6.files/image415.gif" border="0" height="21" width="81">, а фокусы находятся
+ на расстоянии <img src="img/lec6.files/image416.gif" border="0" height="27" width="45">&nbsp;друг от друга.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.7.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p class="MsoNormal">Действительная&nbsp; полуось&nbsp;
+ гиперболы&nbsp; равна&nbsp; 5,&nbsp; эксцентриситет&nbsp; <img src="img/lec6.files/image417.gif" border="0" height="23" width="51">. </span></p>
+ <p class="MsoNormal">Найти каноническое
+ уравнение гиперболы.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.8.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p class="MsoNormal">Парабола&nbsp; с&nbsp; вершиной&nbsp; в&nbsp;
+ начале&nbsp; координат проходит через точку (-2;-3) </span></p>
+ <p class="MsoNormal">симметрично относительно
+ оси <i>ОХ</i>. Найти уравнение параболы и ее фокус.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 36.7pt;">
+ <td style="padding: 0cm 5.4pt; width: 26.7pt; height: 36.7pt;" valign="top" width="36">
+ <p style="margin: 6pt 0cm 0.0001pt 18pt; text-indent: -10.9pt;">5.9.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 467.75pt; height: 36.7pt;" valign="top" width="624">
+ <p class="MsoNormal">Вывести уравнение параболы,
+ директриса которой имеет уравнение <img src="img/lec6.files/image418.gif" border="0" height="21" width="87">, а фокус расположен в точке<span style="font-style: italic;"> F(2;3)</span>. </span></p>
+ </td>
+ </tr>
+</tbody></table>
+
+<p><b><i>Привести к каноническому&nbsp; виду&nbsp;
+уравнение кривой</i></b></p>
+
+<table class="MsoNormalTable" style="width: 500.4pt; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="667">
+ <tbody><tr style="height: 31.05pt;">
+ <td style="padding: 0cm 5.4pt; width: 32.4pt; height: 31.05pt;" valign="top" width="43">
+ <p style="margin-top: 6pt;">5.10.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 468pt; height: 31.05pt;" valign="top" width="624">
+ <p class="MsoNormal"><img src="img/lec6.files/image420.gif" border="0" height="28" width="184">.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 28.65pt;">
+ <td style="padding: 0cm 5.4pt; width: 32.4pt; height: 28.65pt;" valign="top" width="43">
+ <p style="margin-top: 6pt;">5.11.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 468pt; height: 28.65pt;" valign="top" width="624">
+ <p class="MsoNormal"><img src="img/lec6.files/image421.gif" border="0" height="27" width="200">.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 29.05pt;">
+ <td style="padding: 0cm 5.4pt; width: 32.4pt; height: 29.05pt;" valign="top" width="43">
+ <p style="margin-top: 6pt;">5.12.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 468pt; height: 29.05pt;" valign="top" width="624">
+ <p class="MsoNormal"><img src="img/lec6.files/image422.gif" border="0" height="27" width="224">.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 28.05pt;">
+ <td style="padding: 0cm 5.4pt; width: 32.4pt; height: 28.05pt;" valign="top" width="43">
+ <p style="margin-top: 6pt;">5.13.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 468pt; height: 28.05pt;" valign="top" width="624">
+ <p class="MsoNormal"><img src="img/lec6.files/image423.gif" border="0" height="27" width="168">.</span></p>
+ </td>
+ </tr>
+ <tr style="height: 27.75pt;">
+ <td style="padding: 0cm 5.4pt; width: 32.4pt; height: 27.75pt;" valign="top" width="43">
+ <p style="margin-top: 6pt;">5.14.</span></p>
+ </td>
+ <td style="padding: 0cm 5.4pt; width: 468pt; height: 27.75pt;" valign="top" width="624">
+ <p class="MsoNormal"><img src="img/lec6.files/image424.gif" border="0" height="28" width="183">.</span></p>
+ </td>
+ </tr>
+</tbody></table>
+
+
+
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl11.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl13.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

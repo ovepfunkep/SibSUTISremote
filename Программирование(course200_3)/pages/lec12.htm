@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 12. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+ <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+
+<h3><a href="#">12. Динамические массивы</a></h3>
+<a href="#1" class=punkt>12.1. Основные понятия</a><br>
+<a href="#2" class=punkt>12.2. Одномерные динамические массивы</a><br>
+<a href="#3" class=punkt>12.3. Двумерные динамические массивы</a><br>
+<a href="#4" class=punkt>Контрольные вопросы</a><br>
+
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>12.1. Основные понятия</h3>
+<P>При определении статического массива: &lt;тип&gt; &lt;имя_массива&gt; 
+ [количество_элементов] , имя_массива становится указателем на область 
+ памяти, выделяемой для размещения элементов массива. Количество элементов 
+ должно быть константой. Таким образом, размеры памяти, выделяемой под 
+ массив, заданы в определении массива. Но иногда нужно, чтобы размеры памяти 
+ были не фиксированными, а выделялись в ходе выполнения программы при решении 
+ конкретной задачи. </p>
+<P>&#9;Формирование массивов с переменными размерами можно 
+ организовать с помощью указателей и средств для динамического выделения 
+ памяти. Эти средства описаны в файле &lt;alloc.h&gt;. Функции malloc() 
+ и calloc() динамически выделяют память в соответствии со значениями их 
+ параметров и возвращают адрес начала выделенного участка памяти. Тип возвращаемого 
+ значения указателя void *. Его можно преобразовать к указателю любого 
+ типа с помощью явного приведения типа. Функция free(void *) освобождает 
+ память, выделенную с помощью malloc() или calloc().</P>
+<P></P>
+<P class=punkt>int *p;</P>
+<P class=punkt>p=(int *)malloc(size); //Указателю на целое p присваивается 
+ адрес начала выделенной области памяти размером size байт.</P>
+<P class=punkt>p=(int *)calloc(n, size); //Указателю на целое p присваивается 
+ адрес начала выделенной области памяти размером n*size байт.</P>
+<P class=punkt>free(p); //Освобождает выделенную по адресу p память. 
+ Преобразование указателя любого типа к типу void * осуществляется автоматически, 
+ так что в качестве фактического параметра можно подставить указатель любого 
+ типа без явного приведения типов.<br>
+ </P></DIR></DIR>
+ <br>
+<a name=2 class="anchor"></a>
+<h3>12.2. Одномерные динамические 
+ массивы</h3>
+<P></P>
+<P><b>Пример формирования одномерного динамического массива</b></P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include &lt;alloc.h&gt;
+
+main()
+
+{float *p,d;
+
+ int i,n;
+
+ printf("\n input n:");
+
+ scanf("%d",&n);
+
+ p=(float *)malloc(n*sizeof(float));
+
+ for (i=0;i&lt;n;i++)
+
+  { printf("x[%d]=",i);
+
+    scanf("%f",&d);
+
+    p[i]=d;
+
+ }
+
+ for (i=0;i&lt;n;i++)
+
+  {  if (i%4==0) printf("\n");
+
+     printf("\t x[%d]=%6.2f",i,p[i]);
+
+   }
+
+ free(p);
+
+ getch();
+
+}
+</Pre>
+<P>&#9;Доступ к участкам выделенной памяти выполняется с 
+ помощью операции индексирования: p[i]. </P>
+<P><br>
+<a name=3 class="anchor"></a>
+<h3>12.3. Двумерные динамические массивы</h3>
+<P>&#9;Каждый элемент массива может быть, в свою очередь, 
+ массивом. Именно так конструируются динамические многомерные массивы. 
+ Рассмотрим алгоритм создания и обработки двумерного массива.</P>
+ <OL>
+<P>
+ <LI>Определяем указатель на массив указателей , задающий адреса начала 
+   строк матрицы: тип **uk.</LI>
+<P></P>
+<P>
+ <LI>Вводим размеры матрицы n,m.</LI>
+<P></P>
+<P>
+ <LI>Создаём динамический массив указателей на указатели начала строк : 
+   uk=(тип **)malloc(n*sizeof(тип *));</LI>
+<P></P>
+<P>
+ <LI>В цикле выделяем память под n массивов – строк по m элементов в каждом: 
+   for (i=0;i&lt;n;i++) uk[i]=(тип *)malloc(m*sizeof(тип));</LI>
+<P></P>
+<P>
+ <LI>Обработка массива (работа с индексированными элементами uk[i][j]).</LI>
+<P></P>
+<P>
+ <LI>В цикле освобождаем память, занятую под n массивов – строк : for (i=0;i&lt;n;i++) 
+   free(uk[i]);</LI>
+<P></P>
+<P>
+ <LI>Освобождаем память, занятую под массив указателей : free(uk).</LI>
+<P></P>
+ </OL>
+<P></P>
+<P> <B>Пример обработки двумерного динамического массива</b></P>
+<P></P>
+<P>Составить программу, создающую динамическую матрицу размером 
+ n*n, заполнить матрицу случайными числами. Вычислить сумму каждой строки 
+ и поместить суммы строк в одномерный динамический массив.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include &lt;stdlib.h&gt;
+
+#include &lt;alloc.h&gt;
+
+void main()
+
+{ int n,j,i;
+
+  float ** matr; float * mass; // Объявляем matr - указатель на массив указателей //mass – указатель на одномерный массив
+
+  clrscr();
+
+  printf("Введите размер квадратной матрицы n: "); scanf("%d",&n);
+
+  mass=(float *)malloc(n*sizeof(float )); // Выделяем память под массив mass
+
+  if (mass==NULL)
+
+   {puts("не создан динамический массив!");
+
+    return;}
+
+  matr=(float **)malloc(sizeof(float *)*n); // Выделяем память под массив указателей
+
+  if (matr==NULL)
+
+    {puts("не создан динамический массив!");
+
+     return;}
+
+  randomize();
+
+  for (i=0;i&lt;n;i++)
+
+    { matr[i]=(float *)malloc(sizeof(float)*n); // Выделяем память под i-ю строку
+
+      if (matr[i]==NULL)
+
+        {puts("не создан динамический массив!");
+
+         return;}
+
+      for (j=0;j&lt;n;j++) matr[i][j]=random(100);
+
+    }
+
+  for (i=0;i&lt;n;i++)
+
+   { mass[i]=0;
+
+     for (j=0;j&lt;n;j++)
+
+        mass[i]+=matr[i][j];
+  
+   }
+
+  for (i=0;i&lt;n;i++)
+
+   { for (j=0;j&lt;n;j++)
+
+       printf("\t%6.2f",matr[i][j]);
+
+    printf("\n");
+
+   }
+
+  for (i=0;i&lt;n;i++)
+
+     printf("\n сумма %d строки %8.2f",i,mass[i]);
+
+  for (i=0;i&lt;n;i++)
+
+      free(matr[i]); //Освобождаем память i – й строки
+
+  free(matr); // Освобождаем память массива указателей
+
+  free(mass); // Освобождаем память массива сумм
+
+  getch();
+
+}
+</Pre>
+<P>&nbsp;</P>
+<a name=4 class="anchor"></a>
+<h3>12.4. Контрольные вопросы</h3>
+<P>1. Отличия динамического массива от статического.</P>
+<P>2. Как создать одномерный динамический массив?</P>
+<P>3. Как создать динамическую матрицу?</P>
+<P>4. Как освобождается память, занятая под динамические 
+ структуры?<br>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec11.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec13.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

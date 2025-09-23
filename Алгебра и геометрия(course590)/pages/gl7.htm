@@ -1,0 +1,1262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 7. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 3. АНАЛИТИЧЕСКАЯ ГЕОМЕТРИЯ НА ПЛОСКОСТИ</h3>
+<h3>§7. Прямая линия на плоскости</h3>
+<a href="#1" class=punkt>7.1. Уравнение линии на плоскости</a><br>
+<a href="#2" class=punkt>7.2. Прямая линия на плоскости</a><br>
+<a href="#3" class=punkt>7.3. Типовые задачи на плоскости</a><br>
+<a href="#4">ЗАДАЧИ К ЧАСТИ 3 (для самостоятельного решения).</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§7. ПРЯМАЯ ЛИНИЯ НА ПЛОСКОСТИ</h3>
+<a name=1 class="anchor"></a>
+
+<h3>7.1. Уравнение линии на плоскости</h3>
+<p>Линия на плоскости рассматривается
+(задается) как множество точек, обладающих
+некоторым только им присущим геометрическим свойством. Например,
+окружность радиуса
+<i>R</i> есть множество всех точек
+плоскости, удаленных на
+расстояние <i>R</i> от некоторой фиксированной точки <i>О</i>
+(центра
+окружности).</p>
+<p>Введение на плоскости системы
+координат позволяет определять положение
+линии на плоскости с помощью уравнения (т.е. равенства, связывающего
+координаты
+точек линии).</span></p>
+<p><i>Уравнением линии</span></i> (или кривой) на плоскости <i>Оху
+</i>называется такое уравнение <span style="font-style: italic;">F(x,y)=0</span>&nbsp;&nbsp;с
+двумя переменными,
+которому удовлетворяют координаты <i>х </i>и <i>у</i>
+каждой точки линии и не
+удовлетворяют координаты любой точки, не лежащей на этой линии.</span></p>
+<p>Переменные <i>х</i> и <i>у</i>
+в уравнении линии называются <i>текущими
+координатами</i> точек линии.</span></p>
+<p>Уравнение линии позволяет изучение
+геометрических свойств линии заменить
+исследованием его уравнения.</span></p>
+<p>Так, для того чтобы установить
+лежит ли точка <span style="font-style: italic;">A(x0;
+y0)</span>&nbsp;на данной линии,
+достаточно
+проверить (не прибегая к геометрическим построениям), удовлетворяют ли
+координаты
+точки <i>А </i>уравнению этой линии в выбранной системе
+координат.</span></p>
+<p><i>Пример</span></i>. Точка
+<i>K</i> (– 2; 1) лежит на линии <span style="font-style: italic;">2x+y+3=0</span>,
+а точка <i>L </i>(1; 1) не лежит
+на данной линии .</span></p>
+<p>Аналогичным образом вводится
+понятие уравнения линии в полярной системе
+координат.</span></p>
+<p>Уравнение <img style="width: 95px; height: 26px;" alt="" src="img/lec7.files/f00.png" align="middle">
+называется
+<i>уравнением данной линии в полярной системе координат</i>,
+если координаты
+любой точки, лежащей на этой линии, и только они, удовлетворяет этому
+уравнению.</span></p>
+<p>Линию на плоскости можно также
+задать <i>параметрически</i>, при помощи
+двух уравнений:</span></p>
+<p><img style="width: 97px; height: 67px;" alt="" src="img/lec7.files/f7_1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(7.1)</span></p>
+<p>где <i>х</i> и <i>у</i>– координаты произвольной
+точки <span style="font-style: italic;">M(x;y)</span>,
+лежащей на данной линии, а </span><i>t</i> – переменная, называемая
+параметром. Параметр </span><i>t</i><i><span style="font-size: 12pt;" lang="EN-US"> </span></i>определяет
+положение точки <span style="font-style: italic;">(x;y)</span>&nbsp;на
+плоскости.</span></p>
+<p>Например, если <span style="font-style: italic;">x = t + 1</span>, <span style="font-style: italic;">y = t</span><sup style="font-style: italic;"> 2</sup>&nbsp;, то
+значению параметра </span><i>t</i><i> </i>= 2,
+соответствует на плоскости точка (3; 4).</span></p>
+<p><img src="img/lec4.files/image121.gif" align="left" height="176" width="166"> Чтобы перейти от параметрических
+уравнений линии к уравнению вида <span style="font-style: italic;">F(x,y)
+= 0</span>,
+надо каким-либо способом
+из уравнений исключить параметр </span><i>t</i><i>. </i>Однако заметим, такой переход не
+всегда целесообразен и не всегда возможен.</span></p>
+<p>Линию на плоскости можно задать <i>векторным
+уравнением</i>
+<img style="width: 67px; height: 31px;" alt="" src="img/lec4.files/image123.gif" align="middle">,
+где </span><i>t</i>
+– скалярный переменный параметр. Каждому значению <img src="img/lec4.files/image124.gif" height="25" width="16">&nbsp;соответствует
+определенный вектор <img style="width: 80px; height: 31px;" alt="" src="img/lec4.files/image125.gif" align="middle">&nbsp;плоскости (рис.3.10).
+При изменении параметра </span><i>t</i> конец вектора&nbsp;<img style="width: 67px; height: 31px;" alt="" src="img/lec4.files/image123.gif" align="middle"></span>&nbsp;опишет
+некоторую линию. Векторному
+уравнению линии&nbsp;<img style="width: 67px; height: 31px;" alt="" src="img/lec4.files/image123.gif" align="middle">&nbsp;в
+системе координат <i>Оху</i> соответствует два скалярных
+уравнения (7.1), т.е. уравнения проекций на оси
+координат векторного уравнения линий
+есть ее параметрические уравнения.</span></p>
+<p>Векторное уравнение и
+параметрические уравнения линии имеют механический
+смысл. Если точка перемещается на плоскости, то указанные уравнения
+называются
+уравнениями движения, а линия – траекторией точки, параметр </span><i>t</span></i>
+при этом есть время.</span></p>
+<p>Итак, всякой линии на плоскости
+соответствует&nbsp; некоторое уравнение вида </span><span style="font-style: italic;">F(x,y)
+= 0</span></span>&nbsp;.</span></p>
+<p>Всякому уравнению вида&nbsp;</span><span style="font-style: italic;">F(x,y)
+= 0</span></span>&nbsp;соответствует,
+вообще говоря, некоторая линия,
+свойства которой определяются данным уравнением. Выражение «вообще
+говоря»
+означает, что сказанное допускает исключения. </span></p>
+
+<p>Так, уравнению <img style="width: 177px; height: 36px;" alt="" src="img/lec4.files/image126.gif" align="middle">&nbsp;соответствует
+не линия, а точка (2; 3);
+уравнению <img style="width: 120px; height: 31px;" alt="" src="img/lec4.files/image127.gif" align="middle">&nbsp;на
+плоскости не соответствует никакой геометрический образ.</span></p>
+<p>В аналитической геометрии на
+плоскости возникают две основные задачи.
+Первая: зная геометрические свойства кривой, найти ее уравнение;
+вторая: зная
+уравнение кривой, изучить ее форму и свойства. При этом нас будут
+интересовать
+такие свойства, которые не зависят от расположения линии относительно
+системы
+координат. Величины, которые остаются неизменными при преобразовании
+системы координат
+называются <i>инвариантами</i>. Одним из таких инвариантов
+является <i>порядок
+линии</i> или, соответственно, <i>степень уравнения</i>.
+Уточним это
+утверждение.</span></p>
+<p><i>Алгебраической линией</span></i> на плоскости называется множество,
+которое в какой-нибудь
+декартовой системе координат может быть задано уравнением вида</span></p>
+<p><img style="width: 338px; height: 27px;" alt="" src="img/lec7.files/f7_2.png">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(7.2)</span></p>
+<p>причем все показатели –
+неотрицательные целые числа. <i>Степенью
+уравнения</i> (7.2) или <i>порядком линии</i>
+называется наибольшая из
+сумм <img src="img/lec4.files/image129.gif" height="27" width="47">, <img src="img/lec4.files/image130.gif" height="24" width="95">.<i>
+</i>В дальнейшем
+будем рассматривать только алгебраические линии.</span></p>
+<p><i>Теорема об инвариантности порядка</span></i>. <i>Если в какой-либо
+декартовой системе координат
+линия может быть задана уравнением вида </i>(7.2)<i>, то и в любой
+другой декартовой системе координат она может быть задана уравнением
+того же
+вида, имеющим такую же степень</i>.</span></p>
+<p>Доказательство этого факта нетрудно
+провести самостоятельно. Идея его
+заключается в том, что преобразование координат по формулам (6.8), (6.10) и (6.12) не может <i>увеличить</i>
+степень уравнения. Но оно
+не может и <i>уменьшить</i> её, иначе обратное
+преобразование увеличило бы эту
+степень, что невозможно. Таким образом степень уравнения есть инвариант.</p><br>
+<a name=2 class="anchor"></a>
+<h3>7.2. Прямая линия на плоскости</h3>
+<p>Простейшей из линий является <i>прямая</i>.
+Прямая линия есть
+единственный <i>линейный образ</i> на плоскости, т.е.
+геометрический объект,
+определяемый линейным уравнением. Однако, в зависимости от способа
+задания
+прямой, её уравнение может принимать различные виды. Рассмотрим эти
+виды.</span></p>
+<p><span style="position: absolute; z-index: 251649536; left: 0px; margin-left: -1px; margin-top: 10px; width: 40px; height: 40px;"><img src="img/lec4.files/image131.gif" height="40" width="40"></span><b>&nbsp;</span></b></p>
+<p><b><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Общее уравнение прямой</i></b></p>
+<p>Рассмотрим уравнение
+первой степени относительно <i>х</i> и <i>у</i>
+в общем виде</span></p>
+<p><img src="img/lec4.files/image132.gif" height="29" width="133"></span>,</span><span style="font-size: 12pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.3)</span></p>
+<p>где <i>А, В, С</i> –
+произвольные числа, причем <i>А</i>
+и <i>В</i> не равны нулю одновременно.</span></p>
+<p>Простейшим из таких уравнений может
+быть <img src="img/lec4.files/image133.gif" height="25" width="45">&nbsp;-
+уравнение оси <i>Ох</i>. Порядок этой линии
+равен 1. По теореме об инвариантности порядка любое уравнение вида (7.3) есть уравнение прямой, и,
+наоборот, любая прямая в декартовой системе
+координат имеет уравнение вида (7.3). </span></p>
+
+<p>Некоторые частные
+случаи общего уравнения прямой:</span></p>
+<p><span style="font-size: 12pt; font-family: Symbol;">·<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>если
+<img src="img/lec4.files/image134.gif" height="20" width="45">, то уравнение приводится к виду <img src="img/lec4.files/image135.gif" height="47" width="64">.
+Это есть уравнение
+прямой, параллельной оси <i>Ох;</i></span></p>
+<p><span style="font-size: 12pt; font-family: Symbol;">·<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>если
+<img src="img/lec4.files/image136.gif" height="20" width="45">, то прямая параллельна оси <i>Оу</i>;</span></p>
+<p><span style="font-size: 12pt; font-family: Symbol;">·<span style="font-family: &quot;arial&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>если
+<img src="img/lec4.files/image137.gif" height="20" width="45">, то получаем <img src="img/lec4.files/image138.gif" height="25" width="97">.
+Прямая проходит через начало координат.</span></p>
+<p><img src="img/lec4.files/image139.gif" align="left" height="40" width="40"></p>
+<p><b><i>Уравнение прямой, проходящей через
+данную точку с данным нормальным вектором</span></i></b></p>
+<p>Найдем уравнение прямой, проходящей
+через заданную точку <img src="img/lec4.files/image140.gif" height="31" width="95">&nbsp;перпендикулярно
+данному
+ненулевому вектору <img src="img/lec4.files/image141.gif" height="31" width="85">&nbsp;(рис.3.11).
+Такой </span><img src="img/lec4.files/image142.gif" align="left" height="180" width="209">вектор называется <i>нормальным</i>
+для
+этой прямой.</span></p>
+<p>Возьмем на прямой произвольную
+текущую точку <img src="img/lec4.files/image045.gif" height="31" width="72">&nbsp;и
+рассмотрим вектор <img src="img/lec4.files/image143.gif" height="33" width="188">. Поскольку
+векторы </span><b><i>n</span></i></b> и <img src="img/lec4.files/image144.gif" height="29" width="51">&nbsp;перпендикулярны,
+то их скалярное произведение равно нулю: <img src="img/lec4.files/image145.gif" height="31" width="103">,
+то есть, в координатах:</span></p>
+<p> <img src="img/lec4.files/image146.gif" height="35" width="213">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.4)</span></p>
+<p>Это уравнение называется <i>уравнением
+прямой, проходящей через данную
+точку с данным нормальным вектором</i>. Это уравнение приводится
+к общему виду,
+если раскрыть скобки и привести подобные.</span></p>
+<p>&nbsp;</p>
+<p><img src="img/lec4.files/image147.gif" align="left" height="40" width="40"><b><i>Каноническое
+уравнение прямой</span></i></b></p>
+<p><img src="img/lec4.files/image148.gif" align="left" height="171" width="162">Пусть прямая проходит через данную
+точку <img src="img/lec4.files/image140.gif" height="31" width="95">&nbsp;в данном
+направлении (рис.3.12). Направление
+может быть задано вектором <img src="img/lec4.files/image149.gif" height="25" width="76">,
+который называется в этом случае <i>направляющим
+вектором</i> прямой. Им может служить любой вектор, параллельный
+этой прямой.
+Если рассмотреть произвольную текущую точку прямой <img src="img/lec4.files/image045.gif" height="31" width="72">,
+то, очевидно, вектор <img src="img/lec4.files/image143.gif" height="33" width="188">&nbsp;и
+вектор <b><i>q</i></b> будут коллинеарными. Но в таком случае координаты этих векторов будут
+пропорциональными:</span></p>
+<p><img src="img/lec4.files/image150.gif" height="55" width="129">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.5)</span></p>
+<p>Это уравнение называется <i>уравнением
+прямой, проходящей через данную
+точку с данным направляющим вектором</i> или <i>каноническим
+уравнением прямой</i>.</span></p>
+<p>Заметим, что одна из координат
+направляющего вектора </span><b><i>q</i></b> может
+равняться нулю. Не следует думать, что в этом случае число делится на
+ноль. Это просто означает, что соответствующий числитель тоже равен нулю.
+Например, уравнение <img src="img/lec4.files/image151.gif" height="48" width="100">&nbsp;есть
+уравнение прямой, проходящей через
+точку <img src="img/lec4.files/image152.gif" height="25" width="63">&nbsp;параллельно
+вектору <img src="img/lec4.files/image153.gif" height="24" width="67">, т.е.
+параллельно оси </span><i>O</span></i><i>y. </span></i>Но тогда
+уравнение этой прямой можно записать как <img src="img/lec4.files/image154.gif" height="20" width="67">&nbsp;или
+<img src="img/lec4.files/image155.gif" height="20" width="40">.</span></p>
+<p><img src="img/lec4.files/image156.gif" align="left" height="40" width="40"></p>
+<p><b><i>Уравнение прямой, проходящей через
+две данные точки</span></i></b></p>
+<p>Пусть прямая проходит через точки <img src="img/lec4.files/image157.gif" height="31" width="88">&nbsp;и
+<img src="img/lec4.files/image158.gif" height="31" width="95">&nbsp;(рис.3.13).</span></p>
+<p><img src="img/lec4.files/image159.gif" align="left" height="232" width="219">В этом случае вектор <img src="img/lec4.files/image160.gif" height="33" width="205">&nbsp;является
+направляющим вектором прямой. Применяя
+в этом случае каноническое уравнение, получим:</span></p>
+<p><img src="img/lec4.files/image161.gif" height="59" width="141">.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;(7.6)</span></p>
+<p>Это уравнение и является <i>уравнением
+прямой, проходящей
+через две данные точки</i>. Разумеется, предполагается, что <img src="img/lec4.files/image162.gif" height="27" width="57">,
+<img src="img/lec4.files/image163.gif" height="27" width="60">.</span></p>
+<p>Если <img src="img/lec4.files/image164.gif" height="27" width="57">,
+то прямая, проходящая через точки <img src="img/lec4.files/image157.gif" height="31" width="88">&nbsp;и
+<img src="img/lec4.files/image158.gif" height="31" width="95">, параллельна оси ординат. Ее
+уравнение имеет
+вид <img src="img/lec4.files/image165.gif" height="27" width="49">.</span></p>
+<p>Если <img src="img/lec4.files/image166.gif" height="27" width="60">,
+то уравнение прямой может быть записано в виде <img src="img/lec4.files/image167.gif" height="27" width="51">,</span></p>
+<p>и тогда прямая <img src="img/lec4.files/image168.gif" height="27" width="55">&nbsp;параллельна
+оси абсцисс.</span></p>
+<p><img src="img/lec4.files/image169.gif" align="left" height="40" width="40"></p>
+<p><b><i>Уравнение прямой с данным угловым коэффициентом</span></i></b></p>
+<p><img src="img/lec4.files/image170.gif" align="left" height="210" width="238">Пусть на плоскости <i>Оху</i>
+задана произвольная прямая,
+не параллельная оси <i>Оу </i>(рис.3.14). Ее положение
+вполне определяется
+координатой </span><i>b</span></i> точки <img src="img/lec4.files/image171.gif" height="24" width="57">&nbsp;пересечения
+с осью <i>Оу</i> и углом <img src="img/lec4.files/image172.gif" height="16" width="17">,
+отсчитываемым в положительном
+направлении (против часовой стрелки) между положительным направлением
+оси <i>Ох</i>
+и данной прямой. Очевидно, <img src="img/lec4.files/image173.gif" height="21" width="77">.</span></p>
+<p>Возьмем на прямой произвольную точку <img src="img/lec4.files/image045.gif" height="31" width="72">.
+Очевидно, <img src="img/lec4.files/image174.gif" height="49" width="99">, т.е. <img src="img/lec4.files/image175.gif" height="25" width="116">.
+Введя обозначение <img src="img/lec4.files/image176.gif" height="25" width="67">, получим уравнение</span></p>
+<p>  <img src="img/lec4.files/image177.gif" height="29" width="85">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.7)</span></p>
+<p>Число <img src="img/lec4.files/image178.gif" height="25" width="67">&nbsp;называется
+<i>угловым коэффициентом</i> прямой, а уравнение (7.7) – <i>уравнением прямой с
+данным угловым коэффициентом</i>.</span></p>
+<p>Если прямая проходит через начало
+координат, то <img src="img/lec4.files/image179.gif" height="21" width="44">&nbsp;и,
+следовательно, уравнение этой
+прямой будет иметь вид <img src="img/lec4.files/image180.gif" height="25" width="55">.</span></p>
+<p>Если прямая параллельна оси <i>Ох</i>,
+то <img src="img/lec4.files/image181.gif" height="20" width="44">, следовательно, <img src="img/lec4.files/image182.gif" height="25" width="96">&nbsp;и
+уравнение (7.7) примет вид <img src="img/lec4.files/image183.gif" height="25" width="45">.</span></p>
+<p>Если прямая параллельна оси <i>Оу</i>,
+то <img src="img/lec4.files/image184.gif" height="47" width="48">, уравнение (7.7) теряет смысл,
+т.к. для нее угловой коэффициент <img src="img/lec4.files/image185.gif" height="49" width="120">&nbsp;не
+существует. В этом случае уравнение
+прямой будет иметь вид &nbsp;<img src="img/lec4.files/image186.gif" height="16" width="45">,
+где </span><i>a</span></i> – абсцисса
+точки пересечения прямой с осью <i>Ох.</i> </span></p>
+<p><img src="img/lec4.files/image187.gif" align="left" height="40" width="40"></p>
+<p><b>&nbsp;<i>Уравнение
+прямой, проходящей через данную точку в данном направлении</i></span></b></p>
+<p><b><i><img style="width: 192px; height: 201px; float: left;" alt="" src="img/p7_3_15.png" hspace="7"></i></span></b></p>
+<p>Пусть прямая
+проходит через точку <img src="img/lec4.files/image140.gif" height="31" width="95">&nbsp;и
+ее направление характеризуется
+угловым коэффициентом </span><i>k</span></i>(рис.3.15)<i>.</i>
+Уравнение этой прямой можно записать в виде <img src="img/lec4.files/image189.gif" height="25" width="81">,
+где </span><i>b</span></i> – пока
+неизвестная величина. Так как прямая проходит через точку <img src="img/lec4.files/image140.gif" height="31" width="95">,
+то координаты точки
+удовлетворяют уравнению прямой: <img src="img/lec4.files/image190.gif" height="27" width="97">.
+Отсюда <img src="img/lec4.files/image191.gif" height="27" width="96">. Подставляя
+значение </span><i>b</span></i>
+в уравнение <img src="img/lec4.files/image189.gif" height="25" width="81">,
+получим искомое уравнение прямой <img src="img/lec4.files/image192.gif" height="27" width="133">,
+то есть </span></p>
+<p><img src="img/lec4.files/image193.gif" height="35" width="152">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(7.8)</span></p>
+<p>Уравнение (7.8) с различными значениями </span><i>k</span></i> называют
+также <i>уравнениями пучка прямых</i>, проходящих через
+точку <img src="img/lec4.files/image140.gif" height="31" width="95">. Другими словами,
+любая
+прямая, проходящая через данную точку может быть задана уравнением (7.8). Исключением является прямая,
+параллельная оси <i>Оу</i>. В уравнении
+(7.8) коэффициент <img src="img/lec4.files/image194.gif" height="24" width="63">&nbsp;может принимать любые действительные
+значения.</span></p>
+<p><img src="img/lec4.files/image195.gif" align="left" height="40" width="40"></p>
+<p><b>&nbsp;<i>Нормальное
+уравнение прямой</i></span></b></p>
+<p><img src="img/lec4.files/image196.gif" align="left" height="203" width="209">В общем уравнении прямой нормальный
+вектор определен
+неоднозначно. Любой вектор, коллинеарный нормальному вектору, также
+является нормальным. Исключить эту неоднозначность можно, умножив общее
+уравнение прямой (7.3) на нормирующий множитель <img src="img/lec4.files/image197.gif" height="51" width="154">,
+выбирая при этом знак таким образом, чтобы свободный член был отрицателен.</span></p>
+
+<p>Если <img src="img/lec4.files/image198.gif" height="20" width="45">, то выбор знака произволен. Получим
+уравнение </span></p>
+<p><img src="img/lec4.files/image199.gif" height="53" width="319">,</p>
+<p>в котором коэффициенты <img src="img/lec4.files/image200.gif" height="50" width="129">&nbsp;и
+<img src="img/lec4.files/image201.gif" height="51" width="129">&nbsp;есть направляющие косинусы
+нормального вектора. При этом <img src="img/lec4.files/image202.gif" height="27" width="148">,
+т.е. нормальный вектор - единичной длины. Последнее слагаемое <img src="img/lec4.files/image203.gif" height="50" width="118">,
+где <img src="img/lec4.files/image204.gif" height="24" width="44">, есть расстояние
+начала координат от данной прямой (рис.3.16). Теперь уравнение примет вид <i>нормального
+уравнения прямой</i></span></p>
+<p><img src="img/lec4.files/image205.gif" height="29" width="209">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(7.9)</span></p><br>
+<p><img src="img/lec4.files/image206.gif" align="left" height="40" width="40"></p>
+<p><b><i>Уравнение прямой в отрезках</span></i></b></p>
+<p><img src="img/lec4.files/image207.gif" align="left" height="166" width="275"> Пусть прямая пересекает ось <i>Ох
+</i>в точке <img src="img/lec4.files/image208.gif" height="31" width="75">, а ось <i>Оу</i>
+– в точке <img src="img/lec4.files/image209.gif" height="31" width="76">&nbsp;(рис.3.17).
+В этом случае уравнение прямой, проходящей через две точки (7.6), примет вид <img src="img/lec4.files/image210.gif" height="45" width="99">, откуда следует</span></p>
+<p> &nbsp;&nbsp;<img src="img/lec4.files/image211.gif" height="53" width="81">.&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(7.10)</span></p>
+<p>Это уравнение называется <i>уравнением прямой в отрезках</i>, так как
+числа </span><i>a</span></i> и </span><i>b</span></i> указывают, какие отрезки отсекает
+прямая на осях координат.</span></p>
+<br>
+<p><img src="img/lec4.files/image212.gif" align="left" height="40" width="40"></p>
+<b><i>Полярное уравнение прямой</span></i></b></p>
+<p><img src="img/lec4.files/image213.gif" align="left" height="177" width="210">Найдем уравнение прямой в полярных
+координатах. Ее положение можно определить, указав расстояние <i>р</i> от полюса <i>О</i> до
+данной прямой и угол <img src="img/lec4.files/image172.gif" height="16" width="17">&nbsp;между
+полярной осью <i>ОР</i> (обычно совпадающей с осью </span><i>Ox</span></i><span style="font-size: 12pt;">)<i> </i>и
+осью </span><i>l</span></i>, проходящей через полюс <i>О</i>
+перпендикулярно данной прямой (рис.3.17).</span></p>
+<p>Для любой точки <img src="img/lec4.files/image214.gif" height="31" width="71">&nbsp;на
+данной прямой имеем: <img src="img/lec4.files/image215.gif" height="31" width="99">.
+С другой стороны, <img src="img/lec4.files/image216.gif" height="37" width="347">.
+Следовательно,&nbsp; <img src="img/lec4.files/image217.gif" height="31" width="143">&nbsp;или</span></p>
+<p>&nbsp;&nbsp;<img src="img/lec4.files/image218.gif" height="60" width="127">.&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.11)</span></p>
+<p>Полученное уравнение и есть <i>уравнение прямой в
+полярных координатах</i>. В этом уравнении <img src="img/lec4.files/image219.gif" height="17" width="17">&nbsp;и
+</span><i>p</span></i> – данные
+величины,&nbsp; </span><i>r</span></i> и <span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966;</span> – текущие координаты. В случае,
+если прямая проходит
+через полюс <i>О</i>, т.е. <img src="img/lec4.files/image220.gif" height="25" width="47">,
+её уравнение может быть записано в виде <img src="img/lec4.files/image221.gif" height="21" width="49">.
+Например, для
+биссектрисы первого координатного угла имеем: <img src="img/lec4.files/image222.gif" height="20" width="47">&nbsp;или
+(в полярных координатах) <img src="img/lec4.files/image223.gif" height="49" width="51">.</span></p>
+<p>В уравнении (7.11), при значении <img src="img/lec4.files/image224.gif" height="49" width="81">,
+знаменатель обращается в 0, что соответствует
+бесконечно удаленной от полюса точке прямой. Очевидно, на прямой
+имеются две такие
+точки. </span></p>
+<p><img src="img/lec4.files/image225.gif" align="left" height="40" width="52"></p>
+<p><b><i>Параметрические уравнения прямой</span></i></b></p>
+<p>Если в каноническом уравнении
+прямой каждую из дробей&nbsp;
+в правой и левой части равенства обозначить через </span><i>t</span></i>, затем
+выразить текущие координаты точки, то получатся параметрические уравнения прямой</span></p>
+<p><img src="img/lec4.files/image226.gif" height="61" width="103">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.12)</span></p>
+<p>Здесь <img src="img/lec4.files/image084.gif" height="31" width="65">&nbsp;-
+координаты некоторой («начальной») точки прямой, <img src="img/lec4.files/image149.gif" height="25" width="76">&nbsp;-
+координаты направляющего вектора этой
+прямой. Параметр </span><i>t</span></i> может принимать любые значения.
+Причем, если значение
+</span><i>t</span></i><i> </span></i>растет
+от 0 в положительную сторону, то соответствующая точка <img src="img/lec4.files/image045.gif" height="31" width="72">&nbsp;на прямой «движется» от начальной точки&nbsp; <img src="img/lec4.files/image140.gif" height="31" width="95">&nbsp;по
+направлению направляющего вектора <img src="img/lec4.files/image227.gif" height="21" width="15">.
+Если же значение параметра отрицательно, то точка <img src="img/lec4.files/image228.gif" height="20" width="25">&nbsp;расположена
+от начальной точки в противоположном вектору <img src="img/lec4.files/image227.gif" height="21" width="15">&nbsp;направлении на прямой.</span></p>
+<p><img src="img/lec4.files/image229.gif" align="left" height="40" width="52"></p>
+<p><b><i>Уравнение пучка прямых</i></b></p>
+<p>&nbsp;Совокупность всех прямых, проходящих через точку <img src="img/lec4.files/image140.gif" height="31" width="95">,
+называется <i>пучком прямых</i> с центром в точке <img src="img/lec4.files/image230.gif" height="27" width="31">&nbsp;(рис.3.19). Уравнение пучка (точнее, совокупность таких уравнений) можно выразить одной из формул:</span></p>
+<p><img src="img/lec4.files/image231.gif" height="31" width="148">&nbsp;или
+<img src="img/lec4.files/image232.gif" height="31" width="152">.</span></p>
+<p>В первом случае исключается прямая <img src="img/lec4.files/image233.gif" height="27" width="80">&nbsp;(параллельная
+оси <img src="img/lec4.files/image234.gif" height="25" width="28">), а во втором –
+прямая <img src="img/lec4.files/image235.gif" height="27" width="83">&nbsp;(параллельная
+оси <img src="img/lec4.files/image236.gif" height="21" width="28">). </span></p>
+<p><img src="img/lec4.files/image237.gif" align="left" height="196" width="242">Однако, иногда возникает
+необходимость, зная уравнения каких-либо двух
+прямых пучка, найти уравнение третьей прямой этого же пучка при условии, что её
+угловой коэффициент известен (например, равен </span><i>k</span></i>). В этом
+случае можно избежать нахождения центра пучка, а уравнение искомой прямой получить по формуле</span></p>
+<p><img src="img/lec4.files/image238.gif" height="31" width="313">,&nbsp;
+(7.13)</span></p>
+<p>где
+<img src="img/lec4.files/image239.gif" height="27" width="145">&nbsp;и <img src="img/lec4.files/image240.gif" height="27" width="153">&nbsp;-
+уравнения известных прямых, а <img src="img/lec4.files/image219.gif" height="17" width="17">&nbsp;и
+<img src="img/lec4.files/image241.gif" height="25" width="15">&nbsp;- некоторые числа, неравные
+нулю одновременно и такие, что</span></p>
+<p><img src="img/lec4.files/image242.gif" height="55" width="131">.</span></p>
+<p>Так,
+например, если <img src="img/lec4.files/image243.gif" height="21" width="47">, то из последнего
+равенства получим</span></p>
+<p><img src="img/lec4.files/image244.gif" height="55" width="112">.</span></p>
+<p>Подставляя найденное значение в (7.13) и приводя уравнение к общему
+виду, окончательно будем иметь</span></p>
+<p><img src="img/lec4.files/image189.gif" height="25" width="81">,</span></p>
+<p>где </p>
+<p><img src="img/lec4.files/image245.gif" height="119" width="220">.</span></p>
+<p><i>Замечание</span></i>. Нетрудно понять, что полученные отношения
+определителей в формуле для свободного члена <img src="img/lec4.files/image246.gif" height="21" width="15">,
+есть не что иное, как координаты центра данного пучка прямых, вычисленные по формулам Крамера.</p>
+<br>
+<a name=3 class="anchor"></a>
+<h3>7.3. Типовые задачи на плоскости</h3>
+<p><b>1.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Как найти угол между прямыми</span></b></p>
+<p>Пусть прямые <img src="img/lec4.files/image247.gif" height="27" width="20">&nbsp;и
+<img src="img/lec4.files/image248.gif" height="27" width="23">&nbsp;(рис.3.20) заданы общими
+уравнениями <img src="img/lec4.files/image239.gif" height="27" width="145">&nbsp;и <img src="img/lec4.files/image240.gif" height="27" width="153">.
+Будем считать углом <span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966;</span>
+между этими прямыми меньший из двух образованных ими смежных углов. В
+случае, если углы одинаковые <img src="img/lec4.files/image249.gif" height="37" width="79">,
+- любой из них.</span></p>
+<p>Вычислим угол между нормальными векторами этих прямых:</span></p>
+<p><img src="img/lec4.files/image250.gif" height="61" width="333">.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>(7.14)</span></p>
+<p>Тогда <img src="img/lec4.files/image251.gif" height="65" width="276">,
+<img src="img/lec4.files/image252.gif" height="37" width="107">.</span></p>
+<p>Если же прямые заданы своими каноническими уравнениями
+<img src="img/lec4.files/image253.gif" height="55" width="121">&nbsp;и <img src="img/lec4.files/image254.gif" height="55" width="127">,
+то угол между ними можно искать, вычисляя угол между направляющими векторами этих прямых:</span></p>
+<p><img src="img/lec4.files/image255.gif" align="left" height="167" width="232"><img src="img/lec4.files/image256.gif" height="61" width="321">&nbsp;&nbsp;&nbsp;&nbsp;(7.15)</span></p>
+<p>И тогда <img src="img/lec4.files/image257.gif" height="65" width="267">.</span></p>
+<p>Наконец, мы получим еще одну формулу для вычисления
+угла между двумя прямыми на плоскости. Пусть на этот раз прямые заданы уравнениями
+с угловыми коэффициентами, например, <img src="img/lec4.files/image258.gif" height="27" width="92">&nbsp;и
+<img src="img/lec4.files/image259.gif" height="27" width="96">. Тогда (рис.3.21) <img src="img/lec4.files/image260.gif" height="27" width="93">.
+Но <img src="img/lec4.files/image261.gif" height="27" width="168">. Используя формулу для тангенса
+разности двух углов, получим (если <img src="img/lec4.files/image262.gif" height="47" width="48">)</span></p>
+<p><img src="img/lec4.files/image263.gif" height="55" width="115">.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.16)</span></p>
+<p>Отсюда <img src="img/lec4.files/image264.gif" height="61" width="144">.</p>
+<br>
+<p><b>2.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Когда две прямые параллельны</span></b></p>
+<p>Если прямые параллельны, то <img src="img/lec4.files/image265.gif" height="24" width="63">,
+следовательно, равны их угловые
+коэффициенты: <img src="img/lec4.files/image266.gif" height="27" width="56">.
+И, обратно, если прямые <img src="img/lec4.files/image267.gif" height="25" width="20">&nbsp;и
+<img src="img/lec4.files/image268.gif" height="25" width="23">&nbsp;таковы, что <img src="img/lec4.files/image266.gif" height="27" width="56">,
+то прямые параллельны. Следовательно, <i>условием
+параллельности двух прямых является равенство их угловых коэффициентов</i>:</span></p>
+<p><img src="img/lec4.files/image266.gif" height="27" width="56">.</span></p>
+<p>В случае, когда прямые заданы каноническими
+уравнениями, условием параллельности их является коллинеарность
+направляющих векторов этих прямых. Применяя соответствующую формулу из векторной
+алгебры, получим критерий параллельности двух прямых в виде: </span></p>
+<p><img src="img/lec4.files/image269.gif" height="55" width="68">.</span></p>
+<p>Наконец, коллинеарность нормальных векторов двух
+прямых также является необходимым и достаточным условием их
+параллельности:</span></p>
+<p><img src="img/lec4.files/image270.gif" height="55" width="73">.</span></p>
+<p><b><span style="font-size: 8pt;">&nbsp;</span></b></p>
+
+<p><b>3.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Когда две прямые перпендикулярны</span></b></p>
+<p>Если две прямые перпендикулярны, то угол между ними –
+прямой, т.е. <img src="img/lec4.files/image271.gif" height="47" width="48">.
+Тогда <img src="img/lec4.files/image272.gif" height="23" width="72">&nbsp;и <img src="img/lec4.files/image273.gif" height="24" width="69">.
+Отсюда нетрудно
+получить критерии перпендикулярности для разных случаев задания прямых.
+Итак,</span></p>
+<p>- если известны нормальные
+векторы прямых, то: </span></p>
+<p><img src="img/lec4.files/image274.gif" height="27" width="129">;</span></p>
+<p>- если известны направляющие
+векторы прямых, то: <img src="img/lec4.files/image275.gif" height="27" width="119">;</span></p>
+<p>- если известны угловые
+коэффициенты прямых, то:</span></p>
+<p><img src="img/lec4.files/image276.gif" height="27" width="91">&nbsp;или
+<img src="img/lec4.files/image277.gif" height="55" width="75">.</span></p>
+<p><span style="font-size: 12pt;">&nbsp;</span></p>
+<p><b>4.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Как найти точку пересечения двух
+прямых</b></p>
+<p>Чтобы найти точку пересечения двух
+прямых <img src="img/lec4.files/image267.gif" height="25" width="20">&nbsp;и <img src="img/lec4.files/image268.gif" height="25" width="23">,
+заданных общими уравнениями <img src="img/lec4.files/image239.gif" height="27" width="145">&nbsp;и
+<img src="img/lec4.files/image240.gif" height="27" width="153">, следует решить систему из этих
+двух уравнений. Если прямые не параллельны (и не совпадают), то
+определитель системы <img src="img/lec4.files/image278.gif" height="60" width="133">. В
+этом случае система имеет единственное решение <img src="img/lec4.files/image279.gif" height="25" width="56">,
+где </span></p>
+<p><img src="img/lec4.files/image280.gif" height="48" width="296">,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.17)</p>
+<p>- координаты точки пересечения
+данных прямых.</span></p>
+<p>&nbsp;</span></p>
+<p><b>5.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Когда три прямые пересекаются в
+одной точке</span></b></p>
+<p><img src="img/lec4.files/image281.gif" align="right" height="157" width="196">Пусть три прямые (рис.3.22) заданы
+своими общими уравнениями
+<img src="img/lec4.files/image239.gif" height="27" width="145">, <img src="img/lec4.files/image240.gif" height="27" width="153">&nbsp;и
+<img src="img/lec4.files/image282.gif" height="27" width="151">. Каким условиям должны
+удовлетворять коэффициенты этих уравнений, чтобы данные три прямые
+пересекались
+в одной точке? Отвечая на этот вопрос, будем предполагать, что никакие
+две из
+этих прямых не совпадают и не параллельны. В противном случае ответ
+будет
+очевиден. Такое предположение эквивалентно условию, чтобы из трёх
+определителей
+второго порядка</span></p>
+<p><img src="img/lec4.files/image283.gif" height="60" width="72">,
+<img src="img/lec4.files/image284.gif" height="60" width="69">&nbsp;и <img src="img/lec4.files/image285.gif" height="60" width="72"></span></p>
+<p>хотя бы один был отличен от нуля.
+Допустим, что первый
+определитель не равен нулю, т.е. первая и вторая прямая пересекаются в
+некоторой точке. Координаты этой точки найдем по формулам (7.17). Так
+как эта точка должна лежать и на третьей прямой, то</span></p>
+<p><img src="img/lec4.files/image286.gif" height="119" width="277">.</span></p>
+<p>Отсюда</span></p>
+<p><img src="img/lec4.files/image287.gif" height="60" width="340">,</span></p>
+<p>и окончательно можно преобразовать это равенство&nbsp; в виде такого
+условия:</span></p>
+<p><img src="img/lec4.files/image288.gif" height="78" width="141">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.18)</span></p>
+<p>&nbsp;</span></p>
+<p><b>6.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Когда три точки лежат на одной
+прямой</b></p>
+<p><img src="img/lec4.files/image289.gif" align="left" height="195" width="230">Пусть теперь заданы три точки: <img src="img/lec4.files/image157.gif" height="31" width="88">,
+<img src="img/lec4.files/image158.gif" height="31" width="95">&nbsp;и <img src="img/lec4.files/image290.gif" height="25" width="84">&nbsp;(рис.3.23).
+В каком случае эти точки лежат
+на одной прямой? Эта задача является двойственной предыдущей задаче.
+Положительный ответ на поставленный вопрос следует при выполнении условия: </span></p>
+<p><img src="img/lec4.files/image291.gif" height="77" width="112">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.19)</span></p><br>
+<p>Условие (7.19) следует из проверки того, лежит
+ли одна из точек на прямой, проходящей через две другие точки. </span></p><br>
+<p><b>7.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Как найти расстояние от
+точки до прямой</span></b></p>
+<p><img src="img/lec4.files/image292.gif" align="left" height="202" width="208">Пусть задана прямая </span><i>L</span></i> уравнением
+<img src="img/lec4.files/image293.gif" height="25" width="129">и точка <img src="img/lec4.files/image140.gif" height="31" width="95">&nbsp;(рис.3.24).
+Требуется
+найти расстояние </span><i>d</span></i> от точки <i>M</i>0 до прямой <i>L</i>.
+Для этого вычислим модуль проекции
+вектора <img src="img/lec4.files/image294.gif" height="31" width="56">, где <img src="img/lec4.files/image157.gif" height="31" width="88">&nbsp;- произвольная точка
+прямой </span><i>L</span></i>, на направление нормального
+вектора <img src="img/lec4.files/image141.gif" height="31" width="85">. Следовательно, <img src="img/lec4.files/image295.gif" height="67" width="443">.
+Так как точка <img src="img/lec4.files/image157.gif" height="31" width="88">&nbsp;принадлежит
+прямой </span><i>L</span></i>,
+то <img src="img/lec4.files/image296.gif" height="27" width="141">&nbsp;или <img src="img/lec4.files/image297.gif" height="27" width="123">.Поэтому </span></p> 
+<p><img src="img/lec4.files/image298.gif" height="60" width="157">.&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.20)</span></p>
+<p><i>Пример</span></i>.
+Найти расстояние от точки <img src="img/lec4.files/image299.gif" height="27" width="75">&nbsp;до
+прямой <img src="img/lec4.files/image300.gif" height="21" width="113">. Ответ получим,
+применяя формулу (7.20):</span></p>
+<p><img src="img/lec4.files/image301.gif" height="176" width="191"><img src="img/lec4.files/image302.gif" height="53" width="221">.</span></p>
+<p><b>&nbsp;</span></b></p>
+<p><b><span style="font-size: 12pt;"></span></b></p>
+<p class="MsoBodyTextIndent" style="margin-left: 32.2pt; text-align: justify; text-indent: -18pt;"><b><span style="font-size: 12pt;"></span></b></p>
+<p><b></span></b></p>
+<p><b>8.&nbsp;&nbsp;&nbsp;&nbsp;
+</b><b>Когда прямая пересекает отрезок</span></b></p>
+<p>Пусть прямая </span><i>L</span></i> задана
+уравнением <img src="img/lec4.files/image303.gif" height="24" width="127">,
+а отрезок <img src="img/lec4.files/image304.gif" height="20" width="35">&nbsp;задан
+координатами своих концов: <img src="img/lec4.files/image305.gif" height="25" width="73">&nbsp;и
+<img src="img/lec4.files/image306.gif" height="25" width="75">&nbsp;(рис.3.25). Выражение <img src="img/lec4.files/image307.gif" height="25" width="108">&nbsp;будет
+положительно, если точка с
+координатами <img src="img/lec4.files/image308.gif" height="25" width="53">&nbsp;находится
+с той же стороны от прямой, куда направлен нормальный вектор <img src="img/lec4.files/image309.gif" height="24" width="47">.
+Если же точка находится в другой полуплоскости, то это выражение будет отрицательным.
+Отсюда получим критерий пересечения отрезка <img src="img/lec4.files/image304.gif" height="20" width="35">&nbsp;прямой
+</span><i>L</span></i>: </span></p>
+<p><img src="img/lec4.files/image310.gif" height="25" width="279">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.21)</span></p>
+<p>&nbsp;</span></p>
+<p><b>9.&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Как разделить угол пополам</span></b></p>
+<p>Пусть прямые <img src="img/lec4.files/image267.gif" height="25" width="20">&nbsp;и
+<img src="img/lec4.files/image268.gif" height="25" width="23">&nbsp;заданы общими уравнениями <img src="img/lec4.files/image239.gif" height="27" width="145">&nbsp;и
+<img src="img/lec4.files/image240.gif" height="27" width="153">. Требуется найти уравнение
+биссектрисы угла, образованного этими прямыми (рис.3.26).</span></p>
+<p>Как известно, биссектриса угла
+является геометрическим
+местом точек, равноудаленных от сторон угла. Это свойство позволяет нам
+использовать
+для решения задачи формулу (7.20). Для произвольной точки <img src="img/lec4.files/image311.gif" height="25" width="61">&nbsp;искомой
+<br>
+биссектрисы расстояния до сторон угла равны соответственно <img src="img/lec4.files/image312.gif" height="65" width="163">&nbsp;и
+<img src="img/lec4.files/image313.gif" height="65" width="172">. Поэтому уравнения биссектрис (для
+двух смежных углов) будут</span></p>
+<p><img src="img/lec4.files/image314.gif" height="61" width="261">&nbsp;и
+<img src="img/lec4.files/image315.gif" height="61" width="275">.&nbsp;&nbsp; (7.22)</span></p>
+<p><i>Пример</span></i>.
+Найти уравнения биссектрис углов, образованных прямыми <img src="img/lec4.files/image316.gif" height="21" width="99">&nbsp;и
+<img src="img/lec4.files/image317.gif" height="21" width="108">. </span></p>
+<p class="MsoBodyTextIndent" style="text-align: justify; text-indent: 30pt;"><img src="img/lec4.files/image318.gif" height="231" width="237">
+&nbsp;</span></p>
+<p class="MsoBodyTextIndent" style="text-align: justify; text-indent: 30pt;">Используя уравнения (</span><span style="font-family: &quot;arial&quot;;">7.22</span>), получим <img src="img/lec4.files/image319.gif" height="48" width="173">&nbsp;и
+<img src="img/lec4.files/image320.gif" height="48" width="184">. Умножим полученные равенства на
+<img src="img/lec4.files/image321.gif" height="25" width="36">, перенесем
+все слагаемые в левую часть и приведем подобные. В результате будем
+иметь искомые
+уравнения двух биссектрис</span></p>
+<p><img src="img/lec4.files/image322.gif" height="21" width="113">&nbsp;и
+<img src="img/lec4.files/image323.gif" height="21" width="107">.</span></p>
+<p>Нетрудно проверить, что
+биссектрисы, определяемые
+этими уравнениями, взаимно перпендикулярны.</span></p>
+<p>&nbsp;</p>
+<p><b>10.&nbsp;
+</b><b>&nbsp;Как найти отраженный луч</span></b></p>
+<p>Пусть задана прямая <i>Z</i>
+уравнением <img src="img/lec4.files/image258.gif" height="27" width="92">. В нашей задаче
+эта
+прямая будет служить «зеркалом». Другая прямая – </span><i>L</span></i><i><span style="font-size: 12pt;" lang="EN-US">
+</span></i>,
+заданная уравнением <img src="img/lec4.files/image259.gif" height="27" width="96">,
+будет играть роль
+«луча». «Луч» </span><i>L</span></i> в точке пересечения с «зеркалом» </span><i>Z</span></i>
+отражается по закону «угол отражения равен углу падения». Требуется
+найти
+уравнение отраженного луча (рис.3.27). </span></p>
+<p><img src="img/lec4.files/image324.gif" align="left" height="207" width="213">Уравнение искомой прямой будем
+искать в виде: </span></p>
+<p><img src="img/lec4.files/image231.gif" height="31" width="148">.</span></p>
+<p>В качестве точки <img src="img/lec4.files/image084.gif" height="31" width="65">&nbsp;можно
+взять точку пересечения прямых </span><i>Z</span></i><i> </i>и </span><i>L</span></i><i>.
+</span></i>Для
+этого надо решить систему уравнений
+</span></p>
+<p><img src="img/lec4.files/image325.gif" height="61" width="109">.</span></p>
+<p>Далее, будем предполагать, что эти
+прямые, как и искомая
+прямая, не параллельны оси <i>Oy</i>. Согласно
+геометрическому смыслу углового
+коэффициента, имеем: <img src="img/lec4.files/image326.gif" height="27" width="69">,
+<img src="img/lec4.files/image327.gif" height="27" width="75">. Обозначим угловой
+коэффициент искомого луча <img src="img/lec4.files/image328.gif" height="24" width="61">,
+а угол между «падающим» лучом и «зеркалом»</span> &#966;</span>. Как
+видно из рисунка, <img src="img/lec4.files/image329.gif" height="25" width="73">&nbsp;и
+<img src="img/lec4.files/image330.gif" height="25" width="87">. Отсюда <img src="img/lec4.files/image331.gif" height="25" width="85">;
+&nbsp;&nbsp;&nbsp;<img src="img/lec4.files/image332.gif" height="53" width="187">.
+&nbsp;&nbsp;Но &nbsp;<img src="img/lec4.files/image333.gif" height="56" width="109">.
+&nbsp;&nbsp;&nbsp;В &nbsp;итоге &nbsp;получим </span></p>
+<p><img src="img/lec4.files/image334.gif" height="60" width="155">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(7.23)</span></p>
+<p>&nbsp;</span></p>
+<p><b>11.&nbsp;</b><b>&nbsp;Как найти треугольник по
+двум сторонам и точке пересечения медиан</span></b></p>
+<p><img src="img/lec4.files/image335.gif" align="left" height="207" width="227">В этой задаче требуется найти
+координаты вершин
+треугольника, если известны уравнения двух его сторон и координаты точки
+пересечения медиан этого треугольника. Точка пересечения медиан
+треугольника (центроид) является его «центром тяжести». Решение этой задачи в общем
+виде приводит к довольно громоздким формулам. Поэтому рассмотрим решение задачи на
+конкретном примере. </span></p>
+<p>Пусть в треугольнике <i>АВС</i> даны уравнения двух
+его сторон <i>АВ</i> и <i>АС</i>, например, (<i>АВ</i>):
+<img src="img/lec4.files/image336.gif" height="24" width="105">, &nbsp;(<i>АС</i>):
+<img src="img/lec4.files/image337.gif" height="24" width="104">. Пусть точка <img src="img/lec4.files/image338.gif" height="28" width="56">&nbsp;-
+точка пересечения его
+медиан (рис.3.28). Найдем координаты вершин. </span></p>
+<p>Сначала найдем координаты точки <i>А</i>.
+Для этого решим систему уравнений <img src="img/lec4.files/image339.gif" height="57" width="115">.
+&nbsp;Используя формулу (7.17), получим <img src="img/lec4.files/image340.gif" height="28" width="67">.
+&nbsp;Зная, что точка <i>Р</i> делит медиану <i>АМ</i>
+в отношении <img src="img/lec4.files/image341.gif" height="20" width="31">, определим
+координаты
+точки <i>М </i>&nbsp;– середины стороны <i>ВС</i>.
+Используем формулы (6.4) задачи деления отрезка в данном
+отношении и запишем </span></p>
+<p><span style="font-size: 12pt;"><img src="img/lec4.files/image342.gif" height="48" width="111">&nbsp;и
+<img src="img/lec4.files/image343.gif" height="48" width="115">.</span></p>
+<p>В нашем случае: <img src="img/lec4.files/image344.gif" height="51" width="113">;
+<img src="img/lec4.files/image345.gif" height="48" width="89">. Отсюда <img src="img/lec4.files/image346.gif" height="28" width="65">.</span></p>
+<p>Теперь найдем уравнение прямой <i>ВС</i>.
+Она проходит
+через точку <i>М</i>, поэтому её уравнение можно записать
+в виде (7.8): <img src="img/lec4.files/image347.gif" height="28" width="121">,
+где угловой коэффициент </span><i>k</span></i> найдем
+из условия, что точка <i>М</i> делит отрезок <i>ВС</i>
+пополам. Для точек <i>В</i>
+и <i>С</i> имеем <img src="img/lec4.files/image348.gif" height="60" width="148">&nbsp;и
+<img src="img/lec4.files/image349.gif" height="60" width="148">. <br>
+Поскольку </span><i>k</span></i> неизвестно, то из этих систем
+координаты точек <i>В</i>
+и <i>С</i> выразятся через </span><i>k</span></i>. Для определения </span><i>k</span></i> достаточно
+выразить абсциссы <img src="img/lec4.files/image350.gif" height="27" width="24">&nbsp;и
+<img src="img/lec4.files/image351.gif" height="27" width="24">:</span></p>
+<p><img src="img/lec4.files/image352.gif" height="48" width="88">;&nbsp;
+<img src="img/lec4.files/image353.gif" height="48" width="89">.</span></p>
+<p>По формуле (6.5) деления отрезка пополам полусумма
+значений абсцисс есть абсцисса середины отрезка. </span></p>
+<p><img src="img/lec4.files/image354.gif" height="52" width="176">,
+откуда <img src="img/lec4.files/image355.gif" height="48" width="52">.</span></p>
+<p>Таким образом, прямая <i>ВС</i>
+имеет уравнение <img src="img/lec4.files/image356.gif" height="48" width="131">&nbsp;или <img src="img/lec4.files/image357.gif" height="24" width="131">,
+а координаты вершин <img src="img/lec4.files/image358.gif" height="48" width="76">,
+<img src="img/lec4.files/image359.gif" height="48" width="63">; <img src="img/lec4.files/image360.gif" height="48" width="63">,
+<img src="img/lec4.files/image361.gif" height="48" width="64">. </span></p>
+<p>&nbsp;</span></p>
+<p><b>12.&nbsp;
+</b><b>&nbsp;Как найти треугольник по
+двум вершинам и точке
+пересечения 
+высот</span></b></p>
+<p>Требуется найти уравнения сторон треугольника, зная
+координаты двух его вершин и точки пересечения высот (ортоцентра). </span></p>
+<p><img src="img/lec4.files/image362.gif" align="left" height="191" width="241">Решим эту задачу в общем виде.
+Пусть даны две вершины <img src="img/lec4.files/image363.gif" height="31" width="85">&nbsp;и
+<img src="img/lec4.files/image364.gif" height="31" width="85">&nbsp;треугольника и точка
+пересечения его высот <img src="img/lec4.files/image365.gif" height="31" width="85">&nbsp;(рис.3.29).
+Очевидно, уравнение стороны <i>АВ</i> найдем
+непосредственно по формулам (7.6):</span></p>
+<p><img src="img/lec4.files/image366.gif" height="55" width="151">.</span></p>
+<p>Уравнение стороны <i>ВС </i>найдем
+как уравнение прямой, проходящей через данную точку <i>В</i> с данным
+нормальным вектором (формула (7.4)). В качестве нормального вектора,
+очевидно, можно
+взять вектор <i>АН</i>:</span></p>
+<p><b><span style="font-size: 12pt;"><img src="img/lec4.files/image367.gif" height="31" width="379">.</span></b></p>
+<p>Аналогично, для уравнения стороны <i>АС</i> можно
+взять нормальный вектор <i>ВН</i>:</span></p>
+<p><b><span style="font-size: 12pt;"><img src="img/lec4.files/image368.gif" height="31" width="388">.</span></b></p>
+<p>Что касается третьей вершины <i>С</i>,
+то её координаты можно найти, решая систему из двух последних уравнений
+(задача № <b>4</b>).</span></p>
+<p>&nbsp;</p>
+<p><b>13.&nbsp;&nbsp;</b><b>Как найти треугольник по
+одной вершине, одной высоте
+и одной медиане</span></b></p>
+<p><b><img style="width: 214px; height: 179px; float: left;" alt="" src="img/lec7.files/p3_30.png" hspace="7" vspace="7"></span></b></p>
+<p>Требуется найти уравнения сторон треугольника
+(или координаты двух остальных вершин), зная координаты одной вершины,
+а также уравнения одной из высот и одной из медиан. Допустим, что высота и
+медиана исходятиз разных вершин треугольника, не совпадающих с данной вершиной. </span></p>
+<p>Например, известны координаты
+вершины <img src="img/lec4.files/image370.gif" height="31" width="69">, уравнение
+высоты,
+исходящей из вершины <img src="img/lec4.files/image371.gif" height="20" width="19">&nbsp;&nbsp;<img src="img/lec4.files/image372.gif" height="27" width="23">:
+<img src="img/lec4.files/image373.gif" height="25" width="119">&nbsp;и уравнение медианы,
+исходящей
+из вершины <img src="img/lec4.files/image374.gif" height="21" width="19">&nbsp;&nbsp;<img src="img/lec4.files/image375.gif" height="27" width="28">:
+<img src="img/lec4.files/image376.gif" height="25" width="120">&nbsp;(рис.3.30).</span></p>
+<p class="MsoBodyTextIndent" style="text-align: justify; text-indent: 30pt;"><span style="position: absolute; z-index: 251671040; left: 0px; margin-left: -167px; margin-top: 38px; width: 100px; height: 29px;"></span><span style="font-size: 12pt;">Для решения
+задачи, заметим прежде всего, что зная уравнение высоты <img src="img/lec4.files/image372.gif" height="27" width="23">,
+нетрудно получить уравнение
+стороны <img src="img/lec4.files/image378.gif" height="21" width="33">, к
+которой проведена эта высота, поскольку нормальный вектор высоты <img src="img/lec4.files/image372.gif" height="27" width="23">&nbsp;есть
+направляющий
+вектор для <img src="img/lec4.files/image378.gif" height="21" width="33">.
+Используя каноническое уравнение прямой получим:</span></p>
+<p>или
+<img src="img/lec4.files/image380.gif" height="25" width="120">.</span></p>
+<p>Теперь, решая систему, состоящую из
+уравнения медианы <img src="img/lec4.files/image375.gif" height="27" width="28">&nbsp;и
+найденного уравнения <img src="img/lec4.files/image378.gif" height="21" width="33">,
+найдём координаты
+точки <img src="img/lec4.files/image374.gif" height="21" width="19">:</span></p>
+<p><img src="img/lec4.files/image381.gif" height="57" width="161">,
+откуда получим <img src="img/lec4.files/image382.gif" height="28" width="69">.</span></p>
+<p>Обозначим координаты вершины <img src="img/lec4.files/image364.gif" height="31" width="85">.
+Тогда середина отрезка <img src="img/lec4.files/image383.gif" height="20" width="31">&nbsp;имеет
+координаты <img src="img/lec4.files/image384.gif" height="49" width="119">. Так как
+середина <img src="img/lec4.files/image383.gif" height="20" width="31">&nbsp;лежит на
+медиане <img src="img/lec4.files/image375.gif" height="27" width="28">, а сама точка <img src="img/lec4.files/image371.gif" height="20" width="19">лежит
+на высоте <img src="img/lec4.files/image372.gif" height="27" width="23">, то получим
+систему
+уравнений для неизвестных <img src="img/lec4.files/image350.gif" height="27" width="24">&nbsp;и
+<img src="img/lec4.files/image385.gif" height="27" width="24">&nbsp;:</span></p>
+<p class="MsoBodyTextIndent" style="text-indent: 0cm;"><img src="img/lec4.files/image386.gif" height="79" width="233">,
+откуда получим <img src="img/lec4.files/image387.gif" height="31" width="73">.</span></p>
+<p class="MsoBodyTextIndent" style="text-align: justify; text-indent: 0cm;">Зная теперь все вершины
+треугольника, нетрудно
+получить уравнения <br>
+остальных его сторон.</span></p>
+<p>&nbsp;</span></p>
+<p><b>14.&nbsp;</b><b>&nbsp;Как найти треугольник по
+одной вершине, одной высоте
+и одной биссектрисе</span></b></p>
+<p>Как и в предыдущей задаче, положим,
+что высота и биссектриса исходят из решения задачи на конкретном
+примере.</span></p><img style="width: 233px; height: 228px; float: left;" alt="" src="img/lec7.files/p3_31.png" hspace="7" vspace="7"><p><br><span style="position: absolute; z-index: 251684352; left: 0px; margin-left: 439px; margin-top: 66px; width: 41px; height: 39px;"><br></span><span style="position: absolute; z-index: 251682304; left: 0px; margin-left: 514px; margin-top: 38px; width: 41px; height: 40px;"></span><span style="font-size: 12pt;">Пусть
+известны координаты вершины <img src="img/lec4.files/image393.gif" height="31" width="84">,
+уравнение высоты, исходящей из вершины <img src="img/lec4.files/image371.gif" height="20" width="19">&nbsp;&nbsp;<img src="img/lec4.files/image372.gif" height="27" width="23">:
+<img src="img/lec4.files/image394.gif" height="25" width="109">&nbsp;и уравнение биссектрисы,
+исходящей из вершины&nbsp;&nbsp;&nbsp;<img src="img/lec4.files/image395.gif" height="27" width="19">:
+<img src="img/lec4.files/image396.gif" height="25" width="99">&nbsp;(рис.</span><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">3.31</span>)</span></p>
+<p><span style="position: absolute; z-index: 251680256; left: 0px; margin-left: 559px; margin-top: 42px; width: 9px; height: 19px;"></span><span style="position: absolute; z-index: 251677184; left: 0px; margin-left: 426px; margin-top: 58px; width: 177px; height: 15px;"></span><span style="position: absolute; z-index: 251686400; left: 0px; margin-left: 523px; margin-top: 73px; width: 11px; height: 3px;"></span><span style="position: absolute; z-index: 251687424; left: 0px; margin-left: 532px; margin-top: 64px; width: 2px; height: 11px;"></span><span style="position: absolute; z-index: 251683328; left: 0px; margin-left: 601px; margin-top: 51px; width: 41px; height: 40px;"></span>Аналогично
+тому, как это было сделано в предыдущей задаче, мы можем найти уравнение стороны <img src="img/lec4.files/image378.gif" height="21" width="33">, используя уравнение прямой, проходящей
+через данную точку <img src="img/lec4.files/image401.gif" height="20" width="19">&nbsp;с
+данным направляющим вектором <img src="img/lec4.files/image402.gif" height="31" width="123">&nbsp;(каноническое
+уравнение прямой). Получим</span></p>
+<p><span style="font-size: 12pt;"><img src="img/lec4.files/image403.gif" height="49" width="161">&nbsp;или
+<img src="img/lec4.files/image404.gif" height="25" width="111">.</span></p>
+<p>Найдём координаты точки <img src="img/lec4.files/image374.gif" height="21" width="19">,
+решая систему, состоящую из уравнения
+биссектрисы <img src="img/lec4.files/image395.gif" height="27" width="19">&nbsp;и
+найденного уравнения <img src="img/lec4.files/image378.gif" height="21" width="33">:</span></p>
+<p><img src="img/lec4.files/image405.gif" height="60" width="161">,
+откуда получим <img src="img/lec4.files/image406.gif" height="31" width="73">.</span></p>
+<p>Угол между биссектрисой <img src="img/lec4.files/image395.gif" height="27" width="19">&nbsp;и
+стороной <img src="img/lec4.files/image378.gif" height="21" width="33">&nbsp;найдем,
+используя формулу (7.16) задачи 1. Так как угловой
+коэффициент биссектрисы <img src="img/lec4.files/image395.gif" height="27" width="19">&nbsp;равен
+<img src="img/lec4.files/image407.gif" height="27" width="60">, а стороны <img src="img/lec4.files/image378.gif" height="21" width="33">&nbsp;равен
+<img src="img/lec4.files/image408.gif" height="27" width="63">, то </span></p>
+<p><span style="font-size: 12pt;"><img src="img/lec4.files/image409.gif" height="55" width="229">.</span></p>
+<p>Но угол между стороной <img src="img/lec4.files/image410.gif" height="21" width="32">&nbsp;и
+биссектрисой <img src="img/lec4.files/image395.gif" height="27" width="19">&nbsp;так же
+равен <img src="img/lec4.files/image411.gif" height="21" width="16">. </span></p>
+<p>Заметим, что и тот и другой угол измеряются нами в
+одном направлении (на рисунке – против часовой стрелки). Поэтому
+сохраняем отрицательный знак угловых коэффициентов. </span></p>
+<p>Обозначив угловой коэффициент
+стороны <img src="img/lec4.files/image410.gif" height="21" width="32">&nbsp;через <img src="img/lec4.files/image412.gif" height="27" width="20">,
+будем иметь</span></p>
+<p><img src="img/lec4.files/image413.gif" height="56" width="237">.
+Отсюда <img src="img/lec4.files/image414.gif" height="49" width="67">.</span></p>
+<p>Запишем уравнение стороны <img src="img/lec4.files/image410.gif" height="21" width="32">,
+используя уравнение прямой,
+проходящей через данную точку с данным угловым коэффициентом</span></p>
+<p><img src="img/lec4.files/image415.gif" height="49" width="197">&nbsp;или
+<img src="img/lec4.files/image416.gif" height="25" width="109">.</span></p>
+<p>Теперь нетрудно найти координаты
+вершины <img src="img/lec4.files/image371.gif" height="20" width="19">, решая систему
+уравнений для <img src="img/lec4.files/image372.gif" height="27" width="23">&nbsp;и
+<img src="img/lec4.files/image410.gif" height="21" width="32"></span></p>
+<p><span style="font-size: 12pt;"><img src="img/lec4.files/image417.gif" height="60" width="160">,
+откуда <img src="img/lec4.files/image418.gif" height="31" width="61">.</span></p>
+<p>Осталось выписать уравнение стороны
+<img src="img/lec4.files/image383.gif" height="20" width="31">, проходящей через эти
+самые точки:</span></p>
+<p><img src="img/lec4.files/image419.gif" height="49" width="160">&nbsp;или
+<img src="img/lec4.files/image420.gif" height="25" width="128">.</span></p><br>
+
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+<p style="border: medium none ; padding: 0cm; text-align: justify;"><b><span style="font-size: 6pt;">&nbsp;</span></b></p>
+</div>
+
+<p><img src="img/lec4.files/image421.jpg" align="left" height="288" hspace="12" width="235"><b> ДЕКАРТ
+Рене&#769; </b>&nbsp;(1596 - 1650)
+— французский математик, философ, физик и физиолог, создатель аналитической
+геометрии и современной  алгебраической символики. </p>
+<p>Декарт происходил из старинного, но обедневшего дворянского рода и был младшим сыном в
+семье. В детстве Рене отличался хрупким здоровьем и невероятной
+любознательностью. Начальное образование Декарт получил в иезуитском колледже Ла Флеш. Религиозное
+образование, как ни странно, только укрепило в молодом Декарте скептическое
+недоверие к тогдашним философским авторитетам. Позже он сформулировал свой
+метод познания: дедуктивные (математические) рассуждения над
+результатами воспроизводимых опытов. В молодости Декарт совмещает математические
+исследования с военной службой. Он принимает участие в осаде Ларошели, в
+Тридцатилетней войне. </span></p>
+<p>В 1628 г. Декарт переезжает в Голландию, где проводит 20 лет. Он ведёт
+обширную переписку с лучшими учёными Европы, изучает самые различные науки — от медицины
+до метеорологии. Наконец, в 1634 г. он закончил
+свою первую, программную книгу под названием «Мир». Однако, опасаясь
+инквизиции, Декарт решил при жизни не печатать этот труд.</span></p>
+<p>В вышедших позднее трудах сформулированы главные тезисы Декарта:</p>
+<p><span style="font-size: 10pt; font-family: Symbol;">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Бог сотворил мир и законы природы, а далее Вселенная действует как
+самостоятельный механизм. </span></p>
+<p><span style="font-size: 10pt; font-family: Symbol;">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>В мире нет ничего, кроме движущейся материи различных видов. Материя
+состоит из элементарных частиц, локальное взаимодействие которых и производит все
+природные явления. </span></p>
+<p><span style="font-size: 10pt; font-family: Symbol;">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Математика — мощный и универсальный метод познания природы, образец для других наук. </span></p>
+<p>В 1637 году вышел в свет
+главный математический труд Декарта, «Рассуждение о методе» (полное название: «Рассуждение о
+методе, позволяющем направлять свой разум и отыскивать истину в науках»). В
+этой книге излагалась аналитическая геометрия, а в приложениях — многочисленные
+результаты в алгебре, геометрии, оптике и многое другое.</span></p>
+<p>Особо следует отметить переработанную им математическую символику Виета,
+с этого момента близкую к современной. Коэффициенты он обозначал a, b,
+c…, а неизвестные — x, y, z. Натуральный показатель
+степени принял современный вид (дробные и отрицательные утвердились благодаря Ньютону).
+Появилась черта над подкоренным выражением. Уравнения приводятся в
+канонической форме (в правой части — нуль).</p>
+<p>Символическую алгебру Декарт называл «Всеобщей математикой», и писал, что она должна
+объяснить «<i>всё относящееся к порядку и мере</i>».</p>
+<p>Создание аналитической геометрии позволило перевести исследование
+геометрических свойств кривых и тел на алгебраический язык, то есть
+анализировать уравнение кривой в некоторой системе
+координат. Этот перевод имел тот недостаток, что
+теперь надо было аккуратно определять подлинные геометрические свойства, не зависящие от системы
+координат (инварианты).
+Однако достоинства нового метода были исключительно велики, и Декарт
+продемонстрировал их в той же книге, открыв множество положений,
+неизвестных древним и современным ему математикам.</span></p>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+<p style="border: medium none ; padding: 0cm; text-align: justify;"><b><span style="font-size: 6pt;">&nbsp;</span></b></p>
+</div>
+<br>
+<a name=4 class="anchor"></a>
+<h3>ЗАДАЧИ К ЧАСТИ 3 (для самостоятельного решения).</h3>
+<table class="MsoNormalTable" style="border-collapse: collapse; width: 709px; height: 1877px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p class="MsoNormal">3.1.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="text-align: justify;">Луч света направлен по прямой <sub><img src="img/lec4.files/image422.gif" border="0" height="25" width="129"></sub>&nbsp;и отражается от оси
+абсцисс. Найти уравнение отраженного луча.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.2.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Составить уравнение катетов
+прямоугольного равнобедренного треугольника, зная уравнение гипотенузы <sub><img src="img/lec4.files/image423.gif" border="0" height="24" width="77"></sub>&nbsp;и вершину прямого угла <span style="font-style: italic;">С(4;-1)</span>&nbsp;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.3.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Составить уравнения сторон
+квадрата, если одна из его вершин <span style="font-style: italic;">A(2;-4)</span>&nbsp;, а точка пересечения диагоналей <span style="font-style: italic;">M(5;2)</span>&nbsp;.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.4.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Проверить, что четыре точки&nbsp;</span><span style="font-size: 13pt;"><span style="font-style: italic;">A(-2;-2), </span></span><span style="font-style: italic;">B(-3;1), </span></span><span style="font-style: italic;">C(7;7)</span></span><span style="font-size: 13pt;">&nbsp;&nbsp;и </span><span style="font-style: italic;">D(3;1)</span></span>&nbsp;служат вершинами трапеции и
+составить уравнение её средней линии.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.5.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Дан треугольник&nbsp;</span><span style="font-size: 13pt;"><span style="font-style: italic;">A(1;2), </span></span><span style="font-style: italic;">B(3;7), </span></span><span style="font-style: italic;">C(5;-13)</span></span><span style="font-size: 13pt;">. Вычислить длину перпендикуляра,
+опущенного из вершины <i>В</i> на медиану, проведенную из
+вершины <i>А</i>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.6.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Даны две прямые: <sub><img src="img/lec4.files/image434.gif" border="0" height="24" width="121"></sub>&nbsp;и <sub><img src="img/lec4.files/image435.gif" border="0" height="24" width="132"></sub>. Найти точку удаленную от обеих
+прямых на расстояние <sub><img src="img/lec4.files/image436.gif" border="0" height="21" width="45"></sub>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.7.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Даны вершины четырехугольника&nbsp;</span><span style="font-size: 13pt;"><span style="font-style: italic;">A(-9;0), </span></span><span style="font-style: italic;">B(-3;6), </span></span><span style="font-style: italic;">C(3;4) </span>и<span style="font-style: italic;"> </span></span><span style="font-style: italic;">D(6;-3)</span></span>. Найти точку пересечения его
+диагоналей и вычислить угол между ними.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.8.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Вычислить координаты вершин ромба,
+если известны уравнения двух его сторон: <sub><img src="img/lec4.files/image441.gif" border="0" height="24" width="111"></sub>, <sub><img src="img/lec4.files/image442.gif" border="0" height="24" width="123"></sub>&nbsp;и уравнение одной из его
+диагоналей: <sub><img src="img/lec4.files/image443.gif" border="0" height="24" width="104"></sub>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.9.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Даны две вершины треугольника&nbsp;</span><span style="font-size: 13pt;"><span style="font-style: italic;">A(-6;2), </span></span><span style="font-style: italic;">В(2;-2)</span></span>&nbsp;и точка пересечения его
+высот </span><span style="font-style: italic;">H(1;2)</span></span>.
+Вычислить координаты третьей вершины.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.10.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Через точку </span><span style="font-size: 13pt;"><span style="font-style: italic;">P(0;1)</span></span>&nbsp;провести прямую так, чтобы
+её отрезок, заключенный между прямыми <sub><img src="img/lec4.files/image448.gif" border="0" height="24" width="112"></sub>&nbsp;и <sub><img src="img/lec4.files/image449.gif" border="0" height="24" width="105"></sub>, делился в точке <i>Р </i>пополам.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.11.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Найти центр вписанного круга и
+центр тяжести равнобедренного треугольника, если даны уравнения боковых
+сторон треугольника: <sub><img src="img/lec4.files/image450.gif" border="0" height="24" width="105"></sub>; <sub><img src="img/lec4.files/image451.gif" border="0" height="24" width="123"></sub>&nbsp;и точка </span><span style="font-style: italic;">M(3;-8)</span></span>, лежащая на его основании.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.12.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">В равнобедренном треугольнике
+известно уравнение основания: <sub><img src="img/lec4.files/image453.gif" border="0" height="24" width="105"></sub>, уравнение одной из боковых сторон:
+<sub><img src="img/lec4.files/image454.gif" border="0" height="24" width="105"></sub>&nbsp;и
+точка </span><span style="font-style: italic;">P(1,2;5,6)</span></span><span style="font-size: 13pt;">&nbsp;на
+другой боковой стороне. Вычислить а) расстояние боковой стороны от
+противоположной вершины; б) координаты центра тяжести; в) площадь
+треугольника.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.13.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Составить уравнения сторон
+треугольника, зная одну из его вершин&nbsp;</span><span style="font-style: italic;">A(3;-4)</span></span>&nbsp;и уравнения двух высот: <sub><img src="img/lec4.files/image457.gif" border="0" height="25" width="119"></sub>&nbsp;и <sub><img src="img/lec4.files/image458.gif" border="0" height="25" width="121"></sub>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.14.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Даны две вершины треугольника&nbsp;</span><span style="font-size: 13pt;"><span style="font-style: italic;">A(2;-3)</span></span>&nbsp;и </span><span style="font-size: 13pt;"><span style="font-style: italic;">В(5;1)</span></span>, уравнение стороны <sub><img style="width: 146px; height: 22px;" alt="" src="img/f7_3_14.png"></sub>&nbsp;и медианы </span><span style="font-size: 13pt;"><sub><img style="width: 159px; height: 19px;" alt="" src="img/f7_3_14_2.png"></sub></span>. Составить уравнение высоты,
+опущенной из вершины <i>С</i> на сторону <i>АВ</i>,
+и вычислить её длину.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.15.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Составить уравнения сторон
+треугольника, зная его вершину&nbsp;</span><span style="font-style: italic;">A(-4;2)</span></span>&nbsp;и уравнения двух медиан: <sub><img src="img/lec4.files/image464.gif" border="0" height="25" width="121"></sub>&nbsp;и <sub><img src="img/lec4.files/image465.gif" border="0" height="24" width="121"></sub>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.16.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Составить уравнения сторон
+треугольника, зная его вершину <span style="font-style: italic;">A(2;-4)</span>&nbsp;&nbsp;и уравнения биссектрис двух
+его углов: <sub><img src="img/lec4.files/image466.gif" border="0" height="25" width="101"></sub>&nbsp;и
+<sub><img src="img/lec4.files/image467.gif" border="0" height="25" width="111"></sub>.</span></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; width: 37.8pt;" valign="top" width="50">
+<p style="margin-top: 6pt;">3.17.</span></p>
+</td>
+<td style="padding: 0cm 5.4pt; width: 462.6pt;" valign="top" width="617">
+<p style="margin-top: 6pt; text-align: justify;">Зная вершины треугольника&nbsp;</span><span style="font-size: 13pt;"><span style="font-style: italic;">A(3;-2), </span></span><span style="font-style: italic;">B(1;5) </span>и<span style="font-style: italic;"> </span></span><span style="font-style: italic;">С(-4;3)</span></span>, проверить, что его высоты
+пересекаются в одной точке и вычислить площадь треугольника, вершинами
+которого служат основания высот данного треугольника <i>АВС</i>.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl6.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl8.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

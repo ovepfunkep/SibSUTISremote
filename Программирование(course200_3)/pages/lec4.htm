@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 4. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+  <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3><a href="#">4. Статические массивы</a></h3>
+<a href="#1" class=punkt>4.1. Основные сведения</a><br>
+<a href="#2" class=punkt>4.2. Одномерные массивы</a><br>
+<a href="#3" class=punkt>4.3. Многомерные массивы</a><br>
+<a href="#4" class=punkt>Контрольные вопросы</a><br>
+
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>4.1. Основные сведения</h3>
+<P>Массивы - структурированный тип данных с элементами одного типа, имеющий 
+ одно имя и определенное количество элементов. Количество элементов определяет 
+ размер массива. Например, массив составляют номера зачетных книжек студентов, 
+ здесь число элементов равно числу студентов; массив образуют набор чисел, 
+ их количество равно числу элементов массива. Порядковый номер элемента 
+ массива называется его индексом. Массив может иметь не один, а большее 
+ число индексов. Число индексов называется размерностью массива, например, 
+ массив с двумя индексами называется двумерным массивом. Строка символов 
+ является массивом символов, вектор – массив вещественных чисел, матрица 
+ – массив векторов. Обработка массивов выполняется следующим образом: описание, 
+ ввод или инициализация элементов массива, преобразование и вывод. </p>
+<P><B>&#9;</b>При описании массивов после имени в квадратных 
+     скобках указывается число его элементов. В языке Си индекс элемента 
+     массива начинается с нуля, поэтому индекс последнего элемента массива 
+     на 1 меньше числа элементов в данном массиве.</P>
+
+  <P>&nbsp;</P>
+<a name=2 class="anchor"></a>
+<h3>4.2. Одномерные массивы</h3>
+
+  <P><b>Пример обработки одномерного массива</b></P>
+   
+<P>Дан массив из 50 целых чисел. Найти наибольший элемент 
+ в массиве и его порядковый номер.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#define n 50 // определение константы n=50
+
+int i, max, nom, a[n]; //описание массива целых чисел из n элементов
+
+main()
+
+{for (i=0; i&lt;n; i++)
+
+  {printf( "\n Введите элемент массива ");
+
+  scanf ("%d", &a[i])};
+
+  for (i=1,max=a[0],nom=0; i&lt;n; i++)
+
+    if (max&lt;a[i])
+
+          {nom=i; max=a[i];}
+
+ printf("\n Вывод элементов исходного массива : \n");
+
+ for (i=0; i&lt;n; i++) printf ( "%6d", a[i] );
+
+ printf ("\n Максимальное число в массиве %4d, его индекс %4d " , max, nom);
+
+ getch();
+
+}
+</pre>   
+<P>По окончании цикла переменная max будет иметь значение, 
+ равное максимальному элементу массива, а переменная nom – порядковый номер 
+ этого элемента. Вывод элементов массива выполняется в строку. Для вывода 
+ их в столбец надо написать: printf ( "%d \n", a[i] );</P>
+<P>&nbsp;</p>
+<a name=3 class="anchor"></a>
+<h3>4.3. Многомерные массивы</h3>
+<P>Массив, имеющий больше одного индекса, называется многомерным. 
+ Если индексов два, то это двумерный массив или матрица. Многомерные массивы 
+ задаются указанием каждого измерения в квадратных скобках. Например, оператор 
+ </P>
+<P> int matr [6] [8];</P>
+<P>задает описание матрицы из 6 строк и 8 столбцов. Нумерация 
+ строк и столбцов начинается с 0. По каждому из индексов устанавливается 
+ размер массива. Такой массив имеет 6*8=48 элементов, первый индекс изменяется 
+ от 0 по 5 (включая), второй индекс - от 0 по 7. В памяти такой массив 
+ располагается в последовательных ячейках построчно, при переходе к следующему 
+ элементу быстрее всего изменяется последний индекс. При обработке многомерных 
+ массивов используются вложенные циклы, т.е. цикл по столбцам располагается 
+ внутри цикла по строкам.</P>
+<P>Элементы массива после объявления вводятся оператором 
+ scanf в цикле или инициализируются. При инициализации двумерного массива 
+ он представляется как массив из массивов, при этом каждый массив заключается 
+ в свои фигурные скобки, либо задается общий список в том порядке, в котором 
+ элементы располагаются в памяти:</P>
+<P>int mas [] [2]= { {1,2}, {0,2}, {1,0}};</P>
+<P>int mas [3] [2]={ 1,2,0,2,1,0};</P>
+<P>&nbsp;</P>
+<P></P>
+<P><b> Пример обработки многомерного массива </b></P>
+<P></P>
+<P>Дана матрица A(3,4). Найти сумму элементов в каждой строке. </P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+main ( )
+
+{ int a[3][4], sum [3], i, j; // описание матрицы и вектора
+
+for ( i=0 ; i&lt;3; i++) // ввод матрицы
+
+for ( j=0; j&lt;4; j++)
+
+  {printf ("\n Введите элемент a [%d][%d]=", i ,j);
+
+  scanf ("%d",&a[i][j]);
+
+  }
+
+for ( i=0; i&lt;3; i++)
+
+  {sum [i]=0;
+
+  for ( j=0; j&lt;4; j++)
+
+      sum [i] = sum [i]+ a[i][j];
+
+  }
+
+printf ("\n Вывод матрицы:\n");
+
+for (i=0; i&lt;3; i++) //форматный вывод матрицы по строкам
+
+ { for (j=0; j&lt;4; j++)
+
+      printf ("%4d",a [i][j] );
+
+    printf ("\n"); // переход на новую строку
+
+ }
+
+printf ("\n Вывод массива сумм:\n");
+
+for (j=0; j&lt;3; j++)
+
+   printf ("%5d",sum [j] ); // вывод массива sum
+
+getch();
+
+return 0;
+
+}
+</pre>
+<P>В программе элементы матрицы вводятся по строкам по одному 
+ с подтверждением клавишей Enter. А выводятся в общепринятом виде: каждая 
+ строка матрицы с новой строки экрана (цикл i по строкам внешний, а цикл 
+ j – внутренний). Если поменять местами циклы, то будет вывод матрицы по 
+ столбцам.<br>
+ <br>
+ </P>
+<P> <B>&#9;</b></P>
+<br>
+ <a name=4 class="anchor"></a>
+<h3>4.4. Контрольные вопросы</h3>
+
+<P>1. Что такое массив? индекс элемента массива?</P>
+<P>2. Как ввести и вывести элементы вектора в строку 
+ и в столбец?</P>
+<P>3. Способы описания и инициализации одномерных массивов.</P>
+<P>4. Способы описания и инициализации двумерных массивов.</P>
+<P>5. Ввод и вывод матрицы по строкам. </P>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec3.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec5.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

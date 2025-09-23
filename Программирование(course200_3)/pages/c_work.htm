@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="">
+ <meta name="author" content="do.sibsutis.ru">
+
+ <title>Контрольная работа. Программирование (часть 2)</title>
+
+ <link rel="icon" type="image/png" href="../lib/css/favicon.png">
+ <!-- Bootstrap Core CSS -->
+ <link href="../lib/css/bootstrap.css" rel="stylesheet">
+
+ 
+  <link href="../lib/css/prettify.css" rel="stylesheet">
+<!-- Custom CSS -->
+ <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+ <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+ <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+ <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="navbar-header">
+ <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+
+ <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+
+ <a class="navbar-brand " href="../index.htm">
+ <text class = "hidden-xs">Программирование (часть 2)</text>
+ <text class = "visible-xs">Программирование (часть 2)</text>
+ </a>
+ </div>
+
+ <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+ <!-- <ul class="nav navbar-nav">
+ <li><a href="#"></a></li>
+ </ul> -->
+
+ <ul class="nav navbar-nav navbar-right">
+ <li class="dropdown">
+ <button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+ <a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+  
+ <ul class="dropdown-menu">
+  
+ <li><a href="../index.htm">Аннотация курса</a></li>
+  
+ <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+ <li><a href="labs.htm">Лабораторные работы</a></li>
+  
+<li><a href="c_work.htm">Контрольная работа</a></li>
+ 
+
+ <li role="separator" class="divider"></li>
+     
+   
+  <li><a href="lit.htm">Литература</a></li>
+  
+
+  <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+   </ul>
+ </li>
+ </ul>
+ </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+ <div id="intro" class="section content-section ">
+ 
+<div class="container">
+ <div class="row">
+ <div class="col-lg-12">
+
+ 
+ <div class="page-header">
+  <h3>Контрольная работа</h3>
+ </div>
+
+
+<h2>Методические указания и задание на выполнение контрольной работы </h2>
+
+<br>
+
+<div class="row">
+<div class="col-md-6">  
+<a class="btn btn-primary btn-block" href="c_work.doc">Скачать методические указания к контрольной работе в формате DOC</a>
+</div>
+</div>
+
+<br><br>
+<p><b>1. Требования к контрольной работе</b><br>
+</p>
+
+<p>1.1.Объем контрольной работы</p>
+<p>Общий объем пояснительной записки не должен превышать 30 стр.</p>
+
+<p>Записка иллюстрируется блок-схемами алгоритмов, формами выходных данных или копиями экранов.</p>
+
+<br><div class="row">
+ <div class="col-lg-9">
+   <div class="alert alert-warning"><h4><br></h4>Выбор номера варианта контрольной работы осуществляется по последней цифре пароля</div></div></div><br>
+<p>1.2.Содержание пояснительной записки:</p>
+<p>1) титульный лист по образцу;</p>
+<p>2) задание;</p>
+<p>3) содержание;</p>
+<p>4) введение;</p>
+<p>5) постановка комплекса задач (определение и детальное рассмотрение поставленной задачи);</p>
+<p>6) блок-схема функционирования системы (меню: создание списка, просмотр списка,
+корректировка, и т.д.) и блок-схема алгоритма задания вашего варианта.</p>
+<p>7) проектный раздел (описание структуры программы, т. е. какие функции использовались и связи между ними);</p>
+<p>8) исходный модуль программы (с комментариями);</p>
+<p>9) результаты тестирования выполнения задания;</p>
+<p>10) список литературы;</p>
+<br>
+<p><b>2.Оформление контрольной работы</b><br>
+</p>
+<p>Пояснительная записка
+пишется на одной стороне листа формата 210 x297 мм. При этом необходимо
+оставлять поля: верхнее - 20 мм, левое - 30 мм, нижнее - 20 мм, правое - 10 мм.</p>
+<p>Текст делится на разделы.
+Каждый раздел начинается с новой страницы.</p>
+<p>Разделы и подразделы нумеруются
+арабскими цифрами с точкой в конце: 2., 2.1., 2.1.1. Введение и заключение не
+нумеруются. Заголовки разделов посредине текста прописными буквами. Заголовки
+подразделов - с абзаца (15 см от края текста), строчными. Заголовок отстоит от
+текста на 2 см. После заголовка не ставится точка и он не подчеркивается.</p>
+<p>Иллюстрации имеют подпись: рис. с номером раздела и порядковым номером иллюстрации, разделенными точкой,
+например, рис. 3.2. и краткий подрисуночный текст. Рисунок располагают после
+той страницы, где на него дана первая ссылка.</p>
+<p>В пояснительной записке все страницы, в том числе титульный лист, содержание, листы с рисунками и
+программами нумеруются арабскими цифрами.</p>
+<p>На титульном листе номер не ставят, на последующих проставляют в нижнем колонтитуле.</p>
+<p>Защита контрольной работы проводится на ЭВМ при полностью функционирующей программе.</p>
+<br>
+<p><b>3. Задание: разработать программу для создания и
+работы с двусвязным списком , состоящим из структур. Для работы со списком
+создать меню со следующими пунктами:</span></b></p>
+
+  <p class="MsoNormal"><b>1. Создание списка.</b></p>
+  <p class="MsoNormal"><b>2. Просмотр списка.</b></p>
+  <p class="MsoNormal"><b>3. Добавление в список новой записи.</b></p>
+  <p class="MsoNormal"><b>4. Поиск и корректировка записи в списке.</b></p>
+  <p class="MsoNormal"><b>5. Удаление записи из списка.</b></p>
+  <p class="MsoNormal"><b>6. Сохранение списка в файле.</b></p>
+  <p class="MsoNormal"><b>7. Загрузка списка из файла.</b></p>
+  <p class="MsoNormal"><b>8. Выход.</b></p>
+
+<p><b>&nbsp;</b></p>
+
+
+<p>3.1. Варианты задания </p>
+<p class=punkt><strong>1.</strong> Структура
+содержит фамилию, имя, отчество и 4 оценки по 4-м предметам (массив структур с
+полями предмет, оценка). Удалять из списка имеющих 3 оценки неудовлетворительно.
+Поиск по фамилии и изменение оценок. <b>Добавлять новые записи в начало списка</b>.</p>
+
+<p>&nbsp;</p>
+
+<p class=punkt><strong>2.</strong> Структура
+содержит фамилию, имя, отчество и 4 оценки по 4-м предметам (массив структур с
+полями предмет, оценка). Удалять из списка по введённой фамилии. Изменять
+оценки по введённой фамилии. <b>Добавлять новые записи в конец списка</b>.</p>
+
+<p>&nbsp;</p>
+<p class=punkt><b>3.</b> Структура
+содержит название книги, ф.и.о. автора, год издания. Удалять из списка издания
+с годом меньше заданного. Изменять год издания по введённому названию книги. <b>Добавлять
+новые записи в конец списка.</b></p>
+
+<p>&nbsp;</p>
+
+<p class=punkt><strong>4.&nbsp; </strong>Структура
+содержит название книги, ф.и.о. автора, год издания. Удалять книги заданного
+автора. Изменять год издания по введённому названию книги. <b>Добавлять новые
+записи перед последней</b>.</p>
+
+<p>&nbsp;</p>
+
+<p class=punkt><b>5.</b> Структура
+содержит название товара, цену единицы товара, количество товара. Удалять из
+списка заданный товар. Изменять цену заданного товара. <b>Добавлять новые
+записи после первой</b>. </p>
+
+<p>&nbsp;</p>
+
+<p class=punkt><b>6. </b>Структура
+содержит название товара, цену, количество товара. Удалять из списка партии
+товара, превышающие заданную стоимость. Изменять цену заданного товара. <b>Добавлять
+новые записи после первой.</b></p>
+
+<p >&nbsp;</p>
+<p class=punkt><b>7. </b>Структура
+содержит фамилию, имя, отчество, адрес, год рождения. Изменять адрес по
+заданной фамилии. <b>Создавать список и добавлять новые записи так, чтобы
+список был упорядочен по возрастанию (по фамилиям). </b></p>
+
+<p >&nbsp;</p>
+
+<p class=punkt><b>8. </b>Структура
+содержит фамилию, имя, отчество, дату рождения. Изменять фамилию. <b>Создавать
+список и добавлять новые записи так, чтобы список был упорядочен по возрасту. </b></p>
+
+<p >&nbsp;</p>
+
+<p class=punkt><b>9. </b>Структура
+содержит название издания, тип издания (газета или журнал), цена экземпляра. Изменять
+цену экземпляра заданного издания. <b>Создавать список и добавлять новые записи
+так, чтобы сначала располагались журналы, затем газеты. </b></p>
+
+<p>&nbsp;</p>
+
+<p class=punkt><b>10. </b>Структура содержит название издания, тип издания (газета или журнал),
+цена экземпляра. Изменять цену экземпляра заданного издания. <b>Создавать
+список и добавлять новые издания так, чтобы названия были упорядочены по возрастанию.</b><br>
+<br>
+<br>
+</p>
+
+<p><b>Приложение</b></p>
+<p><b>Образец титульного листа:</b><br>
+</p>
+<p style="text-align:center"><b>Государственный комитет Российской Федерации по телекоммуникациям</b></p>
+<p style="text-align:center"><strong>Сибирский государственный университет телекоммуникаций и информатики</strong><br>
+  <br>
+</p>
+<p align=center style='text-align:center'><b><span
+style='font-size:16.0pt'>Контрольная РАБОТА</span></b></p>
+<br>
+<br>
+<p style='text-align:center'><b>По дисциплине « Программирование (часть 2)»</b></p>
+<br><br>
+
+
+<p style='text-align:center'><b><span
+style='font-size:16.0pt'>Тема работы</span></b></p>
+
+<p style='text-align:center'><b><span
+style='font-size:16.0pt'>Вариант №</span></b></p>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<p><b>                                                                   </b>Работу
+выполнил</p>
+
+<p class=MsoNormal>                                                                   студент
+1 курса</p>
+
+<p class=MsoNormal>                                                                   группы</p>
+
+<p class=MsoNormal>                                                                   Ф.
+И. О.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                                                                   Работу
+проверил</p>
+
+<p class=MsoNormal>                                                                   Ф.И.О.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                                                                   Работа
+защищена</p>
+
+<p class=MsoNormal>                                                                   «___»
+__________2006г.</p>
+
+<p class=MsoNormal>                                                                                                                                                                                      С
+оценкой «_______»</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:45.0pt;line-height:
+150%'><b><span style='line-height:150%'>&nbsp;</span></b></p>
+
+<p>Функция сохранения в файл (</span><span lang=EN-US style='line-height:
+150%'>save</span>) организована следующим
+образом. После вызова функции из главного меню происходит стандартная проверка
+наличия активного списка, если список существует, функция продолжает работу.</span></p>
+
+<p>Сначала в каталоге, из которого была
+запущена программа, создается и открывается для записи в бинарном режиме файл </span><span
+lang=EN-US style='line-height:150%'>data</span><span style='line-height:150%'>.</span><span
+lang=EN-US style='line-height:150%'>txt</span>.
+Запись в файл реализована при помощи цикла </span><span lang=EN-US
+style='line-height:150%'>WHILE</span>, который
+выполняется до тех пор, пока не будет достигнут конец списка </span><span
+lang=EN-US style='line-height:150%'>NULL</span><span style='line-height:150%'>.</span></p>
+
+<p>В цикле также предусмотрена проверка на
+возможность записи в файл, основанная на операторе </span><span lang=EN-US
+style='line-height:150%'>IF</span>. Если
+структуру удается записать в файл, указатель перемещается на следующую запись,
+после чего цикл повторяется снова, если запись по какой либо причине не
+удалась, происходит вывод сообщения об ошибке записи файла, файл закрывается и
+функция завершает свою работу.</span></p>
+
+<p>После завершения процедуры записи списка,
+файл закрывается и на экран под пунктами меню выводится сообщение об успешном
+завершении процедуры записи  в файл.</span></p>
+<br>
+<p>Исходный код функции.</span><br>
+  <br>
+</p>
+
+<pre class="prettyprint">
+void save(item *p)     //Заголовок функции
+
+{FILE *in;
+
+  if (tail == NULL)    //Проверка на наличие активного списка
+
+  {
+    //Вывод сообщения об отсутствии списка
+    printf("\n  Список товаров отсутствует нажмите <1>\n       чтобы создать новый список,\n     либо загрузите список из файла");
+
+    getch();
+
+  }
+
+  else {
+
+    in = fopen("data.txt", "wb");    //Создание файла data.txt и открытие для записи
+
+    if (in != NULL)
+
+    {
+
+      while (p != NULL)
+
+      {
+
+        if (!fwrite(p, sizeof(item), 1, in))
+
+        {
+				     //Детектор ошибок
+          perror("fwrite");
+
+          getchar();
+
+          fclose(in);		    //Закрытие файла
+
+          return ;
+
+        }
+
+        p = p->next;		    //Продвижение по списку
+
+      }
+
+      fclose(in);		    //Закрытие файла
+  
+      printf("\n Список успешно сохранен в файл!");
+
+      getch();
+
+    }
+
+    else
+
+    {
+
+     printf("Ошибка! Не удалось создать/прочитать файл\n");
+
+     printf("Нажмите любую клавишу...\n");
+
+      getchar();
+
+      return 0;
+
+    }
+
+  }
+
+}
+</pre>
+<p>Функция загрузки списка из файла (</span><span
+lang=EN-US style='line-height:150%'>load</span>)
+позволяет загрузить ранее сохраненный список из файла. Функция доступна сразу
+после запуска программы, как один из вариантов создания списка.</span></p>
+
+<p>После запуска функции происходит очищение
+памяти под новый список, без которого процесс загрузки проходил бы некорректно.
+Очищение памяти основано на цикле </span><span lang=EN-US style='line-height:
+150%'>WHILE</span>, который выполняется до тех
+пор, пока не будет достигнут конец существующего списка </span><span
+lang=EN-US style='line-height:150%'>NULL</span>,
+если таковой имеется. </span></p>
+
+<p>Затем программа ищет в каталоге, из
+которого она была запущена файл </span><span lang=EN-US style='line-height:
+150%'>data</span><span style='line-height:150%'>.</span><span lang=EN-US
+style='line-height:150%'>txt</span><span lang=EN-US style='line-height:150%'> </span>после чего открывает его в режиме чтения. </span></p>
+
+<p>Формирование списка из прочитанных данных
+основано на цикле </span><span lang=EN-US style='line-height:150%'>WHILE</span>, который выполняется до тех пор, пока не будет
+достигнут конец файла.</span></p>
+
+<p>За один «виток» цикла считывается одна
+структура, после чего происходит обнуление невалидных указателей, которые были
+сохранены вместе с информационной частью структуры.</span></p>
+
+<p>Считанной из файла структуре назначаются
+новые, валидные указатели, после чего цикл повторяется.</span></p>
+
+<p>По завершению формирования списка
+выводится сообщение об успешной загрузке из файла.</span></p>
+<br>
+<p>Исходный код функции.</span><br>
+  <br>
+</p>
+
+<pre class="prettyprint">
+
+void load(void)			//Заголовок функции
+
+{
+
+  item *p,  *pr;		//Инициализация переменных и указателей
+
+  FILE *in;
+
+  pr = NULL;			//Обнуление указателей
+
+  p = head;
+
+  while (p != NULL)		//Процедура очистки памяти
+
+  {
+
+    item *pTemp;
+
+    pTemp = p->next;
+
+    free(p);
+
+    p = pTemp;
+
+  }
+
+  in = fopen("data.txt", "rb");		//Открытие файла data.txt в режиме чтения
+
+  do
+
+  {
+
+   p= (item*)malloc(sizeof(item));	//Выделение памяти
+
+    fread(p, sizeof(item), 1, in);	//Чтение из файла одной структуры
+
+    p->prev = NULL;			//Обнуление невалидных указателей
+
+    p->next = NULL;
+
+    p->prev = pr;
+
+    if (pr != NULL)
+
+      pr->next = p;
+
+    else
+
+      head = p;
+
+    pr = p;				//Назначение новых указателей
+
+  }
+
+  while (!feof(in));			//Выполнение цикла до тех пор пока не будет достигнут конец файла
+
+  tail = p->prev;
+
+  tail->next = NULL;
+
+  p = tail;
+
+  printf("\n Список успешно загружен из файла!");//Вывод сообщения об окончании процедуры загрузки из файла.
+
+  getch();
+
+}
+</pre>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+style='line-height:150%'> Существующий список не сохраняется автоматически, в
+случае необходимости восстановления данных пользователь должен предварительно
+сохранить созданный либо измененный список.</span><br>
+
+
+<br>
+
+ 
+
+
+<br>		
+
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+
+ <!--Меню навигации-->
+ <div aria-label="..." class = "nav-menu">
+ <ul class="pager background-transition-slow">
+ <li title="Наверх" style = "margin-right:15px; "><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+ </ul>
+ </div>
+
+ </div>
+ <!-- jQuery -->
+ <script src="../lib/js/jquery.js"></script>
+
+ 
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+ <script src="../lib/js/bootstrap.min.js"></script>
+
+ <!-- Scrolling Nav JavaScript -->
+ <script src="../lib/js/jquery.easing.min.js"></script>
+ <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

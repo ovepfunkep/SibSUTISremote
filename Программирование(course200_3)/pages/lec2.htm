@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 2. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+  <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3><a href="#">2. Программы разветвлённой структуры</a></h3>
+<a href="#1" class=punkt>2.1. Основные сведения</a><br>
+<a href="#2" class=punkt>2.2. Условный оператор IF</a><br>
+<a href="#3" class=punkt>2.3. Множественный выбор</a><br>
+<a href="#4" class=punkt>Контрольные вопросы</a><br>
+
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>2.1. Основные сведения</h3>
+<P>Алгоритм разветвленной структуры - это алгоритм, в котором 
+ вычислительный процесс осуществляется по одной из ветвей. Если количество 
+ ветвей две – то используется условный блок, если больше – то множественный 
+ выбор. В программах используют соответственно условный оператор IF или 
+ оператор SWITCH для реализации разветвленного алгоритма.</P>
+<P>&nbsp;</P>
+<a name=2 class="anchor"></a>
+<h3>2.2. Условный оператор IF </h3>
+
+<P>Условный оператор в языке Си имеет формат:</P>
+<P>if (условие) оператор1; </P>
+<P>else оператор2; (полная форма) </P>
+<P>if (условие) оператор1; (сокращенная форма).</P>
+<P>Если оператор1 и оператор2 состоят из одного оператора, 
+ то в фигурные скобки они не заключаются. Если оператор1 и/или оператор2 
+ являются составным оператором (несколько операторов), то он заключается 
+ в фигурные скобки. Условие всегда заключается в круглые скобки.</P>
+<P>В качестве примера приведем программу вычисления наибольшего 
+ из значений функции y1=x&#178;+1, y2=7-x&#178; , y3=x+1 для любого х.</P>
+
+
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+main()
+
+{ float x,y1,y2,y3,max;
+
+  printf("\n Введите x "); scanf("%f ",&x);
+
+  y1=x*x+1; y2=7-x*x; y3=x+1;
+
+  if (y1>y2)
+
+     max=y1;
+
+  else
+
+     max=y2;
+
+if (y3>max)
+
+     max=y3;
+
+printf ("x=%8.2f y1=%8.2f y2=%8.2f y3=%8.2f max=%8.2f\n",x,y1,y2,y3,max);
+
+}
+</pre>
+<P>&nbsp;</p>
+<a name=3 class="anchor"></a>
+<h3>2.3. Множественный выбор</h3>
+<P>В программах с множественным выбором используется переключатель 
+ switch , который сравнивает значение выражения, указанного за ним, и выполняет 
+ оператор, метка которого совпадает с этим значением. </P>
+<P>Общий вид:</P>
+
+<pre class="prettyprint">
+Switch (выражение)
+
+{ case метка_1: список_операторов_1;
+
+  .............................
+
+  case метка_n: список_операторов_n;
+
+  default : операторы; 
+}
+</pre>
+<P> Значения выражения и меток должны быть целочисленными 
+ константами. Например, определим количество дней по введенному номеру 
+ месяца.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt; // Заголовочный файл для работы с терминалом
+
+int m;
+
+main()
+
+{
+
+printf("\n Введите номер месяца :"); scanf("%d",&m);
+
+printf("\n В %d месяце дней: ",m);
+
+switch(m){
+
+  case 1:case 3:case 5: case 7:case 8:case 10:case 12:
+
+      printf("тридцать один \n"); break;
+
+  case 2: printf ("двадцать восемь \n"); break;
+
+  case 4: case 6: case 9: case 11: printf("тридцать \n"); break;
+
+  default: printf("\n Номер месяца неверен \n");
+
+}
+
+getch ();
+
+}
+</pre>
+<P>В примере программы, если номер месяца превышает 12, 
+ выводится сообщение о неверном вводе месяца, для чего используется default. 
+ Оператор break служит для прерывания цикла проверки и перехода в конец 
+ переключателя. В случае отсутствия break, происходит переход на следующую 
+ ветвь case. Функция getch, подключающаяся заголовочным файлом conio.h, 
+ ожидает нажатия любой клавиши. Это позволяет просмотреть результаты, не 
+ используя ALT+F5 для просмотра экрана пользователя.</P>
+<P></P>
+<P>&nbsp;</p><a name=4 class="anchor"></a>
+<h3>2.4.Контрольные вопросы</h3>
+<P></P>
+<P>1. Сравните виды условных операторов Си. </P>
+<P>2. Всегда ли ставятся скобки и какие в условном операторе?</P>
+<P>3. Зачем ставятся в переключателе операторы break 
+ и default?</P>
+<P>4. Как будет работать программа из примера без break?</P>
+<P>5. Приведите пример оператора if.</P>
+<P>6. Приведите пример оператора switch.</P>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec1.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec3.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

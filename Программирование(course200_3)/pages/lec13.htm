@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 13. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+  <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+
+
+<h3><a href="№">13. Динамические структуры данных</a></h3>
+<a href="#1" class=punkt>13.1. Односвязные списки</a><br>
+<a href="#2" class=punkt>13.2. Двусвязные списки</a><br>
+<a href="#3" class=punkt>Контрольные вопросы</a><br>
+
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>13.1. Односвязные списки</h3>
+<P>Список – это последовательность структур, каждая из которых содержит
+ ссылку, связывающую её с другой структурой. Для организации списков используются
+ структуры, состоящие из двух смысловых частей – информационной и дополнительной.
+ Информационная часть содержит подлежащую обработке информацию, в дополнительной
+ находятся указатели на последующую или предыдущую структуру списка:</p>
+<P class=punkt>Struct spis { char data[20];</P>
+<P class=punkt>struct spis *next; }; // Указатель на структуру</P>
+<P>Здесь при описании указателя используем ещё не описанный
+ объект struct spis *next , который будет служить ссылкой на последующий
+ элемент списка. Самая последняя структура в списке никуда не указывает,
+ т.е. поле next должно иметь значение NULL. Адрес начала (головы) списка
+ хранится в переменной типа указатель *head. На текущую структуру будет
+ указывать *p.</P>
+<P>&nbsp;</p>
+<P><b>Пример создания и просмотра односвязного списка.</b></P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include &lt;alloc.h&gt;
+
+struct spis
+
+{char data[20];
+
+  struct spis *next;};
+
+struct spis * create(void); //прототип функции создания списка (возвращает адрес его головы)
+
+void list(spis *head); // прототип функции просмотра списка
+
+struct spis *head; // глобальная переменная, адрес головы списка
+
+main()
+
+{clrscr();
+
+  head= create();
+
+  list(head);
+
+  free(head);
+
+}
+
+struct spis * create(void)
+
+{spis *p, *pred; char c;
+
+// pred – указатель на предыдущую структуру
+
+head=pred=p=(spis *)malloc(sizeof(spis)); //выделяем память для первой записи
+
+printf(" фамилия: ");
+
+scanf("%s", p->data);
+
+do { p=(spis *)malloc(sizeof(spis));
+
+  printf("\n фамилия: ");
+
+  scanf("%s", p->data);
+
+  pred->next=p; //ссылка из предыдущей записи на текущую
+
+  pred=p; // сохранение адреса текущей записи
+
+  printf(" Закончить? y/n ");
+
+  c=getch();
+
+} while (c!='y');
+
+p->next=NULL;
+
+return head;
+
+}
+
+void list(spis *head)
+
+{spis *p;
+
+p=head;
+
+while (p!=NULL) // пока не конец списка
+
+{printf("\n фамилия: %s",p->data);
+
+  p=p->next; // продвижение по списку
+
+}
+
+getch();
+
+}</Pre>
+<br>
+<a name=2 class="anchor"></a>
+<h3>13.2. Двусвязные списки</h3>
+<P>&#9;В двусвязном списке каждая структура содержит две
+ ссылки: на предыдущую и последующую структуры. Таким образом, по списку
+ можно перемещаться от начала к концу и от конца к началу. Для доступа
+ к началу и концу списка должны быть известны их адреса, которые могут
+ сохраняться в глобальных переменных типа указатель. </P>
+<P></P>
+<P><b>Пример создания и работы с двусвязным списком.</b></P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include &lt;alloc.h&gt;
+
+#include &lt;string.h&gt;
+
+struct spis
+
+{char data[20];
+
+  struct spis *v1; // v1 – указатель на предыдущую структуру
+
+  struct spis *v2; // v2 – указатель на последующую структуру
+
+};
+
+void create(void); // создание
+
+void list(spis *); // просмотр
+
+void del(void); // удаление
+
+struct spis *head,*tail; // указатели на начало и конец списка
+
+main()
+
+{
+
+  clrscr();
+
+  create();
+
+  list(head); // просмотр с начала списка
+
+  list(tail); // просмотр с конца списка
+
+del();
+
+list(head);
+
+free(head);
+
+}
+
+void create(void)
+
+{spis *p,*pred;
+
+  pred=NULL;
+
+  do { p=(spis *)malloc(sizeof(spis));
+
+    printf("Фамилия: "); gets(p->data);
+
+    p->v1=pred;
+
+    if (pred != NULL)
+
+      pred->v2=p;
+
+    else
+
+      head=p;
+
+    pred=p;
+
+    puts(" Закончить - <esc>");
+
+}
+
+while (getch()!=27);
+
+  tail=p;
+
+  tail->v2=NULL;
+
+}
+
+void list(spis *p)
+
+{if (p==head)
+
+  while (p != NULL)
+
+    {puts(p->data);
+
+      p=p->v2;
+
+    }
+
+   else if (p==tail)
+
+  while ( p!= NULL)
+
+  {puts(p->data);
+
+    p=p->v1;
+
+  }
+
+  else
+
+    puts("Неверный адрес ");
+
+    getch();
+
+  }
+
+void del(void)
+
+{spis *p,*temp;char f[20]; // f[20] – Строка для удаляемой фамилии
+
+  clrscr();
+
+  printf("Фамилия: ");gets(f);
+
+  p=head;
+
+  while (p!=NULL)
+
+    {if (strcmp((p->data),f)==0) // если найдена заданная фамилия
+
+    {if (p==head) // если найденная запись - первая
+
+        {head=p->v2;
+
+          head->v1=NULL;
+
+          free(p);
+
+          p=head;
+
+        }
+
+       else if (p==tail) // если найденная запись - последняя
+
+      {tail=p->v1;
+
+        tail->v2=NULL;
+
+        free(p);
+
+        p=tail;
+
+      }
+
+      else // удаление из средины списка
+
+      {p->v2->v1=p->v1;
+
+        p->v1->v2=p->v2;
+
+        temp=p;
+
+        p=p->v2;
+
+        free(temp);
+
+      }
+
+    }
+
+else // если заданная фамилия не найдена – продвигаемся по списку
+
+p=p->v2;
+
+}
+
+}</Pre>
+<P>&nbsp;</P>
+<a name=3 class="anchor"></a>
+<h3>13.3. Контрольные вопросы</h3>
+<P>1. Понятие статической и динамической памяти.</P>
+<P>2. Как создаётся и просматривается односвязный список?</P>
+<P>3. Как создаётся и просматривается двусвязный список?</P>
+<P>4. Как удалить структуру из списка?</P>
+<P>5. Как добавить структуру в список?<br>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec12.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <!--li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec13.htm"></a></li-->
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,840 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Параграф 4. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Алгебра и геометрия</text> 
+  <text class = "visible-xs">А и Г</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+   <li><a href="lec_index.htm">Теория</a></li>
+   
+<li><a href="spravka.htm">Справочники</a></li> 
+<li><a href="c_work.htm">Контрольная работа</a></li>
+      <li role="separator" class="divider"></li>
+    
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3>ЧАСТЬ 2. ВЕКТОРНАЯ АЛГЕБРА</h3>
+<h3>§4. Геометрический вектор</h3>
+<a href="#1" class=punkt>4.1. Основные понятия</a><br>
+<a href="#2" class=punkt>4.2. Ось. Проекция вектора на ось</a><br>
+<a href="#3" class=punkt>4.3. Линейные операции над векторами</a><br>
+<a href="#4" class=punkt>4.4. Скалярное произведение векторов</a><br>
+<a href="#5" class=punkt>4.5. Векторное произведение векторов</a><br>
+<a href="#6" class=punkt>4.6. Смешанное произведение векторов</a><br>
+</div>
+<!--начало-->
+<h3 class="style5" style="margin: 6pt 0cm 3pt; text-indent: 0cm;">§4. ГЕОМЕТРИЧЕСКИЙ ВЕКТОР</h3>
+<a name=1 class="anchor"></a>
+<h3>4.1. Основные понятия</h3>
+<p>Величина, каждое значение которой
+полностью определяется одним числом, называется <i>скалярной </i>величиной<i>.</i>
+Примерами скалярных величин являются: площадь, длина, объем, температура, работа, масса.</p>
+<p>Другие величины, например сила, скорость, ускорение,
+определяются не только своими числовыми значениями, но и направлением.
+Такие величины называются <i>векторными.</i> Векторная величина
+изображается с помощью вектора.</span></p>
+<p>Вначале мы будем рассматривать векторы и действия над
+ними безотносительно координатных систем во множестве этих векторов.
+Такой <i>инвариантный </i>подход к векторной алгебре более присущ физике, так как
+физические законы инвариантны по самой своей природе. Итак, мы рассматриваем <i>геометрический
+вектор</i>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image001.gif" align="left" height="123" width="171"></p></td>
+      <td width="800" valign="top"><p><i>Вектор<b> – </b></span></i>это направленный прямолинейный
+отрезок, т.е. отрезок, имеющий определенную
+длину и определенное направление (рис.2.1). Если </span><i>А</span></i> — начало
+вектора, а </span><i>В</span></i> — его конец, то вектор
+обозначается символом <img src="img/lec3.files/image002.gif" height="35" width="33">.
+Мы также будем использовать
+жирные латинские буквы <img src="img/lec3.files/image003.gif" height="16" width="15">,
+<img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;и т.д. Вектор <img src="img/lec3.files/image005.gif" height="35" width="31">&nbsp;(у него начало в точке <i>В</i>, а конец в точке <i>А</i>) называется <i>противоположным
+</i>вектору <i><img src="img/lec3.files/image002.gif" height="35" width="33">.
+</i>Вектор противоположный вектору <img src="img/lec3.files/image003.gif" height="16" width="15">,
+обозначается <img src="img/lec3.files/image006.gif" height="16" width="29">.</p></td>
+     
+    </tr>
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image007.gif" align="left" height="128" width="147"></p></td>
+      <td width="800" valign="top"><p><i>Длиной </i>или<i>
+модулем </i>вектора <img src="img/lec3.files/image008.gif" height="33" width="31">&nbsp;называется длина отрезка <i>АВ</i>
+и обозначается |<img src="img/lec3.files/image002.gif" height="35" width="33">|.
+Вектор, длина которого равна нулю, называется <i>нулевым вектором</i>
+и обозначается <img src="img/lec3.files/image009.gif" height="21" width="15">.
+Нулевому вектору приписывается неопределенное направление. Вектор,
+длина которого равна единице, называется <i>единичным</i>
+вектором и обозначается <img src="img/lec3.files/image010.gif" height="17" width="15">.
+Единичный вектор, направление которого совпадает с направлением вектора <b><i>a</span></i></b>, обозначается <img src="img/lec3.files/image011.gif" height="25" width="20">.</p></td>
+     
+    </tr>
+</table>
+<p>Векторы <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и
+<img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;называются <i>коллинеарными,</i>
+если они лежат на одной прямой или на параллельных прямых. Коллинеарность
+векторов <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и <img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;будем обозначать: <img src="img/lec3.files/image012.gif" height="23" width="37">. На рис.2.2
+векторы <img src="img/lec3.files/image013.gif" height="24" width="48">&nbsp;коллинеарны:
+<img src="img/lec3.files/image014.gif" height="23" width="61">.</p>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image015.gif" align="left" height="112" width="173"></p></td>
+      <td width="800" valign="top"><p>Коллинеарные векторы могут быть
+направлены одинаково или противоположно.</p>
+<p>Нулевой вектор считается коллинеарным&nbsp; любому вектору.</p>
+<p>Два вектора <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и
+<img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;называются <i>равными,
+</i>если они имеют одинаковые длины, коллинеарны и одинаково направлены:
+ <img src="img/f016.png" align="middle" height="26" width="280"><b><i> </i></b>– <i>сонаправлены</i>.</p></td>
+      
+    </tr>
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image018.gif" align="left" height="136" width="171"></p></td>
+      <td width="800" valign="top"><p> Из определения равенства векторов
+следует, что вектор можно переносить параллельно самому себе, а начало вектора помещать в
+любую точку пространства. Такие векторы называются <i>свободными.</i> На рис.2.3
+изображены равные векторы <img src="img/lec3.files/image019.gif" height="21" width="75">.
+Мы будем рассматривать только свободные векторы. Таким образом, можно считать, что все векторы выходят из одной точки. </p>
+<p>На рисунке 2.4 векторы образуют параллелограмм. Справедливы равенства: <img src="img/lec3.files/image020.gif" height="20" width="55">,
+<img src="img/lec3.files/image021.gif" height="16" width="52">.</p></td>
+     
+    </tr>
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image022.gif" align="left" height="147" width="183"></p></td>
+      <td width="800" valign="top"><p>Векторы в пространстве называются <i>компланарными</i>,
+если они лежат в одной плоскости или в параллельных плоскостях. Если
+среди векторов хотя бы один нулевой или два любые коллинеарны, то такие
+векторы будут компланарны.</p>
+<p><i>Углом </i>между двумя ненулевыми векторами <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и
+<img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;называется угол,
+образованный представляющими их направленными отрезками <img src="img/lec3.files/image023.gif" height="25" width="61">&nbsp;и
+<img src="img/lec3.files/image024.gif" height="25" width="63">, отложенными от одной точки <i>О</i>. На рис.2.5
+угол между векторами <img src="img/lec3.files/image025.gif" height="16" width="16">&nbsp;и
+<img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;обозначен  <img src="img/lec3.files/image026.gif" height="27" width="92">.
+Очевидно, <img src="img/lec3.files/image027.gif" height="25" width="77">.</p></td>
+   
+</table>
+
+<br>
+<a name=2 class="anchor"></a>
+<h3>4.2. Ось. Проекция вектора на ось</h3>
+<p><i>Осью</i> называют прямую, на которой указано направление.
+Пусть <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;-
+данный вектор и <i><span style="font-size: 12pt;" lang="EN-US">l</span></i>
+– ось. Представим вектор <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;отрезком
+<img src="img/lec3.files/image028.gif" height="27" width="61">&nbsp;и спроектируем на ось </span><i><span style="font-size: 12pt;" lang="EN-US">l</span></i>.
+При этом проекцией точки на ось будем считать основание перпендикуляра, опущенного
+из этой точки на ось. Пусть <img src="img/lec3.files/image029.gif" height="20" width="23">,
+<img src="img/lec3.files/image030.gif" height="20" width="23">&nbsp;- проекции точек <i>A</i>, <i>В</i>. <i>Проекцией вектора
+на ось</i> называют длину отрезка <img src="img/lec3.files/image032.gif" height="20" width="40">,
+если направление вектора <img src="img/lec3.files/image033.gif" height="25" width="40">&nbsp;совпадает
+с направлением оси (рис.2.6), и длину <img src="img/lec3.files/image032.gif" height="20" width="40">&nbsp;с
+минусом, если направление <img src="img/lec3.files/image033.gif" height="25" width="40">&nbsp;противоположно
+направлению оси (рис.2.7). Если точки <img src="img/lec3.files/image029.gif" height="20" width="23">&nbsp;и
+<img src="img/lec3.files/image030.gif" height="20" width="23">&nbsp;совпадают, т.е. <img src="img/lec3.files/image034.gif" height="21" width="69">,
+то проекция вектора на ось равна нулю. Обозначим проекцию вектора <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;на
+ось </span><i><span style="font-size: 12pt;" lang="EN-US">l</span></i><i><span style="font-size: 12pt;" lang="EN-US">
+</span></i>так:
+<img src="img/lec3.files/image035.gif" height="27" width="41">. Если <img src="img/lec3.files/image036.gif" height="21" width="45">&nbsp;или
+угол &#966; между вектором <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и
+осью </span><i><span style="font-size: 12pt;" lang="EN-US">l</span></i>
+– прямой, то <img src="img/lec3.files/image037.gif" height="27" width="71">.</p>
+<p>Отметим
+некоторые свойства проекций. </p>
+<p><img src="img/lec3.files/image038.gif" align="left" height="30" width="42">Проекция
+вектора на ось равна произведению длины вектора на косинус угла между
+вектором и осью, т.е.</p>
+<p><img style="width: 170px; height: 34px;" alt="" src="img/f017.png"><br>
+</span></p>
+<p>В
+самом деле, если&nbsp;<img style="width: 160px; height: 54px;" alt="" src="img/f018.png" align="middle">&nbsp;,
+то <img style="width: 289px; height: 29px;" alt="" src="img/f019.png" align="middle">. Если <img style="width: 160px; height: 54px;" ismap="ismap" alt="" src="img/f020.png" align="middle">, то&nbsp;<img style="width: 293px; height: 35px;" alt="" src="img/f021.png" align="middle">. </span></p>
+<p>Очевидным
+является следующее свойство:</p>
+<p><img src="img/lec3.files/image044.gif" align="left" height="30" width="42">Проекции равных векторов на одну и ту же ось равны между собой.
+</p>
+<p>&nbsp;</p>
+<a name=3 class="anchor"></a>
+<h3>4.3. Линейные операции над векторами</h3>
+<p>Определим следующие две операции
+над векторами:
+умножение вектора на число и сложение векторов. </p>
+<p><b><i>Умножение вектора на число</span></i></b></p>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image045.gif" align="left" height="140" width="183"></p></td>
+      <td width="800" valign="top"><p>Пусть </span><i><img src="img/lec3.files/image046.gif" height="17" width="16"></sub></span></i><span style="font-size: 15pt;">&nbsp;– произвольный вектор и </span><i><img src="img/lec3.files/image047.gif" height="21" width="16">&nbsp;–
+</span></i>произвольное
+число (скаляр). <i>Произведением вектора </i></span><i><img src="img/lec3.files/image046.gif" height="17" width="16"></i><i>&nbsp;на число <img src="img/lec3.files/image047.gif" height="21" width="16">&nbsp;</span></i>называется
+вектор <img src="img/lec3.files/image048.gif" height="21" width="39">,
+который имеет длину <img src="img/lec3.files/image049.gif" height="27" width="69">,
+коллинеарен вектору <img src="img/lec3.files/image046.gif" height="17" width="16">,
+имеет направление вектора <img src="img/lec3.files/image046.gif" height="17" width="16">,
+если <img src="img/lec3.files/image050.gif" height="21" width="48"><i>&nbsp;</i>и
+противоположное направление, если
+<img src="img/lec3.files/image051.gif" height="21" width="48">.</p>
+<p>В случае если <i><img src="img/lec3.files/image047.gif" height="21" width="16">=</i><span style="font-size: 15pt;">0</span> или <img src="img/lec3.files/image052.gif" height="21" width="45">,
+то результатом операции будет нулевой
+вектор. Очевидно, операция умножения вектора на число всегда
+определена. Отметим
+некоторые её свойства, непосредственно вытекающие из определения.</p></td>
+      
+    </tr>
+</table>
+<p><i>&nbsp;</i></p>
+<p><img src="img/lec3.files/image053.gif" align="left" height="30" width="42"><i>Любые два ненулевых коллинеарных вектора получаются друг из друга умножением на некоторое число</i>.
+</p>
+<p>Если <img src="img/lec3.files/image054.gif" height="21" width="71">, то <img src="img/lec3.files/image055.gif" height="25" width="43">.
+Наоборот, если <img src="img/lec3.files/image056.gif" height="27" width="43">, <img src="img/lec3.files/image057.gif" height="25" width="59">,
+то при некотором <img src="img/lec3.files/image058.gif" height="20" width="16">&nbsp;верно
+равенство <img src="img/lec3.files/image054.gif" height="21" width="71">.</p>
+<p>&nbsp;</p>
+<p><img src="img/lec3.files/image059.gif" align="left" height="29" width="42"><i>Всякий вектор равен произведению
+его модуля на единичный вектор его же направления. </i></p>
+<p>Пусть <img src="img/lec3.files/image060.gif" height="29" width="21">&nbsp;–
+единичный вектор в
+направлении вектора <i><img src="img/lec3.files/image046.gif" height="17" width="16"></i><span style="font-size: 15pt;">.</span> Тогда </p>
+<p><img src="img/lec3.files/image061.gif" height="29" width="85">.</p>
+<p>Естественно, для противоположного вектора верно равенство:</p>
+<p><img src="img/lec3.files/image062.gif" height="32" width="109">.</p>
+<p><b><i>Сложение векторов</i></b></p>
+<p>Пусть <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и
+<img src="img/lec3.files/image004.gif" height="20" width="15">&nbsp;— два произвольных вектора,
+<img src="img/lec3.files/image063.gif" height="35" width="59">. От точки <img src="img/lec3.files/image064.gif" height="20" width="19">&nbsp;отложим
+вектор <img src="img/lec3.files/image065.gif" height="35" width="57">. Вектор <img src="img/lec3.files/image066.gif" height="35" width="31">, называется <i>суммой</i>
+векторов <img src="img/lec3.files/image003.gif" height="16" width="15">&nbsp;и <img src="img/lec3.files/image004.gif" height="20" width="15">:
+<img src="img/lec3.files/image067.gif" height="35" width="87">&nbsp; (рис.2.9).</span></p>
+<p>Это правило сложения векторов называется <i>правилом треугольника.</i></span></p>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="650" valign="top"><p><img src="img/lec3.files/image068.gif" align="left" height="170" width="639"></p></td>
+      <td width="450" valign="top"><p>Сумму двух векторов можно построить
+также по <i>правилу параллелограмма
+</i>(рис.2.10).</p>
+<p> Обобщим правило треугольника для
+случая, когда складываются три и большее количество векторов. Расположим их
+последовательно, т.е. каждое следующее слагаемое будем откладывать от конца предыдущего
+слагаемого. </p></td>
+      
+    </tr>
+</table>
+<p>Тогда их суммой будет «замыкающий» вектор, т.е. вектор,
+имеющий начало в начале первого слагаемого вектора, а конец – в конце
+последнего слагаемого. Например, на рис.2.11 показано сложение трех векторов <img src="img/lec3.files/image069.gif" height="24" width="49">.</p>
+
+<p><i>Разность </i>
+векторов <b><i>a</i></b> и <b><i>b</i></b> есть вектор <img src="img/lec3.files/image070.gif" height="24" width="109">&nbsp;(рис.2.12).</p>
+<p>Отметим, что в параллелограмме,
+построенном на векторах <img src="img/lec3.files/image071.gif" height="16" width="12">&nbsp;и <b><i>b</i></b>, одна направленная диагональ
+является суммой векторов <b><i>a</i></b> и <b><i>b</i></b>, а другая – разностью.</span></p>
+<p>Операции сложения векторов и
+умножения вектора на
+число называются <i>линейными операциями</i>. Следующие
+свойства этих операций
+вытекают из определения (сравните с соответствующими свойствами
+матричных операций
+в пункте 2.2 §2).</span></p>
+<p><i>Свойства линейных операций над
+векторами</span></i></p>
+<p><img src="img/lec3.files/image072.gif" align="left" height="30" width="42"><i>&nbsp;Коммутативность сложения</span></i>:
+&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 130px; height: 24px;" alt="" src="img/f022.png">&nbsp;.</span></p>
+<p><img src="img/lec3.files/image074.gif" align="left" height="29" width="42"><i>&nbsp;Ассоциативность
+сложения</span></i>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 222px; height: 27px;" alt="" src="img/f023.png">&nbsp;. </span></p>
+<p><img src="img/lec3.files/image076.gif" align="left" height="30" width="42"><img src="img/lec3.files/image077.gif" align="left" height="30" width="43"><i>&nbsp;Дистрибутивность
+умножения на число относительно суммы векторов</span></i>: &nbsp;&nbsp;<img style="width: 211px; height: 24px;" alt="" src="img/f024.png">.</span></p>
+<p style="margin-left: 35.45pt; text-align: justify; text-indent: 0.55pt;"><i>&nbsp;Дистрибутивность векторного
+сомножителя относительно суммы чисел</span></i>:&nbsp;<img style="width: 265px; height: 26px;" alt="" src="img/f025.png">&nbsp;</span></p>
+<p style="text-align: justify;"><img src="img/lec3.files/image080.gif" align="left" height="30" width="43"><i>&nbsp; Ассоциативность
+относительно числового множителя: &nbsp; <img style="width: 129px; height: 25px;" alt="" src="img/f026.png"></span></i><span style="font-size: 12pt;">.</span></p>
+<p>Линейные
+операции над векторами приводят к соответствующим линейным операциям
+над проекциями этих векторов на одну и ту же ось.</span></p>
+<p><img src="img/lec3.files/image082.gif" align="left" height="29" width="43"><img src="img/lec3.files/image083.gif" align="left" height="29" width="43">При
+умножении вектора на число его проекция на ось также <br>
+умножается на это число, т.е. &nbsp;<img style="width: 163px; height: 28px;" alt="" src="img/f027.png">&nbsp;;</span></p>
+<p>Проекция
+суммы двух векторов на ось равна сумме проекций на эту ось,
+т.е.&nbsp;<img style="width: 221px; height: 25px;" alt="" src="img/f028.png">&nbsp;.</span></p>
+<p>Доказательства
+этих свойств нетрудно провести самостоятельно, пользуясь данным в п.4.2
+определением проекции вектора на ось.</p>
+<br>
+<a name=4 class="anchor"></a>
+<h3>4.4. Скалярное
+произведение векторов</h3>
+<p><i>Скалярным произведением</span></i> двух ненулевых векторов <i>&nbsp;</i><b><i>a</i></b> и <b><i>b</i></b> называется <i>число</i>,
+равное произведению длин
+этих векторов на косинус угла между ними.</span></p>
+<p><b><img style="width: 182px; height: 29px;" alt="" src="img/f029.png">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(</span></b>4.1)</span></p>
+<p>где
+<img style="width: 101px; height: 27px;" alt="" src="img/f030.png"> &nbsp; – угол между
+векторами <b><i>a</i></b> и <b><i>b</i></b>. </p>
+<p>Если хотя бы один из векторов <b><i>a</i></b> и <b><i>b</i></b><b><i> </i></b>– нулевой, то их скалярное
+произведение равно нулю. Для обозначения
+скалярного произведения векторов используется также запись <img src="img/lec3.files/image087.gif" height="21" width="25">,
+или <img src="img/lec3.files/image088.gif" height="32" width="51">. </span></p>
+<p><b>&nbsp;</b></p>
+<p><i>Свойства
+скалярного произведения</span></i></p>
+<p><img src="img/lec3.files/image089.gif" align="left" height="30" width="42"><i>&nbsp; Коммутативность</span></i>: <img style="width: 72px; height: 20px;" alt="" src="img/f031.png">.</p>
+<p><img src="img/lec3.files/image091.gif" align="left" height="29" width="42"><i>&nbsp;Ассоциативность относительно
+умножения на скаляр</span></i>: </span></p>
+<p><img style="width: 221px; height: 21px;" alt="" src="img/f032.png">.</p>
+<p><img src="img/lec3.files/image093.gif" align="left" height="30" width="42"><i>&nbsp;Скалярный квадрат вектора равен
+квадрату его длины</span></i>: </p>
+<p><img src="img/lec3.files/image094.gif" align="left" height="29" width="42"> <img style="width: 80px; height: 27px;" alt="" src="img/f033.png">.</p>
+<p><i>Дистрибутивность
+относительно сложения</span></i>: </span></p>
+<p><img style="width: 179px; height: 26px;" alt="" src="img/f034.png"></p>
+<p>Доказательство
+первых трёх свойств не вызовет затруднений. Четвёртое свойства будет
+следствием
+следующих формул, которые интересны сами по себе:</span></p>
+<p><sub><img style="width: 471px; height: 32px;" alt="" src="img/f4_2.png"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(4.2)</p><br>
+<p><img src="img/lec3.files/image099.gif" align="left" height="198" width="218">&nbsp;Первая
+из формул есть <i>теорема косинусов</i>. В самом деле,
+если <img src="img/lec3.files/image100.gif" height="31" width="129">, то <img src="img/lec3.files/image101.gif" height="27" width="88">&nbsp;(рис.2.13)
+и тогда</span></p>
+<p>&nbsp;<img style="width: 351px; height: 26px;" alt="" src="img/f035.png">.</p>
+<p>&nbsp;Вторая
+формула получается из первой при помощи равенства <img style="width: 128px; height: 31px;" alt="" src="img/lec3.files/image103.gif" align="middle">.
+Отметим, что из этих формул непосредственно
+следует, что </span></p>
+<p><img style="width: 296px; height: 33px;" alt="" src="img/f4_3.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(4.3)</span></p>
+<p>&nbsp;Соответствующее
+свойство в геометрии формулируется так: <i>сумма квадратов
+диагоналей параллелограмма
+равна сумме квадратов всех его сторон</i>. </p>
+<p>Теперь
+докажем свойство 4. Пусть даны три вектора <img src="img/lec3.files/image013.gif" height="24" width="48">.
+Положим <img src="img/lec3.files/image105.gif" height="25" width="173">&nbsp;и
+применим формулу (4.3) к векторам </span><b><i>p</i></b> и <b><i> </i></b></span><b><i>q</i></b>. Пользуясь формулами (4.2), получим</span></p>
+<p><img src="img/lec3.files/image106.gif" height="38" width="431">&nbsp;и
+<img src="img/lec3.files/image107.gif" height="36" width="149">.</p>
+<p><img src="img/lec3.files/image108.gif" height="39" width="400">.</p>
+
+<p>Вместе с тем, </p>
+<p><img src="img/lec3.files/image109.gif" height="39" width="521">.</p>
+<p>Сравнивая
+две последние формулы, в силу равенства (4.3) получаем</span></p>
+<p><img style="width: 159px; height: 19px;" alt="" src="img/f036.png">.</p>
+<p><img src="img/lec3.files/image110.gif" align="left" height="133" width="159">&nbsp;Два вектора называются <i>ортогональными</i>,
+если угол между ними – прямой (рис.2.14). Другими словами, ортогональные
+векторы лежат на взаимно перпендикулярных прямых. Будем использовать
+обозначение для ортогональных векторов: <img src="img/lec3.files/image111.gif" height="21" width="51">.
+</p>
+<p>&nbsp;Свойства 1,2,4 позволяют скалярно
+умножать векторные
+суммы, как обычные многочлены. Например, требуется вычислить скалярное
+произведение <img src="img/lec3.files/image112.gif" height="17" width="44">,
+если&nbsp;</span></p>
+<p><img style="width: 490px; height: 51px;" alt="" src="img/f037.png"> </p>
+<p><i>Решение.</i> Перемножим скалярно векторы <b><i>m</i></b> и <b><i>n </i></b>, раскрывая скобки:</p>
+<p><img style="width: 533px; height: 85px;" alt="" src="img/f038.png">
+<br>
+</p>
+<p>Теперь можно сформулировать
+следующее очень важное
+свойство скалярного произведения:</span></p>
+<p><img src="img/lec3.files/image118.gif" align="left" height="29" width="43"><i>&nbsp;Два
+ненулевых вектора ортогональны тогда и только тогда, когда их скалярное
+произведение равно нулю</span></i>.</span></p>
+<p><img style="width: 159px; height: 24px;" alt="" src="img/f039.png"></p>
+<p>В
+самом деле, пусть <img style="width: 65px; height: 21px;" alt="" src="img/f040.png" align="middle">.
+Это значит <b><img style="width: 183px; height: 28px;" alt="" src="img/f041.png" align="middle">.
+</b>Но так как </span><b><i>a</i></b> и </span><b><i>b</i></b> – ненулевые векторы, то
+<img style="width: 125px; height: 24px;" alt="" src="img/f042.png">, откуда
+следует, что угол между </span><b><i>a</span></i></b> и <b><i>b</i></b>&nbsp; прямой, т.е. векторы
+ортогональны.
+Доказательство обратного утверждения очевидно.</span></p>
+<p><i>Задача</span></i>.</span> Найти длину
+вектора <sub><img style="width: 103px; height: 18px;" alt="" src="img/f043.png" align="middle"></sub>,
+если&nbsp;<img style="width: 229px; height: 25px;" alt="" src="img/f044.png" align="middle">&nbsp;.</span></p>
+<p><i>Решение</span></i>. </span></p>
+<p><sub><img src="img/lec3.files/image127.gif" height="44" width="568"></sub>.</span></p>
+<p><b><i>Механическая
+интерпретация скалярного произведения. </span></i></b></p>
+<p><img src="img/lec3.files/image128.gif" align="left" height="159" width="195">Пусть материальная точка
+перемещается прямолинейно из
+положения <sub><img src="img/lec3.files/image064.gif" height="20" width="19"></sub>&nbsp;в
+положение <sub><img src="img/lec3.files/image129.gif" height="20" width="19"></sub>&nbsp;под
+действием постоянной силы <sub><img src="img/lec3.files/image130.gif" height="20" width="21"></sub>,
+образующей угол <sub><img src="img/lec3.files/image131.gif" height="21" width="17"></sub>&nbsp;с
+перемещением <sub><img src="img/lec3.files/image132.gif" height="27" width="65"></sub>&nbsp;(рис.2.15).</span></p>
+<p>Известно, что работа силы <sub><img src="img/lec3.files/image130.gif" height="20" width="21"></sub>&nbsp;при
+перемещении <sub><img src="img/lec3.files/image133.gif" height="21" width="19"></sub>&nbsp;равна <sub><img src="img/lec3.files/image134.gif" height="23" width="119"></sub>,&nbsp;
+т.е. <sub><img src="img/lec3.files/image135.gif" height="20" width="73"></sub>.</span></p>
+<p>Таким образом, скалярное произведение вектора силы на
+вектор сдвига есть <i>работа, совершаемая этой силой при
+перемещении материальной точки на заданный отрезок</i>.</span></p><br>
+<p><b><i>Угол между векторами</span></i></b></p>
+<p>Из формулы для скалярного произведения векторов
+вытекает формула для вычисления косинуса угла между векторами</span></p>
+<p><b><img style="width: 130px; height: 56px;" alt="" src="img/f4_4.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(</span></b>4.4)</p>
+<p><img src="img/lec3.files/image137.gif" align="left" height="156" width="183">Если скалярное произведение
+положительно, то угол между векторами острый, если же отрицательно, то угол тупой.</p>
+<p><b><i>Проекция вектора на вектор</i></b></p>
+<p>Для вычисления длины проекции вектора <b><i>а </i></b>на
+ось, направление которой задаётся вектором<b><i> </i></b><b><i>b</span></i></b>, используем скалярное
+произведение. Если угол между вектором <b><i>а</i></b>&nbsp;
+и направлением <b><i>b</i></b> равен <span style="font-size: 13pt; font-family: Symbol;" lang="EN-US">&#966;</span>, а проекцию вектора <b><i>а</i></b>
+на направление <b><i>b</i></b> обозначим <img src="img/lec3.files/image138.gif" height="27" width="44">,
+то, поскольку <sub><img style="width: 123px; height: 31px;" alt="" src="img/lec3.files/image139.gif"></sub>&nbsp;(см.
+рис.2.16), можем заключить:</p>
+<p><img style="width: 120px; height: 58px;" alt="" src="img/f4_5.png">&nbsp;&nbsp;&nbsp;&nbsp;
+(4.5)</p>
+<br>
+<a name=5 class="anchor"></a>
+<h3>4.5. Векторное произведение векторов</h3>
+<p>Рассмотрим еще одну векторную операцию в трёхмерном
+пространстве. Но прежде необходимо разобраться с ориентацией векторов. </p>
+<p>Три некомпланарных вектора <b><i>a</i></b>, <b><i>b</i></b> и <b><i>c</i></b>, взятые в указанном
+порядке, образуют <i>правоориентированную </i>или просто<i> правую </i>тройку,
+если наблюдаемый с конца третьего вектора <b><i>c</i></b> <i>кратчайший</i> поворот от первого вектора <b><i>a</i></b> ко второму вектору <b><i>b</i></b> происходит <i>против часовой стрелки</i> (т.е. в положительном
+направлении) (рис.2.17). </p>
+<p>В противном случае, если такой
+поворот от <b><i>a</i></b><b><i> </i></b>к <b><i>b</i></b><b><i> </i></b>происходит
+<i>по часовой стрелке</i>, то тройка векторов <b><i>a</i></b>, </span><b><i>b</span></i></b> и <b><i>c</i></b> образует <i>левоориентированную
+</i>или просто <i>левую</i>
+тройку (рис.2.18).</p>
+<p><img src="img/lec3.files/image141.gif" align="right" height="173" width="375"> Разумеется, если поменять порядок
+следования двух соседних векторов в тройке, то её ориентация сменится на
+противоположную. Таким образом, любые три некомпланарных вектора в пространстве образуют либо
+правую,либо левую тройку. </p>
+<p>Теперь можно приступить к определению второго вида умножения
+векторов – векторного произведения.</p>
+<p><i>Векторным произведением</i> ненулевого вектора </span><b><i>a</i></b> на ненулевой вектор </span><b><i>b</span></i></b><b><i> </i></b>называется
+<i>вектор </i><b><i>c</span></i></b>, удовлетворяющий трём условиям:</span></p>
+<p>1) длина его равна произведению длин
+векторов-сомножителей на синус угла между ними:&nbsp;&nbsp; <img src="img/lec3.files/image142.gif" height="31" width="123">,&nbsp;
+где <img src="img/lec3.files/image143.gif" height="28" width="91"> ;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(4.6)</span></p>
+<p>2) он ортогонален векторам <b><i>a</span></i></b> и </span><b><i>b</i></b>, т.е. &nbsp;&nbsp;<img src="img/lec3.files/image144.gif" height="22" width="47">&nbsp;и
+<img src="img/lec3.files/image145.gif" height="22" width="47">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+<p>3) векторы
+<img src="img/lec3.files/image146.gif" height="31" width="64">&nbsp;образуют правую тройку.
+(см.
+рис.2.19).</p>
+<p><img src="img/lec3.files/image147.gif" align="left" height="163" width="195">&nbsp;&nbsp;&nbsp;&nbsp;
+В случае, если хотя бы один из векторов <b><i>a</span></i></b> и <b><i>b</span></i></b> – нулевой, их векторное
+произведение будем считать
+нулевым вектором. Векторное произведение обозначается <img src="img/lec3.files/image148.gif" height="21" width="41">&nbsp;или <img src="img/lec3.files/image149.gif" height="31" width="45">. Мы будем использовать первое
+обозначение.</span></p>
+<p>В первую очередь необходимо отметить главное различие двух видов
+операции умножения векторов: векторное произведение является векторной величиной
+в отличие от скалярного произведения, которое есть число.</span></p>
+<p><i>Свойства векторного произведения</span></i></p>
+<p><img src="img/lec3.files/image150.gif" align="left" height="30" width="42"><i>При
+перестановке сомножителей векторное произведение меняет знак</span></i>: </span></p>
+<p><img style="width: 129px; height: 21px;" alt="" src="img/f4_7.png">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(4.7)</p>
+<p>Это свойство называют <i>антикоммутативностью. </i>В самом
+деле, векторы <img src="img/lec3.files/image148.gif" height="21" width="41">&nbsp;и <img src="img/lec3.files/image152.gif" height="21" width="41">&nbsp;коллинеарны,
+имеют одинаковые модули, но противоположно направлены, так как тройки <img style="width: 103px; height: 28px;" alt="" src="img/f046.png">&nbsp;</span>и <img style="width: 104px; height: 27px;" alt="" src="img/f047.png">&nbsp;имеют
+противоположную ориентацию.</p>
+<p><img src="img/lec3.files/image044.gif" align="left" height="30" width="42"><i>Векторное
+произведение ассоциативно
+относительно умножения на скаляр</i>:</p> <img style="width: 267px; height: 25px;" alt="" src="img/f045.png"><br>
+</p>
+<p>Докажем
+это свойство. Пусть <img src="img/lec3.files/image156.gif" height="21" width="45">.
+Вектор <img src="img/lec3.files/image157.gif" height="25" width="67">&nbsp;перпендикулярен
+векторам
+<b><i><span lang="EN-US">a</span></i></b>
+и <b><i><span lang="EN-US">b</span></i></b>.
+Вектор <img src="img/lec3.files/image158.gif" height="25" width="67">&nbsp;также
+перпендикулярен векторам <b><i><span lang="EN-US">a</span></i></b>
+и <b><i><span lang="EN-US">b</span></i></b>
+(векторы <b><i><span lang="EN-US">a</span></i></b>,
+<img src="img/lec3.files/image159.gif" height="21" width="27">&nbsp;лежат в одной
+плоскости). Значит, векторы <img src="img/lec3.files/image157.gif" height="25" width="67">&nbsp;и&nbsp;<img src="img/lec3.files/image158.gif" height="25" width="67">&nbsp;коллинеарны. Очевидно, что
+и направления их совпадают. Кроме того, они имеют одинаковую длину:</p>
+
+<p><img style="width: 484px; height: 66px;" alt="" src="img/f048.png">.</p>
+<p>Таким
+образом, <img style="width: 164px; height: 21px;" alt="" src="img/f049.png" align="middle">.
+Аналогично доказывается при <img style="width: 52px; height: 21px;" alt="" src="img/f050.png" align="middle">.</p>
+<p><img src="img/lec3.files/image164.gif" align="left" height="30" width="42"><i>Векторное
+произведение дистрибутивно относительно сложения</i>:</p>
+<p><img style="width: 223px; height: 18px;" alt="" src="img/f051.png"></p><br>
+<p><img src="img/lec3.files/image166.gif" align="left" height="29" width="42"><i>Два вектора </i><b><i><span lang="EN-US">a</span></i></b><i> и </i><b><i><span lang="EN-US">b</span></i></b><i>
+коллинеарны тогда и только тогда, когда их векторное</i> <i>произведение
+равно нулевому вектору</i>:</p>
+<p><img style="width: 165px; height: 24px;" alt="" src="img/f052.png"><br></p>
+<p>Это следует из того, что угол между
+коллинеарными векторами
+равен либо 0<span style="font-family: Symbol;">°</span>,
+либо 180<span style="font-family: Symbol;">°</span>.
+В обоих случаях синус этого угла равен
+нулю. Если же хотя бы один из векторов – нулевой, то это свойство
+становится тривиальным.</p>
+
+<p><i>Следствие</i>.
+Для любого вектора <b><i>а</i></b> имеет место
+равенство:</p><p><img style="width: 83px; height: 18px;" alt="" src="img/f053.png">.</p>
+<p>Свойства
+1-3 позволяют векторно перемножать векторные суммы как многочлены с
+учётом порядка умножаемых векторов. Например:</p>
+<p><img src="img/lec3.files/image169.gif" height="31" width="483"></p>
+<p><img src="img/lec3.files/image170.gif" height="25" width="232">.</p>
+<p>&nbsp;
+Иногда рассматривают так
+называемое <i>двойное векторное произведение</i>. Это
+векторное произведение вектора
+<b><i><span lang="EN-US">a</span></i></b>
+на векторное произведение двух других
+векторов <b><i><span lang="EN-US">b</span></i></b>
+и <b><i><span lang="EN-US">c</span></i></b>:&nbsp;<img style="width: 89px; height: 23px;" alt="" src="img/f054.png" align="middle">&nbsp;. Отметим без
+доказательства следующие свойства двойного векторного произведения:</p>
+<p>1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 195px; height: 26px;" alt="" src="img/f055.png">;</p>
+<p>2)>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 266px; height: 22px;" alt="" src="img/f056.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(формула
+Лагранжа);</p>
+<p>3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 338px; height: 19px;" alt="" src="img/f057.png"></sub>&nbsp;&nbsp;&nbsp;&nbsp;
+(тождество
+Якоби).</p>
+<p><img src="img/lec3.files/image175.gif" align="left" height="183" width="207"> &nbsp;&nbsp;Геометрические
+приложения векторного произведения</p>
+<p>Пусть требуется найти <i>площадь
+параллелограмма</i>,
+построенного на векторах </span><b><i>a</span></i></b> и </span><b><i>b</span></i></b> как на сторонах (рис.2.20).
+Эта площадь, как известно, равна произведению длин сторон на синус угла
+между ними. Но, согласно определению (4.6) векторного произведения, его
+модуль равен</span></p>
+<p><img style="width: 231px; height: 31px;" alt="" src="img/f058.png">,</span></p>
+<p>т.е.
+площадь параллелограмма вычисляется по формуле:</span></p>
+<p><img style="width: 109px; height: 36px;" alt="" src="img/f059.png"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(4.8)</span></p>
+<p><i>Площадь треугольника</span></i>, стороны которого суть векторы </span><b><i>a</span></i></b> и </span><b><i>b</span></i></b> , равна половине
+соответствующей площади параллелограмма (рис.2.20) и, следовательно,</span></p>
+<p><img src="img/lec3.files/image178.gif" height="49" width="103">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(4.9)</span></p>
+<p><i>Задача</span></i>. Вычислить площадь треугольника,
+построенного на
+векторах <img src="img/lec3.files/image179.gif" height="20" width="49">&nbsp;и <img src="img/lec3.files/image180.gif" height="20" width="49">,
+если <img src="img/lec3.files/image181.gif" height="24" width="108">, <img src="img/lec3.files/image182.gif" height="48" width="87">.</p>
+<p><i>Решение</span></i>. Воспользуемся формулой (4.9) и
+свойствами векторного
+произведения:</p>
+<p><img src="img/lec3.files/image183.gif" height="49" width="612">.</p><br>
+<p><b><i>Физические
+приложения векторного произведения</i></b></p>
+<p><i>Линейная скорость вращения</i></p>
+<p>Вычислим
+линейную скорость <img src="img/lec3.files/image184.gif" height="17" width="15">&nbsp;точки
+<i>М</i> твердого тела, например, диска <b>Д</b>,
+вращающегося с угловой
+скоростью <img src="img/lec3.files/image185.gif" height="17" width="19">&nbsp;вокруг
+неподвижной оси (рис.2.21).
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="250" valign="top"><p><img src="img/lec3.files/image186.gif" align="left" height="231" width="231"></p></td>
+      <td width="750" valign="top"><p>Пусть <img src="img/lec3.files/image187.gif" height="27" width="68">&nbsp;–
+радиус-вектор точки <i>М</i>,&nbsp;
+<br>
+<i>О</i> – неподвижная точка оси. Тогда линейная скорость
+определяется формулой
+Эйлера </p>
+<p><img src="img/lec3.files/image188.gif" height="17" width="73">.</p>
+<p>Как видим, эта скорость направлена перпендикулярно как радиусу-вектору
+точки <i>М</i>,
+так и вектору угловой скорости <img src="img/lec3.files/image185.gif" height="17" width="19">,
+образуя с этими векторами правую тройку.</p></td>
+     
+    </tr>
+</table>
+<p><i>Сила
+Лоренца</i></p>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image189.gif" align="left" height="172" width="183"></p></td>
+      <td width="800" valign="top"><p>
+На электрически
+заряженную частицу при движении её в магнитном поле действует сила со
+стороны
+магнитного поля, которая зависит от величины <i><span lang="EN-US">q</span></i>
+заряда частицы, направления и величины скорости <b><i><span lang="EN-US">v</span></i></b>
+частицы, направления и величины магнитной индукции <b><i>В
+</i></b>(рис.2.22). </p>
+<p>Если
+положительно заряженная частица влетает в магнитное поле
+перпендикулярно линиям
+индукции, то на неё действует сила в направлении, перпендикулярном как
+линиям
+индукции, так и скорости частицы. Формула для вычисления этой силы
+носит имя голландского
+физика&nbsp; Г.А.Лоренца:</p>
+<p><img src="img/lec3.files/image190.gif" height="25" width="91">.</p></td>
+     
+    </tr>
+</table>
+
+<br>
+<a name=6 class="anchor"></a>
+<h3> 4.6. Смешанное произведение
+векторов</h3>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" valign="top"><p><img src="img/lec3.files/image191.gif" align="left" height="220" width="296"></p></td>
+      <td width="800" valign="top"><p>Рассмотрим произведение векторов <b><i>a</span></i></b>, <b><i>b</span></i></b> и </span><b><i>c</span></i></b>, составленное следующим образом: <img src="img/lec3.files/image192.gif" height="25" width="75">. Здесь
+первые два вектора перемножаются векторно, а их результат умножается
+скалярно на третий вектор. Такое произведение называется <i>смешанным</i>
+произведением трех векторов. Смешанное произведение является числом.</span></p>
+<p>Выясним геометрический смысл
+выражения <img src="img/lec3.files/image192.gif" height="25" width="75">. Построим
+параллелепипед,
+ребрами которого являются векторы <b><i>a</span></i></b>, </span><b><i>b</span></i></b> и </span><b><i>c</span></i></b>. Пусть
+вектор <sub><img src="img/lec3.files/image193.gif" height="21" width="73"></sub>&nbsp;(рис.</span><span style="font-size: 12pt;" lang="EN-US">2</span>.23).  Имеем:</p>
+<p><img src="img/lec3.files/image194.gif" height="27" width="213">, <img src="img/lec3.files/image195.gif" height="25" width="119"></sub></span><span style="font-size: 12pt;">,</p>
+</td>
+     
+    </tr>
+</table>
+<p>где
+</span><i>S</span></i> – площадь параллелограмма,
+построенного на векторах <img src="img/lec3.files/image196.gif" height="17" width="16">&nbsp;</span>и <img src="img/lec3.files/image197.gif" height="21" width="15">;
+<img src="img/lec3.files/image198.gif" height="27" width="81">&nbsp;для правой тройки векторов
+и <img src="img/lec3.files/image199.gif" height="27" width="93">&nbsp;для
+левой, где <i>Н –</i>
+высота параллелепипеда. Получаем: </p>
+<p><img style="width: 177px; height: 26px;" alt="" src="img/f060.png">,
+т.е. <img style="width: 126px; height: 20px;" alt="" src="img/f061.png">,</span></p>
+<p>где
+<i>V</span></i><i> – </span></i>объем
+параллелепипеда, образованного векторами </span><b><i>a</i></b>, </span><b><i>b</i></b> и </span><b><i>c</i></b>.</p>
+<p>Таким образом, смешанное
+произведение трех векторов численно
+равно объему параллелепипеда, построенного на этих векторах, взятому со
+знаком «плюс», если эти векторы образуют правую тройку, и со знаком «минус»,
+если они образуют левую тройку.</p>
+<p><i>Свойства
+смешанного произведения</span></i></p>
+<p><img src="img/lec3.files/image202.gif" align="left" height="29" width="42"><i>Смешанное
+произведение не меняется при перемене местами знаков векторного и
+скалярного произведения</i>:</span></p>
+<p><img style="width: 185px; height: 22px;" alt="" src="img/f062_0.png">.</p>
+<p>Действительно, <img src="img/lec3.files/image204.gif" height="25" width="120">&nbsp;и <img src="img/lec3.files/image205.gif" height="25" width="209">.
+Знак в правой части этих
+равенств берем один и тот же,
+так как тройки векторов <img src="img/lec3.files/image206.gif" height="31" width="67">&nbsp;и
+<img src="img/lec3.files/image207.gif" height="31" width="68">&nbsp;- одинаково ориентированы.</span></p>
+<p>Это позволяет записывать смешанное
+произведение векторов вообще </span>без
+знаков векторного и скалярного умножения:</p>
+<p><img style="width: 236px; height: 26px;" alt="" src="img/f062.png">.</p>
+<p>В
+самом деле, никакие другие расстановки знаков, такие как&nbsp;<img style="width: 87px; height: 30px;" alt="" src="img/f063.png">&nbsp;&nbsp;или
+<img style="width: 85px; height: 24px;" alt="" src="img/f064.png">&nbsp;просто не имеют смысла.</span></p>
+<p><img src="img/lec3.files/image044.gif" align="left" height="30" width="42"><i> Смешанное
+произведение не меняется при циклической перестановке сомножителей</span></i>: </span></p>
+<p><sub><img src="img/lec3.files/image211.gif" height="21" width="132">.</p>
+<p>Действительно, в этом случае не
+изменяются ни объем
+параллелепипеда, ни ориентация его ребер.</p>
+<p><img src="img/lec3.files/image212.gif" align="left" height="30" width="42"><i>Смешанное
+произведение векторов меняет свой знак при перемене мест любых двух
+векторов-сомножителей</span></i>:</span></p>
+<p><sub><img src="img/lec3.files/image213.gif" height="21" width="217"></sub>.</span></p>
+<p>Действительно, такая перестановка
+равносильна перестановке сомножителей в векторном произведении, меняющей у
+произведения знак.</p>
+
+<p><img src="img/lec3.files/image214.gif" align="left" height="27" width="42"><img src="img/lec3.files/image215.gif" align="left" height="211" width="224"><i>Смешанное произведение векторов </span></i><b><i>a</span></i></b><i>, </span></i><b><i>b</span></i></b><i> и </span></i><b><i>c</span></i></b><i> равно нулю тогда и только тогда, когда они компланарны</span></i>.</span></p>
+<p><img src="img/lec3.files/image216.gif" height="21" width="64"></sub><sub><img src="img/lec3.files/image217.gif" height="17" width="27"></sub><b><i>&nbsp;</i></b></span><b><i>a</span></i></b>, </span><b><i>b</span></i></b> и </span><b><i>c</span></i></b>&nbsp; – компланарны.</span></p>
+<p>Это важное свойство становится очевидным, если обратиться
+к геометрическому смыслу смешанного произведения. В самом деле, объём
+параллелепипеда равен нулю лишь в том случае, когда все его ребра находятся в одной
+плоскости, а значит векторы, образующие этот параллелепипед – компланарны. </span></p>
+<p>Случай, когда хотя бы один из
+векторов – нулевой, тем более очевиден. Таким образом, свойство 4 позволяет
+устанавливать компланарность векторов.</p>
+<span style="font-size: 12pt; font-family: &quot;arial&quot;;"><br style="page-break-before: always;" clear="all">
+</span>
+<p><img src="img/lec3.files/image218.gif" align="left" height="29" width="42"><i>Объём
+пирамиды, образованной векторами </span></i><b><i>a</span></i></b><i>, </span></i><b><i>b</span></i></b><i> и </span></i><b><i>c</span></i></b>, <i>можно вычислить по
+формуле:</i></span></p>
+<p><b><img src="img/lec3.files/image219.gif" height="49" width="109"></b><span style="font-size: 12pt;">.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b>(4.10)</span></p>
+<p>Формула (4.10) вытекает из того геометрического факта, что объём пирамиды
+составляет шестую часть объёма параллелепипеда, достроенного из этой пирамиды
+(рис.2.24).</span></p>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+<p style="border: medium none ; padding: 0cm; text-align: justify;">&nbsp;</span></p>
+</div><br>
+<p><img src="img/lec3.files/image220.jpg" align="left" height="269" hspace="12" width="220"></p>
+<p><b>Гамильтон
+Уильям Роуэн </b> (1806 —1865) выдающийся ирландский математик.</p>
+<p>Уже
+в детстве У.Гамильтон проявил необыкновенные дарования. В 12 лет он,
+под руководством дяди Джеймса, хорошего лингвиста, знал уже 12 языков и
+среди них  персидский, арабский и санскрит.
+В 13 лет он написал руководство по сирийской грамматике.</p>
+<p>После языков настала пора увлечения математикой. Двумя годами раньше
+Гамильтону попался латинский перевод «Начал» Евклида,
+и он детально изучил это сочинение; в 13 лет он прочел «Универсальную
+арифметику» Ньютона;
+в 16 лет— большую часть «Математических
+начал натуральной философии» Ньютона,
+в 17 лет— начал изучение «Небесной механики» Лапласа.</p>
+<p>В 1823г. поступил в Тринити-колледж в  Дублине.
+Он показал столь блестящие способности, что в  1827 году,
+ещё студентом, был назначен профессором астрономии в Дублинском
+университете и королевским астрономом Ирландии. Сочинения У.Гамильтона носят печать гениальности,
+и можно сказать, что он далеко опередил своих современников.</p>
+<p>В 1834—1835 годах он публикует важные открытия по механике и теории
+интегрирования систем дифференциальных уравнений, развитые потом  Якоби.
+Он указал возможность получения дифференциальных
+уравнений движения, исходя из нового принципа, названного принципом
+Гамильтона, являющегося развитием  принципа
+наименьшего действия, установленного ранее Мопертюи,
+Эйлером и Лагранжем.
+Созданная им гамильтонова
+динамика  оказалась в XX веке
+фундаментом теории
+микромира.</p>
+<p>Гамильтону же принадлежит введение в механику особого наглядного приема
+изображения изменений
+величин и направлений скорости точки, совершающей какое-либо прямо- или
+криволинейное движение.</span></p>
+<p>В им была развита аксиоматическая теория
+комплексных чисел как пар вещественных.</p>
+<p>В 1843 г. У.Гамильтон открыл кватернионы,
+некоммутативную числовую структуру с тремя мнимыми единицами. Следующие
+20 лет он посвятил их подробному исследованию и приложениям.</span></p>
+<p>В ходе исследований Гамильтон попутно ввёл понятие векторного
+поля и создал основы векторного
+анализа. Он ввёл понятие векторного
+произведения, предложил оператор «набла».
+На основе работ Гамильтона Гиббс
+и Хевисайд
+завершили систему векторного анализа.</p>
+<div style="border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color windowtext; border-width: medium medium 1pt; padding: 0cm 0cm 1pt;">
+<p style="border: medium none ; padding: 0cm; text-align: justify;"><b><span style="font-size: 6pt;">&nbsp;</span></b></p>
+</div>
+<br>
+<br><br>
+<!--конец-->
+      
+				
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="gl3.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="gl5.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

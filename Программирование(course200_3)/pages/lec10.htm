@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="do.sibsutis.ru">
+
+  <title>Лекция 10. Конспект лекций</title>
+	
+	<link rel="icon" type="image/png" href="../lib/css/favicon.png">
+  <!-- Bootstrap Core CSS -->
+  <link href="../lib/css/bootstrap.css" rel="stylesheet">
+  <link href="../lib/css/prettify.css" rel="stylesheet">	
+  <!-- Custom CSS -->
+  <link href="../lib/css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   <li class="hidden"> <a class="page-scroll" href="#page-top"></a> </li>
+	 
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+	 
+   <a class="navbar-brand " href="../index.htm"> 
+  <text class = "hidden-xs">Программирование (часть 2)</text> 
+  <text class = "visible-xs">Программирование (часть 2)</text>
+	 </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and glyphicon glyphicon-list-alt content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+	 <!-- <ul class="nav navbar-nav">
+		<li><a href="#"></a></li> 
+   </ul> -->
+	
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+		<button type="button" class="navbar-toggle dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	   
+		<a class = "dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Материалы</a>
+     <ul class="dropdown-menu">
+    <li><a href="../index.htm">Аннотация курса</a></li>
+      <li role="separator" class="divider"></li>
+  
+ <li><a href="lec_index.htm">Теория</a></li>
+ 
+<li><a href="labs.htm">Лабораторные работы</a></li>  
+ <li><a href="c_work.htm">Контрольная работа</a></li>
+
+ 
+      <li role="separator" class="divider"></li>
+   
+
+      <li><a href="lit.htm">Литература</a></li>
+      <!--li><a href="q.htm">Вопросы для самопроверки</a></li-->			
+     </ul>
+ </li>
+ </ul>
+  </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+
+
+  <div id="intro" class="section content-section ">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-12">	
+
+
+<!-- содержание -->	
+<div class="page-header">				
+<h3><a href="#">10. Обработка бинарных файлов</a></h3>
+<a href="#1" class=punkt>10.1. Основные понятия</a><br>
+<a href="#2" class=punkt>Контрольные вопросы</a><br>
+</div>
+<!--начало-->
+<a name=1 class="anchor"></a>
+<h3>10.1. Основные понятия</h3>
+<P>Если файл открыт в бинарном режиме, его можно записывать или считывать 
+ побайтно. Функция fseek() позволяет обращаться с файлом как с массивом 
+ и переходить к любой позиции в файле, обеспечивая возможность произвольного 
+ доступа. Если текстовые файлы являются файлами с последовательным доступом, 
+ то произвольный доступ чаще всего применяется к бинарным файлам. &#9; 
+ </p>
+<P>Бинарные файлы могут содержать любую информацию. Чаще 
+ всего используются файлы, содержащие структуры. Для чтения и записи в 
+ бинарные файлы можно использовать функции fread(), fwrite() или fscanf(),fprintf(). 
+ </P>
+<P>fread –функция для чтения из файла: </P>
+<P>int fread(void *ptr, unsigned size, unsigned count, FILE 
+ *f);</P>
+<P>Из файла f считываются и по адресу ptr записываются count 
+ элементов размером size каждый. Функция возвращает число фактически считанных 
+ элементов.</P>
+<P>fwrite – функция для записи в файл:</P>
+<P>int fwrite(void *ptr, unsigned size, unsigned count, 
+ FILE *f);</P>
+<P>В файл записываются, начиная с адреса ptr, count элементов 
+ размером size каждый. Функция возвращает число фактически записанных элементов.</P>
+<P>fseek – функция для произвольного доступа к байтам бинарных 
+ файлов:</P>
+<P>int fseek(FILE *f, long offset, int w);</P>
+<P>offset показывает, на сколько байт нужно сместиться относительно 
+ точки отсчёта – w. </P>
+<P>w должно быть равно одной из трех констант: </P>
+<P>SEEK_SET или 0 - начало файла; </P>
+<P>SEEK_CUR или 1 – текущая позиция в файле; </P>
+<P>SEEK_END или 2 – конец файла. </P>
+<P>ftell - возвращает текущую позицию в файле как длинное 
+ целое:</P>
+<P>long int ftell (FILE *f); </P>
+<P>&nbsp;</P>
+<P></P>
+<P><b>Пример обработки бинарного файла</b></P>
+<P>Составить программу, выполняющую следующие функции:</P>
+ 
+ <ol>
+   <li>Создание нового файла;</li>
+   <li>Просмотр файла;</li>
+   <li>Добавление информации в конец файла;</li>
+   <li>Поиск по названию товара и изменение цены и количества;</li>
+ </ol>
+
+<P>Файл создать из структур вида: название товара, его цена 
+ и количество. </P>
+<P>Задание выполнить в отдельных функциях. Использовать 
+ меню для выбора функций.</P>
+<pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+#include &lt;conio.h&gt;
+
+#include &lt;string.h&gt;
+
+struct tov {char name[10]; float c; int kol;} t1;
+
+void input(FILE *); // создание нового файла
+
+void print(FILE *); // просмотр файла
+
+void app(FILE *); // добавление в файл
+
+void find(FILE *); // поиск и изменение
+
+main()
+
+{ char c;
+
+  FILE *tf;
+
+  while (1)
+
+   {clrscr();
+
+    puts(" 1 – новый файл");
+
+    puts(" 2 – просмотр файла");
+
+    puts(" 3 – добавление в файл");
+
+    puts(" 4 – поиск и изменение");
+
+    puts(" 0 - выход");
+
+    c=getch();
+
+    switch(c)
+
+    { case '1':input(tf);break;
+
+      case '2':print(tf);break;
+
+      case '3':app(tf);break;
+
+      case '4':find(tf);break;
+
+      case '0':return 0;
+
+      default : puts(" неверный режим");
+
+    }
+
+  }
+
+}
+
+void input(FILE *tf)
+
+{ char ch;
+
+  tf=fopen("file1.dat","wb"); // открытие бинарного файла для записи
+
+  clrscr();
+
+  printf("\n Ввод товаров\n");
+
+  do
+
+  { printf("\n название: "); scanf("%s",t1.name);
+
+    printf(" цена: "); scanf("%f",&t1.c);
+
+    printf(" количество: "); scanf("%d",&t1.kol);
+
+    fwrite(&t1,sizeof(t1),1,tf); // запись в файл одной структуры t1
+
+    printf("\n Закончить? y/n ");
+
+    ch=getch();
+
+  }
+
+  while (ch != 'y');
+
+  fclose(tf);
+
+}
+
+void print(FILE *tf)
+
+{ int i;
+
+  clrscr();
+
+  tf=fopen("file1.dat","rb"); // открытие бинарного файла для чтения
+
+  i=1;
+
+  fread(&t1,sizeof(t1),1,tf); // чтение из файла одной структуры t1
+
+  while (!feof(tf))
+
+  {  printf("\n %3d tovar %10s cena %6.2f kolic %4d", i, t1.name, t1.c, t1.kol);
+
+     fread(&t1,sizeof(t1),1,tf);
+
+     i++;
+
+  }
+
+  getch();
+
+}
+
+void app(FILE *tf)
+
+{ char ch;
+
+  tf=fopen("file1.dat","ab"); // открытие бинарного файла для добавления
+
+  clrscr();
+
+  printf("\n Ввод товаров \n");
+
+  do
+
+  { printf("\n название: "); scanf("%s", t1.name);
+
+    printf(" цена: "); scanf("%f",&t1.c);
+
+    printf(" количество: "); scanf("%d",&t1.kol);
+
+    fwrite(&t1,sizeof(t1),1,tf);
+
+    printf(" Закончить? y/n ");
+
+    ch=getch();
+
+   }
+
+  while (ch != 'y');
+
+  fclose(tf);
+
+}
+
+void find(FILE *tf)
+
+{ char c, tov[10];
+
+  long int i;
+
+  tf=fopen("file1.dat","rb+"); // открытие бинарного файла для чтения и записи
+
+  clrscr();
+
+  puts(" Название искомого товара: ");
+
+  gets(tov);
+
+  fread(&t1,sizeof(t1),1,tf);
+
+  while (!feof(tf))
+
+  { if (strcmp(t1.name,tov)==0)
+
+      { printf(" tovar %10s cena %6.2f kolic %d",t1.name,t1.c,t1.kol);
+
+        printf("\n изменить? y/n ");
+
+        c=getch();
+
+        if (c=='y')
+
+          { printf("\n количество: "); scanf("%d",&t1.kol);
+
+            printf("\n цена: "); scanf("%f",&t1.c);
+
+            i=sizeof(t1);
+
+            fseek(tf, -i, 1); // возврат на sizeof(t1) байт назад
+
+            fwrite(&t1,sizeof(t1),1,tf);//запись изменённой структуры
+
+         }
+
+      }
+
+   fread(&t1,sizeof(t1),1,tf);
+
+  }
+
+ fclose(tf);
+
+}
+</pre><P>&nbsp;</p>
+<a name=2 class="anchor"></a>
+<h3>10.2. Контрольные вопросы</h3>
+<P></P>
+<P>1. Режимы доступа к файлам</P>
+<P>2. Назначение функций fseek, ftell</P>
+<P>3. Можно ли взаимозаменять функции fscanf и fread; 
+ fprintf и fwrite ?</P>
+<P>4. Привести пример корректировки К-той записи в 
+ файле прямого доступа.<br>
+ </P>
+<br><br>
+<!--конец-->
+      
+				
+
+
+				</div>
+			</div>
+			
+      </div>
+    </div>
+  </div>
+	
+	<!--Меню навигации по Темам -->	
+	<div aria-label="..." class = "nav-menu">
+	 <ul class="pager background-transition-slow">
+		 <li title="Наверх" style = "margin-right:15px;	"><a class = "glyphicon glyphicon-menu-up page-scroll" href="#page-top"></a></li>
+		 <li title="К предыдущей лекции"><a class = "glyphicon glyphicon-menu-left page-scroll" href="lec9.htm"></a></li>
+		 <li title="В содержание"><a class = "glyphicon glyphicon-list-alt" href="lec_index.htm"></a></li>
+		 <li title="К следующей лекции"><a class = "glyphicon glyphicon-menu-right page-scroll" href="lec11.htm"></a></li>
+	 </ul>
+	</div>
+	<!---->
+	
+	</div>
+  <!-- jQuery -->
+  <script src="../lib/js/jquery.js"></script>
+<script src="../lib/css/prettify.js"></script>
+<script type="text/javascript">
+  !function ($) {
+$(function(){
+window.prettyPrint && prettyPrint()  
+    })
+  }(window.jQuery)
+</script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../lib/js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="../lib/js/jquery.easing.min.js"></script>
+  <script src="../lib/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
